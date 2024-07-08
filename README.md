@@ -1,4 +1,4 @@
-# Wok-on-This-as-a-template-for-the-new-site
+# Work-on-This-as-a-template-for-the-new-site
  New Site
 
  # Hi there, I'm Omar!
