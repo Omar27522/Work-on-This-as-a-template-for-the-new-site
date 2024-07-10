@@ -3,25 +3,24 @@
 
  # Hi there, I'm Omar!
 
-[Short bio] (https://latinospc.com/about/?omar#more_content)(e.g., I'm a software developer passionate about building beautiful and functional web applications. In my free time, I enjoy going out and being outside.)
+[Short bio] (https://latinospc.com/about/?omar#more_content) (e.g., I'm a software developer passionate about building beautiful and functional web applications. In my free time, I enjoy going out and being outside.)
 
 **Skills**
 
-* [List of your technical skills](e.g., Python, JavaScript, HTML, CSS)
-* [List of your soft skills](e.g., Communication, Teamwork, Problem-solving)
+* PHP, HTML, CSS, ~javaScript
+* Communication, Teamwork, Problem-solving, logistical notations
 
 **Projects**
 
-* [Project 1 name](link to the repository) - [Short description of the project]
-* [Project 2 name](link to the repository) - [Short description of the project]
-* [Project 3 name](link to the repository) - [Short description of the project]
+* [LatinosPC](https://latinospc.com/) - [Our goal is to provide you and your company with outstanding service. We're dedicated to enhancing your experience through effective marketing, customer-friendly retention strategies, and maintaining top-notch quality control.]
+
 
 **Connect with me!**
 
-* [Link to your website] (if you have one)
-* [Link to your LinkedIn profile](if you have one)
-* [Link to your Twitter profile] (if you have one)
-* [Link to your other social media profiles] (optional)
+* [LAtinosPC]((https://latinospc.com/contact/#scroll))
+* [LinkedIn](https://www.linkedin.com/in/miguel-garcia-a36399234)
+* [Email](help@latinospc.com)
+
 
 
 **Languages**
