@@ -1,19 +1,19 @@
-<div class="mainbar"><!-- Main Bar-->
-<div class="article"> <!--Computer Solutions -->
+<article class="mainbar"><!-- Main Bar-->
+<section class="article"> <!--Computer Solutions -->
                 <h2><span>Computer Solutions</span></h2>
                 <div class="clr"></div>
-                <img src="./include/_images/help.jpg" alt="" class="fl" height="146" width="263" />
+                <img src="../include/_images/help.jpg" alt="" class="fl" height="146" width="263" />
                 <p>On site PC repair, we will help your computer run smoother,
                   faster and perform better. We offer free diagnostics &amp;
                   free physical cleanup. Computers from months old to decades,
                   we will make them run, and you will be satisfied.</p>
                 <br />
-</div>
+</section>
 
-<div class="article"> <!--We specialize in -->
+<section class="article"> <!--We specialize in -->
                 <h2><span>We Specialize</span> In</h2>
                 <div class="clr"></div>
-                <img src="./include/_images/100_satisfaction_guarantee.png" alt="%100 Satisfacion" style="float: right;" height="260"
+                <img src="../include/_images/100_satisfaction_guarantee.png" alt="%100 Satisfacion" style="float: right;" height="260"
                   width="260" /><br />
                 <p>Mal-aware &amp; Virus removal<br />
                   Essential program installations<br />
@@ -29,12 +29,12 @@
                   Power jack<br />
                   Cleanups physical hardware and software<br />
                   Computer burned we'll take a look</p>
-</div>
+</section>
 
-<div class="article"> <!--Custom Made Websites -->
+<section class="article"> <!--Custom Made Websites -->
                   <h2><span>Custom Made Websites</span></h2>
                   <div class="clr"></div>
-                  <a href="https://img.techpowerup.org/191221/websites.jpg"><img src="./include/_images/websites.jpg" alt="" class="fl"
+                  <a href="https://img.techpowerup.org/191221/websites.jpg"><img src="../include/_images/websites.jpg" alt="" class="fl"
                       height="400" width="265" /></a>
                   <p>We make simple Professional looking websites, for small
                     businesses, churches, teams, restaurants, events, personal
@@ -47,28 +47,28 @@
                     .net, .co or the one you want, these are popular .top,
                     .loan, .xyz, .club, .online, .vip, .win, .shop, .ltd .men
                     .site </p>
-</div>
+</section>
 
-          </div><!-- Main Bar-->
+</article><!-- Main Bar-->
 
-<div class="sidebar"> <!-- Sidebar -->
-            <div class="gadget">
+<article class="sidebar"> <!-- Sidebar -->
+            <aside class="gadget">
               <h2><span>Contact</span> Us</h2>
               <div class="clr"></div>
               <ul class="sb_menu">
-                <li><a href="https://www.facebook.com/SolidStateCR/"><img src="./include/_images/facebook.png"
+                <li><a href="https://www.facebook.com/SolidStateCR/"><img src="../include/_images/facebook.png"
 
                       alt="Facebook" /></a></li>
-                <li><a href="https://twitter.com/latinospc"><img src="./include/_images/twitter.png"
+                <li><a href="https://twitter.com/latinospc"><img src="../include/_images/twitter.png"
 
                       alt="Twitter" /></a> </li>
                 <li><a href="https://support.google.com/mail/answer/56256?hl=en"><img
 
-                      src="./include/_images/email.png" alt="email" /></a></li>
+                      src="../include/_images/email.png" alt="email" /></a></li>
               </ul>
-            </div>
+            </aside>
             <!-- InstanceBeginEditable name="sidebar" -->
-            <div class="gadget">
+            <aside class="gadget">
               <h2><span>Websites We Use</span></h2>
               <div class="clr"></div>
               <ul class="ex_menu">
@@ -79,42 +79,27 @@
                   Powerful Website Hosting Services Web hosting made easy and
                   affordable.</li>
               </ul>
-            </div>
-            <div class="gadget">
+            </aside>
+            <aside class="gadget">
               <h2><span>Contact</span> Us</h2>
               <div class="clr"></div>
               <ul class="sb_menu">
-                <li><a href="https://www.facebook.com/SolidStateCR/"><img src="./include/_images/facebook.png"
+                <li><a href="https://www.facebook.com/SolidStateCR/"><img src="../include/_images/facebook.png"
 
                       alt="Facebook" /></a></li>
-                <li><a href="https://twitter.com/latinospc"><img src="./include/_images/twitter.png"
+                <li><a href="https://twitter.com/latinospc"><img src="../include/_images/twitter.png"
 
                       alt="Twitter" /></a> </li>
                 <li><a href="https://support.google.com/mail/answer/56256?hl=en"><img
 
-                      src="./include/_images/email.png" alt="email" /></a></li>
+                      src="../include/_images/email.png" alt="email" /></a></li>
               </ul>
-            </div>
-            <div class="gadget">
-              <h2><span>Contact</span> Us</h2>
-              <div class="clr"></div>
-              <ul class="sb_menu">
-                <li><a href="https://www.facebook.com/SolidStateCR/"><img src="./include/_images/facebook.png"
-
-                      alt="Facebook" /></a></li>
-                <li><a href="https://twitter.com/latinospc"><img src="./include/_images/twitter.png"
-
-                      alt="Twitter" /></a> </li>
-                <li><a href="https://support.google.com/mail/answer/56256?hl=en"><img
-
-                      src="./include/_images/email.png" alt="email" /></a></li>
-              </ul>
-            </div>
-            <!-- InstanceEndEditable -->
-</div>
+            </aside>
+</article><!-- Sidebar -->
           <div class="clr"></div>
 
-<div class="fullbar article"> <!--Full Bar -->
+<article class="fullbar"> <!--Full Bar -->
+  <section class="article">
             <h2>Can I just Keep on writing? whats gonna happen?</h2>
                       <p>
                         Lorem Ipsum
@@ -126,4 +111,5 @@
 
                               Maecenas vitae efficitur nisi. Mauris sagittis eget orci quis iaculis. Pellentesque at mi mi. Sed arcu enim, sodales sed tortor vitae, facilisis tempus nulla. Integer dictum sit amet orci vel aliquam. Vestibulum euismod urna non felis dapibus ultricies. Maecenas at posuere sapien, vitae ultrices metus. Integer consectetur accumsan velit, a lobortis velit aliquam quis. Nam scelerisque varius semper. Etiam at libero sagittis, tempus enim eu, pharetra lacus. Maecenas lobortis, dui non interdum rutrum, lacus diam imperdiet velit, in tincidunt dolor neque et lorem. 
                             </p>
-</div><!--Full Bar -->
+  </section>
+</article><!--Full Bar -->

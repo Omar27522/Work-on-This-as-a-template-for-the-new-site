@@ -12,7 +12,7 @@
 <div class="header">
         <div class="header_resize">
           <div class="logo">
-            <h1><a href="../"><span>LAtinos</span>PC.com<small>"PC" is for Personal Computer
+            <h1><a href="../"><span>LAtinos</span>PC.com<small>"PC" es por Computadora Personal
             </small></a></h1>
           </div>
           <div class="clr"></div>
@@ -23,16 +23,16 @@
         <div class="hbg_resize">
         <nav class="menu_nav">
             <ul>
-              <li class="<?= $js="current"; ?>"><a href="#">Jesus Christ</a></li>
+              <li class="<?= $js="current"; ?>"><a href="#">Cristo Jesus</a></li>
 
-              <li class="<?= empty($home) ? ($home = 'current') : ($home = 'active'); ?>">
-                <a href="../">Home</a></li>
+              <li class="<?= empty($casa) ? ($casa = 'current') : ($casa = 'active'); ?>">
+                <a href="../">Inicio</a></li>
 
               <li class="<?= empty($es) ? ($es = 'current') : ($es = 'active');?>">
-                <a href="<?= $directoryPath ?>es/">En Español</a></li>
+                <a href="<?= $directoryPath ?>../">English</a></li>
 
-              <li class="<?= empty($about) ? ($about = 'current') : ($about = 'active');?>">
-                <a href="<?= $directoryPath ?>about/">About Us</a></li>
+              <li class="<?= empty($acerca) ? ($acerca = 'current') : ($acerca = 'active');?>">
+                <a href="<?= $directoryPath ?>es/acerca">Acerca de</a></li>
 
               <li class="<?= empty($hardware) ? ($hardware = 'current') : ($hardware = 'active');?>">
                 <a href="<?= $directoryPath ?>hardware/">Hardware </a></li>
@@ -41,10 +41,10 @@
                 <a href="<?= $directoryPath ?>software/">Software </a></li>
 
               <li class="<?= empty($contact) ? ($contact = 'current') : ($contact = 'active');?>">
-                <a href="<?= $directoryPath ?>contact/">Contact Us</a></li>
+                <a href="<?= $directoryPath ?>contacto/">Contacto</a></li>
 
-              <li class="<?= empty($reviews) ? ($reviews = 'current') : ($reviews = 'active');?>">
-                <a href="<?= $directoryPath ?>reviews/">Reviews</a></li>
+              <li class="<?= empty($critica) ? ($critica = 'current') : ($critica = 'active');?>">
+                <a href="<?= $directoryPath ?>es/critica/">Reseñas</a></li>
 
               <li class="<?= $phone="current"; ?>"><a href="tel:+019092767214" style="translate: 705px -85px;color: #fff;font-size: 30px;background-color: rgba(51, 170, 51, .384);">909-276-7214</a></li>
             </ul>
@@ -80,7 +80,7 @@ content();
           </div>
           <div class="col c3">
             <h2><span>About</span></h2>
-            <img src="../include/_images/computer%20CPU.jpg" alt="" height="60" width="60" />
+            <img src="<?= $directoryPath ?>include/_images/computer%20CPU.jpg" alt="" height="60" width="60" />
             <p>A company with years of experience, bringing Southern California
               people and families the experience of a working system. Personal
               websites with professional or casual and distinguished look; at

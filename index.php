@@ -1,6 +1,8 @@
 <?php
 $title="LAtinosPC.com Welcome";
 $directoryPath = './';
+$lang = 'en';
+$home ='active';
 
 include ('./include/_code/page.php');
 
