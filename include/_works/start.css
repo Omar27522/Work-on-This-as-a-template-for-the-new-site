@@ -1,0 +1,94 @@
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+/* Hero section */
+.hero {
+    background-color: #f3b845;
+    color: black;
+    text-align: center;
+    padding: 50px 0;
+    background-image: url('https://latinospc.com/images/websites/webcontent/5.jpg');
+    background-size:100%;
+    background-repeat:no-repeat;
+    padding-bottom:0;
+}
+
+.hero h2 {
+    font-size: 32px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+/* Services section */
+.services {
+    background-color: #fff;
+    color: #333;
+    padding: 40px 0;
+}
+
+.services h2 {
+    font-size: 28px;
+    text-align: center;
+}
+
+.services ul {
+    list-style: disc;
+    padding-left: 40px;
+}
+
+.services ul li {
+    font-size: 18px;
+}
+
+/* Special offers section */
+.offers {
+    background-color: #f1f1f1;
+    color: #333;
+    padding: 40px 0;
+}
+
+.offers h2 {
+    font-size: 28px;
+    text-align: center;
+}
+
+.offers ul {
+    list-style: square;
+    padding-left: 40px;
+}
+
+.offers ul li {
+    font-size: 18px;
+}
+
+/* Contact section */
+.contact {
+    background-color: #fff;
+    color: #333;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 28px;
+}
+
+.contact p {
+    font-size: 18px;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer p {
+    font-size: 14px;
+}
