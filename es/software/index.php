@@ -1,12 +1,13 @@
 <?php
-$title="Hola! Una Cordial Bienvenida";
+$title = "Software";
 $directoryPath = '../';
 $lang = 'es';
-$casa ='active';
+$software ='active';
 
-include ('../include/_code/pagina.php');
+include ('../../include/_code/pagina.php');
 
 function content(){
- include_once('../include/_works/es_frontPage.php');
+    $directoryPath = '../../';
+ include_once('../../include/_works/es_software.php');
 }
 ?>
