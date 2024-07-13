@@ -186,19 +186,9 @@ ul,
   float: right;
   width: 670px;
 }
-.content .mainbar img {
-  padding: 4px;
-  border: 1px solid #c00;
-  border-style: double;
-}
-.content .mainbar img.fl {
-  margin: 0;
-  float: left;
-}
-img.fr {
-  margin: 0;
-  float: right;
-}
+.fl { margin:4px 16px 4px 0; float:left;}
+.rtl { margin:4px 4px 16px 0; float:right;}
+
 .content .mainbar .article {
   margin: 0;
   padding: 16px 24px 24px 40px;

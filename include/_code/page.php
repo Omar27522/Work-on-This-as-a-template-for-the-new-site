@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="<?= $lang ?>">
+<html lang="en">
 <head>
     <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
     <title><?= $title?></title>
     <link href="<?= $directoryPath ?>include/_code/style.css" rel="stylesheet" type="text/css" />
+    <link href="<?= $directoryPath ?>include/_works/start.css" rel="stylesheet" type="text/css" />
 	<link rel="icon" href="<?= $directoryPath ?>annotation_2019_12_08_033413_AUw_2.ico">
 </head>
 

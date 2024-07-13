@@ -1,24 +1,25 @@
 <!DOCTYPE html>
-<html lang="<?= $lang ?>">
+<html lang="es">
 <head>
     <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
     <title><?= $title?></title>
     <link href="<?= $directoryPath ?>include/_code/style.css" rel="stylesheet" type="text/css" />
+    <link href="<?= $directoryPath ?>include/_works/start.css" rel="stylesheet" type="text/css" />
 	<link rel="icon" href="<?= $directoryPath ?>annotation_2019_12_08_033413_AUw_2.ico">
 </head>
 
-<body>
-    <div class="main">
-<div class="header">
-        <div class="header_resize">
-          <div class="logo">
-            <h1><a href="../"><span>LAtinos</span>PC.com<small>"PC" es por Computadora Personal
-            </small></a></h1>
-          </div>
-          <div class="clr"></div>
-        </div>
-</div>
+<body><main class="main">
+  <header class="header"><!-- Header -->
+    <div class="header_resize">
+            <div class="logo">
+              <h1><a href="../"><span>LAtinos</span>PC.com<small>"PC" es por Computadora Personal
+              </small></a></h1>
+    </div>
+            <div class="clr"></div>
+    </div>
+  </header><!-- Header -->
 
+<<<<<<< Updated upstream
 <div class="hbg">
         <div class="hbg_resize">
                <nav class="menu_nav">
@@ -56,12 +57,38 @@
         </nav>
         </div><?php $es=="current";  ?>
 </div>
+=======
+  <div class="hbg"><!--Navigation Menu Bar  -->
+    <div class="hbg_resize">
+      <nav class="menu_nav">
+        <ul>
+          <li class="<?= $js="current"; ?>"><a href="#">Cristo Jesus</a></li>
+          <li class="<?= empty($casa) ? ($casa = 'current') : ($casa = 'active'); ?>">
+            <a href="<?= $directoryPath ?>../es">Inicio</a></li>
+          <li class="<?= empty($es) ? ($es = 'current') : ($es = 'active');?>">
+            <a href="<?= $directoryPath ?>../">English</a></li>
+          <li class="<?= empty($acerca) ? ($acerca = 'current') : ($acerca = 'active');?>">
+            <a href="<?= $directoryPath ?>es/acerca">Acerca de</a></li>
+          <li class="<?= empty($hardware) ? ($hardware = 'current') : ($hardware = 'active');?>">
+            <a href="<?= $directoryPath ?>hardware/">Hardware </a></li>
+          <li class="<?= empty($software) ? ($software = 'current') : ($software = 'active');?>">
+            <a href="<?= $directoryPath ?>software/">Software </a></li>
+          <li class="<?= empty($contact) ? ($contact = 'current') : ($contact = 'active');?>">
+            <a href="<?= $directoryPath ?>contacto/">Contacto</a></li>
+          <li class="<?= empty($critica) ? ($critica = 'current') : ($critica = 'active');?>">
+            <a href="<?= $directoryPath ?>es/critica/">Reseñas</a></li>
+          <li class="<?= $phone="current"; ?>"><a href="tel:+019092767214" style="translate: 705px -85px;color: #fff;font-size: 30px;background-color: rgba(51, 170, 51, .384);">909-276-7214</a></li>
+        </ul>
+      </nav>
+    </div><?php $es=="current";  ?>
+  </div><!--Navigation Menu Bar  -->
+>>>>>>> Stashed changes
 
       <div class="content"> <!-- Content -->
         <div class="content_resize"><!-- Content Resize -->
-<?php
-content();
-?>
+
+  <?php content();
+  ?>
 
         </div><!-- Content Resize -->
       </div><!-- Content -->
@@ -115,7 +142,4 @@ content();
               Templates</a></p>
         </div>
       </div>
-</div><!-- Footer Bar -->
-
-</body>
-</html>
+</main></body></html>

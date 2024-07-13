@@ -1,8 +1,8 @@
-<!-- Hero Section -->
-    <section class="hero">
+<!-- Hero Section --><article class="fullbar">
+    <section class="hero article">
         <div class="container">
-            <h2 style="translate:0 -50px;">Your Trusted IT Solution Partner</h2>
-            <button><a href="tel:+19092767214">call</a></button>
+            <h2>Your Trusted IT Solution Partner</h2>
+            <button><a href="tel:+19092767214"><img src="https://latinospc.com/images/number.jpeg" height="150px"width="450px"></a></button>
             <p style="padding-left: 50px;">Reliable, fast, and professional computer repair and IT services.</p>
         </div>
     </section>
@@ -19,7 +19,7 @@
                 <li>Hardware Diagnosis and Solutions</li>
                 <li>Virus and Malware Removal</li>
                 <li>Backup Solutions (Local, Offsite, Cloud)</li>
-                <li>System Cleanups</li>
+                <li>System Cleanups</li><img src="https://latinospc.com/images/button2.jpg" height="150px" width="350px" class="fl">
                 <li>Remote Support and Phone Consultations</li>
                 <li>Software/Hardware Upgrades and Buying Guides</li>
                 <li>Bilingual Support (Tambien Hablamos Español)</li>
@@ -36,6 +36,7 @@
                 <li>In-person and Online Computer Classes for Beginners and Intermediate Users</li>
                 <li>Remote and Phone-based Support</li>
                 <li>Reasonable Rates: $35 Diagnosis Fee (added to cost of service/repair)</li>
+                <img src="https://latinospc.com/images/storefront.png" class="rtl">
             </ul>
         </div>
     </section>
@@ -49,3 +50,4 @@
             <p>We work with individuals, students, small-to-medium businesses, gamers, and professionals.</p>
         </div>
     </section>
+</article>
