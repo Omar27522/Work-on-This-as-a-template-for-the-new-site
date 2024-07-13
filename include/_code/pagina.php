@@ -19,7 +19,6 @@
     </div>
   </header><!-- Header -->
 
-<<<<<<< Updated upstream
 <div class="hbg">
         <div class="hbg_resize">
                <nav class="menu_nav">
@@ -27,7 +26,7 @@
               <li class="<?= $js="current"; ?>"><a href="#">Cristo Jesus</a></li>
 
               <li class="<?= empty($casa) ? ($casa = 'current') : ($casa = 'active'); ?>">
-                <a href="../">Inicio</a></li>
+              <a href="<?= ($casa == 'active') ? './' : $directoryPath.'./'; ?>">Inicio</a></li>
 
               <li class="current">
                 <a href="<?= $directoryPath ?>../">English</a></li>
@@ -35,54 +34,28 @@
               <li class="<?= empty($acerca) ? ($acerca = 'current') : ($acerca = 'active'); ?>">
                 <a href="<?= ($acerca == 'active') ? './' : $directoryPath.'es/acerca'; ?>">Acerca de</a>
               </li>
-              
+
               <li class="<?= empty($hardware) ? ($hardware = 'current') : ($hardware = 'active'); ?>">
                 <a href="<?= ($hardware == 'active') ? './' : $directoryPath.'es/hardware/'; ?>">Hardware</a>
               </li>
-              
+
               <li class="<?= empty($software) ? ($software = 'current') : ($software = 'active'); ?>">
                 <a href="<?= ($software == 'active') ? './' : $directoryPath.'es/software/'; ?>">Software</a>
               </li>
-              
-              <li class="<?= empty($contact) ? ($contact = 'current') : ($contact = 'active'); ?>">
-                <a href="<?= ($contact == 'active') ? './' : $directoryPath.'es/contacto/'; ?>">Contacto</a>
+
+              <li class="<?= empty($contacto) ? ($contacto = 'current') : ($contacto = 'active'); ?>">
+                <a href="<?= ($contacto == 'active') ? './' : $directoryPath.'es/contacto/'; ?>">Contacto</a>
               </li>
-              
+
               <li class="<?= empty($critica) ? ($critica = 'current') : ($critica = 'active'); ?>">
                 <a href="<?= ($critica == 'active') ? './' : $directoryPath.'es/critica/'; ?>">Reseñas</a>
               </li>
-            
-              <li class="<?= $phone="current"; ?>"><a href="tel:+019092767214" style="translate: 705px -85px;color: #fff;font-size: 30px;background-color: rgba(51, 170, 51, .384);">909-276-7214</a></li>
+
+              <li class="<?= $phone="current"; ?>"><a href="tel:9092767214" style="translate: 705px -85px;color: #fff;font-size: 30px;background-color: rgba(51, 170, 51, .384);">909-276-7214</a></li>
             </ul>
         </nav>
-        </div><?php $es=="current";  ?>
+        </div>
 </div>
-=======
-  <div class="hbg"><!--Navigation Menu Bar  -->
-    <div class="hbg_resize">
-      <nav class="menu_nav">
-        <ul>
-          <li class="<?= $js="current"; ?>"><a href="#">Cristo Jesus</a></li>
-          <li class="<?= empty($casa) ? ($casa = 'current') : ($casa = 'active'); ?>">
-            <a href="<?= $directoryPath ?>../es">Inicio</a></li>
-          <li class="<?= empty($es) ? ($es = 'current') : ($es = 'active');?>">
-            <a href="<?= $directoryPath ?>../">English</a></li>
-          <li class="<?= empty($acerca) ? ($acerca = 'current') : ($acerca = 'active');?>">
-            <a href="<?= $directoryPath ?>es/acerca">Acerca de</a></li>
-          <li class="<?= empty($hardware) ? ($hardware = 'current') : ($hardware = 'active');?>">
-            <a href="<?= $directoryPath ?>hardware/">Hardware </a></li>
-          <li class="<?= empty($software) ? ($software = 'current') : ($software = 'active');?>">
-            <a href="<?= $directoryPath ?>software/">Software </a></li>
-          <li class="<?= empty($contact) ? ($contact = 'current') : ($contact = 'active');?>">
-            <a href="<?= $directoryPath ?>contacto/">Contacto</a></li>
-          <li class="<?= empty($critica) ? ($critica = 'current') : ($critica = 'active');?>">
-            <a href="<?= $directoryPath ?>es/critica/">Reseñas</a></li>
-          <li class="<?= $phone="current"; ?>"><a href="tel:+019092767214" style="translate: 705px -85px;color: #fff;font-size: 30px;background-color: rgba(51, 170, 51, .384);">909-276-7214</a></li>
-        </ul>
-      </nav>
-    </div><?php $es=="current";  ?>
-  </div><!--Navigation Menu Bar  -->
->>>>>>> Stashed changes
 
       <div class="content"> <!-- Content -->
         <div class="content_resize"><!-- Content Resize -->

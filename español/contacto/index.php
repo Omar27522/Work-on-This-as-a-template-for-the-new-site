@@ -1,13 +1,13 @@
 <?php
-$title = "Software";
-$directoryPath = '../';
+$title="Contacto";
+$directoryPath = '../../';
 $lang = 'es';
-$software ='active';
+$contacto ='active';
 
 include ('../../include/_code/pagina.php');
 
 function content(){
     $directoryPath = '../../';
- include_once('../../include/_works/es_software.php');
+ include_once('../../include/_works/es_contacto.php');
 }
 ?>

@@ -19,12 +19,93 @@
           <div class="clr"></div>
         </div>
 </div>
+<style>
+.navbar {
+  overflow: hidden;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+}
+
+.dropdown .dropbtn {
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  width:7vw;
+  min-width: 3rem;
+}
+.show {
+  display: block;
+  width:90vw;
+  max-width: 930px;
+}
+</style>
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
 
 <div class="hbg">
         <div class="hbg_resize">
-        <nav class="menu_nav">
+        <nav class="menu_nav navbar">
             <ul>
-              <li class="<?= $js="current"; ?>"><a href="#">Jesus Christ</a></li>
+              <li class="<?= $js="current dropdown"; ?>"><a class="dropbtn" onclick="myFunction()">Jesus Christ</a>
+              <div class="dropdown-content" id="myDropdown">
+              <img src="../include/_images/computer%20CPU.jpg" alt="CPUimage"/>
+              <div class="rtl"><a href="../">Link 8</a>
+                <a href="../">Link 9</a>
+                <a href="../">Link 12</a>
+                <a href="../">Link 10</a>
+                <a href="#link11">Link 11</a>
+              </div>
+              <a href="../">Link 1</a>
+              <a href="../">Link 2</a>
+              <a href="../">Link 3</a><img src="../include/_images/computer%20CPU.jpg" class="rtl" style="padding-right: 30px" alt="CPUimage"width="400px" />
+              <a href="../">Si esta muy largo el link ya chafíe</a>
+              <a href="../">Link 5</a>
+              <a href="../">Link 6</a>
+              <a href="../">Link 7</a>
+              
+              </div>
+</li>
 
               <li class="<?= empty($home) ? ($home = 'current') : ($home = 'active'); ?>">
                 <a href="../">Home</a></li>
@@ -50,7 +131,7 @@
               <li class="<?= $phone="current"; ?>"><a href="tel:+019092767214" style="translate: 705px -85px;color: #fff;font-size: 30px;background-color: rgba(51, 170, 51, .384);">909-276-7214</a></li>
             </ul>
         </nav>
-        </div><?php $es=="current";  ?>
+        </div>
 </div>
 
       <div class="content"> <!-- Content -->
