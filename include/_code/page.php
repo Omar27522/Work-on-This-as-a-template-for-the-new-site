@@ -21,7 +21,7 @@
         </div>
 </div>
 
-<!-- Dropdown Menu -->
+<!-- Dropdown Menu https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp -->
 <script>
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
@@ -41,7 +41,7 @@ window.onclick = function(e) {
 </script>
 <!--^^ Dropdown Menu ^^-->
 
-<div class="hbg">
+<div class="hbg"><!-- HBG -->
         <div class="hbg_resize">
         <nav class="menu_nav navbar">
             <ul>
@@ -85,7 +85,7 @@ window.onclick = function(e) {
               <li class="<?= empty($reviews) ? ($reviews = 'current') : ($reviews = 'active');?>">
                 <a href="<?= $directoryPath ?>reviews/">Reviews</a></li>
 
-              <li class="<?= $phone="current"; ?>"><a href="tel:+019092767214" style="translate: 705px -85px;color: #fff;font-size: 30px;background-color: rgba(51, 170, 51, .384);">909-276-7214</a></li>
+              <li class="current"><a href="tel:+019092767214" style=" translate: 705px -85px; color: #fff;font-size: 30px;background-color: rgba(51, 170, 51, .384);">909-276-7214</a></li>
             </ul>
         </nav>
         </div> <!-- HBG Resize -->
@@ -93,9 +93,8 @@ window.onclick = function(e) {
 
       <div class="content"> <!-- Content -->
         <div class="content_resize"><!-- Content Resize -->
-<?php
-content();
-?>
+<?=
+  content(); ?>
 
         </div><!-- Content Resize -->
       </div><!-- Content -->
