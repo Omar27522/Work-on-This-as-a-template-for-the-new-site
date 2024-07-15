@@ -20,9 +20,9 @@
                 <li>Virus and Malware Removal</li>
                 <li>Backup Solutions (Local, Offsite, Cloud)</li>
                 <li>System Cleanups</li><img src="https://latinospc.com/images/button2.jpg" height="150px" width="350px" class="fl">
-                <li>Remote Support and Phone Consultations</li>
-                <li>Software/Hardware Upgrades and Buying Guides</li>
-                <li>Bilingual Support (Tambien Hablamos Español)</li>
+                <li style="list-style-type: none">Remote Support and Phone Consultations</li><br />
+                <li style="list-style-type: none">Software/Hardware Upgrades and Buying Guides</li><br />
+                <li style="list-style-type: none">Bilingual Support:<br />(Tambien Hablamos Español)</li>
             </ul>
         </div>
     </section>

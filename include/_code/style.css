@@ -296,6 +296,7 @@ ul.ex_menu li a:hover {
 }
 .footer a:hover {
   text-decoration: none;
+  color: whitesmoke;
 }
 .footer_resize {
   margin: 0 auto;
@@ -342,4 +343,14 @@ ol li textarea {
 }
 ol li .send {
   margin: 16px 0 0 0;
+}
+.links {
+  padding: 80px;
+  margin: 0;
+}
+.linksColor:hover  {
+  color: whitesmoke;
+  font-size: xx-large;
+  display: inline-block;
+  position: absolute;
 }

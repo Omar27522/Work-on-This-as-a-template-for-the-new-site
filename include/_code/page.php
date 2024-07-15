@@ -5,6 +5,7 @@
     <title><?= $title?></title>
     <link href="<?= $directoryPath ?>include/_code/style.css" rel="stylesheet" type="text/css" />
     <link href="<?= $directoryPath ?>include/_works/start.css" rel="stylesheet" type="text/css" />
+    <link href="<?= $directoryPath ?>include/_code/nav.css" rel="stylesheet" type="text/css" />
 	<link rel="icon" href="<?= $directoryPath ?>annotation_2019_12_08_033413_AUw_2.ico">
 </head>
 
@@ -19,54 +20,10 @@
           <div class="clr"></div>
         </div>
 </div>
-<style>
-.navbar {
-  overflow: hidden;
-}
 
-.navbar a {
-  float: left;
-  font-size: 16px;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-.dropdown {
-}
-
-.dropdown .dropbtn {
-  cursor: pointer;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-  width:7vw;
-  min-width: 3rem;
-}
-.show {
-  display: block;
-  width:90vw;
-  max-width: 930px;
-}
-</style>
+<!-- Dropdown Menu -->
 <script>
-/* When the user clicks on the button, 
+/* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
 function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
@@ -82,30 +39,30 @@ window.onclick = function(e) {
   }
 }
 </script>
+<!--^^ Dropdown Menu ^^-->
 
 <div class="hbg">
         <div class="hbg_resize">
         <nav class="menu_nav navbar">
             <ul>
               <li class="<?= $js="current dropdown"; ?>"><a class="dropbtn" onclick="myFunction()">Jesus Christ</a>
-              <div class="dropdown-content" id="myDropdown">
-              <img src="../include/_images/computer%20CPU.jpg" alt="CPUimage"/>
-              <div class="rtl"><a href="../">Link 8</a>
-                <a href="../">Link 9</a>
-                <a href="../">Link 12</a>
-                <a href="../">Link 10</a>
-                <a href="#link11">Link 11</a>
-              </div>
-              <a href="../">Link 1</a>
-              <a href="../">Link 2</a>
-              <a href="../">Link 3</a><img src="../include/_images/computer%20CPU.jpg" class="rtl" style="padding-right: 30px" alt="CPUimage"width="400px" />
-              <a href="../">Si esta muy largo el link ya chafíe</a>
-              <a href="../">Link 5</a>
-              <a href="../">Link 6</a>
-              <a href="../">Link 7</a>
-              
-              </div>
-</li>
+                <div class="dropdown-content" id="myDropdown">
+                <img src="../include/_images/computer%20CPU.jpg" alt="CPUimage"/>
+                <div class="rtl"style="padding-top: 30px;padding-right:20px;"><a href="../">Link 8</a>
+                  <a href="../">Link 9</a>
+                  <a href="../">Link 12</a>
+                  <a href="../">Link 10</a>
+                  <a href="#link11">Link 11</a>
+                </div>
+                <a href="../">Link 1</a>
+                <a href="../">Link 2</a>
+                <a href="../">Link 3</a><img src="../include/_images/computer%20CPU.jpg" class="rtl" style="padding-right: 30px" alt="CPUimage"width="400px" />
+                <a href="../">Si esta muy largo el link ya chafíe</a>
+                <a href="../">Link 5</a>
+                <a href="../">Link 6</a>
+                <a href="../">Link 7</a>
+                </div>
+              </li>
 
               <li class="<?= empty($home) ? ($home = 'current') : ($home = 'active'); ?>">
                 <a href="../">Home</a></li>
@@ -131,8 +88,8 @@ window.onclick = function(e) {
               <li class="<?= $phone="current"; ?>"><a href="tel:+019092767214" style="translate: 705px -85px;color: #fff;font-size: 30px;background-color: rgba(51, 170, 51, .384);">909-276-7214</a></li>
             </ul>
         </nav>
-        </div>
-</div>
+        </div> <!-- HBG Resize -->
+</div><!-- HBG -->
 
       <div class="content"> <!-- Content -->
         <div class="content_resize"><!-- Content Resize -->
@@ -170,24 +127,18 @@ content();
           </div>
           <div class="clr"></div>
         </div>
-      </div>
-      <p style="text-align: center;"><a href="#">Home</a>   <a href="inicio.html">Espanol</a>
-         <a href="about.html"> About Us</a>   <a href="terms.html">Terms</a>  
-        <a href="contact.html">Contact Us</a>   <a href="testimonials.html">Testimonials</a><a href="#">Home</a>   <a href="inicio.html">Espanol</a>
-         <a href="about.html"> About Us</a>   <a href="terms.html">Terms</a>  
-        <a href="contact.html">Contact Us</a>   <a href="testimonials.html">Testimonials</a><a href="#">Home</a>   <a href="inicio.html">Espanol</a>
-         <a href="about.html"> About Us</a>   <a href="terms.html">Terms</a>  
-        <a href="contact.html">Contact Us</a>   <a href="testimonials.html">Testimonials</a></p>
-        <p style="text-align: center;"><a href="#">Home</a>   <a href="inicio.html">Espanol</a>
-           <a href="about.html"> About Us</a>   <a href="terms.html">Terms</a>  
-          <a href="contact.html">Contact Us</a>   <a href="testimonials.html">Testimonials</a><a href="#">Home</a>   <a href="inicio.html">Espanol</a>
-           <a href="about.html"> About Us</a>   <a href="terms.html">Terms</a>  
-          <a href="contact.html">Contact Us</a>   <a href="testimonials.html">Testimonials</a><a href="#">Home</a>   <a href="inicio.html">Espanol</a>
-           <a href="about.html"> About Us</a>   <a href="terms.html">Terms</a>  
-          <a href="contact.html">Contact Us</a>   <a href="testimonials.html">Testimonials</a></p>
+      </div> <!--I tried to fix the code with the linksColor class -->
+      <p class="links" style="text-align: center;"><a href="#" class="linksColor">Home</a>   <a href="inicio.html">Espanol</a>
+         <a href="about.html"> About Us</a>   <a href="terms.html" class="linksColor">Terms</a>  
+        <a href="contact.html">Contact Us</a>   <a href="testimonials.html" class="linksColor">Testimonials</a><a href="#">Home</a>   <a href="inicio.html">Espanol</a>
+         <a href="about.html"> About Us</a>   <a href="terms.html" class="linksColor">Terms</a>  
+        <a href="contact.html">Contact Us</a>   <a href="testimonials.html" class="linksColor">Testimonials</a><a href="#">Home</a>   <a href="inicio.html">Espanol</a>
+         <a href="about.html"> About Us</a>   <a href="terms.html" class="linksColor">Terms</a>  
+        <a href="contact.html">Contact Us</a>   <a href="testimonials.html" class="linksColor">Testimonials</a></p>
+
       <div class="footer">
         <div class="footer_resize">
-          <p class="lf">© Copyright <a href="http://latinospc.com">LAtinosPC.com</a>.</p>
+          <p class="lf">© Copyright <a href="http://latinospc.com" style=":hover{color}">LAtinosPC.com</a>.</p>
           <p class="rf">Layout by Atomic <a href="http://www.atomicwebsitetemplates.com/">Website
               Templates</a></p>
         </div>
