@@ -6,7 +6,7 @@
                     <a href="../">Link 9</a>
                     <a href="../">Link 12</a>
                     <a href="../">Link 10</a>
-                    <a href="https://latinospc.com">Link 11</a>
+                    <a href="#link11">Link 11</a>
                 </div>
                 <a href="../">Link 1</a>
                 <a href="../">Link 2</a>
@@ -14,7 +14,7 @@
                 <a href="../">Link 4</a>
                 <a href="../">Link 5</a>
                 <a href="../">Link 6</a>
-                <a href="../">Link 7</a>
+                <a href="https://latinospc.com/?the_internet">Link 7</a>
                 <!-- <input type="checkbox" id="leftArrow" name="ImagePrevious" value="boldText">
 -->             </div>
 </li>
