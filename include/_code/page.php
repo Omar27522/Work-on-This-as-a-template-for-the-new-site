@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
-    <title><?= $title?></title>
+    <title><?= $title ?></title>
     <link href="<?= $directoryPath ?>include/_code/style.css" rel="stylesheet" type="text/css" />
     <link href="<?= $directoryPath ?>include/_works/start.css" rel="stylesheet" type="text/css" />
     <link href="<?= $directoryPath ?>include/_code/nav.css" rel="stylesheet" type="text/css" />
@@ -44,31 +44,20 @@ window.onclick = function(e) {
 <div class="hbg"><!-- HBG -->
         <div class="hbg_resize">
         <nav class="menu_nav navbar">
-            <ul>
-              <li class="<?= $js="current dropdown"; ?>"><a class="dropbtn" onclick="myFunction()">Jesus Christ</a>
-                <div class="dropdown-content" id="myDropdown">
-                <img src="../include/_images/computer%20CPU.jpg" alt="CPUimage"/>
-                <div class="rtl"style="padding-top: 30px;padding-right:20px;"><a href="../">Link 8</a>
-                  <a href="../">Link 9</a>
-                  <a href="../">Link 12</a>
-                  <a href="../">Link 10</a>
-                  <a href="#link11">Link 11</a>
-                </div>
-                <a href="../">Link 1</a>
-                <a href="../">Link 2</a>
-                <a href="../">Link 3</a><img src="../include/_images/computer%20CPU.jpg" class="rtl" style="padding-right: 30px" alt="CPUimage"width="400px" />
-                <a href="../">Si esta muy largo el link ya chafíe</a>
-                <a href="../">Link 5</a>
-                <a href="../">Link 6</a>
-                <a href="../">Link 7</a>
-                </div>
-              </li>
+            <ul> <?php   if  (!empty($about) || !empty($hardware) || !empty($software) || !empty($contact) || !empty($reviews)){
+            include('../include/_code/jesuschrist.php');
+            }
+            else if (!empty($home)){
+            include('./include/_code/jesuschrist.php');
+            //JesusChrist();
+            }
+            ?>
 
               <li class="<?= empty($home) ? ($home = 'current') : ($home = 'active'); ?>">
                 <a href="../">Home</a></li>
 
               <li class="<?= empty($es) ? ($es = 'current') : ($es = 'active');?>">
-                <a href="<?= $directoryPath ?>es/">En Español</a></li>
+                <a href="<?= $directoryPath ?>español/">En Español</a></li>
 
               <li class="<?= empty($about) ? ($about = 'current') : ($about = 'active');?>">
                 <a href="<?= $directoryPath ?>about/">About Us</a></li>
@@ -89,7 +78,7 @@ window.onclick = function(e) {
             </ul>
         </nav>
         </div> <!-- HBG Resize -->
-</div><!-- HBG -->
+</div><!--^^ HBG ^^-->
 
       <div class="content"> <!-- Content -->
         <div class="content_resize"><!-- Content Resize -->

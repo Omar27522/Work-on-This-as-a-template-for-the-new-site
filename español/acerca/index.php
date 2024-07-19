@@ -7,7 +7,7 @@ $acerca ='active';
 include ('../../include/_code/pagina.php');
 
 function content(){
-    $directoryPath = '../../';
- include_once('../../include/_works/es_frontPage.php');
+ include_once('../../include/_works/es/es_acerca.php');
+    include_once('../../include/_works/about.php');
 }
 ?>

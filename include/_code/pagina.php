@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+<head><!-- Head de el documento -->
     <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
     <title><?= $title?></title>
     <link href="<?= $directoryPath ?>include/_code/style.css" rel="stylesheet" type="text/css" />
     <link href="<?= $directoryPath ?>include/_works/start.css" rel="stylesheet" type="text/css" />
+    <link href="<?= $directoryPath ?>include/_code/nav.css" rel="stylesheet" type="text/css" />
 	<link rel="icon" href="<?= $directoryPath ?>annotation_2019_12_08_033413_AUw_2.ico">
-</head>
+</head><!--^^ Head de el documento ^^-->
 
 <body><main class="main">
   <header class="header"><!-- Header -->
@@ -17,54 +18,88 @@
     </div>
             <div class="clr"></div>
     </div>
-  </header><!-- Header -->
+  </header><!--^^ Header ^^-->
 
-<div class="hbg">
+<!-- Dropdown Menu https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp -->
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
+<!--^^ Dropdown Menu ^^-->
+<div class="hbg"><!-- HBG --><!-- nav bar -->
         <div class="hbg_resize">
                <nav class="menu_nav">
             <ul>
-              <li class="<?= $js="current"; ?>"><a href="#">Cristo Jesus</a></li>
+            <li class="<?= $js="current dropdown"; ?>"><a class="dropbtn" onclick="myFunction()">Cristo Jesus</a>
+                <div class="dropdown-content" id="myDropdown">
+                <img src="../include/_images/computer%20CPU.jpg" alt="CPUimage"/>
+                <div class="rtl"style="padding-top: 30px;padding-right:20px;"><a href="../">Link 8</a>
+                  <a href="../">Link 9</a>
+                  <a href="../">Link 12</a>
+                  <a href="../">Link 10</a>
+                  <a href="#link11">Link 11</a>
+                </div>
+                <a href="../">Link 1</a>
+                <a href="../">Link 2</a>
+                <a href="../">Link 3</a><img src="../include/_images/computer%20CPU.jpg" class="rtl" style="padding-right: 30px" alt="CPUimage"width="400px" />
+                <a href="../">link 4</a>
+                <a href="../">Link 5</a>
+                <a href="../">Link 6</a>
+                <a href="../">Link 7</a>
+                </div>
+              </li>
 
               <li class="<?= empty($casa) ? ($casa = 'current') : ($casa = 'active'); ?>">
-              <a href="<?= ($casa == 'active') ? './' : $directoryPath.'./'; ?>">Inicio</a></li>
+              <a href="<?= ($casa == 'active') ? './' : $directoryPath.'./español/'; ?>">Inicio</a></li>
 
               <li class="current">
                 <a href="<?= $directoryPath ?>../">English</a></li>
 
               <li class="<?= empty($acerca) ? ($acerca = 'current') : ($acerca = 'active'); ?>">
-                <a href="<?= ($acerca == 'active') ? './' : $directoryPath.'es/acerca'; ?>">Acerca de</a>
+                <a href="<?= ($acerca == 'active') ? './' : $directoryPath.'español/acerca'; ?>">Acerca de</a>
               </li>
 
               <li class="<?= empty($hardware) ? ($hardware = 'current') : ($hardware = 'active'); ?>">
-                <a href="<?= ($hardware == 'active') ? './' : $directoryPath.'es/hardware/'; ?>">Hardware</a>
+                <a href="<?= ($hardware == 'active') ? './' : $directoryPath.'español/hardware/'; ?>">Hardware</a>
               </li>
 
               <li class="<?= empty($software) ? ($software = 'current') : ($software = 'active'); ?>">
-                <a href="<?= ($software == 'active') ? './' : $directoryPath.'es/software/'; ?>">Software</a>
+                <a href="<?= ($software == 'active') ? './' : $directoryPath.'español/software/'; ?>">Software</a>
               </li>
 
               <li class="<?= empty($contacto) ? ($contacto = 'current') : ($contacto = 'active'); ?>">
-                <a href="<?= ($contacto == 'active') ? './' : $directoryPath.'es/contacto/'; ?>">Contacto</a>
+                <a href="<?= ($contacto == 'active') ? './' : $directoryPath.'español/contacto/'; ?>">Contacto</a>
               </li>
 
               <li class="<?= empty($critica) ? ($critica = 'current') : ($critica = 'active'); ?>">
-                <a href="<?= ($critica == 'active') ? './' : $directoryPath.'es/critica/'; ?>">Reseñas</a>
+                <a href="<?= ($critica == 'active') ? './' : $directoryPath.'español/critica/'; ?>">Reseñas</a>
               </li>
 
               <li class="<?= $phone="current"; ?>"><a href="tel:9092767214" style="translate: 705px -85px;color: #fff;font-size: 30px;background-color: rgba(51, 170, 51, .384);">909-276-7214</a></li>
             </ul>
         </nav>
         </div>
-</div>
+</div><!--^^ HBG ^^-->
 
-      <div class="content"> <!-- Content -->
-        <div class="content_resize"><!-- Content Resize -->
-
-  <?php content();
-  ?>
-
-        </div><!-- Content Resize -->
-      </div><!-- Content -->
+<div class="content"> <!-- Content -->
+  <div class="content_resize"><!-- Content Resize -->
+    <?php content();
+    ?>
+  </div><!--^^ Content Resize ^^-->
+</div><!--^^ Content ^^-->
 
 <div class="fbg"> <!-- Footer Bar -->
         <div class="fbg_resize">
@@ -114,5 +149,7 @@
           <p class="rf">Layout by Atomic <a href="http://www.atomicwebsitetemplates.com/">Website
               Templates</a></p>
         </div>
-      </div>
+</div><!--^^ Footer Bar ^^-->
+
+
 </main></body></html>
