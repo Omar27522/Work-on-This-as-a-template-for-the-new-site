@@ -1,23 +1,38 @@
 <li class="<?= $js="current dropdown"; ?>"><a class="dropbtn" onclick="myFunction()">Jesus Christ</a>
                 <div class="dropdown-content" id="myDropdown">
-                <img src="https://latinospc.com/images/artificialintelligence/our_lord_and_savior_jesus_christ/lamb9.webp" width="372px" height="248px" alt="CPUimage" style="padding-top: 15px;padding-left:20px;"/>
-                <div class="rtl"style="padding-top: 30px;padding-right:20px;">
-                    <a href="../">Link 8</a>
-                    <a href="../">Link 9</a>
-                    <a href="../">Link 12</a>
-                    <a href="../">Link 10</a>
-                    <a href="#link11">Link 11</a>
+                <a href="https://latinospc.com" style="display: inline" class="image">
+                
+                <?php
+                $pictures= array('1','2','3','4','5','6','7','8','9','10','11','12');
+                echo"<img src=\"https://latinospc.com/images/artificialintelligence/our_lord_and_savior_jesus_christ/lamb";
+                for($i=0; $i<1; $i++){
+                    shuffle($pictures);
+            
+                echo $pictures[$i];}
+                echo".webp\" width=\"372px\" height=\"248px\" alt=\"CPUimage\" style=\"padding-top: 15px;padding-left:20px;\"/>";
+                ?>
+                </a>
+                
+                
+                
+                
+                
+                <div class="rtl"style="padding-top: 30px;padding-right:20px;"><a href="../">Backups</a>
+                  <a href="../">Programs</a>
+                  <a href="../" title="Anatomy of a Computer">Anatomy</a>
+                  <a href="../">Notebooks</a>
+                  <a href="#link11" title="Cables and Connectors">Cables</a>
                 </div>
-                <a href="../">Link 1</a>
-                <a href="../">Link 2</a>
-                <a href="../">Link 3</a><img src="../include/_images/computer%20CPU.jpg" class="rtl" style="padding-right: 30px" alt="CPUimage"width="400px" />
-                <a href="../">Link 4</a>
-                <a href="../">Link 5</a>
-                <a href="../">Link 6</a>
-                <a href="https://latinospc.com/?the_internet">Link 7</a>
-                <!-- <input type="checkbox" id="leftArrow" name="ImagePrevious" value="boldText">
--->             </div>
-</li>
+                <a href="../">Websites</a>
+                <a href="../">Passwords</a>
+                <a href="../">Tutorials</a><img src="../include/_images/computer%20CPU.jpg" class="rtl" style="padding-right: 30px" alt="CPUimage"width="400px" />
+                <a href="../">Images</a>
+                <a href="../">Artwork</a>
+                <a href="../">Writing</a>
+                </div>
+              </li>
+
+<!-- <input type="checkbox" id="leftArrow" name="ImagePrevious" value="boldText">-->
               <?php
               /*This is the Idea I have in mind.
               Make 2 checkboxes, one at each side of the image.

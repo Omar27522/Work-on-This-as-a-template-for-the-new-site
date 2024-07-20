@@ -46,19 +46,19 @@ window.onclick = function(e) {
             <li class="<?= $js="current dropdown"; ?>"><a class="dropbtn" onclick="myFunction()">Cristo Jesus</a>
                 <div class="dropdown-content" id="myDropdown">
                 <img src="../include/_images/computer%20CPU.jpg" alt="CPUimage"/>
-                <div class="rtl"style="padding-top: 30px;padding-right:20px;"><a href="../">Link 8</a>
-                  <a href="../">Link 9</a>
-                  <a href="../">Link 12</a>
-                  <a href="../">Link 10</a>
-                  <a href="#link11">Link 11</a>
+                <div class="rtl"style="padding-top: 30px;padding-right:20px;"><a href="../">Backups</a>
+                  <a href="../">Programs</a>
+                  <a href="../">Anatomy of a Computer</a>
+                  <a href="../">Notebooks</a>
+                  <a href="#link11">Cables and Connectors</a>
                 </div>
-                <a href="../">Link 1</a>
-                <a href="../">Link 2</a>
-                <a href="../">Link 3</a><img src="../include/_images/computer%20CPU.jpg" class="rtl" style="padding-right: 30px" alt="CPUimage"width="400px" />
-                <a href="../">link 4</a>
-                <a href="../">Link 5</a>
-                <a href="../">Link 6</a>
-                <a href="../">Link 7</a>
+                <a href="../">Websites</a>
+                <a href="../">Passwords</a>
+                <a href="../">Tutorials</a><img src="../include/_images/computer%20CPU.jpg" class="rtl" style="padding-right: 30px" alt="CPUimage"width="400px" />
+                <a href="../">Conputer Parts</a>
+                <a href="../">Images</a>
+                <a href="../">Artwork</a>
+                <a href="../">Writing</a>
                 </div>
               </li>
 
