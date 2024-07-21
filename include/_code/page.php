@@ -40,7 +40,7 @@ window.onclick = function(e) {
 }
 </script>
 <!--^^ Dropdown Menu ^^-->
-
+<!-- ONE page for all the site !empty($about) || !empty($hardware) || || !empty($es_software) || !empty($contact) || !empty($reviews)-->
 <div class="hbg"><!-- HBG -->
         <div class="hbg_resize">
         <nav class="menu_nav navbar">

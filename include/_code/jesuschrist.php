@@ -1,5 +1,5 @@
 <li class="<?= $js="current dropdown"; ?>"><a class="dropbtn" onclick="myFunction()">Jesus Christ</a>
-                <div class="dropdown-content" id="myDropdown">
+                <div class="dropdown-content" id="myDropdown"><span style =" color: red; display: block; translate: 300px 0px">bring to top</span>
                 <a href="https://latinospc.com" style="display: inline" class="image">
                 
                 <?php
@@ -22,13 +22,14 @@
                   <a href="../" title="Anatomy of a Computer">Anatomy</a>
                   <a href="../">Notebooks</a>
                   <a href="#link11" title="Cables and Connectors">Cables</a>
-                </div>
+                </div><div style="margin-top: 30px">
                 <a href="../">Websites</a>
                 <a href="../">Passwords</a>
-                <a href="../">Tutorials</a><img src="../include/_images/computer%20CPU.jpg" class="rtl" style="padding-right: 30px" alt="CPUimage"width="400px" />
+                <a href="../">Tutorials</a><img src="https://latinospc.com/images/100.png" class="rtl" style="padding-right: 150px; translate: 0px -200px"  alt="CPUimage"width="200px" />
                 <a href="../">Images</a>
                 <a href="../">Artwork</a>
                 <a href="../">Writing</a>
+                      </div>
                 </div>
               </li>
 
