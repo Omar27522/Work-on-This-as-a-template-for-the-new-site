@@ -179,12 +179,15 @@ ul,
   padding-left: 50px;
   padding-right: 45px;
   text-align: justify;
+  margin-top:0;
+  padding-top:0;
 }
 .content .mainbar {
   margin: 0;
   padding: 0;
   float: right;
   width: 670px;
+  
 }
 .fl { margin:4px 16px 4px 0; float:left;}
 .rtl { margin:4px 4px 16px 0; float:right;}
@@ -259,7 +262,7 @@ ul.ex_menu li a:hover {
 .fbg a {
   color: #fff;
 }
-.fbg img {
+ img {
   padding: 4px;
   border: 1px solid #cfd2d4;
   background-color: #fff;
@@ -358,7 +361,6 @@ ol li .send {
 /*My code */
 .image {
   box-shadow: 0 4px 2px 0 rgba(0,0,0,0.2);
- 
   background: none;
   color: initial;
 }
@@ -367,3 +369,4 @@ ol li .send {
   background: none;
   color: initial;
 }
+.newspaper2 { columns:3;column-rule: 4px double #d4ffe9;}

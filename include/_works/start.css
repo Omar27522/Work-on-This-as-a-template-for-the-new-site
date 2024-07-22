@@ -32,6 +32,20 @@
 .hero2 p {
     font-size: 18px;
 }
+.hero3 {
+    background-color: #008cff55;  /*CYBER YELLOW*/
+    color: black;
+    text-align: center;
+    padding: 50px 0 30px 0;
+}
+
+.hero3 h2 {
+    font-size: 32px;
+}
+
+.hero3 p {
+    font-size: 18px;
+}
 
 /* Services section */
 .services {

@@ -1,22 +1,15 @@
 <li class="<?= $js="current dropdown"; ?>"><a class="dropbtn" onclick="myFunction()">Jesus Christ</a>
-                <div class="dropdown-content" id="myDropdown"><span style =" color: red; display: block; translate: 300px 0px">bring to top</span>
+                <div class="dropdown-content" id="myDropdown">
                 <a href="https://latinospc.com" style="display: inline" class="image">
-                
                 <?php
                 $pictures= array('1','2','3','4','5','6','7','8','9','10','11','12');
                 echo"<img src=\"https://latinospc.com/images/artificialintelligence/our_lord_and_savior_jesus_christ/lamb";
                 for($i=0; $i<1; $i++){
                     shuffle($pictures);
-            
                 echo $pictures[$i];}
                 echo".webp\" width=\"372px\" height=\"248px\" alt=\"CPUimage\" style=\"padding-top: 15px;padding-left:20px;\"/>";
                 ?>
                 </a>
-                
-                
-                
-                
-                
                 <div class="rtl"style="padding-top: 30px;padding-right:20px;"><a href="../">Backups</a>
                   <a href="../">Programs</a>
                   <a href="../" title="Anatomy of a Computer">Anatomy</a>
@@ -25,7 +18,7 @@
                 </div><div style="margin-top: 30px">
                 <a href="../">Websites</a>
                 <a href="../">Passwords</a>
-                <a href="../">Tutorials</a><img src="https://latinospc.com/images/100.png" class="rtl" style="padding-right: 150px; translate: 0px -200px"  alt="CPUimage"width="200px" />
+                <a href="../">Tutorials</a><img src="https://latinospc.com/images/100.png" class="rtl" style="translate: -40% -50%"  alt="CPUimage"width="200px" />
                 <a href="../">Images</a>
                 <a href="../">Artwork</a>
                 <a href="../">Writing</a>

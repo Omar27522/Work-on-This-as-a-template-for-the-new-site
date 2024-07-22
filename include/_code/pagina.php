@@ -44,21 +44,30 @@ window.onclick = function(e) {
                <nav class="menu_nav">
             <ul>
             <li class="<?= $js="current dropdown"; ?>"><a class="dropbtn" onclick="myFunction()">Cristo Jesus</a>
-                <div class="dropdown-content" id="myDropdown">
-                <img src="../include/_images/computer%20CPU.jpg" alt="CPUimage"/>
-                <div class="rtl"style="padding-top: 30px;padding-right:20px;"><a href="../">Backups</a>
-                  <a href="../">Programs</a>
-                  <a href="../">Anatomy of a Computer</a>
+                <div class="dropdown-content" id="myDropdown"><?php
+                $pictures= array('1','2','3','4','5','6','7','8','9','10','11','12');
+                echo"<img src=\"https://latinospc.com/images/artificialintelligence/our_lord_and_savior_jesus_christ/lamb";
+                for($i=0; $i<1; $i++){
+                    shuffle($pictures);
+                echo $pictures[$i];}
+                echo".webp\" width=\"372px\" height=\"248px\" alt=\"CPUimage\" style=\"padding-top: 15px;padding-left:20px;\"/>";
+                ?>
+                <div class="rtl"style="padding-top: 30px;padding-right:20px;"><a href="../">Respaldos</a>
+                  <a href="../">Programas</a>
+                  <a href="../">Anatomia</a>
                   <a href="../">Notebooks</a>
-                  <a href="#link11">Cables and Connectors</a>
+                  <a href="#link11">Cables</a>
                 </div>
                 <a href="../">Websites</a>
-                <a href="../">Passwords</a>
-                <a href="../">Tutorials</a><img src="../include/_images/computer%20CPU.jpg" class="rtl" style="padding-right: 30px" alt="CPUimage"width="400px" />
-                <a href="../">Conputer Parts</a>
-                <a href="../">Images</a>
-                <a href="../">Artwork</a>
-                <a href="../">Writing</a>
+                <a href="../">Contraseñas</a>
+                <a href="../">Tutoriales</a>
+
+                <img src="https://latinospc.com/images/100.png" class="rtl" style="translate: -40% -50%" alt="CPUimage" width="200px" />
+
+                <a href="../">Imagenes</a>
+                <a href="../">Trabajos</a>
+                <a href="../">Escritura</a>
+
                 </div>
               </li>
 
