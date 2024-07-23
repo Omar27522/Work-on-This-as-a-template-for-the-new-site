@@ -234,8 +234,8 @@ ul.ex_menu li a {
 }
 ul.sb_menu li a:hover,
 ul.ex_menu li a:hover {
-  color: #2b5e9d;
-  font-weight: bold;
+  color: #3a86e2;
+  
 }
 ul.sb_menu li a:hover {
   text-decoration: underline;
