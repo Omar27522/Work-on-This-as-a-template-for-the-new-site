@@ -1,97 +1,81 @@
 <article class="fullbar">
-    <section class="hero3 article" style="background-color:DarkSeaGreen;">
-        <div class="container">
-            <!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ **`ღ´** -->
-                <ul class ="ex_menu" style="text-align:center;padding-bottom: 20px;">
-                    <li id="cpu" style="display: inline;font-size: xxx-large"><a href="?hw/sw#cpu">
-                            CPU
-                        </a> - </li>
+<section class="hero3 article" style="background-color:DarkSeaGreen;">
+    <div class="container">
+        <!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ **`ღ´** -->
+            <ul class ="ex_menu" style="text-align:center;padding-bottom: 20px;">
+                <li id="cpu" style="display: inline;font-size: xxx-large"><a href="?hw/sw#cpu">
+                    <?= empty($title[0]) ? $titulo[0] : $title[0];?>
+                    </a> - </li>
                     <li style="display: inline;font-size: xxx-large"><a href="#intel">
-                            Intel
-                        </a> - </li>
-                    <li style="display: inline;font-size: xxx-large"><a href="#amd">
-                            AMD
-                        </a></li>
-                </ul>
-                <img src="https://latinospc.com/images/computer%20CPU.jpg" alt="" class="fl" height="60"
-                    width="60" />
+                <?= empty($title[1]) ? $titulo[1] : $title[1];?>
+                    </a> - </li>
+                <li style="display: inline;font-size: xxx-large"><a href="#amd">
+                        <?= empty($title[2]) ? $titulo[2] : $title[2];?>
+                    </a></li>
+            </ul>
+        <img src="https://latinospc.com/images/computer%20CPU.jpg" alt="" class="fl" height="60" width="60" />
+            <p>
+                <?= empty($architecture[0]) ? $architecture[0] : $architecture[0];?></p>
+                <span><?= empty($update[0]) ? $actualizacion[0] : $update[0];?></span>
+            <p>
+            <?= empty($architecture[1]) ? $architecture[1] : $architecture[1];?>
+            </p>
+        <div class="colms2">
+            <ul class="ex_menu">
+                    <style>.ex_menu li h2, .ex_menu p {display:inline;}</style>
+                    <li>
+                        <h2><a href="https://en.wikipedia.org/wiki/X86" title="Wikipedia">
+                        <?= empty($title[3]) ? $titulo[3] : $title[3];?>
+                        </a></h2><p>
+                        <?= empty($architecture[2]) ? $architecture[2] : $architecture[2];?>
+                    </p></li>
+                    <li>
+                    <h2><a href="https://en.wikipedia.org/wiki/ARM_architecture_family"
+                            title="ARM architecture family">
+                            <?= empty($title[4]) ? $titulo[4] : $title[4];?>
+                        </a></h2><p>
+                        <?= empty($architecture[3]) ? $architecture[3] : $architecture[3];?>
+                    </p></li>
+                    <li>
+                    <h2><a href="https://riscv.org/about/history/" title="History">
+                            <?= empty($title[5]) ? $titulo[5] : $title[5];?>
+                        </a></h2><p>
+                    <?= empty($architecture[4]) ? $architecture[4] : $architecture[4];?>
+                    </p>
                 <p>
-                    Modern CPU Architecture Types</p>
-                    <span>Last Update:7/19/2023</span>
-                <p>
-                    There are several modern CPU architectures currently in use. Some examples include:
+                    <a href="https://www.google.com/books/edition/_/F1c8XqLLJboC?hl=en&sa=X&ved=2ahUKEwjO6s-qz6H-AhU9hu4BHf-lBXcQ8fIDegQIDBAE"
+                        title="Concepts of Urban Design By David Gosling, Barry Maitland · 1984">
+                        <?= empty($title[6]) ? $titulo[6] : $title[6];?>
+                    </a>
                 </p>
-                <div class="colms2">
-                    <ul class="ex_menu">
-                            <style>.ex_menu li h2, .ex_menu p {display:inline;}</style>
+                    </li>
+                    <li>
+                    <h2><a href="https://www.mips.com/products/architectures/">
+                            <?= empty($title[7]) ? $titulo[7] : $title[7];?>
+                        </a></h2><p>
+                    <?= empty($architecture[5]) ? $architecture[5] : $architecture[5];?>
+                    </p>
+                    </li>
+                    <li>
+                    <h2><a href="https://www.ibm.com/cloud/architecture/architectures/power">
+                            <?= empty($title[8]) ? $titulo[8] : $title[8];?>
+                        </a></h2><p>
+                    <?= empty($architecture[6]) ? $architecture[6] : $architecture[6];?>
+                    </p>
+                    </li>
+            </ul>
+        </div><img src="https://latinospc.com/images/artificialintelligence/hw/cpu/thumbs/cpu.jpg"
+                height="280px" class="fl" title="Central Processing Unit" alt="CPU stiker">
+            <p>
+                <?= empty($architecture[7]) ? $architecture[7] : $architecture[7];?>
+            </p>
+    </div>
+</section>
 
-                            <li>
-                                <h2><a href="https://en.wikipedia.org/wiki/X86" title="Wikipedia">
-                                    x86:
-                                </a></h2><p>
-                            Used by Intel and AMD processors and is the most common architecture found in personal
-                            computers and servers.
-                            </p></li>
-
-                            <li>
-                            <h2><a href="https://en.wikipedia.org/wiki/ARM_architecture_family"
-                                    title="ARM architecture family">
-                                    ARM:
-                                </a></h2><p>
-                            Mobile devices, embedded systems, and low-power servers. Known for its low power consumption
-                            and energy efficiency.
-                            </p></li>
-
-
-                            <li>
-                            <h2><a href="https://riscv.org/about/history/" title="History">
-                                    RISC-V:
-                                </a></h2><p>
-                            This is a free and open-source instruction set architecture (ISA) that has been gaining
-                            popularity in recent years. It is used in a variety of applications, including data centers,
-                            IoT devices, and edge computing.
-                            </p>
-                        <p>
-                            <a href="https://www.google.com/books/edition/_/F1c8XqLLJboC?hl=en&sa=X&ved=2ahUKEwjO6s-qz6H-AhU9hu4BHf-lBXcQ8fIDegQIDBAE"
-                                title="Concepts of Urban Design By David Gosling, Barry Maitland · 1984">
-                                Architecture
-                            </a>
-                        </p>
-                            </li>
-                            <li>
-                            <h2><a href="https://www.mips.com/products/architectures/">
-                                    MIPS:
-                                </a></h2><p>
-                            This architecture is used in a wide range of devices such as routers, set-top boxes, and
-                            video game consoles.
-                            <a href="https://www.mips.com/products/risc-v/"
-                                title="RISC-V">https://www.mips.com/products/architectures/</a></p>
-                            </li>
-
-
-                            <li>
-                            <h2><a href="https://www.ibm.com/cloud/architecture/architectures/power">
-                                    Power:
-                                </a></h2><p>
-                            This architecture is used in IBM's Power systems, which are commonly used in enterprise and
-                            scientific computing.
-                            </p>
-                            </li>
-                    </ul>
-                </div><img src="https://latinospc.com/images/artificialintelligence/hw/cpu/thumbs/cpu.jpg"
-                    height="280px" class="fl" title="Central Processing Unit" alt="CPU stiker">
-
-                <p>
-                    Each of these architectures has its own strengths and weaknesses, and the choice of which one to use
-                    will depend on the specific requirements of the application or device.
-                </p>
-        </div>
-    </section>
-
-
+<!-- et▄;Gë6T3ï(⌡╦vt⌐Æïÿ|╪╓kÿY╪R+▌╫¥±   ▄;Gë6T3ï(          )             -->
     <section class=" article" style="background-color:whitesmoke;">
         <div class="container"><p>
-            As of Omar's latest research indicates, here are the latest lineup of modern x86 CPU Architecture:
+            <?= empty($subTitle[0]) ? $subTitulo[0] : $subTitle[0];?>
         </p>
         <div class="spacer"></div>
             <div class="spacer_shape" id="intel"><a
@@ -101,7 +85,7 @@
                     </button></a><a href="#scroll"><img src="https://latinospc.com/images/computer%20CPU.jpg" alt=""
                         class="rtl" height="60" width="60" /></a></div>
             <h2>
-                13th-Gen Raptor Lake____________________
+                <?= empty($subTitle[1]) ? $subTitulo[1] : $subTitle[1];?>
             </h2>
             <ul style="font-size: 35px; padding: 25px;" class="ex_menu">
                 <li style="display: inline"><a class="button" href="https://ark.intel.com/content/www/us/en/ark/products/series/195732/10th-generation-intel-core-i5-processors.html">
@@ -127,7 +111,7 @@
                 </li>
             </ul>
             <p>
-                13th Generation processors are based on the 10nm process and feature the new <a
+                14th Generation processors are based on the 10nm process and feature the new <a
                     href="https://wccftech.com/intel-raptor-lake-s-desktop-cpu-lineup-leaks-out-core-i9-with-up-to-24-raptor-cove-architecture/"
                     title="https://wccftech.com/">Raptor Cove</a> micro-architecture.</p>
 

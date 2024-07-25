@@ -1,5 +1,12 @@
 <?php
+if (isset($_GET['cpu'])) :
+    $title="CPU";
+elseif (isset($_GET['ram'])) :
+    $title="RAM";
+else:
 $title="Hardware";
+endif;
+
 $directoryPath = '../';
 $lang = 'en';
 $hardware ='active';
@@ -8,11 +15,12 @@ include ('../include/_code/page.php');
 
 function content(){
 
-    $include_path = '../include/_works/en/hardware/';
+    $include_path = '../include/_works/hardware/';
 
 if (isset($_GET)) :
     switch (key($_GET)) :
         case 'cpu':
+            include ('../hardware/cpu.php');
             include ($include_path . 'cpu.php');
             break;
         case 'cooling':
