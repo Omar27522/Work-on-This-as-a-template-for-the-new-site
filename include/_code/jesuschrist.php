@@ -1,4 +1,4 @@
-<li class="<?= $js="current dropdown"; ?>"><a class="dropbtn" onclick="myFunction()">Jesus Christ</a>
+<li id="scroll" class="<?= $js="current dropdown"; ?>"><a class="dropbtn" onclick="myFunction()">Jesus Christ</a>
                 <div class="dropdown-content" id="myDropdown">
                 <a href="https://latinospc.com" style="display: inline" class="image">
                 <?php

@@ -237,6 +237,7 @@ ul.ex_menu li a:hover {
   color: #3a86e2;
   
 }
+
 ul.sb_menu li a:hover {
   text-decoration: underline;
 }
@@ -370,3 +371,20 @@ ol li .send {
   color: initial;
 }
 .newspaper2 { columns:3;column-rule: 4px double #d4ffe9;}
+
+.colms2{column-rule: 4px double #3b003b40;columns: 2;}
+
+.ex_menu li   {
+  font-size: 18px;
+  break-inside: avoid;
+}
+.intel_menu li   {
+  font-size: 35px; 
+}
+.ex_menu li h2, .ex_menu p {
+    display: inline;
+}
+p a:hover{
+  text-decoration: none;
+  color: #3a86e2;
+}

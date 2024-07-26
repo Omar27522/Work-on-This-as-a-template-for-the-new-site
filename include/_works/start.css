@@ -46,6 +46,18 @@
 .hero3 p {
     font-size: 18px;
 }
+.hero4 {
+    background-color: whitesmoke;
+    color: black;
+}
+
+.hero4 h2 {
+    font-size: 32px;
+}
+
+.hero4 p {
+    font-size: 18px;
+}
 
 /* Services section */
 .services {
