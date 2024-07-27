@@ -23,7 +23,7 @@
             <div class="colms2">
                 <ul class="ex_menu">
                     <li>
-                        <h2><a href="https://en.wikipedia.org/wiki/X86" title="Wikipedia">
+                        <h2><a href="<?=$links['x86'] ?>" title="Wikipedia">
                                 <?= empty($title[3]) ? $titulo[3] : $title[3];?>
                             </a></h2>
                         <p>
@@ -31,7 +31,7 @@
                         </p>
                     </li>
                     <li>
-                        <h2><a href="https://en.wikipedia.org/wiki/ARM_architecture_family"
+                        <h2><a href="<?=$links['ARM'] ?>"
                                 title="ARM architecture family">
                                 <?= empty($title[4]) ? $titulo[4] : $title[4];?>
                             </a></h2>
@@ -40,21 +40,21 @@
                         </p>
                     </li>
                     <li>
-                        <h2><a href="https://riscv.org/about/history/" title="History">
+                        <h2><a href="<?=$links['RISCV'] ?>" title="History">
                                 <?= empty($title[5]) ? $titulo[5] : $title[5];?>
                             </a></h2>
                         <p>
                             <?= empty($architecture[4]) ? $arquitectura[4] : $architecture[4];?>
                         </p>
                         <p>
-                            <a href="https://www.google.com/books/edition/_/F1c8XqLLJboC?hl=en&sa=X&ved=2ahUKEwjO6s-qz6H-AhU9hu4BHf-lBXcQ8fIDegQIDBAE"
+                            <a href="<?=$links['CUDDGBM'] ?>"
                                 title="Concepts of Urban Design By David Gosling, Barry Maitland · 1984">
                                 <?= empty($title[6]) ? $titulo[6] : $title[6];?>
                             </a>
                         </p>
                     </li>
                     <li>
-                        <h2><a href="https://www.mips.com/products/architectures/">
+                        <h2><a href="<?=$links['MIPS'] ?>">
                                 <?= empty($title[7]) ? $titulo[7] : $title[7];?>
                             </a></h2>
                         <p>
@@ -62,7 +62,7 @@
                         </p>
                     </li>
                     <li>
-                        <h2><a href="https://www.ibm.com/cloud/architecture/architectures/power">
+                        <h2><a href="<?=$links['POWER'] ?>">
                                 <?= empty($title[8]) ? $titulo[8] : $title[8];?>
                             </a></h2>
                         <p>
@@ -87,9 +87,9 @@
             </p>
             <div class="spacer"></div>
             <div class="spacer_shape" id="intel"><a
-                    href="https://www.intel.com/content/www/us/en/products/overview.html"
-                    title="Intel Processors"><button style="padding:40px;font-size:xx-large">
-                        Intel
+                    href="<?=$links['intel'] ?>"
+                    title="intel Processors"><button style="padding:40px;font-size:xx-large">
+                        intel
                     </button></a><a href="#scroll"><img src="https://latinospc.com/images/computer%20CPU.jpg" alt=""
                         class="rtl" height="60" width="60" /></a></div>
             <h2>
@@ -97,31 +97,31 @@
             </h2>
             <ul style="font-size: 35px; padding: 25px;" class="ex_menu intel_menu">
                 <li style="display: inline"><a class="button"
-                        href="https://ark.intel.com/content/www/us/en/ark/products/series/236176/intel-core-i3-processors-14th-gen.html">
+                        href="<?=$links['intel_i3'] ?>">
                         i3</a>
                 </li>
                 -<li style="display: inline"><a class="button"
-                        href="https://ark.intel.com/content/www/us/en/ark/products/series/236175/intel-core-i5-processors-14th-gen.html">
+                        href="<?=$links['intel_i5'] ?>">
                         i5</a>
                 </li>
 
                 -<li style="display: inline"><a class="button"
-                        href="https://ark.intel.com/content/www/us/en/ark/products/series/236170/intel-core-i7-processors-14th-gen.html">
+                        href="<?=$links['intel_i7'] ?>">
                         i7</a>
                 </li>
 
                 -<li style="display: inline"><a class="button"
-                        href="https://ark.intel.com/content/www/us/en/ark/products/series/236143/intel-core-i9-processors-14th-gen.html">
+                        href="<?=$links['intel_i9'] ?>">
                         i9</a>
                 </li>
 
                 -<li style="display: inline"><a class="button"
-                        href="https://ark.intel.com/content/www/us/en/ark/products/series/240357/intel-xeon-6.html">
+                        href="<?=$links['intel_xeon'] ?>">
                         Xeon</a>
                 </li>
 
                 -<li style="display: inline"><a class="button"
-                        href="https://ark.intel.com/content/www/us/en/ark/products/series/236798/intel-core-processors-series-1.html#@Mobile">
+                        href="<?=$links['intel_mobile'] ?>">
                         Mobile</a>
                 </li>
             </ul>
@@ -164,7 +164,7 @@
                 </p>
 
                 <li>
-                    <h2 class="intelletters">Intel Xeon:</h2>
+                    <h2 class="intelletters">intel Xeon:</h2>
                     <p>
                         <?= $intel[8]; ?>
 
@@ -223,14 +223,14 @@
     <section class="hero4 article" style="background-color:wheat;">
         <div class="container">
             <div class="spacer_mega"></div>
-            <div class="spacer_shape" id="amd"><a href="https://www.amd.com/en/processors" title="AMD Processors">
+            <div class="spacer_shape" id="amd"><a href="<?=$links['AMD'] ?>" title="AMD Processors">
                     <button style="padding:40px;font-size:xx-large">
                         <?= empty($title[2]) ? $titulo[2] : $title[2];?>
                     </button></a><a href="#scroll"><img src="https://latinospc.com/images/computer%20CPU.jpg"
                         alt="CPU Image" class="rtl" height="60" width="60" /></a></div>
             <div class="spacer"></div>
             <div class="colms2">
-                <p><a href="https://www.amd.com/en/processors/epyc-server-cpu-family" title="Epyc™"><button>
+                <p><a href="<?=$links['AMD_epyc'] ?>" title="Epyc™"><button>
                             <p class="button_red">
                             <div class="amdletters">
                                 <ol class="ex_menu"><?= $amd[0]; ?></ol>
@@ -242,7 +242,7 @@
                 </p>
                 </button></a></p>
 
-                <p><a href="https://www.amd.com/en/processors/workstation" title="Ryzen™ & Threadripper™"><button>
+                <p><a href="<?=$links['AMD_WS'] ?>" title="Ryzen™ & Threadripper™"><button>
                             <p class="button_red">
                             <div class="amdletters">
                                 <ol><?= $amd[5]; ?></ol>
@@ -255,50 +255,50 @@
             </div>
 
             <div class="colms2">
-                <p><a href="https://www.amd.com/en/products/embedded" title="Embedded"><button>
+                <p><a href="<?=$links['AMD_embedded'] ?>" title="Embedded"><button>
                             <p class="button_red">
                             <ul class="ex_menu"><?= $amd[9]; ?>
-                                <li><a href="https://www.amd.com/en/processors/embedded-epyc-series" class="amdletters"
+                                <li><a href="<?=$links['AMD_embeddedEpyc'] ?>" class="amdletters"
                                         title="EPYC™"><?= $amd[10]; ?></a></li>
-                                <li><a href="https://www.amd.com/en/products/embedded-ryzen-series" class="amdletters"
+                                <li><a href="<?=$links['AMD_embededRyzen'] ?>" class="amdletters"
                                         title="Ryzen™"><?= $amd[11]; ?></a></li>
                                 <?= $amd[12]; ?>
                             </ul>
                 </p>
                 </button></a></p>
 
-                <p><a href="https://www.amd.com/en/products/processors-laptop" title="Laptop"><button>
+                <p><a href="<?=$links['AMD_laptop'] ?>" title="Laptop"><button>
                             <p class="button_red">
                             <ul class="amdletters ex_menu"><?= $amd[13]; ?>
-                                <li><a href="https://www.amd.com/en/products/ryzen-pro-processors-laptop"
+                                <li><a href="<?=$links['AMD_RyzenPro_laptop'] ?>"
                                         class="amdletters" title="Mobile Pro Business"><?= $amd[14]; ?></a></li>
-                                <li><a href="https://www.amd.com/en/processors/ryzen-processors-laptop-business"
+                                <li><a href="<?=$links['AMD_laptopBusiness'] ?>"
                                         class="amdletters" title="Mobile Business"><?= $amd[15]; ?></a></li>
-                                <li><a href="https://www.amd.com/en/processors/ryzen-processors-laptop"
+                                <li><a href="<?=$links['AMD_laptopRyzen'] ?>"
                                         class="amdletters" title="Mobile"><?= $amd[16]; ?></a></li>
-                                <li><a href="https://www.amd.com/en/processors/athlon-mobile" class="amdletters"
+                                <li><a href="<?=$links['AMD_athlon'] ?>" class="amdletters"
                                         title="Mobile Athlon™"><?= $amd[17]; ?></a></li>
                             </ul>
                 </p>
                 </button></a></p>
             </div>
 
-            <p><a href="https://www.amd.com/en/products/processors-desktop" title="Desktop"><button>
+            <p><a href="<?=$links['AMD_desktop'] ?>" title="Desktop"><button>
                         <p class="button_red">
                         <ul class="ex_menu"><?= $amd[18]; ?>
-                            <li><a href="https://www.amd.com/en/processors/ryzen-threadripper-pro"
+                            <li><a href="<?=$links['AMD_threadripperPro'] ?>"
                                     title="Ryzen™ Threadripper™ PRO" class="amdletters"><?= $amd[19]; ?></a></li>
-                            <li><a href="https://www.amd.com/en/ryzen-pro" title="Ryzen™ PRO"
+                            <li><a href="<?=$links['AMD_ryzenPro'] ?>" title="Ryzen™ PRO"
                                     class="amdletters"><?= $amd[20]; ?></a></li>
-                            <li><a href="https://www.amd.com/en/processors/athlon-pro" title="Athlon™ PRO"
+                            <li><a href="<?=$links['AMD_athlonPro'] ?>" title="Athlon™ PRO"
                                     class="amdletters"><?= $amd[21]; ?></a></li>
-                            <li><a href="https://www.amd.com/en/products/ryzen-threadripper" title="High End"
+                            <li><a href="<?=$links['AMD_ryzenThreadripper'] ?>" title="High End"
                                     class="amdletters"><?= $amd[22]; ?></a></li>
-                            <li><a href="https://www.amd.com/en/processors/ryzen" title="AMD Ryzen™ Processors"
+                            <li><a href="<?=$links['AMD_Ryzen'] ?>" title="AMD Ryzen™ Processors"
                                     class="amdletters"><?= $amd[23]; ?></a></li>
-                            <li><a href="https://www.amd.com/en/processors/ryzen-with-graphics"
+                            <li><a href="<?=$links['AMD_RyzenG'] ?>"
                                     title="AMD Ryzen™ with Graphics" class="amdletters"><?= $amd[24]; ?></a></li>
-                            <li><a href="https://www.amd.com/en/processors/athlon-desktop"
+                            <li><a href="<?=$links['AMD_athlonDesktop'] ?>"
                                     title="AMD Athlon™ with Radeon™ Graphics" class="amdletters"><?= $amd[25]; ?></li>
                         </ul>
             </p>
@@ -308,36 +308,36 @@
                     <h2><?= empty($subTitle[3]) ? $subTitulo[3] : $subTitle[3];?></h2><br /><br /><?= $amd[26]; ?>
                 </li>
                 <li>
-                    <strong><a href="https://www.amd.com/en/chipsets/wrx80" title="sWRX80"
+                    <strong><a href="<?=$links['AMD_sWRX80'] ?>" title="sWRX80"
                             class="amdred">sWRX80:</a></strong> <?= $amd[27]; ?>
                 </li>
                 <li>
-                    <strong><a href="https://www.amd.com/en/chipsets/str40" title="TRX40"
+                    <strong><a href="<?=$links['AMD_TRX40'] ?>" title="TRX40"
                             class="amdred">sTRX40:</a></strong> <?= $amd[28]; ?>
                 </li>
                 <li>
-                    <strong><a href="https://www.amd.com/en/products/str4-platform" title="X399" class="amdred">TR4
+                    <strong><a href="<?=$links['AMD_X399'] ?>" title="X399" class="amdred">TR4
                             X399:</a></strong> <?= $amd[29]; ?>
                 </li>
                 <li>
-                    <strong><a href="https://www.amd.com/en/chipsets/am5" title="AM5" class="amdred">AM5:</a></strong>
+                    <strong><a href="<?=$links['AMD_AM5'] ?>" title="AM5" class="amdred">AM5:</a></strong>
                     <?= $amd[30]; ?>
                 </li>
                 <li>
-                    <strong><a href="https://www.amd.com/en/products/chipsets-am4" title="AM4"
+                    <strong><a href="<?=$links['AMD_AM4'] ?>" title="AM4"
                             class="amdred">AM4:</a></strong> <?= $amd[31]; ?>
                 </li>
                 <li>
-                    <strong><a href="https://en.wikipedia.org/wiki/AMD_900_chipset_series" title="AM3+"
+                    <strong><a href="<?=$links['AMD_AM3+'] ?>" title="AM3+"
                             class="amdred">AM3+:</a></strong> <?= $amd[32]; ?>
                 </li>
                 <li>
-                    <strong><a href="https://www.amd.com/en/products/chipsets-fm2plus" title="FM2+"
+                    <strong><a href="<?=$links['AMD_FM2+'] ?>" title="FM2+"
                             class="amdred">FM2+:</a>
                     </strong> <?= $amd[33]; ?>
                 </li>
                 <li>
-                    <strong><a href="https://www.amd.com/en/product/8801" title="SP3" class="amdred">SP3:</a></strong>
+                    <strong><a href="<?=$links['AMD_SP3'] ?>" title="SP3" class="amdred">SP3:</a></strong>
                     <?= $amd[34]; ?>
                 </li>
             </ul>
