@@ -3,6 +3,13 @@
     margin: auto;
     padding: 20px;
 }
+.container dd, .container dt   {
+font-size: 18px;
+}
+.container dt a:hover{
+    text-decoration: none;
+    color: #3a86e2;
+}
 /* Hero section */
 .hero {
     background-color: #ffd300;  /*CYBER YELLOW*/

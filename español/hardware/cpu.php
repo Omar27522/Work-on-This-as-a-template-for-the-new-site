@@ -7,7 +7,47 @@ $subTitulo = ['Según la última investigación de Omar, aquí está la última 
 'Algunos de los usos más comunes para las CPU Intel Xeon incluyen:',
 'La microarquitectura de las CPU populares para el consumidor es la Zen4.'];
 
-$links =['LGA'=>'https://www.digitaltrends.com/computing/what-are-intels-lga-processor-sockets/',
+$links =['LGA'=>'https://es.wikipedia.org/wiki/Land_Grid_Array',
+         'x86'=>'https://es.wikipedia.org/wiki/X86',
+         'ARM'=>'https://es.wikipedia.org/wiki/Arquitectura_ARM',
+         'RISCV'=>'https://www.profesionalreview.com/2022/04/22/risc-v/',
+         'CUDDGBM'=>'https://www.google.com/books/edition/_/F1c8XqLLJboC?hl=en&sa=X&ved=2ahUKEwjO6s-qz6H-AhU9hu4BHf-lBXcQ8fIDegQIDBAE',
+         'MIPS'=>'https://es.wikipedia.org/wiki/MIPS_(procesador)',
+         'POWER'=>'https://es.wikipedia.org/wiki/PowerPC',
+         'intel'=>'https://www.intel.la/content/www/xl/es/products/overview.html',
+         'intel_i3'=>'https://ark.intel.com/content/www/xl/es/ark/products/series/236176/intel-core-i3-processors-14th-gen.html',
+         'intel_i5'=>'https://ark.intel.com/content/www/xl/es/ark/products/series/236175/intel-core-i5-processors-14th-gen.html',
+         'intel_i7'=>'https://ark.intel.com/content/www/xl/es/ark/products/series/236170/intel-core-i7-processors-14th-gen.html',
+         'intel_i9'=>'https://ark.intel.com/content/www/xl/es/ark/products/series/236143/intel-core-i9-processors-14th-gen.html',
+         'intel_xeon'=>'https://ark.intel.com/content/www/xl/es/ark/products/series/240357/intel-xeon-6.html',
+         'intel_mobile'=>'https://ark.intel.com/content/www/xl/es/ark/products/series/236798/intel-core-processors-series-1.html#@Mobile',
+         'AMD'=>'https://www.amd.com/es.html',
+         'AMD_epyc'=>'https://www.amd.com/es/products/processors/server/epyc.html',
+         'AMD_WS'=>'https://www.amd.com/es/products/processors/workstations/ryzen-threadripper.html',
+         'AMD_embedded'=>'https://www.amd.com/es/products/embedded.html',
+         'AMD_embeddedEpyc'=>'https://www.amd.com/es/products/embedded/epyc.html',
+         'AMD_embededRyzen'=>'https://www.amd.com/es/products/embedded/ryzen.html',
+         'AMD_laptop'=>'https://www.amd.com/es/products/processors/laptop/ryzen.html',
+         'AMD_RyzenPro_laptop'=>'https://www.amd.com/es/products/processors/laptop/ryzen.html',
+         'AMD_laptopBusiness'=>'https://www.amd.com/es/products/processors/laptop/ryzen-for-business.html',
+         'AMD_laptopRyzen'=>'https://www.amd.com/es/products/processors/laptop/ryzen.html',
+         'AMD_athlon'=>'https://www.amd.com/es/products/processors/laptop/athlon.html',
+         'AMD_desktop'=>'https://www.amd.com/es/products/processors/ryzen-for-professionals.html',
+         'AMD_threadripperPro'=>'https://www.amd.com/es/products/processors/workstations/ryzen-threadripper/design-and-manufacturing.html',
+         'AMD_ryzenPro'=>'https://www.amd.com/es/products/processors/ryzen-for-professionals.html',
+         'AMD_athlonPro'=>'https://www.amd.com/es/processors/athlon-pro',
+         'AMD_ryzenThreadripper'=>'https://www.amd.com/es/products/processors/workstations/ryzen-threadripper.html',
+         'AMD_Ryzen'=>'https://www.amd.com/es/products/processors/desktops/ryzen.html',
+         'AMD_RyzenG'=>'https://www.amd.com/es/products/processors/laptop/ryzen-for-everyday-productivity.html',
+         'AMD_athlonDesktop'=>'https://www.amd.com/es/products/processors/desktops/athlon.html',
+         'AMD_sWRX80' => 'https://www.amd.com/es/products/processors/chipsets/wrx80.html',
+         'AMD_TRX40' => 'https://www.amd.com/es/products/processors/chipsets/strx40.html',
+         'AMD_X399' => 'https://www.amd.com/es/products/processors/chipsets/str4.html',
+         'AMD_AM5' => 'https://www.amd.com/es/products/processors/chipsets/am5.html',
+         'AMD_AM4' => 'https://www.amd.com/es/products/processors/chipsets/am4.html',
+         'AMD_AM3+' => 'https://en.wikipedia.org/wiki/AMD_900_chipset_series',
+         'AMD_FM2+' => 'https://www.amd.com/es/products/processors/chipsets.html#container-845fddb88a',
+         'AMD_SP3' => 'https://www.amd.com/content/dam/amd/en/documents/processor-tech-docs/design-guides/56795_1_00-PUB.pdf'
 ];
 
 $arquitectura = ['Tipos de Arquitectura de CPU Moderna',
@@ -99,7 +139,6 @@ $amd = [
 
 $cpu = [
     'Es importante verificar la compatibilidad del tamaño del zócalo de la
-
  CPU con la placa base antes de comprar una CPU, ya que la CPU no cabrá en el zócalo si no son compatibles. <br /> AMD generalmente soporta sus zócalos por períodos más largos que Intel, por lo que el zócalo AM4 todavía se está utilizando y es compatible con nuevos procesadores.',
     'La velocidad, el número de núcleos y el tamaño de la caché de una CPU para PC pueden variar ampliamente dependiendo del modelo específico y del fabricante, pero en general, estas son las velocidades, los números de núcleos y los tamaños de caché más populares actualmente:',
     'Velocidad',

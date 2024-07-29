@@ -24,6 +24,7 @@ if (isset($_GET)) :
             include ($include_path . 'cpu.php');
             break;
         case 'cooling':
+            include ('../hardware/cooling.php');
             include ($include_path . 'cooling.php');
             break;
         case 'chassis':
