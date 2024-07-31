@@ -1,43 +1,6 @@
 <article class="hero4 container">
     <!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ **`ღ´** -->
     <style>
-    ul h2 {
-        font-size: larger;
-        text-transform: uppercase;
-        color: #386baa;
-    }
-
-    .container {
-        max-width: 800px;
-        margin: 50px auto;
-        margin-top: 0;
-        padding: 20px;
-        background-color: #fff;
-        border-radius: 10px;
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-        break-inside: avoid-column;
-    }
-
-    /*This I got it straight from jsk*/
-    .container li {
-        list-style-type: none;
-    }
-
-    .colms2 .card2 {
-        background-color: #DBE9FA;
-        break-inside: avoid-column;
-    }
-
-    .fl {
-        margin: 4px 16px 4px 0;
-        float: left;
-    }
-
-    .rtl {
-        margin: 4px 4px 16px 0;
-        float: right;
-    }
-
     .cooler_button {
         text-align: center;
         background-color: #91c9b7;
@@ -105,7 +68,7 @@
             <fieldset class="container card2"><a rel="example_group"
                     href="https://latinospc.com/images/hardware/hw/cooling/lasers.jpg" title="Laser Cooling"
                     class="rtl"><img src="https://latinospc.com/images/hardware/hw/cooling/lasers.webp"
-                        alt="Laser Cooling" height="120px"></a>
+                        alt="Laser Cooling" height="120px"width="120px"></a>
                 <p>
                     <?= empty($coolers['laserCooling']) ? $enfriador['enfriadorLaser'] : $coolers['laserCooling'];?>
                 </p>

@@ -28,6 +28,7 @@ if (isset($_GET)) :
             include ($include_path . 'cooling.php');
             break;
         case 'chassis':
+            include ('../hardware/chassis.php');
             include ($include_path . 'chassis.php');
             break;
         case 'gpu':
@@ -128,7 +129,7 @@ if (isset($_GET)) :
             functionality, design, materials, innovations, thermals, etc.<br />A computer is an electronic device that
             manipulates data or information. It has the ability to store,retrieve, and process data.<p>     <!--https://unsplash.com/photos/2sILr4DwabQ-->
             <h3><a href=\"https://latinospc.com/hardware/?anatomy_of_a_computer#navi\">The anatomy of a computer</a> typically includes,
-        <a href=\"https://latinospc.com//hardware/?notebooks#navi\">Laptops</a>, Portable, Smart Devices, Modular PC\'s, ETC.</h3>";
+        <a href=\"https://latinospc.com//hardware/?notebooks#navi\">Laptops</a>, Portable, Smart Devices, Modular PC's, ETC.</h3>";
     
         $contentSubTitles= ["Computer Parts",       "Central Processing Unit (CPU):",       "Memory (RAM):",        "Memory Storage Drive (hard drive, SSD):",
                                 "Motherboard:",        "Power Supply Unit (PSU):",      "GPU:",       "Chassis:",       "Coolers",      "Input/Output devices:", "Peripheral devices:"  ];

@@ -1,7 +1,7 @@
 .container {
-    width: 80%;
+    width: 85%;
     margin: auto;
-    padding: 20px;
+    padding: 10px;
 }
 .container dd, .container dt   {
 font-size: 18px;

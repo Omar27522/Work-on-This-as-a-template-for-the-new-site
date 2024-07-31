@@ -82,16 +82,7 @@ $coolers = ['coolers'=>'are an essential component of any computing system, as
 ];
 
 
-// Search for the item in the array
-$search_item = 'Evaporative cooling:';
 
-$index = array_search($search_item, $titles);//array variable you want to search
-
-if ($index !== false) {
-    echo "$search_item is in the array at index $index.";
-} else {
-    echo "$search_item is not in the array.";
-}
 
 /*/====================================================\
 |                                                    |

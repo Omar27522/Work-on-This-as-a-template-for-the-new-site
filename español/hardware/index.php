@@ -20,6 +20,7 @@ if (isset($_GET)) :
             include ($include_path . 'cooling.php');
             break;
         case 'chassis':
+            include ('../../hardware/chassis.php');
             include ($include_path . 'chassis.php');
             break;
         case 'gpu':
