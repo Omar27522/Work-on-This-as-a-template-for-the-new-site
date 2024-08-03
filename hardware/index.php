@@ -1,11 +1,69 @@
 <?php
-if (isset($_GET['cpu'])) :
+/*if (isset($_GET['cpu'])) :
     $title="CPU";
 elseif (isset($_GET['ram'])) :
     $title="RAM";
+elseif (isset($_GET['ssd'])) :
+    $title="SSD";
+elseif (isset($_GET['psu'])) :
+    $title="PSU";
+elseif (isset($_GET['motherboard'])) :
+    $title="Motherboard";
+elseif (isset($_GET['gpu'])) :
+    $title="Graphics Card";
+elseif (isset($_GET['chassis'])) :
+    $title="Computer case";
+elseif (isset($_GET['cooling'])) :
+    $title="Cooling";
+elseif (isset($_GET['mouse'])) :
+    $title="Mouse";
+elseif (isset($_GET['keyboard'])) :
+    $title="Kayboard";
+elseif (isset($_GET['display'])) :
+    $title="Display";
+
 else:
 $title="Hardware";
-endif;
+endif;*/
+$hardwareTitles = [
+'cc'   => 'Console Controllers',
+'cpu'  => 'CPU',
+'ram'  => 'RAM',
+'ssd'  => 'SSD',
+'psu'  => 'PSU',
+'pci'  => 'PCI Cards',
+'mouse' => 'Mouse',
+'desk'  => 'Desks',
+'chair'  => 'Chairs',
+'cooling'=> 'Cooling',
+'tablet' => 'Tablets',
+'micro'  => 'Microphones',
+'monitor' => 'Display',
+'headset' => 'Headsets',
+'printer' => 'Printers',
+'scanner' => 'Scanners',
+'chassis'  => 'Computer Case',
+'keyboard'  => 'Keyboard',
+'joystick'  => 'Joysticks',
+'headphone' => 'Headphones',
+'p_memory'  => 'Portable Memory',
+'controller' => 'Controllers',
+'audiomixer' => 'Audio Mixers',
+'motherboard' => 'Motherboard',
+'pencil' => 'Pens, Pencils and Tablets',
+'antislipmats' => 'Anti-Slip Mats',
+'speakers_and_subwoofers' => 'Speakers and Subwoofers',
+'team_uniformity_authority' => 'Uniforms'
+
+];
+
+$title = 'Hardware'; // Default title
+foreach ($hardwareTitles as $key => $value) {
+    if (isset($_GET[$key])) {
+        $title = $value;
+        break;
+    }
+}
 
 $directoryPath = '../';
 $lang = 'en';
@@ -15,111 +73,141 @@ include ('../include/_code/page.php');
 
 function content(){
 
-    $include_path = '../include/_works/hardware/';
+    $include_path   = '../include/_works/_hardware/';
+    $hardware_path  = '../hardware/';
 
 if (isset($_GET)) :
     switch (key($_GET)) :
         case 'cpu':
-            include ('../hardware/cpu.php');
+            include ($hardware_path . 'cpu.php');
             include ($include_path . 'cpu.php');
             break;
         case 'cooling':
-            include ('../hardware/cooling.php');
+            include ($hardware_path . 'cooling.php');
             include ($include_path . 'cooling.php');
             break;
         case 'chassis':
-            include ('../hardware/chassis.php');
+            include ($hardware_path . 'chassis.php');
             include ($include_path . 'chassis.php');
             break;
         case 'gpu':
+            include ($hardware_path . 'gpu.php');
             include ($include_path . 'gpu.php');
             break;
         case 'psu':
+        case 'power_supply':
+            include ($hardware_path . 'psu.php');
             include ($include_path . 'psu.php');
             break;
         case 'motherboard':
+            include ($hardware_path . 'motherboard.php');
             include ($include_path . 'motherboard.php');
             break;
         case 'ssd':
+            include ($hardware_path . 'ssd.php');
             include ($include_path . 'ssd.php');
             break;
         case 'ram':
+            include ($hardware_path . 'ram.php');
             include ($include_path . 'ram.php');
             break;
         case 'mouse':
         case 'computer_mouse':
+            include ($hardware_path . 'mouse.php');
             include ($include_path . 'mouse.php');
             break;
         case 'keyboard':
+            include ($hardware_path . 'keyboard.php');
             include ($include_path . 'keyboard.php');
             break;
         case 'display':
+        case 'monitor':
+            include ($hardware_path . 'display.php');
             include ($include_path . 'display.php');
             break;
         case 'external_memory_drives':
+        case 'p_memory':
         case 'external_drives':
+            include ($hardware_path . 'external_drives.php');
             include ($include_path . 'external_memory_drives.php');
             break;
         case 'pci_cards':
         case 'pci':
+            include ($hardware_path . 'pci_cards.php');
             include ($include_path . 'pci_cards.php');
             break;
-        case 'power_supply':
-            include ($include_path . 'power_supply.php');
-            break;
-        case 'scanners':
+        case 'scanner':
+            include ($hardware_path . 'scanners.php');
             include ($include_path . 'scanners.php');
             break;
         case 'printers':
         case 'printer':
+            include ($hardware_path . 'printers.php');
             include ($include_path . 'printers.php');
             break;
-        case 'ontrollers':
+        case 'controller':
+            include ($hardware_path . 'controllers.php');
             include ($include_path . 'controllers.php');
             break;
         case 'cc':
+            include ($hardware_path . 'console_controllers.php');
             include ($include_path . 'console_controllers.php');
             break;
         case 'joystick':
         case 'joysticks':
+            include ($hardware_path . 'joystick.php');
             include ($include_path . 'joystick.php');
             break;
-        case 'tablets':
+        case 'tablet':
+            include ($hardware_path . 'tablets.php');
             include ($include_path . 'tablets.php');
             break;
         case 'microphones':
+        case'micro':
         case 'microphone':
+            include ($hardware_path . 'microphones.php');
             include ($include_path . 'microphones.php');
             break;
-        case 'headsets':
+        case 'headset':
+            include ($hardware_path . 'headsets.php');
             include ($include_path . 'headsets.php');
             break;
         case 'headphones':
+            include ($hardware_path . 'headphones.php');
             include ($include_path . 'headphones.php');
             break;
         case 'audio_mixers':
         case 'audiomixer':
-            include ($include_path . 'audio_mixers.php');
+            include ($hardware_path . 'audio_mixer.php');
+            include ($include_path . 'audio_mixer.php');
             break;
         case 'gaming_uniforms':
+        case 'team_uniformity_authority':
         case 'uniforms':
+            include ($hardware_path . 'uniforms.php');
             include ($include_path . 'gaming_uniforms.php');
             break;
         case 'pens_pencils_tablets':
+        case 'pencil':
         case 'pens_and_pencils_and_stylus':
+            include ($hardware_path . 'pens_pencils_tablets.php');
             include ($include_path . 'pens_pencils_tablets.php');
             break;
-        case 'chairs':
+        case 'chair':
+            include ($hardware_path . 'chairs.php');
             include ($include_path . 'chairs.php');
             break;
-        case 'desks':
+        case 'desk':
+            include ($hardware_path . 'desks.php');
             include ($include_path . 'desks.php');
             break;
         case 'anti_slip_mats':
         case 'antislipmats':
+            include ($hardware_path . 'anti_slip_mats.php');
             include ($include_path . 'anti_slip_mats.php');
             break;
         case 'speakers_and_subwoofers':
+            include ($hardware_path . 'speakers_and_subwoofers.php');
             include ($include_path . 'speakers_and_subwoofers.php');
             break;
         default:
