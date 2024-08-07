@@ -116,14 +116,28 @@ window.onclick = function(e) {
           <div class="clr"></div>
         </div>
       </div> <!--I tried to fix the code with the linksColor class -->
-      <p class="links" style="text-align: center;"><a href="#" class="linksColor">Home</a>   <a href="inicio.html">Espanol</a>
-         <a href="about.html"> About Us</a>   <a href="terms.html" class="linksColor">Terms</a>  
-        <a href="contact.html">Contact Us</a>   <a href="testimonials.html" class="linksColor">Testimonials</a><a href="#">Home</a>   <a href="inicio.html">Espanol</a>
-         <a href="about.html"> About Us</a>   <a href="terms.html" class="linksColor">Terms</a>  
-        <a href="contact.html">Contact Us</a>   <a href="testimonials.html" class="linksColor">Testimonials</a><a href="#">Home</a>   <a href="inicio.html">Espanol</a>
-         <a href="about.html"> About Us</a>   <a href="terms.html" class="linksColor">Terms</a>  
-        <a href="contact.html">Contact Us</a>   <a href="testimonials.html" class="linksColor">Testimonials</a></p>
-
+      <footer class="links">
+  <nav class="footer-links">
+    <a href="<?= $directoryPath ?>" class="link">Home</a>
+    <a href="<?= $directoryPath ?>español/" class="link">Español</a>
+    <a href="<?= $directoryPath ?>about" class="link">About Us</a>
+    <a href="<?= $directoryPath ?>hardware" class="link">Hardware</a>
+    <a href="<?= $directoryPath ?>software" class="link">Software</a>
+    <a href="<?= $directoryPath ?>contact" class="link">Contact Us</a>
+    <a href="<?= $directoryPath ?>reviews" class="link">Testimonials</a>
+    <a href="<?= $directoryPath ?>backups" class="link">Backups</a>
+    <a href="<?= $directoryPath ?>software/programs" class="link">Programs</a>
+    <a href="<?= $directoryPath ?>hardware/anatomy" class="link">HW Anatomy</a>
+    <a href="<?= $directoryPath ?>hardware/notebooks" class="link">Notebooks</a>
+    <a href="<?= $directoryPath ?>hardware/cables" class="link">Cables</a>
+    <a href="<?= $directoryPath ?>software/websites" class="link">Websites</a>
+    <a href="<?= $directoryPath ?>software/passwords" class="link">Passwords</a>
+    <a href="<?= $directoryPath ?>tutorials" class="link">Tutorials</a>
+    <a href="<?= $directoryPath ?>images" class="link">Images</a>
+    <a href="<?= $directoryPath ?>artwork" class="link">Artwork</a>
+    <a href="<?= $directoryPath ?>writing" class="link">writing</a>
+  </nav>
+</footer>
       <div class="footer">
         <div class="footer_resize">
           <p class="lf">© Copyright <a href="http://latinospc.com" style=":hover{color}">LAtinosPC.com</a>.</p>

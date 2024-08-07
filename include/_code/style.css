@@ -350,8 +350,10 @@ ol li .send {
   margin: 16px 0 0 0;
 }
 .links {
-  padding: 80px;
+  padding-left: 80px;
+  padding-right: 80px;
   margin: 0;
+  font-size: 1.3rem;
 }
 .linksColor:hover  {
   color: whitesmoke;
@@ -361,6 +363,37 @@ ol li .send {
 }
 
 /*My code */
+footer {
+  padding: 20px 0;
+  background-color: transparent;
+  
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+.footer-links a{
+ 
+  color: whitesmoke;
+}
+
+.link {
+  color: #333;
+  text-decoration: none;
+  padding: 10px 15px;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+.link:hover {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+
 .image {
   box-shadow: 0 4px 2px 0 rgba(0,0,0,0.2);
   background: none;
