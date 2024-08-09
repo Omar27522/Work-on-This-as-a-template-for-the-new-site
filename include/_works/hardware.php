@@ -205,7 +205,8 @@
 		</style>
 	<ul style="list-style: none;">
 		<section class="newspaper2">
-
+<!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ღ´**
+  		I have to build a linnks array, that will contain alts for images, titles for links and the href in the link within the page.		-->
 			<li><a tabindex="0" href="?mouse">
                                                                                                                           <?= empty($peripherals[0]) ? $perifericos[0] : $peripherals[0];?>
       <br /><img src="https://latinospc.com/images/hardware/hw/mouse.jpg" width="112" height="112"

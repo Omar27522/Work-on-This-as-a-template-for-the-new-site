@@ -39,12 +39,12 @@
         <p>
         <h2>Power supplies are an essential component of any computing system, whether it&#39;s a laptop or desktop.
         </h2>
-        <img src="../images/hardware/icons/80_Plus_Standard.png" class="rtl">
-        <img src="../images/hardware/icons/80_Plus_Bronze.png" class="rtl">
-        <img src="../images/hardware/icons/80_Plus_Silver.png" class="rtl">
-        <img src="../images/hardware/icons/80_Plus_Gold.png" class="rtl">
-        <img src="../images/hardware/icons/80_Plus_Platinum.png" class="rtl">
-        <img src="../images/hardware/icons/80_Plus_Titanium.png" class="rtl">
+        <img src="https://latinospc.com/images/hardware/icons/80_Plus_Standard.png" class="rtl">
+        <img src="https://latinospc.com/images/hardware/icons/80_Plus_Bronze.png" class="rtl">
+        <img src="https://latinospc.com/images/hardware/icons/80_Plus_Silver.png" class="rtl">
+        <img src="https://latinospc.com/images/hardware/icons/80_Plus_Gold.png" class="rtl">
+        <img src="https://latinospc.com/images/hardware/icons/80_Plus_Platinum.png" class="rtl">
+        <img src="https://latinospc.com/images/hardware/icons/80_Plus_Titanium.png" class="rtl">
         </p>
         <h2><a href="https://en.wikipedia.org/wiki/Category:Computer_power_supply_unit_manufacturers"
                 class="psu">Popular PSU Manufacturers</a></h2>
@@ -53,12 +53,12 @@
             output from 300 to 1200 watts, with the most common wattages being between 400 and 800 watts. The wattage
             needed for a desktop computer PSU is determined by the power requirements of the internal components,
             including the CPU, GPU, hard drives, water pumps, radiators, fans and any additional hardware such as a
-            sound card or optical drives.</p><img src="../images/hardware/hw/psu.jpg" class="fl">
+            sound card or optical drives.</p><img src="https://latinospc.com/images/hardware/hw/psu.jpg" class="fl">
         <p>When choosing a PSU for a desktop computer, it is important to ensure that it has the necessary wattage to
             power all of the components in the system, while also providing enough headroom for future upgrades. A PSU
             that is too weak for the system can cause stability issues or even damage to the hardware, while a PSU that
             is too powerful may waste energy and be more expensive than necessary.</p>
-        <img src="../images/hardware/hw/psu2.png" class="rtl">
+        <img src="https://latinospc.com/images/hardware/hw/psu2.png" class="rtl">
         <h2>PSUs are typically rated for efficiency using the 80 Plus<a href="https://en.wikipedia.org/wiki/80_Plus"
                 title="80 Plus"> certification system</a>, which ranges from 80 Plus (basic efficiency) to 80 Plus
             Titanium (highest efficiency). A more efficient PSU will waste less energy as heat and will result in lower
@@ -70,11 +70,11 @@
             power that can be used by the laptop. Laptop power adapters are typically rated for output voltage and
             amperage, and are designed to provide the specific voltage and amperage required by the laptop&#39;s
             internal components.</p>
-        <img src="../images/hardware/hw/portablepower.png" class="rtl">
+        <img src="https://latinospc.com/images/hardware/hw/portablepower.png" class="rtl">
         <p>When choosing a power adapter for a laptop, it is important to ensure that it provides the correct voltage
             and amperage, as using an adapter with the wrong specifications can damage the laptop&#39;s internal
             components. It is also important to choose an adapter that is compatible with the laptop&#39;s charging
-            port.</p><img src="../images/hardware/hw/slimpower.png" class="fl">
+            port.</p><img src="https://latinospc.com/images/hardware/hw/slimpower.png" class="fl">
         <p>Laptop power adapters come in a variety of sizes and shapes, with some designed for travel and others for use
             at a desk. Some adapters also include additional features, such as the ability to charge multiple devices at
             once or the ability to adjust the output voltage to support a wider range of devices.</p>

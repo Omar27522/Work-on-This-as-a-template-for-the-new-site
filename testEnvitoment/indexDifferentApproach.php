@@ -60,7 +60,12 @@ h2 {
         ];
 
         // Define the default image and description
-        $defaultImage = ['./image4.png', 'Default image description. I need to change the image when a user chooses a different image. All images have their own unique captions.'];
+        $defaultImage =
+            [
+                './image4.png', 'Default image description.
+                I need to change the image when a user chooses a different image.
+                All images have their own unique captions.'
+            ];
 
         // Initialize the image source and description
         $imageSrc = $defaultImage[0];

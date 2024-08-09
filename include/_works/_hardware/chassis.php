@@ -3,65 +3,67 @@
         href="https://latinospc.com/images/bg_lapc.png" title="LAtinosPC Icon Computer" alt="LAPChassisIcon"><img
             src="https://latinospc.com/images/lapc.png" class="image rtl"></a>
     <h1><a href="?hw/sw#cpu" id="case">
-        <?= $titles['chassis'][0]; ?>
+    <?= empty($titles['chassis'][0]) ? $titulo['chasis'][0] : $titles['chassis'][0];?>
+        
     </a></h1>
-    <h2><?= $chassis[0];?></h2>
+    <h2>
+        <?= empty($chassis[0]) ? $chasis[0] : $chassis[0];?>
+    </h2>
     <a href="<?= $links['techQuickie']; ?>" title="Techquickie">
-        <p class="link"><?= $chassis[1]; ?></p>
+        <p class="link"><?= empty($chassis[1]) ? $chasis[1] : $chassis[1];?></p>
     </a>
     <h2>
-    <?= $chassis[2]; ?> <a href="<?= $links['computerCase']; ?>"
-            title="Wikipedia"><?= $chassis[3]; ?></a> <?= $chassis[4]; ?></h2>
+    <?= empty($chassis[2]) ? $chasis[2] : $chassis[2];?> <a href="<?= $links['computerCase']; ?>"
+            title="Wikipedia"><?= empty($chassis[3]) ? $chasis[3] : $chassis[3];?></a> <?= empty($chassis[4]) ? $chasis[4] : $chassis[4];?></h2>
 
         <a rel="example_group" href="https://latinospc.com/images/hardware/case/1600393471697.png"
             title="LAtinosPC Main Computer" alt="LAPChassis">
             <img src="https://latinospc.com/images/cs_chassis.webp" width="263" alt="image" class="image fl" /></a>
 
 
-        <h2><?= $titles['years'][0]; ?></h2>
-        <p><?= $chassis[5]; ?></p>
+        <h2><?= empty($titles['years'][0]) ? $titulo['años'][0] : $titles['years'][0];?></h2>
+        <p><?= empty($chassis[5]) ? $chasis[5] : $chassis[5];?></p>
 
-        <h2><?= $titles['years'][1]; ?></h2>
-        <p><?= $chassis[6]; ?></p>
+        <h2><?= empty($titles['years'][1]) ? $titulo['años'][1] : $titles['years'][1];?></h2>
+        <p><?= empty($chassis[6]) ? $chasis[6] : $chassis[6];?></p>
 
-        <h2><?= $titles['years'][2]; ?></h2>
-        <p><?= $chassis[7]; ?></p>
+        <h2><?= empty($titles['years'][2]) ? $titulo['años'][2] : $titles['years'][2];?></h2>
+        <p><?= empty($chassis[7]) ? $chasis[7] : $chassis[7];?></p>
     <ul class="colms2">
         <li>
-            <h2><?= $titles['years'][3]; ?></h2>
-            <p><?= $chassis[8]; ?></p>
+            <h2><?= empty($titles['years'][3]) ? $titulo['años'][3] : $titles['years'][3];?></h2>
+            <p><?= empty($chassis[8]) ? $chasis[8] : $chassis[8];?></p>
         </li>
 
         <li>
-            <h2><?= $titles['years'][4]; ?></h2>
-            <p><?= $chassis[9]; ?></p>
+            <h2><?= empty($titles['years'][4]) ? $titulo['años'][4] : $titles['years'][4];?></h2>
+            <p><?= empty($chassis[9]) ? $chasis[9] : $chassis[9];?></p>
         </li>
 
         <li>
-            <h2><?= $titles['years'][5]; ?></h2>
-            <p><?= $chassis[10]; ?></p>
+            <h2><?= empty($titles['years'][5]) ? $titulo['años'][5] : $titles['years'][5];?></h2>
+            <p><?= empty($chassis[10]) ? $chasis[10] : $chassis[10];?></p>
         </li>
 
         <li class="item">
-            <h2><?= $titles['years'][6]; ?></h2>
-            <p><?= $chassis[11]; ?></p>
+            <h2><?= empty($titles['years'][6]) ? $titulo['años'][6] : $titles['years'][6];?></h2>
+            <p><?= empty($chassis[11]) ? $chasis[11] : $chassis[11];?></p>
         </li>
 
         <li>
-            <h2><?= $titles['years'][7]; ?></h2>
-            <p><?= $chassis[12]; ?></p>
+            <h2><?= empty($titles['years'][7]) ? $titulo['años'][7] : $titles['years'][7];?></h2>
+            <p><?= empty($chassis[12]) ? $chasis[12] : $chassis[12];?></p>
         </li>
 
         <li>
-            <h2><?= $titles['years'][8]; ?></h2>
-            <p><?= $chassis[13]; ?></p>
+            <h2><?= empty($titles['years'][8]) ? $titulo['años'][8] : $titles['years'][8];?></h2>
+            <p><?= empty($chassis[13]) ? $chasis[13] : $chassis[13];?></p>
         </li>
     </ul>
 
 
 
-        <h2>
-            <?= $chassis['years'][0]; ?>
+        <h2><?= empty($chassis['years'][0]) ? $chasis['años'][0] : $chassis['years'][0];?>
         </h2>
         <hr>
 </article>
