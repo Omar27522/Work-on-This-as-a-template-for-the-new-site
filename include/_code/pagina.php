@@ -2,7 +2,7 @@
 <html lang="es">
 <head><!-- Head de el documento -->
     <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
-    <title><?= $title?></title>
+    <title><?= $titulo?></title>
     <link href="<?= $directoryPath ?>include/_code/style.css" rel="stylesheet" type="text/css" />
     <link href="<?= $directoryPath ?>include/_works/start.css" rel="stylesheet" type="text/css" />
     <link href="<?= $directoryPath ?>include/_code/nav.css" rel="stylesheet" type="text/css" />
@@ -54,7 +54,7 @@ window.onclick = function(e) {
                 ?>
                 <div class="rtl"style="padding-top: 30px;padding-right:20px;"><a href="../">Respaldos</a>
                   <a href="../">Programas</a>
-                  <a href="../">Anatomia</a>
+                  <a href="../">Anatomía</a>
                   <a href="../">Notebooks</a>
                   <a href="#link11">Cables</a>
                 </div>
@@ -64,7 +64,7 @@ window.onclick = function(e) {
 
                 <img src="https://latinospc.com/images/100.png" class="rtl" style="translate: -40% -50%" alt="CPUimage" width="200px" />
 
-                <a href="../">Imagenes</a>
+                <a href="../">Imágenes</a>
                 <a href="../">Trabajos</a>
                 <a href="../">Escritura</a>
 
@@ -113,13 +113,13 @@ window.onclick = function(e) {
 <div class="fbg"> <!-- Footer Bar -->
         <div class="fbg_resize">
           <div class="col c1">
-            <h2><span>Call US</span></h2>
+            <h2><span>Llámenos</span></h2>
             <a href="<?= $directoryPath ?>include/_images/bigphonenumber.png"> <img src="<?= $directoryPath ?>include/_images/number.jpg" alt=""
 
                 height="85" width="230" /> </a><a></a></div>
           <a> </a>
           <div class="col c2"><a>
-              <h2><span>Information</span></h2>
+              <h2><span>Información</span></h2>
             </a>
             <p><a></a><a href="http://latinospc.com">LAtinosPC.com</a><br />
               Tel. (909)276-7214<br />
@@ -128,30 +128,39 @@ window.onclick = function(e) {
             </p>
           </div>
           <div class="col c3">
-            <h2><span>About</span></h2>
+            <h2><span>Acerca de Nosotros</span></h2>
             <img src="<?= $directoryPath ?>include/_images/computer%20CPU.jpg" alt="" height="60" width="60" />
-            <p>A company with years of experience, bringing Southern California
-              people and families the experience of a working system. Personal
-              websites with professional or casual and distinguished look; at
-              your competitive prices </p>
+              <p>Una empresa con años de experiencia, brindando a las personas
+                y familias del sur de California la experiencia de un sistema
+                funcional. Sitios web personales con una apariencia profesional
+                o casual y distinguida; a precios competitivos.
+              </p>
           </div>
           <div class="clr"></div>
         </div>
       </div>
-      <p style="text-align: center;"><a href="#">Home</a>   <a href="inicio.html">Espanol</a>
-         <a href="about.html"> About Us</a>   <a href="terms.html">Terms</a>  
-        <a href="contact.html">Contact Us</a>   <a href="testimonials.html">Testimonials</a><a href="#">Home</a>   <a href="inicio.html">Espanol</a>
-         <a href="about.html"> About Us</a>   <a href="terms.html">Terms</a>  
-        <a href="contact.html">Contact Us</a>   <a href="testimonials.html">Testimonials</a><a href="#">Home</a>   <a href="inicio.html">Espanol</a>
-         <a href="about.html"> About Us</a>   <a href="terms.html">Terms</a>  
-        <a href="contact.html">Contact Us</a>   <a href="testimonials.html">Testimonials</a></p>
-        <p style="text-align: center;"><a href="#">Home</a>   <a href="inicio.html">Espanol</a>
-           <a href="about.html"> About Us</a>   <a href="terms.html">Terms</a>  
-          <a href="contact.html">Contact Us</a>   <a href="testimonials.html">Testimonials</a><a href="#">Home</a>   <a href="inicio.html">Espanol</a>
-           <a href="about.html"> About Us</a>   <a href="terms.html">Terms</a>  
-          <a href="contact.html">Contact Us</a>   <a href="testimonials.html">Testimonials</a><a href="#">Home</a>   <a href="inicio.html">Espanol</a>
-           <a href="about.html"> About Us</a>   <a href="terms.html">Terms</a>  
-          <a href="contact.html">Contact Us</a>   <a href="testimonials.html">Testimonials</a></p>
+      <footer class="links">
+  <nav class="footer-links">
+    <a href="<?= $directoryPath ?>" class="link">Ingles</a>
+    <a href="<?= $directoryPath ?>español/" class="link">Español</a>
+    <a href="<?= $directoryPath ?>español/acerca" class="link">Acerca</a>
+    <a href="<?= $directoryPath ?>español/hardware" class="link">Hardware</a>
+    <a href="<?= $directoryPath ?>español/software" class="link">Software</a>
+    <a href="<?= $directoryPath ?>español/contacto" class="link">Contacto</a>
+    <a href="<?= $directoryPath ?>español/reviews" class="link">Testimonios</a>
+    <a href="<?= $directoryPath ?>español/backups" class="link">Respaldos</a>
+    <a href="<?= $directoryPath ?>español/software/programs" class="link">Programas</a>
+    <a href="<?= $directoryPath ?>español/hardware/anatomy" class="link">Anatomía Hw</a>
+    <a href="<?= $directoryPath ?>español/hardware/notebooks" class="link">Notebooks</a>
+    <a href="<?= $directoryPath ?>español/hardware/cables" class="link">Cables</a>
+    <a href="<?= $directoryPath ?>español/software/websites" class="link">Paginas Web</a>
+    <a href="<?= $directoryPath ?>español/software/passwords" class="link">contraseñas</a>
+    <a href="<?= $directoryPath ?>español/tutorials" class="link">Tutoriales</a>
+    <a href="<?= $directoryPath ?>español/images" class="link">Imágenes</a>
+    <a href="<?= $directoryPath ?>español/artwork" class="link">Obras de Arte</a>
+    <a href="<?= $directoryPath ?>español/writing" class="link">Escritura</a>
+  </nav>
+</footer>
       <div class="footer">
         <div class="footer_resize">
           <p class="lf">© Copyright <a href="http://latinospc.com">LAtinosPC.com</a>.</p>

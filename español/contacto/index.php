@@ -1,5 +1,5 @@
 <?php
-$title="Contacto";
+$titulo="Contacto";
 $directoryPath = '../../';
 $lang = 'es';
 $contacto ='active';

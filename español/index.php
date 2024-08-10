@@ -1,5 +1,5 @@
 <?php
-$title="Bienbenidos a LAtinosPC.com";
+$titulo="Bienvenidos a LAtinosPC.com";
 $directoryPath = '../';
 $lang = 'en';
 $casa ='active';

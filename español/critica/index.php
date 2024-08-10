@@ -1,5 +1,5 @@
 <?php
-$title="Reseñas";
+$titulo="Reseñas";
 $directoryPath = '../../';
 $lang = 'es';
 $critica ='active';

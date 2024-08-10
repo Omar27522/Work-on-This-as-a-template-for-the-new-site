@@ -1,5 +1,5 @@
 <?php
-$title = "Software";
+$titulo = "Software";
 $directoryPath = '../../';
 $lang = 'es';
 $software ='active';

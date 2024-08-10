@@ -1,9 +1,48 @@
 <?php
+
+$hardwareTitulos = [
+    'cc'   => 'Console Controllers',
+    'cpu'  => 'CPU',
+    'ram'  => 'RAM',
+    'ssd'  => 'SSD',
+    'psu'  => 'Fuente de Poder',
+    'pci'  => 'TarjetasPCI',
+    'mouse' => 'Ratón',
+    'desk'  => 'Escritorios',
+    'chair'  => 'Sillas',
+    'cooling'=> 'Enfriamiento',
+    'tablet' => 'Tabletas',
+    'micro'  => 'Micrófonos',
+    'monitor' => 'Pantallas',
+    'headset' => 'Auriculares totales',
+    'printer' => 'Impresoras',
+    'scanner' => 'Scaners',
+    'chassis'  => 'Carcasa del PC',
+    'keyboard'  => 'Teclado',
+    'joystick'  => 'Joysticks',
+    'headphone' => 'Auriculares',
+    'p_memory'  => 'Memoria Portable',
+    'controller' => 'Controladores',
+    'audiomixer' => 'Mezclador de Audio',
+    'motherboard' => 'Motherboard',
+    'pencil' => 'Plumas, Lapices, Tabletas',
+    'antislipmats' => 'Alfombrillas Antideslizantes',
+    'speakers_and_subwoofers' => 'Bocinas y Subwoofers',
+    'team_uniformity_authority' => 'Uniformes'
+    ];
+    
+    $titulo = 'Hardware'; // Default title
+    foreach ($hardwareTitulos as $llave => $valor) {
+        if (isset($_GET[$llave])) {
+            $titulo = $valor;
+            break;
+        }
+    }
 //WE need to update Titles as well as the English titles
 //ALSO the files have changed, so we need to update way the site displays in Spanish
 
 
-$title="Hardware";
+
 $directoryPath = '../../';
 $lang = 'es';
 $hardware ='active';
