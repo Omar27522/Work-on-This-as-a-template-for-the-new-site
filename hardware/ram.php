@@ -1,1 +1,3 @@
-RAM
+<?php
+$titles =['RAM'];
+?>

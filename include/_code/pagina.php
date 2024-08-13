@@ -6,6 +6,7 @@
     <link href="<?= $directoryPath ?>include/_code/style.css" rel="stylesheet" type="text/css" />
     <link href="<?= $directoryPath ?>include/_works/start.css" rel="stylesheet" type="text/css" />
     <link href="<?= $directoryPath ?>include/_code/nav.css" rel="stylesheet" type="text/css" />
+    <script defer src="<?= $directoryPath ?>include/_code/script.js" ></script>
 	<link rel="icon" href="<?= $directoryPath ?>annotation_2019_12_08_033413_AUw_2.ico">
 </head><!--^^ Head de el documento ^^-->
 
@@ -20,53 +21,35 @@
     </div>
   </header><!--^^ Header ^^-->
 
-<!-- Dropdown Menu https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp -->
-<script>
-/* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(e) {
-  if (!e.target.matches('.dropbtn')) {
-  var myDropdown = document.getElementById("myDropdown");
-    if (myDropdown.classList.contains('show')) {
-      myDropdown.classList.remove('show');
-    }
-  }
-}
-</script>
-<!--^^ Dropdown Menu ^^-->
 <div class="hbg"><!-- HBG --><!-- nav bar -->
         <div class="hbg_resize">
                <nav class="menu_nav">
             <ul>
             <li class="<?= $js="current dropdown"; ?>"><a class="dropbtn" onclick="myFunction()">Cristo Jesus</a>
-                <div class="dropdown-content" id="myDropdown"><?php
+                <div class="dropdown-content" id="myDropdown">
+                <a href="https://latinospc.com" style="display: inline;background-image:none;background-color:#f9f9f9;"><?php
                 $pictures= array('1','2','3','4','5','6','7','8','9','10','11','12');
                 echo"<img src=\"https://latinospc.com/images/artificialintelligence/our_lord_and_savior_jesus_christ/lamb";
                 for($i=0; $i<1; $i++){
                     shuffle($pictures);
                 echo $pictures[$i];}
-                echo".webp\" width=\"372px\" height=\"248px\" alt=\"CPUimage\" style=\"padding-top: 15px;padding-left:20px;\"/>";
-                ?>
+                echo".webp\" width=\"372px\" height=\"248px\" alt=\"Jesus Christ\" style=\"margin-top: 15px;margin-left:20px;\" class=\"image\"/>";
+                ?></a>
                 <div class="rtl"style="padding-top: 30px;padding-right:20px;"><a href="../">Respaldos</a>
-                  <a href="../">Programas</a>
-                  <a href="../">Anatomía</a>
-                  <a href="../">Notebooks</a>
-                  <a href="#link11">Cables</a>
+                  <a href="../español/software/programas/">Programas</a>
+                  <a href="./hardware/">Anatomía</a>
+                  <a href="./hardware/notebooks/">Notebooks</a>
+                  <a href="./hardware/cables/">Cables</a>
                 </div>
-                <a href="../">Websites</a>
-                <a href="../">Contraseñas</a>
-                <a href="../">Tutoriales</a>
+                <a href="./software/sitios/">Sitios Web</a>
+                <a href="./software/contraseñas/">Contraseñas</a>
+                <a href="./acerca/tutoriales/">Tutoriales</a>
 
-                <img src="https://latinospc.com/images/100.png" class="rtl" style="translate: -40% -50%" alt="CPUimage" width="200px" />
+                <a href="#Funciona !!!" style="float: right;display: inline;background-image:none;background-color:#f9f9f9;"><img src="<?= $directoryPath; ?>include/_images/100.webp" class="rtl image" style="translate: -40% -50%; border-radius: 110%;"  alt="CPUimage"width="200px" /></a>
 
-                <a href="../">Imágenes</a>
-                <a href="../">Trabajos</a>
-                <a href="../">Escritura</a>
+                <a href="./acerca/imagenes/">Imágenes</a>
+                <a href="./acerca/trabajos/">Trabajos</a>
+                <a href="./acerca/escritura/">Escritura</a>
 
                 </div>
               </li>

@@ -183,6 +183,10 @@ ul,
   margin-top:0;
   padding-top:0;
 }
+.fullbar{
+  margin-bottom:0;
+  padding-bottom:0;
+}
 .content .mainbar {
   margin: 0;
   padding: 0;
@@ -260,14 +264,20 @@ ul.ex_menu li a:hover {
   color: #fff;
   background-color: #525657;
 }
+.fbg_resize img {
+  border: 1px solid #cfd2d4;
+  background-color: #fff;
+}
 .fbg h2,
 .fbg a {
   color: #fff;
 }
  img {
   padding: 4px;
+  border-radius: 3px;;
+  /*
   border: 1px solid #cfd2d4;
-  background-color: #fff;
+  background-color: #fff;*/
 }
 .fbg .col {
   margin: 0;
@@ -366,7 +376,6 @@ ol li .send {
 footer {
   padding: 20px 0;
   background-color: transparent;
-  
 }
 
 .footer-links {
@@ -376,21 +385,23 @@ footer {
 
 }
 .footer-links a{
- 
   color: whitesmoke;
 }
 
 .link {
-  color: #333;
+  color: #727272;
   text-decoration: none;
   padding: 10px 15px;
   margin: 5px;
-  transition: all 0.3s ease;
+  transition: padding 50.3s ease, margin 50.3s ease, color 0.3s ease, underline 0.5s ease;
 }
 
 .link:hover {
   color: #007bff;
   text-decoration: underline;
+  padding: 0px 1px;
+  margin: 0px;
+  flex-wrap: wrap-reverse;
 }
 
 

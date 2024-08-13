@@ -30,7 +30,7 @@ $hardwareTitulos = [
     'speakers_and_subwoofers' => 'Bocinas y Subwoofers',
     'team_uniformity_authority' => 'Uniformes'
     ];
-    
+
     $titulo = 'Hardware'; // Default title
     foreach ($hardwareTitulos as $llave => $valor) {
         if (isset($_GET[$llave])) {

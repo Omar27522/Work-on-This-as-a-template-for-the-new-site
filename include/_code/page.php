@@ -6,6 +6,7 @@
     <link href="<?= $directoryPath ?>include/_code/style.css" rel="stylesheet" type="text/css" />
     <link href="<?= $directoryPath ?>include/_works/start.css" rel="stylesheet" type="text/css" />
     <link href="<?= $directoryPath ?>include/_code/nav.css" rel="stylesheet" type="text/css" />
+    <script defer src="<?= $directoryPath ?>include/_code/script.js" ></script>
 	<link rel="icon" href="<?= $directoryPath ?>annotation_2019_12_08_033413_AUw_2.ico">
 </head>
 
@@ -22,23 +23,7 @@
 </div>
 
 <!-- Dropdown Menu https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp -->
-<script>
-/* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
 
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(e) {
-  if (!e.target.matches('.dropbtn')) {
-  var myDropdown = document.getElementById("myDropdown");
-    if (myDropdown.classList.contains('show')) {
-      myDropdown.classList.remove('show');
-    }
-  }
-}
-</script>
 <!--^^ Dropdown Menu ^^-->
 <!-- ONE page for all the site !empty($about) || !empty($hardware) || || !empty($es_software) || !empty($contact) || !empty($reviews)-->
 <div class="hbg"><!-- HBG -->
@@ -117,26 +102,27 @@ window.onclick = function(e) {
         </div>
       </div> <!--I tried to fix the code with the linksColor class -->
       <footer class="links">
-  <nav class="footer-links">
-    <a href="<?= $directoryPath ?>" class="link">Home</a>
-    <a href="<?= $directoryPath ?>español/" class="link">Español</a>
-    <a href="<?= $directoryPath ?>about" class="link">About Us</a>
-    <a href="<?= $directoryPath ?>hardware" class="link">Hardware</a>
-    <a href="<?= $directoryPath ?>software" class="link">Software</a>
-    <a href="<?= $directoryPath ?>contact" class="link">Contact Us</a>
-    <a href="<?= $directoryPath ?>reviews" class="link">Testimonials</a>
-    <a href="<?= $directoryPath ?>backups" class="link">Backups</a>
-    <a href="<?= $directoryPath ?>software/programs" class="link">Programs</a>
-    <a href="<?= $directoryPath ?>hardware/anatomy" class="link">HW Anatomy</a>
-    <a href="<?= $directoryPath ?>hardware/notebooks" class="link">Notebooks</a>
-    <a href="<?= $directoryPath ?>hardware/cables" class="link">Cables</a>
-    <a href="<?= $directoryPath ?>software/websites" class="link">Websites</a>
-    <a href="<?= $directoryPath ?>software/passwords" class="link">Passwords</a>
-    <a href="<?= $directoryPath ?>tutorials" class="link">Tutorials</a>
-    <a href="<?= $directoryPath ?>images" class="link">Images</a>
-    <a href="<?= $directoryPath ?>artwork" class="link">Artwork</a>
-    <a href="<?= $directoryPath ?>writing" class="link">writing</a>
-  </nav>
+      <nav class="footer-links">
+  <a href="<?= $directoryPath ?>" class="link"><span class="link">Home</span></a>
+  <a href="<?= $directoryPath ?>español/" class="link"><span class="link">Español</span></a>
+  <a href="<?= $directoryPath ?>about" class="link"><span class="link">About Us</span></a>
+  <a href="<?= $directoryPath ?>hardware" class="link"><span class="link">Hardware</span></a>
+  <a href="<?= $directoryPath ?>software" class="link"><span class="link">Software</span></a>
+  <a href="<?= $directoryPath ?>contact" class="link"><span class="link">Contact Us</span></a>
+  <a href="<?= $directoryPath ?>reviews" class="link"><span class="link">Testimonials</span></a>
+  <a href="<?= $directoryPath ?>backups" class="link"><span class="link"><b>Backups</b></span></a>
+  <a href="<?= $directoryPath ?>software/programs" class="link"><span class="link">Programs</span></a>
+  <a href="<?= $directoryPath ?>hardware/anatomy" class="link"><span class="link">HW Anatomy</span></a>
+  <a href="<?= $directoryPath ?>hardware/notebooks" class="link"><span class="link">Notebooks</span></a>
+  <a href="<?= $directoryPath ?>hardware/cables" class="link"><span class="link">Cables</span></a>
+  <a href="<?= $directoryPath ?>software/websites" class="link"><span class="link">Websites</span></a>
+  <a href="<?= $directoryPath ?>software/passwords" class="link"><span class="link">Passwords</span></a>
+  <a href="<?= $directoryPath ?>tutorials" class="link"><span class="link">Tutorials</span></a>
+  <a href="<?= $directoryPath ?>images" class="link"><span class="link">Images</span></a>
+  <a href="<?= $directoryPath ?>artwork" class="link"><span class="link">Artwork</span></a>
+  <a href="<?= $directoryPath ?>writing" class="link"><span class="link">Writing</span></a>
+</nav>
+
 </footer>
       <div class="footer">
         <div class="footer_resize">
