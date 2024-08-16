@@ -1,4 +1,5 @@
-<?php
+<?php //La URL contiene un ? precediendo el valor. Cada valor corresponde a un título en el sitio.
+// URL: ?psu    =>   El título será "Fuente de Poder".
 
 $hardwareTitulos = [
     'cc'   => 'Console Controllers',
@@ -39,17 +40,152 @@ $hardwareTitulos = [
             break;
         }
     }
-//WE need to update Titles as well as the English titles
-//ALSO the files have changed, so we need to update way the site displays in Spanish
-
-
 
 $directoryPath = '../../';
 $hardware ='active';
-$palabrasClave = '<meta name="keywords" content="CPU, RAM, HDD, SSD, Placa base, PSU, Dispositivos de E/S, Periféricos, GPU, Chasis, Enfriadores, Ratón, Teclado, Pantalla, Unidades externas, Tarjetas PCI, Escáneres, Impresoras, Controladores de consola, Joysticks, Tablets, Micrófonos, Auriculares, Mezclador de audio, Controladores, Uniformes de juego, Bolígrafos, Lápices, Sillas, Escritorios, Alfombrillas antideslizantes, Altavoces y subwoofers">';
-$descripción = '<meta name="description" content="Explora una amplia gama de componentes y periféricos para computadoras incluyendo CPU, RAM, HDD, SSD, Placa base, PSU, Dispositivos de E/S, Periféricos, GPU, Chasis, Enfriadores, Ratón, Teclado, Pantalla, Unidades externas, Tarjetas PCI, Escáneres, Impresoras, Controladores de consola, Joysticks, Tablets, Micrófonos, Auriculares, Mezclador de audio, Controladores, Uniformes de juego, Bolígrafos, Lápices, Sillas, Escritorios, Alfombrillas antideslizantes, Altavoces y subwoofers. Encuentra todo lo que necesitas para tu computadora y configuración de juegos." />';
 
-
+// Descripciones y Palabras Clave.
+if (isset($_GET)) :
+    switch (key($_GET)) :
+                case 'cpu':
+                    $palabrasClave = '<meta name="keywords" content="CPU, Procesador, Unidad Central de Procesamiento, Intel, AMD">';
+                    $descripción = '<meta name="description" content="Explora nuestra selección de CPUs, incluyendo procesadores Intel y AMD para mejorar el rendimiento de tu computadora.">';
+                    break;
+                case 'cooling':
+                    $palabrasClave = '<meta name="keywords" content="Enfriamiento, Ventiladores, Disipadores de calor, Pasta térmica, Soluciones de enfriamiento">';
+                    $descripción = '<meta name="description" content="Explora diversas soluciones de enfriamiento, incluyendo ventiladores, disipadores de calor y pasta térmica para mantener tus componentes de computadora funcionando frescos y de manera eficiente.">';
+                    break;
+                case 'chassis':
+                    $palabrasClave = '<meta name="keywords" content="Chasis, Caja de computadora, Caja torre, Torre media, Torre completa, Ventiladores para caja">';
+                    $descripción = '<meta name="description" content="Encuentra el chasis perfecto para tu construcción, incluyendo cajas torre, torres medias y torres completas. Elige entre una variedad de diseños y características.">';
+                    break;
+                case 'gpu':
+                    $palabrasClave = '<meta name="keywords" content="GPU, Tarjeta gráfica, Tarjeta de video, NVIDIA, AMD, GPU para juegos">';
+                    $descripción = '<meta name="description" content="Navega por nuestra selección de GPUs y tarjetas gráficas, incluyendo opciones de NVIDIA y AMD. Encuentra la GPU adecuada para juegos, trabajo creativo y más.">';
+                    break;
+                case 'motherboard':
+                    $palabrasClave = '<meta name="keywords" content="Placa base, Tarjeta madre, Placa base de computadora, ATX, Micro ATX, Chipset">';
+                    $descripción = '<meta name="description" content="Encuentra una amplia gama de placas base para tu construcción, incluyendo ATX, Micro ATX y otros factores de forma. Explora diferentes chipsets y características.">';
+                    break;
+                case 'ssd':
+                    $palabrasClave = '<meta name="keywords" content="SSD, Unidad de estado sólido, Almacenamiento SSD, SSD SATA, SSD NVMe">';
+                    $descripción = '<meta name="description" content="Actualiza tu computadora con una unidad de estado sólido (SSD) para un rendimiento más rápido y confiable. Elige entre SSD SATA y SSD NVMe.">';
+                    break;
+                case 'ram':
+                    $palabrasClave = '<meta name="keywords" content="RAM, Memoria de computadora, RAM DDR4, RAM DDR5, Módulos de memoria, Actualización de memoria, RAM de alta velocidad">';
+                    $descripción = '<meta name="description" content="Mejora el rendimiento de tu computadora con módulos de RAM de alta calidad. Explora nuestra gama de RAM DDR4 y DDR5 para un rendimiento mejorado y velocidad. Encuentra la actualización de memoria adecuada para tu sistema.">';
+                    break;
+                case 'mouse':
+                case 'computer_mouse':
+                case 'raton':
+                case 'ratón':
+                    $palabrasClave = '<meta name="keywords" content="Ratón, Mouse, Ratón de computadora, Ratón para juegos, Ratón inalámbrico, Ratón con cable">';
+                    $descripción = '<meta name="description" content="Descubre una variedad de ratones para computadora, incluyendo ratones para juegos, opciones inalámbricas y con cable. Encuentra el ratón perfecto para tus necesidades.">';
+                    break;
+                case 'keyboard':
+                case 'teclado':
+                    $palabrasClave = '<meta name="keywords" content="Teclado, Teclado de computadora, Teclado mecánico, Teclado de membrana, Teclado para juegos">';
+                    $descripción = '<meta name="description" content="Explora nuestra selección de teclados para computadora, incluyendo teclados mecánicos, de membrana y para juegos. Elige el teclado adecuado para tu escritura y necesidades de juego.">';
+                    break;
+                case 'display':
+                case 'pantalla':
+                    $palabrasClave = '<meta name="keywords" content="Pantalla, Monitor, Monitor de computadora, Monitor LCD, Monitor LED, Monitor 4K">';
+                    $descripción = '<meta name="description" content="Encuentra el monitor ideal para tu configuración, incluyendo pantallas LCD, LED y 4K. Explora varios tamaños y resoluciones para adaptarse a tus necesidades.">';
+                    break;
+                case 'external_memory_drives':
+                case 'external_drives':
+                case 'memoria_externa':
+                    $palabrasClave = '<meta name="keywords" content="Unidades externas, Memoria externa, Unidades USB, Unidades externas de disco duro, Unidades externas SSD">';
+                    $descripción = '<meta name="description" content="Navega por nuestras unidades externas para necesidades adicionales de almacenamiento. Elige entre unidades USB, discos duros externos y unidades SSD externas.">';
+                    break;
+                case 'pci_cards':
+                case 'pci':
+                    $palabrasClave = '<meta name="keywords" content="Tarjetas PCI, Tarjetas de expansión, Tarjetas gráficas, Tarjetas de sonido, Tarjetas de red">';
+                    $descripción = '<meta name="description" content="Mejora tu computadora con tarjetas PCI, incluyendo tarjetas gráficas, de sonido y de red. Expande las capacidades de tu sistema con nuestra selección.">';
+                    break;
+                case 'power_supply':
+                case 'psu':
+                    $palabrasClave = '<meta name="keywords" content="PSU, Fuente de poder, Fuente de alimentación de computadora, Potencia, PSU modular, PSU no modular">';
+                    $descripción = '<meta name="description" content="Elige la fuente de alimentación (PSU) adecuada para tu computadora. Ofrecemos fuentes modulares y no modulares con diferentes potencias para adaptarse a tus necesidades.">';
+                    break;
+                case 'scanners':
+                    $palabrasClave = '<meta name="keywords" content="Escáneres, Escáner de documentos, Escáner plano, Escáner alimentador">';
+                    $descripción = '<meta name="description" content="Encuentra el escáner perfecto para tus necesidades, incluyendo escáneres de documentos, escáneres planos y escáneres alimentadores para uso doméstico o de oficina.">';
+                    break;
+                case 'printers':
+                case 'printer':
+                    $palabrasClave = '<meta name="keywords" content="Impresoras, Impresora de computadora, Impresora de inyección de tinta, Impresora láser, Impresora multifuncional">';
+                    $descripción = '<meta name="description" content="Explora nuestra gama de impresoras, incluyendo impresoras de inyección de tinta, láser y multifuncionales. Encuentra la impresora adecuada para tus necesidades en casa o en la oficina.">';
+                    break;
+                case 'controllers':
+                    $palabrasClave = '<meta name="keywords" content="Controladores, Gamepad, Controlador de juegos, Controlador de computadora">';
+                    $descripción = '<meta name="description" content="Descubre varios controladores y gamepads para una experiencia de juego mejorada. Encuentra controladores compatibles con tu sistema y juegos.">';
+                    break;
+                case 'cc':
+                    $palabrasClave = '<meta name="keywords" content="Controladores de consola, Controladores de consola de juegos, Controladores de Xbox, Controladores de PlayStation">';
+                    $descripción = '<meta name="description" content="Navega por nuestra selección de controladores de consola, incluyendo controladores de Xbox y PlayStation. Encuentra el controlador perfecto para tu consola de juegos.">';
+                    break;
+                case 'joystick':
+                case 'joysticks':
+                    $palabrasClave = '<meta name="keywords" content="Joystick, Joystick de computadora, Joystick para juegos, Controlador de vuelo">';
+                    $descripción = '<meta name="description" content="Encuentra joysticks y controladores de vuelo de alta calidad para juegos y simulación. Mejora tu experiencia de juego con control y retroalimentación precisos.">';
+                    break;
+                case 'tablets':
+                    $palabrasClave = '<meta name="keywords" content="Tabletas, Tableta de computadora, Tableta Android, Tableta iOS, Tableta Windows">';
+                    $descripción = '<meta name="description" content="Explora nuestra gama de tabletas, incluyendo Android, iOS y Windows. Encuentra la tableta perfecta para productividad, entretenimiento y más.">';
+                    break;
+                case 'microphones':
+                case 'microphone':
+                    $palabrasClave = '<meta name="keywords" content="Micrófono, Micrófono de computadora, Micrófono USB, Micrófono de condensador, Micrófono dinámico">';
+                    $descripción = '<meta name="description" content="Elige entre una variedad de micrófonos, incluyendo USB, de condensador y dinámicos para grabación de audio clara y comunicación.">';
+                    break;
+                case 'headsets':
+                    $palabrasClave = '<meta name="keywords" content="Auriculares, Auriculares de computadora, Auriculares para juegos, Auriculares inalámbricos, Auriculares con cancelación de ruido">';
+                    $descripción = '<meta name="description" content="Descubre nuestra gama de auriculares, incluyendo opciones para juegos, inalámbricos y con cancelación de ruido. Encuentra auriculares que se adapten a tu estilo y necesidades.">';
+                    break;
+                case 'headphones':
+                    $palabrasClave = '<meta name="keywords" content="Audífonos, Audífonos de computadora, Audífonos de alta fidelidad, Audífonos inalámbricos, Audífonos con cable">';
+                    $descripción = '<meta name="description" content="Explora audífonos de alta fidelidad y opciones inalámbricas para una experiencia de audio superior. Encuentra el par perfecto para tus necesidades de escucha.">';
+                    break;
+                case 'audio_mixers':
+                case 'audiomixer':
+                    $palabrasClave = '<meta name="keywords" content="Mezcladores de audio, Mezclador de sonido, Mezclador de música, Mezclador de audio USB">';
+                    $descripción = '<meta name="description" content="Encuentra mezcladores de audio de alta calidad para tus necesidades de grabación y transmisión. Explora opciones USB y otros mezcladores para una mezcla de sonido profesional.">';
+                    break;
+                case 'gaming_uniforms':
+                case 'uniforms':
+                    $palabrasClave = '<meta name="keywords" content="Uniformes de juego, Ropa de equipo de juego, Uniformes de eSports, Camisetas de juegos">';
+                    $descripción = '<meta name="description" content="Explora uniformes de juego y ropa de equipo para eSports. Encuentra camisetas y uniformes diseñados para los entusiastas de los videojuegos y los jugadores profesionales.">';
+                    break;
+                case 'pens_pencils_tablets':
+                case 'pens_and_pencils_and_stylus':
+                    $palabrasClave = '<meta name="keywords" content="Lápices, Plumas, Tabletas, Stylus, Accesorios de escritura">';
+                    $descripción = '<meta name="description" content="Encuentra lápices, plumas y tabletas para todas tus necesidades de escritura y dibujo. Explora una variedad de stylus y accesorios para mejorar tu experiencia de escritura.">';
+                    break;
+                case 'chairs':
+                    $palabrasClave = '<meta name="keywords" content="Sillas, Sillas de computadora, Sillas ergonómicas, Sillas para juegos, Sillas de oficina">';
+                    $descripción = '<meta name="description" content="Descubre nuestra selección de sillas para computadora, incluyendo sillas ergonómicas, para juegos y de oficina. Encuentra la silla perfecta para tu comodidad y soporte.">';
+                    break;
+                case 'desks':
+                    $palabrasClave = '<meta name="keywords" content="Escritorios, Escritorio de computadora, Escritorio de oficina, Escritorio para juegos, Escritorio ajustable">';
+                    $descripción = '<meta name="description" content="Encuentra el escritorio ideal para tu configuración, incluyendo escritorios para oficina, juegos y ajustables. Elige el diseño que mejor se adapte a tus necesidades y espacio.">';
+                    break;
+                case 'anti_slip_mats':
+                case 'antislipmats':
+                    $palabrasClave = '<meta name="keywords" content="Alfombrillas antideslizantes, Alfombrillas para escritorio, Almohadillas para ratón, Alfombrillas para teclado">';
+                    $descripción = '<meta name="description" content="Explora alfombrillas antideslizantes y para escritorio para mantener tu área de trabajo organizada y prevenir deslizamientos. Encuentra almohadillas para ratón y teclado para mayor comodidad.">';
+                    break;
+                case 'speakers_and_subwoofers':
+                    $palabrasClave = '<meta name="keywords" content="Altavoces, Subwoofers, Altavoces de computadora, Sonido envolvente, Sistema de audio">';
+                    $descripción = '<meta name="description" content="Mejora tu experiencia de audio con altavoces y subwoofers de alta calidad. Explora opciones para altavoces de computadora y sistemas de sonido envolvente.">';
+                    break;
+                default:
+                    $palabrasClave = '<meta name="keywords" content="CPU, RAM, HDD, SSD, Placa base, PSU, Dispositivos de E/S, Periféricos, GPU, Chasis, Enfriadores, Ratón, Teclado, Pantalla, Unidades externas, Tarjetas PCI, Escáneres, Impresoras, Controladores de consola, Joysticks, Tablets, Micrófonos, Auriculares, Mezclador de audio, Controladores, Uniformes de juego, Bolígrafos, Lápices, Sillas, Escritorios, Alfombrillas antideslizantes, Altavoces y subwoofers">';
+                    $descripción = '<meta name="description" content="Explora una amplia gama de componentes y periféricos para computadoras incluyendo CPU, RAM, HDD, SSD, Placa base, PSU, Dispositivos de E/S, Periféricos, GPU, Chasis, Enfriadores, Ratón, Teclado, Pantalla, Unidades externas, Tarjetas PCI, Escáneres, Impresoras, Controladores de consola, Joysticks, Tablets, Micrófonos, Auriculares, Mezclador de audio, Controladores, Uniformes de juego, Bolígrafos, Lápices, Sillas, Escritorios, Alfombrillas antideslizantes, Altavoces y subwoofers. Encuentra todo lo que necesitas para tu computadora y configuración de juegos." />';
+                    break;
+    endswitch;
+endif;
+#---->PAGINA<----
 include ('../../include/_code/pagina.php');
 
 function content(){

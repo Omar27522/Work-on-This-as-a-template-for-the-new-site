@@ -1,5 +1,6 @@
 <?php
 //The URL contains a ? preceding the value. each value corresponds to a title in the site.
+# URL: ?psu    =>   The title will be "PSU".
 
 $hardwareTitles = [
 'cc'   => 'Console Controllers',
