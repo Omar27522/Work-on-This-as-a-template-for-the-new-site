@@ -20,7 +20,7 @@
 <div class="container article">
     <a href="?hw/sw#cpu">
         <h2 id="gpu">
-            <?= empty($titles) ? $titulos[0] : $titles[0] ?>
+            <?= empty($title) ? $titulo[0] : $title[0] ?>
         </h2>
     </a>
     <a href="<?= $links[0] ?>" title="PC magazine">

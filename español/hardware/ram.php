@@ -1,1 +1,3 @@
-RAM en Español
+<?php 
+$titulo=['RAM'];
+?>

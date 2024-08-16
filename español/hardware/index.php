@@ -6,29 +6,30 @@ $hardwareTitulos = [
     'ram'  => 'RAM',
     'ssd'  => 'SSD',
     'psu'  => 'Fuente de Poder',
-    'pci'  => 'TarjetasPCI',
-    'mouse' => 'Ratón',
-    'desk'  => 'Escritorios',
-    'chair'  => 'Sillas',
-    'cooling'=> 'Enfriamiento',
-    'tablet' => 'Tabletas',
+    'gpu'  => 'Tarjeta de Procesamiento Gráfico',
+    'pci'  => 'Tarjetas PCI',
+    'ratón' => 'Ratón',
+    'escritorio'  => 'Escritorios',
+    'silla'  => 'Sillas',
+    'enfriamiento'=> 'Enfriamiento',
+    'tableta' => 'Tabletas',
     'micro'  => 'Micrófonos',
-    'monitor' => 'Pantallas',
+    'pantalla' => 'Pantallas',
     'headset' => 'Auriculares totales',
-    'printer' => 'Impresoras',
-    'scanner' => 'Scaners',
-    'chassis'  => 'Carcasa del PC',
-    'keyboard'  => 'Teclado',
+    'impresora' => 'Impresoras',
+    'escáner' => 'Escáner',
+    'chasis'  => 'Carcasa del PC',
+    'teclado'  => 'Teclado',
     'joystick'  => 'Joysticks',
-    'headphone' => 'Auriculares',
-    'p_memory'  => 'Memoria Portable',
-    'controller' => 'Controladores',
-    'audiomixer' => 'Mezclador de Audio',
+    'auriculares' => 'Auriculares',
+    'memoria_portable'  => 'Memoria Portable',
+    'controlador' => 'Controladores',
+    'mezclador_de_audio' => 'Mezclador de Audio',
     'motherboard' => 'Motherboard',
-    'pencil' => 'Plumas, Lapices, Tabletas',
-    'antislipmats' => 'Alfombrillas Antideslizantes',
-    'speakers_and_subwoofers' => 'Bocinas y Subwoofers',
-    'team_uniformity_authority' => 'Uniformes'
+    'lápiz' => 'Plumas, Lapices, Tabletas',
+    'almohadillas_anti-deslizantes' => 'Alfombrillas Antideslizantes',
+    'bocinas_y_subwoofers' => 'Bocinas y Subwoofers',
+    'uniformes' => 'Uniformes'
     ];
 
     $titulo = 'Hardware'; // Default title
@@ -44,12 +45,12 @@ $hardwareTitulos = [
 
 
 $directoryPath = '../../';
-$lang = 'es';
 $hardware ='active';
 
 include ('../../include/_code/pagina.php');
 
 function content(){
+    $hw = 'es';
 	$include_path = '../../include/_works/_hardware/';
 	$include_path_vars = '../../español/hardware/';
 	$include_pathV = $include_path_vars;
@@ -87,19 +88,24 @@ if (isset($_GET)) :
             break;
         case 'mouse':
         case 'computer_mouse':
+        case 'raton':
+        case 'ratón':
             include ($include_pathV. 'raton.php');
             include ($include_path . 'mouse.php');
             break;
         case 'keyboard':
+        case 'teclado':
             include ($include_pathV. 'teclado.php');
             include ($include_path . 'keyboard.php');
             break;
         case 'display':
+        case 'pantalla':
             include ($include_pathV. 'pantalla.php');
             include ($include_path . 'display.php');
             break;
         case 'external_memory_drives':
         case 'external_drives':
+        case 'memoria_externa':
             include ($include_pathV. 'memoria_externa.php');
             include ($include_path . 'external_memory_drives.php');
             break;
@@ -205,7 +211,7 @@ if (isset($_GET)) :
 	'I/O' => "Permiten que los datos se ingresen en la computadora (como un teclado y un ratón) y se saquen de la computadora (como una pantalla y altavoces).&nbsp;",
 	'Peripherals' => "Hardware adicional conectado a una computadora, como impresoras, escáneres y discos duros externos.&nbsp;"];
 
-	$peripherals = [
+	$perifericos = [
 	"Ratón",
 	"Teclado",
 	"Pantalla",

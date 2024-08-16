@@ -32,7 +32,7 @@
     <section class="container">
         <!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ **`ღ´** -->
         <h2 id="ram"><a href="?hw/sw#cpu" title="Random Access Memory ">
-            <?= $titles[0]; ?>
+        <?= empty($title[0]) ? $titulo[0] : $title[0];?>
         <img src="https://latinospc.com/images/fz/hw-ram.jpg" alt="" class="fl" height="60" width="60" /></a></h2>
         <h3>The most common RAM sizes for consumer PCs are <b>8GB</b> and <b>16GB</b>. These are sizes that typically
             are found in new

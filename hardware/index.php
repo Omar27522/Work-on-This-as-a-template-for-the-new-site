@@ -1,36 +1,11 @@
 <?php
-/*if (isset($_GET['cpu'])) :
-    $title="CPU";
-elseif (isset($_GET['ram'])) :
-    $title="RAM";
-elseif (isset($_GET['ssd'])) :
-    $title="SSD";
-elseif (isset($_GET['psu'])) :
-    $title="PSU";
-elseif (isset($_GET['motherboard'])) :
-    $title="Motherboard";
-elseif (isset($_GET['gpu'])) :
-    $title="Graphics Card";
-elseif (isset($_GET['chassis'])) :
-    $title="Computer case";
-elseif (isset($_GET['cooling'])) :
-    $title="Cooling";
-elseif (isset($_GET['mouse'])) :
-    $title="Mouse";
-elseif (isset($_GET['keyboard'])) :
-    $title="Kayboard";
-elseif (isset($_GET['display'])) :
-    $title="Display";
-
-else:
-$title="Hardware";
-endif;*/
 $hardwareTitles = [
 'cc'   => 'Console Controllers',
 'cpu'  => 'CPU',
 'ram'  => 'RAM',
 'ssd'  => 'SSD',
 'psu'  => 'PSU',
+'gpu'  => 'Graphics Cards',
 'pci'  => 'PCI Cards',
 'mouse' => 'Mouse',
 'desk'  => 'Desks',
@@ -66,13 +41,13 @@ foreach ($hardwareTitles as $key => $value) {
 }
 
 $directoryPath = '../';
-$lang = 'en';
+
 $hardware ='active';
 
 include ('../include/_code/page.php');
 
 function content(){
-
+    $hw = 'en';
     $include_path   = '../include/_works/_hardware/';
     $hardware_path  = '../hardware/';
 
@@ -173,6 +148,7 @@ if (isset($_GET)) :
             include ($include_path . 'headsets.php');
             break;
         case 'headphones':
+        case 'headphone':
             include ($hardware_path . 'headphones.php');
             include ($include_path . 'headphones.php');
             break;
