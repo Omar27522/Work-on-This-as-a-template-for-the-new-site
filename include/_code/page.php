@@ -14,7 +14,7 @@
 
 <body>
     <div class="main">
-<div class="header">
+<header class="header">
         <div class="header_resize">
           <div class="logo">
             <h1><a href="../"><span>LAtinos</span>PC.com<small>"PC" is for Personal Computer
@@ -22,7 +22,7 @@
           </div>
           <div class="clr"></div>
         </div>
-</div>
+</header>
 
 <!-- Dropdown Menu https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp -->
 

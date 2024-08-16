@@ -8,6 +8,8 @@
     <link href="<?= $directoryPath ?>include/_code/nav.css" rel="stylesheet" type="text/css" />
     <script defer src="<?= $directoryPath ?>include/_code/script.js" ></script>
 	<link rel="icon" href="<?= $directoryPath ?>annotation_2019_12_08_033413_AUw_2.ico">
+  <?php if(!empty($palabrasClave) && !empty($descripción)){  echo $palabrasClave.$descripción;  } ?>
+  <meta name="author" content="LAtinosPC">
 </head><!--^^ Head de el documento ^^-->
 
 <body><main class="main">

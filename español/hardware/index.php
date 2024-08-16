@@ -46,6 +46,9 @@ $hardwareTitulos = [
 
 $directoryPath = '../../';
 $hardware ='active';
+$palabrasClave = '<meta name="keywords" content="CPU, RAM, HDD, SSD, Placa base, PSU, Dispositivos de E/S, Periféricos, GPU, Chasis, Enfriadores, Ratón, Teclado, Pantalla, Unidades externas, Tarjetas PCI, Escáneres, Impresoras, Controladores de consola, Joysticks, Tablets, Micrófonos, Auriculares, Mezclador de audio, Controladores, Uniformes de juego, Bolígrafos, Lápices, Sillas, Escritorios, Alfombrillas antideslizantes, Altavoces y subwoofers">';
+$descripción = '<meta name="description" content="Explora una amplia gama de componentes y periféricos para computadoras incluyendo CPU, RAM, HDD, SSD, Placa base, PSU, Dispositivos de E/S, Periféricos, GPU, Chasis, Enfriadores, Ratón, Teclado, Pantalla, Unidades externas, Tarjetas PCI, Escáneres, Impresoras, Controladores de consola, Joysticks, Tablets, Micrófonos, Auriculares, Mezclador de audio, Controladores, Uniformes de juego, Bolígrafos, Lápices, Sillas, Escritorios, Alfombrillas antideslizantes, Altavoces y subwoofers. Encuentra todo lo que necesitas para tu computadora y configuración de juegos." />';
+
 
 include ('../../include/_code/pagina.php');
 
