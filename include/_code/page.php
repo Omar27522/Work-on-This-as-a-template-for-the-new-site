@@ -32,7 +32,7 @@
         <div class="hbg_resize">
         <nav class="menu_nav navbar">
             <ul> <?php   if  (!empty($about) || !empty($hardware) || !empty($software) || !empty($contact) || !empty($reviews)){
-            include('../include/_code/jesuschrist.php');
+            include($directoryPath.'include/_code/jesuschrist.php');
             }
             else if (!empty($home)){
             include('./include/_code/jesuschrist.php');
@@ -41,7 +41,7 @@
             ?>
 
               <li class="<?= empty($home) ? ($home = 'current') : ($home = 'active'); ?>">
-                <a href="../">Home</a></li>
+                <a href="<?=$directoryPath ?>">Home</a></li>
 
               <li class="<?= empty($es) ? ($es = 'current') : ($es = 'active');?>">
                 <a href="<?= $directoryPath ?>español/">En Español</a></li>

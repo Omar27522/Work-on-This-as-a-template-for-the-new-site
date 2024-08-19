@@ -9,16 +9,13 @@
         <div>
             <h2 style="text-align: center;" id="cpu">
                 <?= empty($contentSubTitles[0]) ? $subTitulosContenido[0] : $contentSubTitles[0];?>
-            </h2><a href="https://latinospc.com/images/hardware/hw/mobo.jpg" title="Motherboard">
+            </h2><br /><a href="https://latinospc.com/images/hardware/hw/mobo.jpg" title="Motherboard">
                 <img src="https://latinospc.com/images/hardware/hw/mobo.webp" alt="image" /></a>
-            <a rel="example_group" href="https://latinospc.com/images/hardware/hw/lightbox/cpu.jpg" title="CPU"></a>
-            <a rel="example_group" href="https://latinospc.com/images/hardware/hw/lightbox/ram.jpg" title="RAM"></a>
-            <a rel="example_group" href="https://latinospc.com/images/hardware/hw/lightbox/ssd.jpg"
-                title="Computer Storage"></a>
-            <a rel="example_group" href="https://latinospc.com/images/hardware/hw/lightbox/ssd2.jpg"
-                title="Computer Storage SSD M.2"></a>
-            <a rel="example_group" href="https://latinospc.com/images/hardware/hw/lightbox/case.jpg"
-                title="Computer Case (Chassis)"></a>
+<!-- Make this image randomize with all the images from here, I really would like to build a fulls creen gallery page maybe, where the image has a right and a left button.
+	under the main image there is a carrousel of more images. Then the Gallery section will be right under This gallery section.
+
+
+-->
             <!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ **`ღ´** Computer Parts-->
         </div>
 
@@ -224,9 +221,9 @@
             <h2 id="peripherals" class="spacer_shape underConstruction card2">
                 <?= empty($peripherals[24]) ? $perifericos[24] : $peripherals[24];?>
             </h2>
-        </a><img src="https://latinospc.com/images/esp/under.webp" height="150px">
+        </a>
         <!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ღ´** Personal Computers -->
-        <p>
+        
             <style>
             .newspaper2 li {
                 font-size: x-large;
@@ -503,7 +500,7 @@
                 <!-- Photo by Rosen Genov from Pexels: https://www.pexels.com/photo/a-presonus-speaker-system-4295360/ --></a>
             </section>
         </ul>
-        </p>
+        
     </section>
-</article><!-- Personal Computers(-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ ღ´** -->
+</article><br /><!-- Personal Computers(-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ ღ´** -->
 <!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻ღ´** -->
