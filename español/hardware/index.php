@@ -1,6 +1,7 @@
 <?php //La URL contiene un ? precediendo el valor. Cada valor corresponde a un título en el sitio.
 // URL: ?psu    =>   El título será "Fuente de Poder".
 
+#Titulos del Hardware
 $hardwareTitulos = [
     'cc'   => 'Console Controllers',
     'cpu'  => 'CPU',
@@ -16,6 +17,7 @@ $hardwareTitulos = [
     'tableta' => 'Tabletas',
     'micro'  => 'Micrófonos',
     'pantalla' => 'Pantallas',
+    'audífonos' => 'Audífonos',
     'headset' => 'Auriculares totales',
     'impresora' => 'Impresoras',
     'escáner' => 'Escáner',
@@ -29,9 +31,9 @@ $hardwareTitulos = [
     'motherboard' => 'Motherboard',
     'lápiz' => 'Plumas, Lapices, Tabletas',
     'almohadillas_anti-deslizantes' => 'Alfombrillas Antideslizantes',
-    'bocinas_y_subwoofers' => 'Bocinas y Subwoofers',
+    'bocinas_y_Subwoofers' => 'Bocinas y Subwoofers',
     'uniformes' => 'Uniformes'
-    ];
+];
 
     $titulo = 'Hardware'; // Default title
     foreach ($hardwareTitulos as $llave => $valor) {
@@ -109,6 +111,7 @@ if (isset($_GET)) :
                     $descripción = '<meta name="description" content="Elige la fuente de alimentación (PSU) adecuada para tu computadora. Ofrecemos fuentes modulares y no modulares con diferentes potencias para adaptarse a tus necesidades.">';
                     break;
                 case 'scanners':
+                case 'escáner':
                     $palabrasClave = '<meta name="keywords" content="Escáneres, Escáner de documentos, Escáner plano, Escáner alimentador">';
                     $descripción = '<meta name="description" content="Encuentra el escáner perfecto para tus necesidades, incluyendo escáneres de documentos, escáneres planos y escáneres alimentadores para uso doméstico o de oficina.">';
                     break;
@@ -143,7 +146,7 @@ if (isset($_GET)) :
                     $palabrasClave = '<meta name="keywords" content="Auriculares, Auriculares de computadora, Auriculares para juegos, Auriculares inalámbricos, Auriculares con cancelación de ruido">';
                     $descripción = '<meta name="description" content="Descubre nuestra gama de auriculares, incluyendo opciones para juegos, inalámbricos y con cancelación de ruido. Encuentra auriculares que se adapten a tu estilo y necesidades.">';
                     break;
-                case 'headphones':
+                case 'audífonos':
                     $palabrasClave = '<meta name="keywords" content="Audífonos, Audífonos de computadora, Audífonos de alta fidelidad, Audífonos inalámbricos, Audífonos con cable">';
                     $descripción = '<meta name="description" content="Explora audífonos de alta fidelidad y opciones inalámbricas para una experiencia de audio superior. Encuentra el par perfecto para tus necesidades de escucha.">';
                     break;
@@ -194,22 +197,26 @@ function content(){
 	$include_path_vars = '../../español/hardware/';
 	$include_pathV = $include_path_vars;
 
-
+ //Paginas del Hardware individuales
 if (isset($_GET)) :
     switch (key($_GET)) :
         case 'cpu':
+        case 'Procesador':
 			include ($include_pathV. 'cpu.php');
             include ($include_path . 'cpu.php');
             break;
         case 'cooling':
+        case 'enfriamiento':
             include ($include_pathV. 'enfriamiento.php');
             include ($include_path . 'cooling.php');
             break;
         case 'chassis':
+        case 'carcasa':
             include ($include_pathV. 'chasis.php');
             include ($include_path . 'chassis.php');
             break;
         case 'gpu':
+        case 'tarjeta_grafica':
             include ($include_pathV. 'gpu.php');
             include ($include_path . 'gpu.php');
             break;
@@ -248,30 +255,33 @@ if (isset($_GET)) :
             include ($include_pathV. 'memoria_externa.php');
             include ($include_path . 'external_memory_drives.php');
             break;
-        case 'pci_cards':
+        case 'tarjeta_pci':
         case 'pci':
             include ($include_pathV. 'tarjeta_pci.php');
             include ($include_path . 'pci_cards.php');
             break;
-        case 'power_supply':
+        case 'fuente_de_poder':
         case 'psu':
             include ($include_pathV. 'fuente_de_poder.php');
-            include ($include_path . 'power_supply.php');
+            include ($include_path . 'psu.php');
             break;
+        case 'escáner':
         case 'scanners':
             include ($include_pathV. 'scaners.php');
             include ($include_path . 'scanners.php');
             break;
-        case 'printers':
+        case 'impresora':
         case 'printer':
             include ($include_pathV. 'impresoras.php');
             include ($include_path . 'printers.php');
             break;
         case 'controllers':
+        case 'controladores':
             include ($include_pathV. 'controladores.php');
             include ($include_path . 'controllers.php');
             break;
         case 'cc':
+        case 'mando_de_consola':
             include ($include_pathV. 'mando_de_consola.php');
             include ($include_path . 'console_controllers.php');
             break;
@@ -280,11 +290,11 @@ if (isset($_GET)) :
             include ($include_pathV. 'joystick.php');
             include ($include_path . 'joystick.php');
             break;
-        case 'tablets':
+        case 'tabletas':
             include ($include_pathV. 'tabletas.php');
             include ($include_path . 'tablets.php');
             break;
-        case 'microphones':
+        case 'microfonos':
         case 'microphone':
             include ($include_pathV. 'microfonos.php');
             include ($include_path . 'microphones.php');
@@ -294,38 +304,43 @@ if (isset($_GET)) :
             include ($include_path . 'headsets.php');
             break;
         case 'headphones':
+        case 'audífonos':
             include ($include_pathV. 'audifonos.php');
             include ($include_path . 'headphones.php');
             break;
         case 'audio_mixers':
         case 'audiomixer':
+        case 'mezcladora_de_audio':
             include ($include_pathV. 'audio_mezcladora.php');
             include ($include_path . 'audio_mixers.php');
             break;
-        case 'gaming_uniforms':
+        case 'uniformes_gaming':
         case 'uniforms':
             include ($include_pathV. 'uniformes_gaming.php');
             include ($include_path . 'gaming_uniforms.php');
             break;
-        case 'pens_pencils_tablets':
+        case 'lapices_plumas_tabletas':
         case 'pens_and_pencils_and_stylus':
             include ($include_pathV. 'lapices_plumas_tabletas.php');
             include ($include_path . 'pens_pencils_tablets.php');
             break;
         case 'chairs':
+        case 'sillas':
             include ($include_pathV. 'sillas.php');
             include ($include_path . 'chairs.php');
             break;
         case 'desks':
+        case 'escritorios':
             include ($include_pathV. 'escritorios.php');
             include ($include_path . 'desks.php');
             break;
         case 'anti_slip_mats':
-        case 'antislipmats':
+        case 'alfombrilla_antideslizante':
             include ($include_pathV. 'alfombrilla_antideslizante.php');
             include ($include_path . 'anti_slip_mats.php');
             break;
         case 'speakers_and_subwoofers':
+        case 'bocinas_y_Subwoofers':
             include ($include_pathV. 'bocinas_y_subwoofers.php');
             include ($include_path . 'speakers_and_subwoofers.php');
             break;

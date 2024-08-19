@@ -9,6 +9,17 @@ $description = '<meta name="description" content="Discover essential software an
 include ('../include/_code/page.php');
 
 function content(){
- include_once('../include/_works/frontPage.php');
+    $sw = 'en';
+    $include_path   = '../include/_works/_hardware/';
+    $software_path  = '../hardware/';
+
+ if (isset($_GET)) :
+    switch (key($_GET)) :
+ default:
+        include ('../include/_works/_software/index.php');
+        include ('../include/_works/software.php');
+            break;
+    endswitch;
+endif;
 }
 ?>

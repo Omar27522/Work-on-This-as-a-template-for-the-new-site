@@ -135,3 +135,156 @@ font-size: 18px;
 .footer p {
     font-size: 14px;
 }
+
+.sub_title {
+    font-size: xx-large;
+    line-height: .9;
+    font-weight: 400;
+}
+.sub_sub_title {
+    font-size: x-large;
+    line-height: .9;
+    font-weight: 650;
+}
+.sub_sub_sub_title{
+  font-size: large;
+    line-height: .9;
+    font-weight: 400;
+}
+.half_size {
+  break-inside: avoid;
+    width: 80%;
+}
+.mainbar p, fieldset,  dd, .blurb li {
+  font-weight: 400;
+  font-size: 18px;
+  break-inside: avoid;
+}
+button {  background-color: whitesmoke;padding: 1px;
+  transition: background-color 0.2s ease-in-out; border-color: whitesmoke;}
+button:hover { transition: background-color 10.4s ease-in-out;
+    background-color: wheat;}
+
+  .button_common_types {
+  translate: 568px 43px;
+}
+.blurb {
+    font-size: 14px;
+    margin-bottom: 10px; /* Add spacing between blurbs */
+    padding: 20px;
+    border-radius: 5px; /* Gentle rounded corners */
+    background-color: transparent; /* Light gray background */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    background-image: linear-gradient(to right, rgba(43, 94, 157, 0.167), rgba(43, 134, 157, 0.189));
+  }
+  .blurb:hover,.blurb:focus{ /* Add hover effect on hover */
+    background-color: #eee;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    background-image: linear-gradient(to right, #e0e0e0, #d3d3d3);
+  }
+  .selection{
+    padding: 10px;
+  }
+  .selection:hover, .selection:focus { /* Add hover effect on hover */
+    background-color: #badbfe;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    background-image: linear-gradient(to right, #caf0db, #a5b5d0);
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .selection_2:hover, .selection_2:focus { /* Add hover effect on hover */
+    background-color: transparent;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    background-image: linear-gradient(to right, #caf0db, #a5b5d0);
+    cursor: grab;
+  }
+/*(-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|--\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ **`ღ´***/
+legend {
+  background-image: linear-gradient(to right, rgba(43, 94, 157, 0.206), rgba(43, 134, 157, 0.269));
+  border-radius: 30% 70% 15% 85% / 62% 10% 90% 38% ;
+}
+span {
+  display: inline;
+}
+dd{
+  margin-left: 15px;
+}
+.selection strong {
+font-size: larger;
+font-weight: 680;
+}
+.blurb summary, .blurb details {
+  display: inline-block;
+}
+ul {
+  list-style: square;
+  list-style-position: inside;
+}
+.img_in-colms2{
+  padding: 15px;
+}
+summary{
+  background: transparent;
+}
+
+/*SPACER DOUBLE LINES*/
+.spacer_double_lines{
+  translate: 0px -30px;
+  background-color: seagreen;
+  transition: background-color 1s ease-in-out;
+}
+.spacer_double_lines {
+  position: relative;
+  overflow: hidden;
+}
+
+.spacer_double_lines::before,
+.spacer_double_lines::after {
+  content: '';
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.spacer_double_lines::before {
+  width: 40px;
+  height: 40px;
+  left: -20px;
+  top: -20px;
+}
+
+.spacer_double_lines::after {
+  width: 25px;
+  height: 25px;
+  right: -12px;
+  bottom: -12px;
+}
+
+.spacer_double_lines:hover {
+  background-color: transparent;
+}
+
+.spacer_double_lines:hover::before,
+.spacer_double_lines:hover::after {
+  opacity: 1;
+  animation: appearAndFloat 2s ease-out forwards;
+}
+
+@keyframes appearAndFloat {
+  0% {
+    transform: scale(0) translateY(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1) translateY(-10px);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1) translateY(-20px);
+    opacity: 0;
+  }
+}
+/*^^^ SPACER DOUBLE LINES^^^ *
+
