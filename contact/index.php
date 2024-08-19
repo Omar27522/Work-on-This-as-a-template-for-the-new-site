@@ -9,6 +9,6 @@ $description = '<meta name="description" content="Get in touch with us at Your L
 include ('../include/_code/page.php');
 
 function content(){
- include_once('../include/_works/frontPage.php');
+    include_once('../include/_code/form.php');
 }
 ?>
