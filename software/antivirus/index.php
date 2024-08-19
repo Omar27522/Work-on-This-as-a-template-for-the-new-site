@@ -20,7 +20,8 @@ Also, the best antivirus solutions are simple, cost less than imagined, and brin
 
 //This works because inside -software- the key is full with AV, and AV site works because the key is empty.
 if (empty(key($_GET))) {
-function content(){
+//THIS IS THE FUNCTION THAT BUILDS THE CONTENT
+    function content(){
 
 if (empty(key($_GET))) {  ?>
 <article class="hero4">
