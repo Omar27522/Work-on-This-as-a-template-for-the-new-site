@@ -21,7 +21,7 @@
 * Welcome! This repository documents the ongoing build process of the website.
     We're aiming to improve the user experience, optimize performance, and update the design to create a smoother, faster, and more visually appealing website.
 
-Current Stage: Where will backups go?
+Current Stage: Finish the architectural foundation of the website. Next time I will work off a design.
 
 Project Overview
 
@@ -42,7 +42,7 @@ Design Updates (The Anti-Virus page under software is the only item that works c
 This section could explain your approach to improving the website's look and feel.
 
 Next Steps
-Structure backups, and all the pages inside menu Jesus Christ.
+populate data to backups, and all the pages inside menu Jesus Christ.
 Build a gallery like the test environment, maybe we can randomize the thumbnail images, and paste them on a side bar.
 The gallery page will also an introduction to the gallery in a main bar.
 Then when a user clicks on an image the image link take the user to the location of the image in relation to its position inside the gallery.

@@ -1,18 +1,20 @@
 <?php
-$title="LAtinosPC.com Welcome";
+//backups are called with ?backups, we display this.
+if (isset($_GET['backups'])) :
+    $title="Backups";
+    $keywords = '<meta name="keywords" content="data backup, file recovery, cloud storage, local backups, secure backups, computer backup, LatinosPC, backup solutions, personal data protection, business data protection, automated backups" />';
+    $description = '<meta name="description" content="LatinosPC.com offers reliable data backup services to ensure the safety of your personal or business files. We provide both local and cloud backup solutions, tailored to your specific needs. Keep your data secure with our professional backup services.">';
+else: //home page with no ?backups will display this
+    $title="LAtinosPC.com Welcome";
+    $keywords ='<meta name="keywords" content="Computer repair, virus removal, data backup, computer classes, in-person classes, online classes, IT support, gamers, small business IT, student IT support" />';
+    $description = '<meta name="description" content="LatinosPC.com is your one-stop shop for all your computer repair needs. We offer a variety of services including computer repair, virus removal, data backup, and in-person and online computer classes. We work with individuals, students, small businesses, and gamers.">';
+endif;
+
 $directoryPath = './';
 $home ='active';
-$keywords ='<meta name="keywords" content="Computer repair, virus removal, data backup, computer classes, in-person classes, online classes, IT support, gamers, small business IT, student IT support" />';
-$description = '<meta name="description" content="LatinosPC.com is your one-stop shop for all your computer repair needs. We offer a variety of services including computer repair, virus removal, data backup, and in-person and online computer classes. We work with individuals, students, small businesses, and gamers.">';
-
 include ('./include/_code/page.php');
-
-
-
-
-
 function content(){
-    if (!empty(key($_GET))) {
+    if (isset($_GET['backups'])) {
 
         include_once('./include/_works/backups.php');
     }

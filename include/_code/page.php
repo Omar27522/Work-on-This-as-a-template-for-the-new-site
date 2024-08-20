@@ -112,7 +112,7 @@
   <a href="<?= $directoryPath ?>software" class="link"><span class="link">Software</span></a>
   <a href="<?= $directoryPath ?>contact" class="link"><span class="link">Contact Us</span></a>
   <a href="<?= $directoryPath ?>reviews" class="link"><span class="link">Testimonials</span></a>
-  <a href="<?= $directoryPath ?>?backups" class="link"><span class="link">Backups</span></a>
+  <a href="<?= $directoryPath ?>?backups#article" class="link"><span class="link">Backups</span></a>
   <a href="<?= $directoryPath ?>software/programs" class="link"><span class="link">Programs</span></a>
   <a href="<?= $directoryPath ?>hardware/#article" class="link"><span class="link">HW Anatomy</span></a>
   <a href="<?= $directoryPath ?>hardware/notebooks" class="link"><span class="link">Notebooks</span></a>
