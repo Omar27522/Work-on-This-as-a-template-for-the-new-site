@@ -119,12 +119,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     padding-top: 5px;
 }
 </style>
-    <div class="jumbotron">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <p>Let us know how we are doing! Or leave us a review, we will be sure to post it.</p>
-        </div>
-    </div>
+    <div tabindex="0" class="jumbotron selection hero4"style=" margin-bottom: 0px;">
+        <div class="container blurb">
+            <h2 style="font-size: xxx-large;">Contact Us</h2>
+            <p style="font-size: xx-large;">Let us know how we are doing!<br />Or leave us a review, we will be sure to post it.</p>
+    </div><br />
     <?php if(!empty($emailSent)): //The CSS interfered with the footer of the site, so I had to remove it, will build a better solution?>
         <div class="container">
             <div class="alert alert-success text-center"><?php echo $config->get('messages.success'); ?></div>
@@ -136,7 +135,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </div><br />
         <?php endif; ?>
 
-    <section class="fullbar hero4 container">
+<section class="jumbotron blurb">
+    <div class="container selection">
+        <div tabindex="0" class="container card2 selection_2">
+
+        <h2>LAtinosPC.com</h2><br />
+                <h2>Tel. (909)206-2784</h2><br />
+                    <h2>E-mail:LAtinosPC@gmail.com</h2>
+
+        </div>
+    </div>
+</section>
+    <section class="fullbar container hero4" style="padding-top: 25px;">
         <form action="<?php echo $_SERVER['REQUEST_URI']; ?>" enctype="application/x-www-form-urlencoded" id="contact-form" class="form-horizontal" method="post">
             <div class="form-group">
                 <label for="form-name" class="col-lg-2 control-label"><?php echo $config->get('fields.name'); ?></label>
@@ -174,9 +184,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 </div>
             </div>
         </form>
-    </section><br />
+    </section>
     <?php endif; ?>
-
     <script type="text/javascript" src="public/js/contact-form.js"></script>
     <script type="text/javascript">
         new ContactForm('#contact-form');
