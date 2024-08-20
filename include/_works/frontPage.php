@@ -1,6 +1,6 @@
 <article class="mainbar"><!-- Main Bar-->
 <section class="article"> <!--Computer Solutions -->
-                <h2><span>Computer Solutions</span></h2>
+                <h2><span>PLACE HOLDER FOR REVIEWS PAGE</span></h2>
                 <div class="clr"></div>
                 <img src="../include/_images/help.jpg" alt="" class="fl" height="146" width="263" />
                 <p>On site PC repair, we will help your computer run smoother,

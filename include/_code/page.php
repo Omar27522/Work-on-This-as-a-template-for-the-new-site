@@ -112,17 +112,17 @@
   <a href="<?= $directoryPath ?>software" class="link"><span class="link">Software</span></a>
   <a href="<?= $directoryPath ?>contact" class="link"><span class="link">Contact Us</span></a>
   <a href="<?= $directoryPath ?>reviews" class="link"><span class="link">Testimonials</span></a>
-  <a href="<?= $directoryPath ?>backups" class="link"><span class="link"><b>Backups</b></span></a>
+  <a href="<?= $directoryPath ?>?backups" class="link"><span class="link">Backups</span></a>
   <a href="<?= $directoryPath ?>software/programs" class="link"><span class="link">Programs</span></a>
-  <a href="<?= $directoryPath ?>hardware/anatomy" class="link"><span class="link">HW Anatomy</span></a>
+  <a href="<?= $directoryPath ?>hardware/#article" class="link"><span class="link">HW Anatomy</span></a>
   <a href="<?= $directoryPath ?>hardware/notebooks" class="link"><span class="link">Notebooks</span></a>
   <a href="<?= $directoryPath ?>hardware/cables" class="link"><span class="link">Cables</span></a>
   <a href="<?= $directoryPath ?>software/websites" class="link"><span class="link">Websites</span></a>
   <a href="<?= $directoryPath ?>software/passwords" class="link"><span class="link">Passwords</span></a>
-  <a href="<?= $directoryPath ?>tutorials" class="link"><span class="link">Tutorials</span></a>
-  <a href="<?= $directoryPath ?>images" class="link"><span class="link">Images</span></a>
-  <a href="<?= $directoryPath ?>artwork" class="link"><span class="link">Artwork</span></a>
-  <a href="<?= $directoryPath ?>writing" class="link"><span class="link">Writing</span></a>
+  <a href="<?= $directoryPath ?>about/tutorials/" class="link"><span class="link">Tutorials</span></a>
+  <a href="<?= $directoryPath ?>about/images" class="link"><span class="link">Images</span></a>
+  <a href="<?= $directoryPath ?>about/artwork" class="link"><span class="link">Artwork</span></a>
+  <a href="<?= $directoryPath ?>about/writing" class="link"><span class="link">Writing</span></a>
 </nav>
 
 </footer>

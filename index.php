@@ -7,7 +7,16 @@ $description = '<meta name="description" content="LatinosPC.com is your one-stop
 
 include ('./include/_code/page.php');
 
+
+
+
+
 function content(){
+    if (!empty(key($_GET))) {
+
+        include_once('./include/_works/backups.php');
+    }
+    else{
  $title = "<h2>Your Trusted IT Solution Partner</h2>";
  $reliable ="Reliable, fast, and professional computer repair and IT services.";
  $services ='<h2>Our Services</h2>
@@ -38,5 +47,7 @@ function content(){
             <p>We work with individuals, students, small-to-medium businesses, gamers, and professionals.</p>";
     include_once('./include/_works/start.php');
 
+    }
 }
+
 ?>

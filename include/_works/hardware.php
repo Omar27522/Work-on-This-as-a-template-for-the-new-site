@@ -1,5 +1,5 @@
 <article class="fullbar">
-    <section class="hero3 article">
+    <section class="hero3 article" id="article">
         <div class="container">
             <?= empty($title) ? $titulo : $title;?>
             <?= empty($description) ? $descripcion : $description;?>
