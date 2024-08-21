@@ -67,7 +67,10 @@ h2 {
                     button('#refactorization');
                 ?><br />
                 <h2>SYSTEM</h2>
-                <div class="colms2"><div><?php//This h3 need this style to align with the other that does not have it.?>
+                <div class="colms2"><div>
+
+<!-- This h3 need this style to align with the other that does not have it.-->
+
                 <h3  style="margin-top: 0;">DIRECTORY DISTRIBUTION</h3>
                 <p tabindex="0" class="selection_2">The site allows the user to navigate to each directory in a seemingly predictable way. There are as
                     many directories as new site locations. At the moment there are 7 directories in the root of the
