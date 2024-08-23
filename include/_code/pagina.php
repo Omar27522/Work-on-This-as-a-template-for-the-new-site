@@ -126,24 +126,24 @@
       </div>
       <footer class="links">
   <nav class="footer-links">
-    <a href="<?= $directoryPath ?>" class="link">Ingles</a>
-    <a href="<?= $directoryPath ?>español/" class="link">Español</a>
-    <a href="<?= $directoryPath ?>español/acerca" class="link">Acerca</a>
-    <a href="<?= $directoryPath ?>español/hardware" class="link">Hardware</a>
-    <a href="<?= $directoryPath ?>español/software" class="link">Software</a>
-    <a href="<?= $directoryPath ?>español/contacto" class="link">Contacto</a>
-    <a href="<?= $directoryPath ?>español/reviews" class="link">Testimonios</a>
-    <a href="<?= $directoryPath ?>español/backups" class="link">Respaldos</a>
-    <a href="<?= $directoryPath ?>español/software/programs" class="link">Programas</a>
-    <a href="<?= $directoryPath ?>español/hardware/anatomy" class="link">Anatomía Hw</a>
-    <a href="<?= $directoryPath ?>español/hardware/notebooks" class="link">Notebooks</a>
-    <a href="<?= $directoryPath ?>español/hardware/cables" class="link">Cables</a>
-    <a href="<?= $directoryPath ?>español/software/websites" class="link">Paginas Web</a>
-    <a href="<?= $directoryPath ?>español/software/passwords" class="link">contraseñas</a>
-    <a href="<?= $directoryPath ?>español/tutorials" class="link">Tutoriales</a>
-    <a href="<?= $directoryPath ?>español/images" class="link">Imágenes</a>
-    <a href="<?= $directoryPath ?>español/artwork" class="link">Obras de Arte</a>
-    <a href="<?= $directoryPath ?>español/writing" class="link">Escritura</a>
+    <a href="<?= $directoryPath ?>español/" class="link"><span class="link">Inicio</span></a>
+    <a href="<?= $directoryPath ?>" class="link"><span class="link">English</span></a>
+    <a href="<?= $directoryPath ?>español/acerca" class="link"><span class="link">Acerca</span></a>
+    <a href="<?= $directoryPath ?>español/hardware" class="link"><span class="link">Hardware</span></a>
+    <a href="<?= $directoryPath ?>español/software" class="link"><span class="link">Software</span></a>
+    <a href="<?= $directoryPath ?>español/contacto" class="link"><span class="link">Contacto</span></a>
+    <a href="<?= $directoryPath ?>español/reviews" class="link"><span class="link">Testimonios</span></a>
+    <a href="<?= $directoryPath ?>español/backups" class="link"><span class="link">Respaldos</span></a>
+    <a href="<?= $directoryPath ?>español/software/programs" class="link"><span class="link">Programas</span></a>
+    <a href="<?= $directoryPath ?>español/hardware/" class="link"><span class="link">Anatomía Hw</span></a>
+    <a href="<?= $directoryPath ?>español/hardware/notebooks" class="link"><span class="link">Notebooks</span></a>
+    <a href="<?= $directoryPath ?>español/hardware/cables" class="link"><span class="link">Cables</span></a>
+    <a href="<?= $directoryPath ?>español/software/websites" class="link"><span class="link">Paginas Web</span></a>
+    <a href="<?= $directoryPath ?>español/software/passwords" class="link"><span class="link">contraseñas</span></a>
+    <a href="<?= $directoryPath ?>español/tutorials" class="link"><span class="link">Tutoriales</span></a>
+    <a href="<?= $directoryPath ?>español/images" class="link"><span class="link">Imágenes</span></a>
+    <a href="<?= $directoryPath ?>español/artwork" class="link"><span class="link">Obras de Arte</span></a>
+    <a href="<?= $directoryPath ?>español/writing" class="link"><span class="link">Escritura</span></a>
   </nav>
 </footer>
       <div class="footer">

@@ -4,7 +4,7 @@
         <div class="container"><?= empty($title) ? $titulo : $title;?>
             <a href="#title"><img src="https://latinospc.com/images/programs/code.jpg" width="263" height="146"
                     alt="image" class="rtl" /></a>
-            <?= empty($description) ? $descripcion : $description[0];?>
+            <?= empty($description) ? $descripcion[0] : $description[0];?>
         </div><span id="ps2"></span><br />
         <div class="container">
 
