@@ -39,11 +39,12 @@ h2 {
         <?= $nav = '<nav class="colms2" style="padding-bottom: 4%;margin-top: 4%;">
             <ul class="ex_menu sb_menu">
                 <li class="current"><a href="#refactorization">Home</a></li>
-                <li><a href="#">Software</a></li>
-                <li><a href="#">Hardware</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Reviews</a></li>
-                <li><a href="#">En Español</a></li>
+                <li><a href="#system">System</a></li>
+                <li><a href="#structure">Structure</a></li>
+                <li><a href="#design">design</a></li>
+                <li><a href="#todo">To-Do List</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
             </ul>
         </nav>'; $footerNav = $nav;?>
 
@@ -56,7 +57,7 @@ h2 {
                     our user's needs. Stay tuned!</p>
 
                     <?php function button($id) {
-                        echo '<a href="'.$id.'"><button>|=|</button></a>';
+                        echo '<a href="'.$id.'" title="'.ucfirst(ltrim($id, "#")).'"><button style="padding:3%;">|=|</button></a>';
                     }
                     button('#system');
                     ?>
