@@ -18,7 +18,7 @@
                 </div><div style="margin-top: 30px">
                 <a href="<?= $directoryPath; ?>software/websites/#article">Websites</a>
                 <a href="<?= $directoryPath; ?>software/passwords/#article">Passwords</a>
-                <a href="<?= $directoryPath; ?>about/tutorials/#article">Tutorials</a><a href="it-works" style="float: right;display: inline;background-image:none;background-color:#f9f9f9;"><img src="<?= $directoryPath; ?>include/_images/100.webp" class="rtl image" style="translate: -40% -50%; border-radius: 110%;"  alt="CPUimage"width="200px" /></a>
+                <a href="<?= $directoryPath; ?>about/tutorials/#article">Tutorials</a><a href="include" style="float: right;display: inline;background-image:none;background-color:#f9f9f9;"><img src="<?= $directoryPath; ?>include/_images/100.webp" class="rtl image" style="translate: -40% -50%; border-radius: 110%;"  alt="CPUimage"width="200px" /></a>
                 <a href="<?= $directoryPath; ?>about/images/#article">Images</a>
                 <a href="<?= $directoryPath; ?>about/artwork/#article">Artwork</a>
                 <a href="<?= $directoryPath; ?>about/writing/#article">Writing</a>
