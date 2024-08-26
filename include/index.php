@@ -9,7 +9,7 @@ function content(){ ?>
 
 <article class="fullbar hero4" id="top">
     <div class="blurb hero3" style="font-size: large">
-        <h2 style="text-align: center">New LatinosPC Website <a href="https://latinospc.com">@latinospc.com</a></h2>
+        <h2 style="text-align: center">New LAtinosPC Website <a href="https://latinospc.com">@LAtinosPC.com</a></h2>
     </div>
     <article class="article" style="margin-top: 0%;">
         <!--This is the whole document -->
@@ -23,6 +23,10 @@ function content(){ ?>
                 <li><a href="#to-do">To-Do List</a></li>
                 <li><a href="#menu">Menu</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#hardware">Hardware</a></li>
+                <li><a href="#software">Software</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#reviews">Reviews</a></li>
             </ul>
         </nav>'; $footerNav = $nav;?>
 
@@ -42,7 +46,7 @@ function content(){ ?>
                     ?>
             </section>
             <?php function separator_bar()  {
-                echo '<hr><hr class="selection" width="20%"><hr>';
+                echo '<hr><a href="#footer"><hr class="selection" width="20%"></a><hr>';
                 }
 
             separator_bar();
@@ -136,7 +140,7 @@ function content(){ ?>
                 <p>I would like to purge my CSS and make it more understandable.</p>
                 <br />
                 <?php
-                    echo button('#to-do');
+                    button('#to-do');
                 ?>
             </section>
 
@@ -160,13 +164,16 @@ function content(){ ?>
                 <p>Data must be put into the site and translated into Spanish. We might need to find a more reliable way
                     than to fill arrays manually with data. But I like it because quality control is optimal.</p>
                 <?php
-                    echo button('#menu');
+                     button('#menu');
                 ?>
             </section>
 
             <?php separator_bar();  ?>
 
             <section tabindex="0" id="menu" class="blurb hero3">
+            <?php
+                     button('#to-do');
+                ?><br />
                 <h2>JESUS CHRIST</h2>
                 <p>Pomona, CA | 909-276-7214 | help@latinospc.com | 8/20/2024</p>
                 <p>This is the menu for the site, many things need to be improved before release, but we should focus on
@@ -177,12 +184,33 @@ function content(){ ?>
                 <p>0 0 0 1 1 1 1</p>
                 <h3>ANATOMY</h3>
                 <p>0 0 0 1 1 1 1</p>
+                <h3>NoteBooks</h3>
+                <p>0 0 0 1 1 1 1</p>
+                <h3>Cables</h3>
+                <p>0 0 0 1 1 1 1</p>
+                <h3>Websites</h3>
+                <p>0 0 0 1 1 1 1</p>
+                <h3>Passwords</h3>
+                <p>0 0 0 1 1 1 1</p>
+                <h3>Tutorials</h3>
+                <p>0 0 0 1 1 1 1</p>
+                <h3>Images</h3>
+                <p>0 0 0 1 1 1 1</p>
+                <h3>Artwork</h3>
+                <p>0 0 0 1 1 1 1</p>
+                <h3>Writing</h3>
+                <p>0 0 0 1 1 1 1</p>
                 <?php
                     echo button('#about');
                 ?>
             </section>
 
+            <?php separator_bar();  ?>
+
             <section tabindex="0" class="blurb hero3" id="about">
+            <?php
+                     button('#menu');
+                ?><br />
                 <h2>ABOUT US</h2>
                 <p>Pomona, CA | 909-276-7214 | help@latinospc.com | 8/20/2024</p>
                 <p>About us page</p>
@@ -201,9 +229,185 @@ function content(){ ?>
                     echo button('#artwork');
                 ?>
             </section>
+            <?php separator_bar();  ?>
+
+            <section tabindex="0" class="blurb hero3" id="hardware">
+            <?php
+                     button('#about');
+                ?><br />
+                <h2>Hardware</h2>
+                <p>Pomona, CA | 909-276-7214 | help@latinospc.com | 8/20/2024</p>
+                <p>Hardware page</p>
+
+                <aside style="text-align: left">
+                    <h3>CPU</h3>
+                    <p>0 10</p>
+                    <h3>RAM</h3>
+                    <p>0 1</p>
+                    <h3>SSD</h3>
+                    <p>0 1</p>
+                    <h3>Motherboard</h3>
+                    <p>0 1</p>
+                    <h3>Power Supply</h3>
+                    <p>0 1</p>
+                    <h3>GPU</h3>
+                    <p>0 1</p>
+                    <h3>Case</h3>
+                    <p>0 1</p>
+                    <h3>Coolers</h3>
+                    <p>0 1</p>
+                    <h3>Mouse</h3>
+                    <p>0 1</p>
+                    <h3>Keyboard</h3>
+                    <p>0 1</p>
+                    <h3>Display</h3>
+                    <p>0 1</p>
+                    <h3>External Memory drive</h3>
+                    <p>0 1</p>
+                    <h3>PCI Cards</h3>
+                    <p>0 1</p>
+                    <h3>Scanners</h3>
+                    <p>0 1</p>
+                    <h3>Printers</h3>
+                    <p>0 1</p>
+                    <h3>Console Controllers</h3>
+                    <p>0 1</p>
+                    <h3>Joysticks</h3>
+                    <p>0 1</p>
+                    <h3>Tablets</h3>
+                    <p>0 1</p>
+                    <h3>Microphones</h3>
+                    <p>0 1</p>
+                    <h3>Headsets</h3>
+                    <p>0 1</p>
+                    <h3>Headphones</h3>
+                    <p>0 1</p>
+                    <h3>Audio Mixers</h3>
+                    <p>0 1</p>
+                    <h3>Controllers</h3>
+                    <p>0 1</p>
+                    <h3>Gaming Uniforms</h3>
+                    <p>0 1</p>
+                    <h3>Pens, Pencils, and Tablets</h3>
+                    <p>0 1</p>
+                    <h3>Chairs</h3>
+                    <p>0 1</p>
+                    <h3>Desks</h3>
+                    <p>0 1</p>
+                    <h3>Anti-Slip Mats</h3>
+                    <p>0 1</p>
+                    <h3>Speakers and Subwoofers</h3>
+                    <p>0 1</p>
+                </aside>
+                <?php
+                    echo button('#software');
+                ?>
+            </section>
+            <?php separator_bar();  ?>
+
+            <section tabindex="0" class="blurb hero3" id="software">
+            <?php
+                     button('#hardware');
+                ?><br />
+                <h2>Software</h2>
+                <p>Pomona, CA | 909-276-7214 | help@latinospc.com | 8/20/2024</p>
+                <p>Software page</p>
+
+                <aside style="text-align: left">
+                    <h2>Open Source</h2>
+                    <p>0 1</p>
+                    <h2>Free</h2>
+                    <p>0 1 1</p>
+                    <h2>Shareware</h2>
+                    <p>0 1 1</p>
+                    <h2>Trial-ware</h2>
+                    <p>0 1 1</p>
+                    <h2>Paid</h2>
+                    <p>0 1 1</p>
+                    <h2>Subscription</h2>
+                    <p>0 1 1</p>
+                    <h2>Anti Virus</h2>
+                    <p>0 1 1</p>
+                    <h2>Malware Cleaner</h2>
+                    <p>0 1 1</p>
+                    <h2>Web Browsers</h2>
+                    <p>0 1 1</p>
+                    <h2>Messaging</h2>
+                    <p>0 1 1</p>
+                    <h2>Media</h2>
+                    <p>0 1 1</p>
+                    <h2>Run-times</h2>
+                    <p>0 1 1</p>
+                    <h2>Imaging</h2>
+                    <p>0 1 1</p>
+                    <h2>Documents</h2>
+                    <p>0 1 1</p>
+                    <h2>File Sharing</h2>
+                    <p>0 1 1</p>
+                    <h2>Online Storage</h2>
+                    <p>0 1 1</p>
+                    <h2>Other</h2>
+                    <p>0 1 1</p>
+                    <h2>Utilities</h2>
+                    <p>0 1 1</p>
+                    <h2>Compression</h2>
+                    <p>0 1 1</p>
+                    <h2>Developer Tools </h2>
+                    <p>0 1 1</p>
+                </aside>
+                <?php
+                    echo button('#contact');
+                ?>
+            </section>
+
+            <?php separator_bar();  ?>
+
+            <section tabindex="0" class="blurb hero3" id="contact">
+            <?php
+                     button('#software');
+                ?><br />
+                <h2>Contact US</h2>
+                <p>Pomona, CA | 909-276-7214 | help@latinospc.com | 8/20/2024</p>
+                <p>Contact us page</p>
+
+                <aside style="text-align: left">
+                    <h2>Contact Us</h2>
+                    <p>0 1</p>
+                    <h2>LATPC</h2>
+                    <p>0 1 1</p>
+                    <h2>Contact Box</h2>
+                    <p>0 1 1</p>
+                </aside>
+                <?php
+                    echo button('#reviews');
+                ?>
+            </section>
+
+            <?php separator_bar();  ?>
+
+            <section tabindex="0" class="blurb hero3" id="reviews">
+            <?php
+                     button('#contact');
+                ?><br />
+                <h2>Contact US</h2>
+                <p>Pomona, CA | 909-276-7214 | help@latinospc.com | 8/20/2024</p>
+                <p>Contact us page</p>
+
+                <aside style="text-align: left">
+                    <h2>Contact Us</h2>
+                    <p>0 1</p>
+                    <h2>LATPC</h2>
+                    <p>0 1 1</p>
+                    <h2>Contact Box</h2>
+                    <p>0 1 1</p>
+                </aside>
+                <?php
+                    echo button('#footer');
+                ?>
+            </section>
         </article>
 
-        <footer>
+        <footer id="footer">
             <!-- Add footer content here -->
             <?= $footerNav;?>
         </footer>
