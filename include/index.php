@@ -179,7 +179,10 @@ function content(){ ?>
                 <p>This is the menu for the site, many things need to be improved before release, but we should focus on
                     simple changes -fast.</p>
                 <h3>BACKUPS</h3>
-                <p>Backups needs to have more pics and look better overall</p>
+                <p>Backups are hosted on the root directory. there is a statement that checks for the URL ?backups || ?respaldos.
+                    and displays the backups file under _works. the $variables file will be hosted in the root directory under the name backups.php,
+                    and respaldos.php.
+                </p>
                 <h3>PROGRAMS</h3>
                 <p>0 0 0 1 1 1 1</p>
                 <h3>ANATOMY</h3>
@@ -367,8 +370,16 @@ function content(){ ?>
                      button('#software');
                 ?><br />
                 <h2>Contact US</h2>
-                <p>Pomona, CA | 909-276-7214 | help@latinospc.com | 8/20/2024</p>
-                <p>Contact us page</p>
+                <p>Pomona, CA | 909-276-7214 | help@latinospc.com | 8/26/2024</p>
+                <p>Contact us page is using a php form called Simple PHP Contact Form master.<br />
+                    The contact directory hosts the contact form in 3 separate directories.
+                    <ul>
+                        <li>Config</li>
+                        <li>Public</li>
+                        <li>Vendor</li>
+                    </ul>
+                    and the main script that runs the form is in the public directory is called autoload.php inside Vendor directory.
+            </p>
 
                 <aside style="text-align: left">
                     <h2>Contact Us</h2>

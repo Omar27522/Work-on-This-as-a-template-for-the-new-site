@@ -1,8 +1,8 @@
 <?php
-require_once './vendor/autoload.php';
+require_once '../../contact/vendor/autoload.php';
 
-$helperLoader = new SplClassLoader('Helpers', './vendor');
-$mailLoader   = new SplClassLoader('SimpleMail', './vendor');
+$helperLoader = new SplClassLoader('Helpers', '../../contact/vendor');
+$mailLoader   = new SplClassLoader('SimpleMail', '../../contact/vendor');
 
 $helperLoader->register();
 $mailLoader->register();
@@ -11,7 +11,7 @@ use Helpers\Config;
 use SimpleMail\SimpleMail;
 
 $config = new Config;
-$config->load('./config/config.php');
+$config->load('../../español/contacto/config/config.php');
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $name    = stripslashes(trim($_POST['form-name']));
@@ -121,8 +121,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </style>
     <div tabindex="0" class="jumbotron selection hero4"style=" margin-bottom: 0px;">
         <div class="container blurb">
-            <h2 style="font-size: xxx-large;">Contact Us</h2>
-            <p style="font-size: xx-large;">Let us know how we are doing!<br />Or leave us a review, we will be sure to post it.</p>
+            <h2 style="font-size: xxx-large;">Contáctenos</h2>
+            <p style="font-size: xx-large;">Háganos saber cómo lo estamos haciendo.<br />¡Deja tu reseña! La publicaremos.</p>
     </div><br />
     <?php if(!empty($emailSent)): //The CSS interfered with the footer of the site, so I had to remove it, will build a better solution?>
         <div class="container">
@@ -139,7 +139,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <div class="container selection">
         <div tabindex="0" class="container card2 selection_2">
 
-        <h2>LAtinosPC.com</h2><br />
+        <h2>LAtinosPC.com/español</h2><br />
                 <h2>Tel. (909)206-2784</h2><br />
                     <h2>E-mail:LAtinosPC@gmail.com</h2>
 
@@ -186,7 +186,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </form>
     </section>
     <?php endif; ?>
-    <script type="text/javascript" src="./public/js/contact-form.js"></script>
+    <script type="text/javascript" src="../../contact/public/js/contact-form.js"></script>
     <script type="text/javascript">
         new ContactForm('#contact-form');
     </script>

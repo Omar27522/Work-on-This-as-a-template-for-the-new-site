@@ -15,7 +15,7 @@ $home ='active';
 include ('./include/_code/page.php');
 function content(){
     if (isset($_GET['backups'])) {
-
+        include_once('./backups.php');
         include_once('./include/_works/backups.php');
     }
     else{

@@ -34,8 +34,6 @@ h2 {
 }
 </style>
 
-
-    ====================================================            
 </article>
 <div class="container">
     <h2>Gallery</h2>

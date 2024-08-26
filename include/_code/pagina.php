@@ -25,7 +25,7 @@
 
 <div class="hbg"><!-- HBG --><!-- nav bar -->
         <div class="hbg_resize">
-               <nav class="menu_nav">
+               <nav class="menu_nav" id="scroll" >
             <ul>
             <li class="<?= $js="current dropdown"; ?>"><a class="dropbtn" onclick="myFunction()">Cristo Jesus</a>
                 <div class="dropdown-content" id="myDropdown">
@@ -37,21 +37,21 @@
                 echo $pictures[$i];}
                 echo".webp\" width=\"372px\" height=\"248px\" alt=\"Jesus Christ\" style=\"margin-top: 15px;margin-left:20px;\" class=\"image\"/>";
                 ?></a>
-                <div class="rtl"style="padding-top: 30px;padding-right:20px;"><a href="../">Respaldos</a>
-                  <a href="../español/software/programas/">Programas</a>
-                  <a href="./hardware/">Anatomía</a>
-                  <a href="./hardware/notebooks/">Notebooks</a>
-                  <a href="./hardware/cables/">Cables</a>
+                <div class="rtl"style="padding-top: 30px;padding-right:20px;"><a href="<?= $directoryPath ?>español/?respaldos">Respaldos</a>
+                  <a href="<?= $directoryPath ?>español/software/programas/">Programas</a>
+                  <a href="<?= $directoryPath ?>español/hardware/">Anatomía</a>
+                  <a href="<?= $directoryPath ?>español/hardware/notebooks/">Notebooks</a>
+                  <a href="<?= $directoryPath ?>español/hardware/cables/">Cables</a>
                 </div>
-                <a href="./software/sitios/">Sitios Web</a>
-                <a href="./software/contraseñas/">Contraseñas</a>
-                <a href="./acerca/tutoriales/">Tutoriales</a>
+                <a href="<?= $directoryPath ?>español/software/sitios/">Sitios Web</a>
+                <a href="<?= $directoryPath ?>español/software/contraseñas/">Contraseñas</a>
+                <a href="<?= $directoryPath ?>español/acerca/tutoriales/">Tutoriales</a>
 
                 <a href="#Funciona !!!" style="float: right;display: inline;background-image:none;background-color:#f9f9f9;"><img src="<?= $directoryPath; ?>include/_images/100.webp" class="rtl image" style="translate: -40% -50%; border-radius: 110%;"  alt="CPUimage"width="200px" /></a>
 
-                <a href="./acerca/imagenes/">Imágenes</a>
-                <a href="./acerca/trabajos/">Trabajos</a>
-                <a href="./acerca/escritura/">Escritura</a>
+                <a href="<?= $directoryPath ?>español/acerca/imagenes/">Imágenes</a>
+                <a href="<?= $directoryPath ?>español/acerca/trabajos/">Trabajos</a>
+                <a href="<?= $directoryPath ?>español/acerca/escritura/">Escritura</a>
 
                 </div>
               </li>

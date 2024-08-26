@@ -30,7 +30,7 @@
 <!-- ONE page for all the site !empty($about) || !empty($hardware) || || !empty($es_software) || !empty($contact) || !empty($reviews)-->
 <div class="hbg"><!-- HBG -->
         <div class="hbg_resize">
-        <nav class="menu_nav navbar">
+        <nav class="menu_nav navbar" id="scroll" >
             <ul> <?php   if  (!empty($about) || !empty($hardware) || !empty($software) || !empty($contact) || !empty($reviews)){
             include($directoryPath.'include/_code/jesuschrist.php');
             }
@@ -61,7 +61,7 @@
               <li class="<?= empty($reviews) ? ($reviews = 'current') : ($reviews = 'active');?>">
                 <a href="<?= $directoryPath ?>reviews/">Reviews</a></li>
 
-              <li class="current"><a href="tel:+019092767214" style=" translate: 705px -85px; color: #fff;font-size: 30px;background-color: rgba(51, 170, 51, .384);">909-276-7214</a></li>
+              <li class="current" id="number"><a href="tel:+019092767214" style=" translate: 705px -85px; color: #fff;font-size: 30px;background-color: rgba(51, 170, 51, .384);">909-276-7214</a></li>
             </ul>
         </nav>
         </div> <!-- HBG Resize -->
