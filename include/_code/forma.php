@@ -140,7 +140,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <div tabindex="0" class="container card2 selection_2">
 
         <h2>LAtinosPC.com/español</h2><br />
-                <h2>Tel. (909)206-2784</h2><br />
+                <h2>Tel. 909-276-7214</h2><br />
                     <h2>E-mail:LAtinosPC@gmail.com</h2>
 
         </div>
