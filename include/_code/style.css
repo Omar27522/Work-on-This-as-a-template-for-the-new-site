@@ -487,4 +487,7 @@ ul h2 {
 .item {
   break-inside: avoid-column;
 }
-/*FORM  */
+
+.fullbar h2:first-of-type {
+  margin-top: 0;
+}
