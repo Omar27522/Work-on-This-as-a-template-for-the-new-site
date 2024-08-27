@@ -150,9 +150,9 @@ function content(){ ?>
                 <?php
                     button('#design');
                 ?><br />
-                <h2>TO-DO LIST 8/20/2024</h2>
+                <h2>TO-DO LIST 8/26/2024</h2>
                 <ul style="text-align: left">
-                    <li>Backups Page...</li>
+                    <li><s>Backups Page...</s> <a href="../?backups#scroll">check it out</a> <a href="../español/?respaldos#scroll">Dale Click</a></li>
                     <li>Home: a better footer maybe?</li>
                     <li>En Español: pagina and page are undistinguishable twins.</li>
                     <li>Hardware: PCI card design...</li>

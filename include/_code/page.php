@@ -17,7 +17,7 @@
 <header class="header">
         <div class="header_resize">
           <div class="logo">
-            <h1><a href="../"><span>LAtinos</span>PC.com<small>"PC" is for Personal Computer
+            <h1><a href="../"><span>LAtinos</span>PC.com<small> "PC" is for Personal Computer
             </small></a></h1>
           </div>
           <div class="clr"></div>
@@ -94,7 +94,7 @@
           </div>
           <div class="col c3">
             <h2><span>About</span></h2>
-            <img src="../include/_images/computer%20CPU.jpg" alt="" height="60" width="60" />
+            <img src="<?= $directoryPath?>include/_images/computer%20CPU.jpg" alt="" height="60" width="60" />
             <p>A company with years of experience, bringing Southern California
               people and families the experience of a working system. Personal
               websites with professional or casual and distinguished look; at

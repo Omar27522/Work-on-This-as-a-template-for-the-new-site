@@ -16,7 +16,7 @@
   <header class="header"><!-- Header -->
     <div class="header_resize">
             <div class="logo">
-              <h1><a href="../"><span>LAtinos</span>PC.com<small>"PC" es por Computadora Personal
+              <h1><a href="../"><span>LAtinos</span>PC.com<small> "PC" es por Computadora Personal
               </small></a></h1>
     </div>
             <div class="clr"></div>
