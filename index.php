@@ -18,6 +18,9 @@ function content(){
         include_once('./backups.php');
         include_once('./include/_works/backups.php');
     }
+    if (isset($_GET['Jesus']))  {
+        include_once('./include/_works/_faith/heavenlyFatherTellMeAboutTheWeb.php');
+    }
     else{
  $title = "<h2>Your Trusted IT Solution Partner</h2>";
  $reliable ="Reliable, fast, and professional computer repair and IT services.";

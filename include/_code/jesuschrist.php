@@ -1,6 +1,6 @@
 <li class="<?= $js="current dropdown"; ?>"><a class="dropbtn" onclick="myFunction()">Jesus Christ</a>
                 <div class="dropdown-content" id="myDropdown">
-                <a href="https://latinospc.com" style="display: inline;background-image:none;background-color:#f9f9f9;">
+                <a href="<?= $directoryPath; ?>?Jesus" style="display: inline;background-image:none;background-color:#f9f9f9;">
                 <?php
                 $pictures= array('1','2','3','4','5','6','7','8','9','10','11','12');
                 echo"<img src=\"https://latinospc.com/images/artificialintelligence/our_lord_and_savior_jesus_christ/lamb";
