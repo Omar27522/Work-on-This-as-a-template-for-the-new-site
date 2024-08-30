@@ -19,6 +19,10 @@ function content(){
             include_once('../español/respaldos.php');
             include_once('../include/_works/backups.php');
         }
+        if (isset($_GET['Jesus']))  {
+            echo"Español";
+            include_once('../include/_works/_faith/heavenlyFatherTellMeAboutTheWeb.php');
+        }
         else    {
             include_once('../include/_works/es/es_start.php');
             include_once('../include/_works/start.php');

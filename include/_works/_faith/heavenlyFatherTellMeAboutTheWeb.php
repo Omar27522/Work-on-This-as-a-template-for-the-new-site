@@ -34,7 +34,7 @@
 	<!-- This is what all images should have depending on size
 	<img src=" "title=" "alt=" "height="500"> -->
 	<div class="fullbar hero4">
-	    <h1 class="title" style="text-align:center">Heavenly Father Tell me about the web</h1>
+	    <h1 class="title" style="text-align:center"><?= empty($titles) ? $titulos[0] : $titles[0]; ?></h1>
 	    <!--This is the image linked to--><a rel="example_group"
 	        href="https://latinospc.com/images/artificialintelligence/our_lord_and_savior_jesus_christ/lamb1.jpg"
 	        title="Jesus holding a lamb" alt="Jesus holding a lamb">
@@ -42,24 +42,23 @@
 	            src="https://latinospc.com/images/artificialintelligence/our_lord_and_savior_jesus_christ/thumbnails/lamb1.webp"
 	            title="Jesus holding a lamb" alt="Jesus holding a lamb" height="500px" width="303px" class="fl" />
 	    </a>
-	    <h2 class="sub_title">Dangers of the Internet</h2>
-	    <p><span class="dangers">Cyberbullying:</span> The internet provides a platform for people to bully and harass
-	        others anonymously. This can lead to severe emotional and psychological harm to victims.</p>
-	    <p><span class="dangers">Online scams:</span> The internet is full of scams that can trick people into giving away
-	        their personal and financial information. These scams can result in financial loss and identity theft.</p>
-	    <p><span class="dangers">Addiction: </span>The internet can be addictive, leading to excessive use that interferes
-	        with daily life, work, and relationships.</p>
-	    <p><span class="dangers">Privacy violations:</span> The internet allows for the collection and sharing of personal
-	        information, often without individuals&#39; consent or knowledge. This can lead to identity theft and other
-	        privacy violations.</p>
-	    <p><span class="dangers">Online predators:</span> The internet provides a platform for sexual predators to target
-	        and groom children and vulnerable individuals.</p>
-	    <p><span class="dangers">Spread of misinformation:</span> The internet allows for the rapid spread of false
-	        information, which can cause harm to individuals and society.</p>
-	    <p><span class="dangers">Cyberstalking: </span>The internet provides an easy way for stalkers to monitor and harass
-	        their victims online.</p>
+	    <h2 class="sub_title"><?= empty($titles) ? $titulos[1] : $titles[1]; ?></h2>
+	    <p><span class="dangers"><?= empty($titles) ? $titulos[2] : $titles[2]; ?>:</span>
+			<?= empty($titles) ? $peligros[0] : $dangers[0]; ?></p>
+	    <p><span class="dangers"><?= empty($titles) ? $titulos[3] : $titles[3]; ?>:</span>
+			<?= empty($titles) ? $peligros[1] : $dangers[1]; ?></p>
+	    <p><span class="dangers"><?= empty($titles) ? $titulos[4] : $titles[4]; ?>:</span>
+			<?= empty($titles) ? $peligros[2] : $dangers[2]; ?></p>
+	    <p><span class="dangers"><?= empty($titles) ? $titulos[5] : $titles[5]; ?>:</span>
+			<?= empty($titles) ? $peligros[3] : $dangers[3]; ?></p>
+	    <p><span class="dangers"><?= empty($titles) ? $titulos[6] : $titles[6]; ?>:</span>
+			<?= empty($titles) ? $peligros[4] : $dangers[4]; ?></p>
+	    <p><span class="dangers"><?= empty($titles) ? $titulos[7] : $titles[7]; ?>:</span>
+			<?= empty($titles) ? $peligros[4] : $dangers[4]; ?></p>
+	    <p><span class="dangers"><?= empty($titles) ? $titulos[8] : $titles[8]; ?>:</span>
+			<?= empty($titles) ? $peligros[5] : $dangers[5]; ?></p>
 	    <div class="spacer_mega"></div>
-	    <h2 class="sub_title">Catholics browsing the internet</h1>
+	    <h2 class="sub_title"><?= empty($titles) ? $titulos[9] : $titles[9]; ?></h1>
 	        <!--This is the image linked to--><a rel="example_group"
 	            href="https://latinospc.com/images/artificialintelligence/our_lord_and_savior_jesus_christ/jesushrist3.jpg"
 	            title="Catholic Path to Salvation" alt="Catholic Path to Salvation">
@@ -122,7 +121,8 @@
 	        <p>Finally, be aware of the potential for online addiction and take steps to prevent it. This may include
 	            setting boundaries around your internet use, practicing mindfulness, and seeking support if necessary.
 	            Remember that your relationship with God and your faith community should always take priority over your
-	            <span class="browse">online activities.</span></p>
+	            <span class="browse">online activities.</span>
+	        </p>
 	        <!--This is the image linked to--><a rel="example_group"
 	            href="https://latinospc.com/images/artificialintelligence/our_lord_and_savior_jesus_christ/jesushrist4.jpg"
 	            title="Browsing the Web" alt="Browsing the Web">
@@ -130,23 +130,17 @@
 	                src="https://latinospc.com/images/artificialintelligence/our_lord_and_savior_jesus_christ/thumbnails/jesushrist4.webp"
 	                title="Browsing the Web" alt="Browsing the Web" height="500px" width="303px" class="fl" />
 	        </a>
-	        <p class="sub_title2">One final point to consider is to always approach the internet with an open mind and a
-	            spirit of discernment. While there is much good that can be found online, there are also many challenges
-	            and pitfalls to be aware of. It&#39;s important to remain vigilant and to use your Catholic faith as a
-	            guide in navigating the online world. Ultimately, your relationship with God and your commitment to
-	            Catholic teachings should be the foundation of your online activities, and should guide you in all that you
-	            do.</p>
+	        <p class="sub_title2"><?= empty($browse) ? $browse['conclusion'] : $browse['conclusion']; ?></p>
 	</div>
 	<div class="fullbar hero4">
 	    <div class="spacer_shape">
-	        <h2 class="sub_title">Browse the internet like a Saint.</h2>
-	        <p>Approach the internet with humility and a willingness to learn. While you may have a deep understanding of
-	            Catholic teachings and traditions, the online world can present new and unique challenges that may require
-	            a different approach or perspective.</p>
+	        <h2 class="sub_title"><?= empty($titles) ? $titulos[10] : $titles[10]; ?></h2>
+	        <p><?= empty($browseS) ? $browseS[0] : $browseS[0]; ?></p>
 	        <p>Remember that the internet is a reflection of the wider world, and can be both a source of good and of evil.
 	            <span class="browse">While there is much good to be found online, there are also many dangers and
 	                temptations to be aware of.</span> It is important to exercise discernment and to rely on your Catholic
-	            faith as a guide in navigating the online world.</p>
+	            faith as a guide in navigating the online world.
+	        </p>
 	        <p>Be mindful of the impact your online activities may have on others, particularly those who are vulnerable or
 	            in need of guidance. Use your platform to spread positivity and to inspire others to deepen their
 	            relationship with God and with the Catholic Church.</p>
@@ -157,12 +151,14 @@
 	            opportunity to deepen your own relationship with God and to share your faith with others. Seek guidance
 	            from the Holy Spirit and be open to the ways in which God may be using the online world to bring about His
 	            kingdom.</p>
-	        <h2 class="dangers">Good God is always with you</h2>
-	        <p><span class="browse">Maintain your purity and avoid engaging in behaviors online that could be harmful to
-	                your physical, emotional, or spiritual well-being.</span> This includes avoiding
-	        <details title="click to reveal">
-	            <summary>:(</summary>pornography, sexual content,
-	        </details> and online relationships that could lead to temptation or sin.</p>
+	        <h2 class="dangers"><?= empty($titles) ? $titulos[11] : $titles[11]; ?></h2>
+	        <p style="display: inline"><span class="browse">Maintain your purity and avoid engaging in behaviors online
+	                that could be harmful to
+	                your physical, emotional, or spiritual well-being. This includes avoiding</span>
+	        <details title="click to reveal" style="display: inline">
+	            <summary style="display: inline; font-size: 1.5rem;cursor:pointer;color:midnightblue">😟</summary><span
+	                class="browse">pornography, sexual content,</span>
+	        </details> <span class="browse">and online relationships that could lead to temptation or sin.</span></p>
 	        <p>Be cautious of the people you interact with online, particularly those who may try to manipulate or exploit
 	            you. <span class="browse">Remember that, not everyone online is who they say they are.</span>It is
 	            important to exercise caution and discernment when forming online relationships.</p>
@@ -205,7 +201,7 @@
 	    </div>
 	</div>
 	<div class="fullbar hero4">
-	    <h2 class="sub_title">The constant battle between good and evil.</h2>
+	    <h2 class="sub_title"><?= empty($titles) ? $titulos[12] : $titles[12]; ?></h2>
 	    <p>The concept of the constant battle between good and evil is a common theme in many religions around the world.
 	        It is the idea that there is an ongoing struggle between forces of light and darkness, or between positive and
 	        negative energies, that affects all aspects of our lives and the world around us.</p>
@@ -264,7 +260,7 @@
 	    </p>
 	</div>
 	<div class="fullbar hero4">
-	    <h2 class="sub_title2">One&#39;s rejection of God.</h2>
+	    <h2 class="sub_title2"><?= empty($titles) ? $titulos[13] : $titles[13]; ?></h2>
 	    <p>In many religious traditions, the rejection of God is seen as a serious matter, with potentially profound
 	        consequences for the individual in question. The specific beliefs and teachings surrounding this issue may vary
 	        depending on the religion and culture in question, but there are some common themes and motifs that appear
@@ -295,7 +291,7 @@
 	        understand their beliefs and values.</p>
 	</div>
 	<div class="fullbar hero4">
-	    <h2 class="sub_title2">Humanity&rsquo;s Responsibility</h2>
+	    <h2 class="sub_title2"><?= empty($titles) ? $titulos[14] : $titles[14]; ?></h2>
 	    <p>The idea that humanity has a special responsibility or role in relation to other living creatures is a complex
 	        and multifaceted issue, with many different perspectives and interpretations.</p>
 	    <!--This is the image linked to--><a rel="example_group"

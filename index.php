@@ -19,6 +19,7 @@ function content(){
         include_once('./include/_works/backups.php');
     }
     if (isset($_GET['Jesus']))  {
+        include_once('./myLordAndSaviorJesusChrist.php');
         include_once('./include/_works/_faith/heavenlyFatherTellMeAboutTheWeb.php');
     }
     else{
