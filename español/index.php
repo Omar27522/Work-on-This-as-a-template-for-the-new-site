@@ -20,7 +20,7 @@ function content(){
             include_once('../include/_works/backups.php');
         }
         if (isset($_GET['Jesus']))  {
-            echo"Español";
+            include_once('../español/miSeñorYSalvadorJesusCristo.php');
             include_once('../include/_works/_faith/heavenlyFatherTellMeAboutTheWeb.php');
         }
         else    {
