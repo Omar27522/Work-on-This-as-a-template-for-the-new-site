@@ -211,8 +211,8 @@
 	    </div>
 	</div>
 	<div class="fullbar hero4">
-	    <hr style="border: 3px dashed darkgray;width: 30%;">
-	    <h2 class="sub_title"><?= empty($titles) ? $titulos[12] : $titles[12]; ?></h2>
+	    <hr style="border: 3px dashed darkgray;width: 30%;"><ul>
+	    <h2 class="sub_title"><?= empty($titles) ? $titulos[12] : $titles[12]; ?></h2></ul>
 	    <p>
 	        <?= empty($battle) ? $batalla[0] : $battle[0]; ?>
 	    </p>

@@ -44,7 +44,7 @@ $browse = [
         '<span class="browse">Avoid</span> engaging in behavior or activities that are illegal, immoral, or unethical, including but not limited to pornography, hate speech, cyberbullying, and piracy.',
 
     'priorities'=>
-        '<span class="browse">Remember</span> to prioritize your safety and privacy online. Be wary of scams, phishing attempts, and other types of online fraud. Use strong passwords and ensure that your personal information is protected.',
+        '<span class="browse">Remember</span> to prioritize your safety and privacy online. Be wary of scams, <a href="https://www.icann.org/resources/pages/phishing-2013-05-03-en">phishing attempts</a>, and other types of online fraud. Use strong passwords and ensure that your personal information is protected.',
 
     'parentalControls'=>
         '<span class="browse">Consider</span> using parental controls or other filtering software to restrict access to certain types of content, particularly if you have children or other vulnerable individuals in your household.',
