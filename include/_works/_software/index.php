@@ -17,6 +17,12 @@ $description=[
             software errors, glitches, bugs, or unwanted features.)</p>'];
 $programs = ['Click on the image','Anti-Virus','Malware Cleaner','Web Browsers','Messaging','Media','Runtimes','Imaging','Documents','File Sharing','Online Storage','Other','Utilities','Compression','Development Tools','Read more',
             'links'=>['antivirus','malwarecleaner']];
+
+$descriptions = [
+    'av'=>'<p>An anti-virus program in itself, is created to help the computer shield itself from viruses. The best antivirus solutions are the ones keeping Up to date with whats out there trying to harm the computer (PC). Also, the best antivirus solutions are simple, cost less than imagined, and bring peace of mind.</p>',
+    'mlwc'=>'<p>Malware, harmful files infecting computers, can be found in spam, emails, infected drives, or bundled software. Often disguised as harmless software, malware steals data and can cause irreparable damage. To prevent infections, use paid or free antivirus solutions that offer real-time protection and background scanning.</p>',
+    ''=>''
+];
         }
 
 if ($sw == 'es') {

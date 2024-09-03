@@ -8,7 +8,8 @@ $directoryPath = '../../';
 }
 //This is the description of AV inside SW.
 //I might have to add something else in case I want to add links inside AV. for the moment this works.
-if (!empty(key($_GET))) { ?>
+/*if (!empty(key($_GET))) { ?>
+echo $descriptions ['av']
 <div class="blurb">
     <p tabindex="0" class="selection">An anti-virus program in itself, is created to help the computer shield itself from viruses.
 
@@ -16,7 +17,7 @@ The best antivirus solutions are the ones keeping Up to date with whats out ther
 
 Also, the best antivirus solutions are simple, cost less than imagined, and bring peace of mind.
 </p>
-</div><?php }
+</div><?php }*/
 
 //This works because inside -software- the key is full with AV, and AV site works because the key is empty.
 if (empty(key($_GET))) {
