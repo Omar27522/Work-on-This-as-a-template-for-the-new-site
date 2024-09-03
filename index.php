@@ -4,6 +4,10 @@ if (isset($_GET['backups'])) :
     $title="Backups";
     $keywords = '<meta name="keywords" content="data backup, file recovery, cloud storage, local backups, secure backups, computer backup, LatinosPC, backup solutions, personal data protection, business data protection, automated backups" />';
     $description = '<meta name="description" content="LatinosPC.com offers reliable data backup services to ensure the safety of your personal or business files. We provide both local and cloud backup solutions, tailored to your specific needs. Keep your data secure with our professional backup services.">';
+elseif (isset($_GET['Jesus'])) :
+    $title="Heavenly Father";
+    $keywords = '<meta name="description" content="Discover how to navigate the internet responsibly as a Catholic. Learn the importance of discernment and using your faith as a guide in the digital age. Stay connected to God while exploring the online world.">';
+    $description = '<meta name="keywords" content="Catholic internet use, responsible internet, online discernment, faith in the digital age, Catholic digital ethics">';
 else: //home page with no ?backups will display this
     $title="LAtinosPC.com Welcome";
     $keywords ='<meta name="keywords" content="Computer repair, virus removal, data backup, computer classes, in-person classes, online classes, IT support, gamers, small business IT, student IT support" />';
@@ -18,7 +22,7 @@ function content(){
         include_once('./backups.php');
         include_once('./include/_works/backups.php');
     }
-    if (isset($_GET['Jesus']))  {
+    elseif (isset($_GET['Jesus']))  {
         include_once('./myLordAndSaviorJesusChrist.php');
         include_once('./include/_works/_faith/heavenlyFatherTellMeAboutTheWeb.php');
     }

@@ -59,7 +59,7 @@
 	        <?= empty($dangers) ? $peligros[6] : $dangers[6]; ?></p>
 	    <div class="spacer_mega"></div>
 	    <hr style="border: 3px dashed darkgray;width: 30%;">
-	    <h2 class="sub_title"><?= empty($titles) ? $titulos[9] : $titles[9]; ?></h1>
+	    <h2 class="sub_title"><?= empty($titles) ? $titulos[9] : $titles[9]; ?></h2>
 	        <!--This is the image linked to--><a rel="example_group"
 	            href="https://latinospc.com/images/artificialintelligence/our_lord_and_savior_jesus_christ/jesushrist3.jpg"
 	            title="Catholic Path to Salvation" alt="Catholic Path to Salvation">

@@ -155,7 +155,7 @@ function content(){ ?>
                     <li><s>Backups Page...</s> <a href="../?backups#scroll">check it out</a> <a href="../español/?respaldos#scroll">Dale Click</a></li>
                     <li>Home: a better footer maybe?</li>
                     <li>En Español: pagina and page are undistinguishable twins.</li>
-                    <li>Hardware: PCI card design...</li>
+                    <li><s>Hardware: PCI card design...</s> <a href="../hardware/?pci#scroll">check it out</a></li>
                     <li>Software: Program descriptions...</li>
                     <li>Contact Us. Make it more inviting. (design)</li>
                     <li>Reviews: design a reviews page before migrating existing data.</li>
@@ -175,8 +175,8 @@ function content(){ ?>
                      button('#to-do');
                 ?><br />
                 <h2>JESUS CHRIST</h2>
-                <p>Pomona, CA | 909-276-7214 | help@latinospc.com | 8/20/2024</p>
-                <p>This is the menu for the site, many things need to be improved before release, but we should focus on
+                <p>When the user clicks on the picture, the user will be sent to a page called, Heavenly Father tell me about the web.</p>
+                <p>This section is the menu for the site, many things need to be improved before release, but we should focus on
                     simple changes -fast.</p>
                 <h3>BACKUPS</h3>
                 <p>Backups are hosted on the root directory. there is a statement that checks for the URL ?backups || ?respaldos.
