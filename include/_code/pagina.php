@@ -38,7 +38,7 @@
                 echo".webp\" width=\"372px\" height=\"248px\" alt=\"Jesus Christ\" style=\"margin-top: 15px;margin-left:20px;\" class=\"image\"/>";
                 ?></a>
                 <div class="rtl"style="padding-top: 30px;padding-right:20px;"><a href="<?= $directoryPath ?>español/?respaldos">Respaldos</a>
-                  <a href="<?= $directoryPath ?>español/software/programas/">Programas</a>
+                  <a href="<?= $directoryPath ?>español/software/#ps2">Programas</a>
                   <a href="<?= $directoryPath ?>español/hardware/#cpu">Anatomía</a>
                   <a href="<?= $directoryPath ?>español/hardware/notebooks/">Notebooks</a>
                   <a href="<?= $directoryPath ?>español/hardware/cables/">Cables</a>

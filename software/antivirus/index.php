@@ -1,7 +1,7 @@
 <?php
 //This is what Page asks for
 if (empty(key($_GET)))  {
-$title = 'Hardware';
+$title = 'Software';
 $software ='active';
 $directoryPath = '../../';
 

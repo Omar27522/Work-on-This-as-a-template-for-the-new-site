@@ -10,8 +10,8 @@ include ('../include/_code/page.php');
 
 function content(){
     $sw = 'en';
-    $include_path   = '../include/_works/_hardware/';
-    $software_path  = '../hardware/';
+    //$include_path   = '../include/_works/_hardware/';
+    //$software_path  = '../hardware/';
 
  if (isset($_GET)) :
     switch (key($_GET)) :

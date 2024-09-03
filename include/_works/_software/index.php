@@ -1,7 +1,8 @@
 <?php
 if ($sw == 'en'){
 $title ='<h2>Commonly known as computer programs -these, are the instructions for the computer’s tasks.</h2>';
-$description=['<p>Like paper
+$description=[
+    '<p>Like paper
             programs, (which we get before the start of performances, like Concert Shows, a Graduation or Stage Plays.</p>
             <p>
             <strong>Software</strong> are a way to communicate to the computer user, about the computer’s ongoing performances.<br />
@@ -14,6 +15,7 @@ $description=['<p>Like paper
             <p>Because computers can execute muti-millions of instructions per second; millions+ of performers and
             performances have to be coordinated in a way that makes the computer <b>run</b> without declaring any
             software errors, glitches, bugs, or unwanted features.)</p>'];
+$programs =['Click on the image','Anti-Virus','Malware Cleaner','Web Browsers','Messaging','Media','Runtimes','Imaging','Documents','File Sharing','Online Storage','Other','Utilities','Compression','Development Tools','Read more'];
         }
 
 if ($sw == 'es') {
@@ -29,5 +31,6 @@ El software de computadora, al igual que los programas en papel, podría conside
 El público disfruta del espectáculo a través de la pantalla del ordenador, los actores son los propios programas.</p>
 <p>Debido a que las computadoras pueden ejecutar millones de instrucciones por segundo, millones de actores y actuaciones deben coordinarse de manera que la computadora <b>funcione</b> sin declarar errores de software, fallos, bugs o características no deseadas.</p>'];
 
+$programs =['Haz click en la imagen','Anti-Virus','Limpiadores de Malware','Navegadores Web','Mensajería','Multi-Media','Tiempos de Ejecución','imágenes','Documentos','Archivos Para Compartir','Almacenamiento en linea','Otros','Utilidades','Compression','Herramientas para Desarrollar','Leer más'];
 }
 ?>

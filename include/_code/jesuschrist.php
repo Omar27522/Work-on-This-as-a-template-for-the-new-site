@@ -11,7 +11,7 @@
                 ?>
                 </a>
                 <div class="rtl"style="padding-top: 30px;padding-right:20px;"><a href="<?= $directoryPath; ?>?backups">Backups</a>
-                  <a href="<?= $directoryPath; ?>software/programs/#article" title="Programs">Programs</a>
+                  <a href="<?= $directoryPath; ?>software/#ps2" title="Programs">Programs</a>
                   <a href="<?= $directoryPath; ?>hardware/#article" title="Anatomy of a Computer">Anatomy</a>
                   <a href="<?= $directoryPath; ?>hardware/notebooks/#article" title="Notebooks">Notebooks</a>
                   <a href="<?= $directoryPath; ?>hardware/cables/#article" title="Cables and Connectors">Cables</a>
