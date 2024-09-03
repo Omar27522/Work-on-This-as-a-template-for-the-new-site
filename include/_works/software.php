@@ -39,10 +39,10 @@
 
             <h2>&larr;
             <?= empty($programs) ? $programas[0] : $programs[0];?>
-            </h2>
+            </h2><!--Figure out a way that The link will go to the correct page in Spanish or English -->
             <aside class="colms2 buttons">
-                <a href="?antivirus#ps2" id="refresh"><button type="button" class="bttn"><?= empty($programs) ? $programas[1] : $programs[1];?></button></a>
-                <a href="?malwarecleaner#ps2" id="refresh"><button type="button" class="bttn"><?= empty($programs) ? $programas[2] : $programs[2];?></button></a>
+                <a href="?<?= empty($programs) ? $programas['links'][0] : $programs['links'][0];?>#ps2" id="refresh"><button type="button" class="bttn"><?= empty($programs) ? $programas[1] : $programs[1];?></button></a>
+                <a href="?<?= empty($programs) ? $programas['links'][1] : $programs['links'][1];?>#ps2" id="refresh"><button type="button" class="bttn"><?= empty($programs) ? $programas[2] : $programs[2];?></button></a>
                 <a href="?webbrowsers#ps2" id="refresh"><button type="button" class="bttn"><?= empty($programs) ? $programas[3] : $programs[3];?></button></a>
                 <a href="?messaging#ps2" id="refresh"><button type="button" class="bttn"><?= empty($programs) ? $programas[4] : $programs[4];?></button></a>
                 <a href="?media#ps2" id="refresh"><button type="button" class="bttn"><?= empty($programs) ? $programas[5] : $programs[5];?></button></a>
