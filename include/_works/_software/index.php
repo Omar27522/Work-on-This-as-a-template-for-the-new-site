@@ -38,7 +38,7 @@ El software de computadora, al igual que los programas en papel, podría conside
 El público disfruta del espectáculo a través de la pantalla del ordenador, los actores son los propios programas.</p>
 <p>Debido a que las computadoras pueden ejecutar millones de instrucciones por segundo, millones de actores y actuaciones deben coordinarse de manera que la computadora <b>funcione</b> sin declarar errores de software, fallos, bugs o características no deseadas.</p>'];
 
-$programs =['Haz click en la imagen','Anti-Virus','Limpiadores de Malware','Navegadores Web','Mensajería','Multi-Media','Tiempos de Ejecución','imágenes','Documentos','Archivos Para Compartir','Almacenamiento en linea','Otros','Utilidades','Compression','Herramientas para Desarrollar','Leer más',
-            'links'=>['antivirus','limpiadordemalware']];
+$programas =['Haz click en la imagen','Anti-Virus','Limpiadores de Malware','Navegadores Web','Mensajería','Multi-Media','Tiempos de Ejecución','imágenes','Documentos','Archivos Para Compartir','Almacenamiento en linea','Otros','Utilidades','Compression','Herramientas para Desarrollar','Leer más',
+            'links'=>['antivirus','limpiadordemalware','navegadoresweb','mensajeria','multimedia','runtimes','imagingenes','documentos','archivosparacompartir','almacenamientoenlinea','otros','utilidades','compression','herramientasparadesarrollar']];
 }
 ?>

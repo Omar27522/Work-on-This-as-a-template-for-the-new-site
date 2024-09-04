@@ -1,4 +1,4 @@
-<article class="fullbar">
+<article class="fullbar"> <!--PLEASE REFORMAT THIS PAGE, MAKE THE CODE MORE READABLE -->
     <!--Full Bar -->
     <section class="hero3" id="software">
         <div class="container"><?= empty($title) ? $titulo : $title;?>
@@ -8,56 +8,92 @@
         </div><span id="ps2"></span><br />
         <div class="container">
 
-            <?php //Please Explain what this does, it a bit intimidating
+            <?php //ISSET checks if $_GET is set then depending on the key the switch statement will have the Spanish and english versions of each of the program categories. for right now the id's and the links will remain the same for both versions. and focuser image is the image file, later we might change this to incorporate a different version of the image.
+            //Also the titles need to be changed || added to titulos for the h2 in the description
             if (isset($_GET)) :
                 switch (key($_GET)) :
-            case 'antivirus':       $imag = 'av';       $title = 'Antivirus';       $id = 'Anti-Virus';     $link = 'antivirus';        break;
-            case 'malwarecleaner':  $imag = 'mwc';      $title = 'Malware Cleaner'; $id = 'MalwareCleaner'; $link = '#MalwareCleaner';  break;
-            case 'webbrowsers':     $imag = 'wb';       $title = 'Web Browsers';    $id = 'WebBrowsers';    $link = '#WebBrowsers';     break;
-            case 'messaging':       $imag = 'msg';      $title = 'Messaging';       $id = 'Messaging';      $link = '#Messaging';       break;
+            case 'antivirus': $imag = 'av'; $title = 'Antivirus'; $titulo = $title; $id = 'Anti-Virus'; $link = 'antivirus'; break;
+
+            case 'malwarecleaner': case 'limpiadordemalware':
+                $imag = 'mwc'; $title = 'Malware Cleaner'; $titulo = 'Limpiadores de Malware'; $id = 'MalwareCleaner'; $link = '#MalwareCleaner'; break;
+
+            case 'webbrowsers': case 'navegadoresweb':
+                $imag = 'wb'; $title = 'Web Browsers'; $titulo = 'Navegadores Web';    $id = 'WebBrowsers';    $link = '#WebBrowsers';     break;
+
+            case 'messaging':
+                case 'mensajeria':            $imag = 'msg';      $title = 'Messaging';       $id = 'Messaging';      $link = '#Messaging';       break;
+
             case 'media':           $imag = 'media';    $title = 'Media';           $id = 'Media';          $link = '#Media';           break;
+
             case 'runtimes':        $imag = 'rt';       $title = 'Runtimes';        $id = 'Runtimes';       $link = '#Runtimes';        break;
+
             case 'imaging':         $imag = 'img';      $title = 'Imaging';         $id = 'Imaging';        $link = '#Imaging';         break;
+
             case 'documents':       $imag = 'docs';     $title = 'Documents';       $id = 'Documents';      $link = '#Documents';       break;
+
             case 'filesharing':     $imag = 'filsha';   $title = 'File Sharing';    $id = 'FileSharing';    $link = '#FileSharing';     break;
+
             case 'onlinestorage':   $imag = 'ons';      $title = 'Online Storage';  $id = 'OnlineStorage';  $link = '#OnlineStorage';   break;
+
             case 'other':           $imag = 'ot';       $title = 'Other';           $id = 'Other';          $link = '#Other';           break;
+
             case 'utilities':       $imag = 'utl';      $title = 'Utilities';       $id = 'Utilities';      $link = '#Utilities';       break;
+
             case 'compression':     $imag = 'press';    $title = 'Compression';     $id = 'Compression';    $link = '#Compression';     break;
+
             case 'developertools':  $imag = 'dv';       $title = 'Developer Tools'; $id = 'DeveloperTools'; $link = '#DeveloperTools';  break;
+
                 default: "code";    $imag='code';          $link='#title'; break;
                 endswitch;
             endif;
             ?>
             <a href="<?php if(!empty($link)){echo$link;}else{echo"#title";} ?>">
-                <img src="https://latinospc.com/images/programs/<?= $imag; ?>.jpg"
-                    width="263"
-                    height="670"
-                    alt="<?php if(!empty($title)){echo$title;}else{echo"image";} ?>"
-                    class="fl" /></a>
-
+                <img src="https://latinospc.com/images/programs/<?= $imag; ?>.jpg" width="263" height="670"
+                    alt="<?php if(!empty($title)){echo$title;}else{echo"image";} ?>" class="fl" /></a>
+            <!--
+multimedia','runtimes','imagingenes','documentos','archivosparacompartir','almacenamientoenlinea','otros','utilidades','compression','herramientasparadesarrollar']];
+        -->
 
             <h2>&larr;
-            <?= empty($programs) ? $programas[0] : $programs[0];?>
-            </h2><!--Figure out a way that The link will go to the correct page in Spanish or English -->
+                <?= empty($programs) ? $programas[0] : $programs[0];?>
+            </h2>
+            <!--Figure out a way that The link will go to the correct page in Spanish or English -->
             <aside class="colms2 buttons">
-                <a href="?<?= empty($programs) ? $programas['links'][0] : $programs['links'][0];?>#ps2" id="refresh"><button type="button" class="bttn"><?= empty($programs) ? $programas[1] : $programs[1];?></button></a>
-                <a href="?<?= empty($programs) ? $programas['links'][1] : $programs['links'][1];?>#ps2" id="refresh"><button type="button" class="bttn"><?= empty($programs) ? $programas[2] : $programs[2];?></button></a>
-                <a href="?webbrowsers#ps2" id="refresh"><button type="button" class="bttn"><?= empty($programs) ? $programas[3] : $programs[3];?></button></a>
-                <a href="?messaging#ps2" id="refresh"><button type="button" class="bttn"><?= empty($programs) ? $programas[4] : $programs[4];?></button></a>
-                <a href="?media#ps2" id="refresh"><button type="button" class="bttn"><?= empty($programs) ? $programas[5] : $programs[5];?></button></a>
-                <a href="?runtimes#ps2" id="refresh"><button type="button" class="bttn"><?= empty($programs) ? $programas[6] : $programs[6];?></button></a>
-                <a href="?imaging#ps2" id="refresh"><button type="button" class="bttn"><?= empty($programs) ? $programas[7] : $programs[7];?></button></a>
-                <a href="?documents#ps2" id="refresh"><button type="button" class="bttn"><?= empty($programs) ? $programas[8] : $programs[8];?></button></a>
-                <a href="?filesharing#ps2" id="refresh"><button type="button" class="bttn"><?= empty($programs) ? $programas[9] : $programs[9];?></button></a>
-                <a href="?onlinestorage#ps2" id="refresh"><button type="button" class="bttn"><?= empty($programs) ? $programas[10] : $programs[10];?></button></a>
-                <a href="?other#ps2" id="refresh"><button type="button" class="bttn"><?= empty($programs) ? $programas[11] : $programs[11];?></button></a>
-                <a href="?utilities#ps2" id="refresh"><button type="button" class="bttn"><?= empty($programs) ? $programas[12] : $programs[12];?></button></a>
-                <a href="?compression#ps2" id="refresh"><button type="button" class="bttn"><?= empty($programs) ? $programas[13] : $programs[13];?></button></a>
-                <a href="?developertools#ps2" id="refresh"><button type="button" class="bttn"><?= empty($programs) ? $programas[14] : $programs[14];?></button></a>
+                <a href="?<?= empty($programs) ? $programas['links'][0] : $programs['links'][0];?>#ps2"
+                    id="refresh"><button type="button"
+                        class="bttn"><?= empty($programs) ? $programas[1] : $programs[1];?></button></a>
+                <a href="?<?= empty($programs) ? $programas['links'][1] : $programs['links'][1];?>#ps2"
+                    id="refresh"><button type="button"
+                        class="bttn"><?= empty($programs) ? $programas[2] : $programs[2];?></button></a>
+                <a href="?<?= empty($programs) ? $programas['links'][2] : $programs['links'][2];?>#ps2"
+                    id="refresh"><button type="button"
+                        class="bttn"><?= empty($programs) ? $programas[3] : $programs[3];?></button></a>
+                <a href="?messaging#ps2" id="refresh"><button type="button"
+                        class="bttn"><?= empty($programs) ? $programas[4] : $programs[4];?></button></a>
+                <a href="?media#ps2" id="refresh"><button type="button"
+                        class="bttn"><?= empty($programs) ? $programas[5] : $programs[5];?></button></a>
+                <a href="?runtimes#ps2" id="refresh"><button type="button"
+                        class="bttn"><?= empty($programs) ? $programas[6] : $programs[6];?></button></a>
+                <a href="?imaging#ps2" id="refresh"><button type="button"
+                        class="bttn"><?= empty($programs) ? $programas[7] : $programs[7];?></button></a>
+                <a href="?documents#ps2" id="refresh"><button type="button"
+                        class="bttn"><?= empty($programs) ? $programas[8] : $programs[8];?></button></a>
+                <a href="?filesharing#ps2" id="refresh"><button type="button"
+                        class="bttn"><?= empty($programs) ? $programas[9] : $programs[9];?></button></a>
+                <a href="?onlinestorage#ps2" id="refresh"><button type="button"
+                        class="bttn"><?= empty($programs) ? $programas[10] : $programs[10];?></button></a>
+                <a href="?other#ps2" id="refresh"><button type="button"
+                        class="bttn"><?= empty($programs) ? $programas[11] : $programs[11];?></button></a>
+                <a href="?utilities#ps2" id="refresh"><button type="button"
+                        class="bttn"><?= empty($programs) ? $programas[12] : $programs[12];?></button></a>
+                <a href="?compression#ps2" id="refresh"><button type="button"
+                        class="bttn"><?= empty($programs) ? $programas[13] : $programs[13];?></button></a>
+                <a href="?developertools#ps2" id="refresh"><button type="button"
+                        class="bttn"><?= empty($programs) ? $programas[14] : $programs[14];?></button></a>
             </aside>
             <div class="clr">each</div>
-            <h3><a href="<?php if (key($_GET)){ echo $link; } ?>" class="rm" title="Programs"><?= empty($programs) ? $programas[15] : $programs[15];?></a></h3>
+            <h3><a href="<?php if (key($_GET)){ echo $link; } ?>" class="rm"
+                    title="Programs"><?= empty($programs) ? $programas[15] : $programs[15];?></a></h3>
         </div>
     </section>
 </article>
@@ -66,12 +102,13 @@
 <article class="fullbar" id="programs"><br />
     <?php if (key($_GET)){ ?>
     <div id="<?= $id ?>" class="hero4 blurb">
-        <h2><?=$title?></h2>
+        <h2><?php if ($sw == 'en'){echo $title;} elseif ($sw == 'es'){echo $titulo;}?></h2>
+        <!-- here subtitle for the descriptions is being checked against the Spanish and English versions of the code. -->
         <section tabindex="0" class="selection">
-        <?php //INORDER TO GET THE DESIRED SOLUTION HERE, BOTH SPANISH AND ENGLISH IMPLEMENTATIONS HAVE TO BE CONSIDERED, LIKE HOW IM GOING TO CHOOSE BETWEEN THE LANGUAGES BASED ON THE STATE OF THE PAGE,
+            <?php //INORDER TO GET THE DESIRED SOLUTION HERE, BOTH SPANISH AND ENGLISH IMPLEMENTATIONS HAVE TO BE CONSIDERED, LIKE HOW IM GOING TO CHOOSE BETWEEN THE LANGUAGES BASED ON THE STATE OF THE PAGE,
         //English version
         if ($sw == 'en'){
-
+//IKNOWTHISCODECANBESHORTENEDWITHSOMEALTSYNTAX Also make it readable
 
         if (isset($_GET['antivirus'])) {
                 echo $descriptions ['av'];
@@ -91,6 +128,12 @@
         if (isset($_GET['antivirus'])) {
         echo 'AV spanish description';
         }
+        elseif (isset($_GET['limpiadordemalware'])) {
+            echo 'MLWC spanish description';
+            }
+            elseif (isset($_GET['navegadoresweb'])) {
+                echo 'Navegadores Web spanish description';
+                }
         }
 
         ?>
