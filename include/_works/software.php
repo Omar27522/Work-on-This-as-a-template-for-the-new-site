@@ -69,8 +69,11 @@
         <h2><?=$title?></h2>
         <section tabindex="0" class="selection">
         <?php //INORDER TO GET THE DESIRED SOLUTION HERE, BOTH SPANISH AND ENGLISH IMPLEMENTATIONS HAVE TO BE CONSIDERED, LIKE HOW IM GOING TO CHOOSE BETWEEN THE LANGUAGES BASED ON THE STATE OF THE PAGE,
+        //English version
+        if ($sw == 'en'){
+
+
         if (isset($_GET['antivirus'])) {
-                include ('./antivirus/index.php');
                 echo $descriptions ['av'];
         }/* Click ON antivirus and a window with a description will open.
         Click on the image and it will Take you to a directory inside software called antivirus.
@@ -80,6 +83,16 @@
         elseif (isset($_GET['malwarecleaner'])) {
             echo $descriptions ['mlwc'];
             }
+        }
+        //Spanish version
+        if ($sw == 'es') {
+
+
+        if (isset($_GET['antivirus'])) {
+        echo 'AV spanish description';
+        }
+        }
+
         ?>
         </section>
     </div> <?php } ?>
