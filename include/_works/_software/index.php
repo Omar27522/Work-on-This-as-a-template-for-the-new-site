@@ -19,9 +19,22 @@ $programs = ['Click on the image','Anti-Virus','Malware Cleaner','Web Browsers',
             'links'=>['antivirus','malwarecleaner','webbrowsers','messaging','media','runtimes','imaging','documents','filesharing','onlinestorage','other','utilities','compression','developertools']];
 
 $descriptions = [
-    'av'=>'<p>An anti-virus program in itself, is created to help the computer shield itself from viruses. The best antivirus solutions are the ones keeping Up to date with whats out there trying to harm the computer (PC). Also, the best antivirus solutions are simple, cost less than imagined, and bring peace of mind.</p>',
-    'mlwc'=>'<p>Malware, harmful files infecting computers, can be found in spam, emails, infected drives, or bundled software. Often disguised as harmless software, malware steals data and can cause irreparable damage. To prevent infections, use paid or free antivirus solutions that offer real-time protection and background scanning.</p>',
-    ''=>''
+    'av'=>'An anti-virus program in itself, is created to help the computer shield itself from viruses. The best antivirus solutions are the ones keeping Up to date with whats out there trying to harm the computer (PC). Also, the best antivirus solutions are simple, cost less than imagined, and bring peace of mind.',
+    'mlwc'=>'Malware, harmful files infecting computers, can be found in spam, emails, infected drives, or bundled software. Often disguised as harmless software, malware steals data and can cause irreparable damage. To prevent infections, use paid or free antivirus solutions that offer real-time protection and background scanning.',
+    'wb'=>'Web browsers, essential tools for accessing the internet, have evolved significantly since their early days. From text-based interfaces to modern graphical browsers, they have played a crucial role in shaping the online world. Today, browsers offer a wide range of features, from speed and security to customization options.',
+    'msg'=>'',
+    'media'=>'',
+    'rtimes'=>'',
+    'imgs'=>'',
+    'docs'=>'',
+    'flsha'=>'',
+    'onsto'=>'',
+    'oth'=>'',
+    'uth'=>'',
+    'compr'=>'',
+    'devtools'=>''
+
+
 ];
         }
 
@@ -39,6 +52,6 @@ El público disfruta del espectáculo a través de la pantalla del ordenador, lo
 <p>Debido a que las computadoras pueden ejecutar millones de instrucciones por segundo, millones de actores y actuaciones deben coordinarse de manera que la computadora <b>funcione</b> sin declarar errores de software, fallos, bugs o características no deseadas.</p>'];
 
 $programas =['Haz click en la imagen','Anti-Virus','Limpiadores de Malware','Navegadores Web','Mensajería','Multi-Media','Tiempos de Ejecución','imágenes','Documentos','Archivos Para Compartir','Almacenamiento en linea','Otros','Utilidades','Compression','Herramientas para Desarrollar','Leer más',
-            'links'=>['antivirus','limpiadordemalware','navegadoresweb','mensajeria','multimedia','runtimes','imagingenes','documentos','archivosparacompartir','almacenamientoenlinea','otros','utilidades','compression','herramientasparadesarrollar']];
+            'links'=>['antivirus','limpiadordemalware','navegadoresweb','mensajeria','multimedia','runtimes','imagenes','documentos','archivosparacompartir','almacenamientoenlinea','otros','utilidades','compresion','herramientasparadesarrollar']];
 }
 ?>

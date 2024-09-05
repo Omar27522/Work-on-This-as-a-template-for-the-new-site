@@ -1,4 +1,4 @@
-<article class="fullbar"> <!--PLEASE REFORMAT THIS PAGE, MAKE THE CODE MORE READABLE -->
+<article class="fullbar"> <!--PLEASE REFORMAT THIS PAGE, MAKE THE CODE MORE READABLE  =0k= -->
     <!--Full Bar -->
     <section class="hero3" id="software">
         <div class="container"><?= empty($title) ? $titulo : $title;?>
@@ -7,53 +7,73 @@
             <?= empty($description) ? $descripcion[0] : $description[0];?>
         </div><span id="ps2"></span><br />
         <div class="container">
-<!--HAY UN ERROR EN LAS IMÁGENES EN ESPAÑOL-->
             <?php //ISSET checks if $_GET is set then depending on the key the switch statement will have the Spanish and english versions of each of the program categories. for right now the id's and the links will remain the same for both versions. and focuser image is the image file, later we might change this to incorporate a different version of the image.
             //Also the titles need to be changed || added to titulos for the h2 in the description
             if (isset($_GET)) :
                 switch (key($_GET)) :
-            case 'antivirus': $imag = 'av'; $title = 'Antivirus'; $titulo = $title; $id = 'Anti-Virus'; $link = 'antivirus'; break;
+            case 'antivirus': $imag = 'av'; $title = 'Antivirus'; $titulo = $title; $id = 'Anti-Virus'; $link = '#Anti-Virus';
+                break;
 
             case 'malwarecleaner': case 'limpiadordemalware':
-                $imag = 'mwc'; $title = 'Malware Cleaner'; $titulo = 'Limpiadores de Malware'; $id = 'MalwareCleaner'; $link = '#MalwareCleaner'; break;
+                $imag = 'mwc'; $title = 'Malware Cleaner'; $titulo = 'Limpiadores de Malware'; $id = 'MalwareCleaner'; $link = '#MalwareCleaner';
+                break;
 
             case 'webbrowsers': case 'navegadoresweb':
-                $imag = 'wb'; $title = 'Web Browsers'; $titulo = 'Navegadores Web';    $id = 'WebBrowsers';    $link = '#WebBrowsers';     break;
+                $imag = 'wb'; $title = 'Web Browsers'; $titulo = 'Navegadores Web'; $id = 'WebBrowsers'; $link = '#WebBrowsers';
+                break;
 
-            case 'messaging':
-                case 'mensajeria':            $imag = 'msg';      $title = 'Messaging';       $id = 'Messaging';      $link = '#Messaging';       break;
+            case 'messaging': case 'mensajeria':
+                    $imag = 'msg'; $title = 'Messaging'; $titulo = 'Mensajería'; $id = 'Messaging'; $link = '#Messaging';
+                break;
 
             case 'media': case'multimedia':
-                    $imag = 'media';$title = 'Media'; $titulo = 'Multi-Media'; $id = 'Media'; $link = '#Media'; break;
+                    $imag = 'media';$title = 'Media'; $titulo = 'Multi-Media'; $id = 'Media'; $link = '#Media';
+                break;
 
-            case 'runtimes':        $imag = 'rt';       $title = 'Runtimes';        $id = 'Runtimes';       $link = '#Runtimes';        break;
+            case 'runtimes':
+                $imag = 'rt'; $title = 'Runtimes'; $titulo = 'Tiempos de Ejecución'; $id = 'Runtimes'; $link = '#Runtimes';
+                break;
 
-            case 'imaging':         $imag = 'img';      $title = 'Imaging';         $id = 'Imaging';        $link = '#Imaging';         break;
+            case 'imaging': case 'imagenes':
+                $imag = 'img'; $title = 'Imaging'; $titulo = 'Imágenes'; $id = 'Imaging'; $link = '#Imaging';
+                break;
 
-            case 'documents':       $imag = 'docs';     $title = 'Documents';       $id = 'Documents';      $link = '#Documents';       break;
+            case 'documents': case 'documentos':
+                $imag = 'docs'; $title = 'Documents'; $titulo = 'Documentos'; $id = 'Documents'; $link = '#Documents';
+                break;
 
-            case 'filesharing':     $imag = 'filsha';   $title = 'File Sharing';    $id = 'FileSharing';    $link = '#FileSharing';     break;
+            case 'filesharing': case 'archivosparacompartir':
+                $imag = 'filsha'; $title = 'File Sharing'; $titulo ='Archivos para Compartir'; $id = 'FileSharing'; $link = '#FileSharing';
+                break;
 
-            case 'onlinestorage':   $imag = 'ons';      $title = 'Online Storage';  $id = 'OnlineStorage';  $link = '#OnlineStorage';   break;
+            case 'onlinestorage': case 'almacenamientoenlinea':
+                $imag = 'ons'; $title = 'Online Storage'; $titulo = 'Almacenamiento en Linea'; $id = 'OnlineStorage'; $link = '#OnlineStorage';
+                break;
 
-            case 'other':           $imag = 'ot';       $title = 'Other';           $id = 'Other';          $link = '#Other';           break;
+            case 'other': case 'otros':
+                $imag = 'ot'; $title = 'Other'; $titulo = 'Otros'; $id = 'Other'; $link = '#Other';
+                break;
 
-            case 'utilities':       $imag = 'utl';      $title = 'Utilities';       $id = 'Utilities';      $link = '#Utilities';       break;
+            case 'utilities': case 'utilidades':
+                $imag = 'utl'; $title = 'Utilities'; $titulo = 'Utilidades'; $id = 'Utilities'; $link = '#Utilities';
+                break;
 
-            case 'compression':     $imag = 'press';    $title = 'Compression';     $id = 'Compression';    $link = '#Compression';     break;
+            case 'compression': case 'compresion':
+                $imag = 'press'; $title = 'Compression'; $titulo = 'Compresión'; $id = 'Compression'; $link = '#Compression';
+                break;
 
-            case 'developertools':  $imag = 'dv';       $title = 'Developer Tools'; $id = 'DeveloperTools'; $link = '#DeveloperTools';  break;
+            case 'developertools': case 'herramientasparadesarrollar':
+                $imag = 'dv'; $title = 'Developer Tools'; $titulo = 'Herramientas de Desarrollo'; $id = 'DeveloperTools'; $link = '#DeveloperTools';
+                break;
 
-                default: "code";    $imag='code';          $link='#title'; break;
+                default: "code";    $imag='code';          $link='#title';
+                        break;
                 endswitch;
             endif;
             ?>
             <a href="<?php if(!empty($link)){echo$link;}else{echo"#title";} ?>">
                 <img src="https://latinospc.com/images/programs/<?= $imag; ?>.jpg" width="263" height="670"
                     alt="<?php if(!empty($title)){echo$title;}else{echo"image";} ?>" class="fl" /></a>
-            <!--
-runtimes','imagingenes','documentos','archivosparacompartir','almacenamientoenlinea','otros','utilidades','compression','herramientasparadesarrollar']];
-        -->
 
             <h2>&larr;
                 <?= empty($programs) ? $programas[0] : $programs[0];?>
@@ -118,7 +138,7 @@ runtimes','imagingenes','documentos','archivosparacompartir','almacenamientoenli
                 </a>
 
             </aside>
-            <div class="clr">each</div>
+            <div class="clr"></div>
             <h3><a href="<?php if (key($_GET)){ echo $link; } ?>" class="rm"
                     title="Programs"><?= empty($programs) ? $programas[15] : $programs[15];?></a></h3>
         </div>
@@ -128,26 +148,32 @@ runtimes','imagingenes','documentos','archivosparacompartir','almacenamientoenli
 
 <article class="fullbar" id="programs"><br />
     <?php if (key($_GET)){ ?>
-    <div id="<?= $id ?>" class="hero4 blurb">
+    <div id="<?= $id ?>" class="hero4 blurb" style="padding-bottom: 3em;">
         <h2><?php if ($sw == 'en'){echo $title;} elseif ($sw == 'es'){echo $titulo;}?></h2>
         <!-- here subtitle for the descriptions is being checked against the Spanish and English versions of the code. -->
-        <section tabindex="0" class="selection">
+        <section tabindex="0" class="selection"><p>
             <?php //INORDER TO GET THE DESIRED SOLUTION HERE, BOTH SPANISH AND ENGLISH IMPLEMENTATIONS HAVE TO BE CONSIDERED, LIKE HOW IM GOING TO CHOOSE BETWEEN THE LANGUAGES BASED ON THE STATE OF THE PAGE,
         //English version
         if ($sw == 'en'){
 //IKNOWTHISCODECANBESHORTENEDWITHSOMEALTSYNTAX Also make it readable
-
-        if (isset($_GET['antivirus'])) {
-                echo $descriptions ['av'];
-        }/* Click ON antivirus and a window with a description will open.
+/* Click ON antivirus and a window with a description will open.
         Click on the image and it will Take you to a directory inside software called antivirus.
         Read more will do the same.
         */
-                                                                           
-        elseif (isset($_GET['malwarecleaner'])) {
+        if (isset($_GET['antivirus'])) :
+                echo $descriptions ['av'];
+        
+
+        elseif (isset($_GET['malwarecleaner'])) :
             echo $descriptions ['mlwc'];
-            }
-        }
+            
+
+        elseif (isset($_GET['webbrowsers'])) :
+            echo $descriptions ['wb'];
+            
+
+        endif;
+    }
         //Spanish version
         if ($sw == 'es') {
 
@@ -164,7 +190,7 @@ runtimes','imagingenes','documentos','archivosparacompartir','almacenamientoenli
         }
 
         ?>
-        </section>
+        </p></section><span style="float:right; padding-right: 3em;">read more.</span>
     </div> <?php } ?>
     <br />
     <a href="#software" id="title" class="sub_title">
