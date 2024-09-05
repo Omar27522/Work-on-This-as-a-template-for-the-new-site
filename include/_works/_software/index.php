@@ -16,7 +16,7 @@ $description=[
             performances have to be coordinated in a way that makes the computer <b>run</b> without declaring any
             software errors, glitches, bugs, or unwanted features.)</p>'];
 $programs = ['Click on the image','Anti-Virus','Malware Cleaner','Web Browsers','Messaging','Media','Runtimes','Imaging','Documents','File Sharing','Online Storage','Other','Utilities','Compression','Development Tools','Read more',
-            'links'=>['antivirus','malwarecleaner']];
+            'links'=>['antivirus','malwarecleaner','webbrowsers','messaging','media','runtimes','imaging','documents','filesharing','onlinestorage','other','utilities','compression','developertools']];
 
 $descriptions = [
     'av'=>'<p>An anti-virus program in itself, is created to help the computer shield itself from viruses. The best antivirus solutions are the ones keeping Up to date with whats out there trying to harm the computer (PC). Also, the best antivirus solutions are simple, cost less than imagined, and bring peace of mind.</p>',

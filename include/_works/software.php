@@ -7,7 +7,7 @@
             <?= empty($description) ? $descripcion[0] : $description[0];?>
         </div><span id="ps2"></span><br />
         <div class="container">
-
+<!--HAY UN ERROR EN LAS IMÁGENES EN ESPAÑOL-->
             <?php //ISSET checks if $_GET is set then depending on the key the switch statement will have the Spanish and english versions of each of the program categories. for right now the id's and the links will remain the same for both versions. and focuser image is the image file, later we might change this to incorporate a different version of the image.
             //Also the titles need to be changed || added to titulos for the h2 in the description
             if (isset($_GET)) :
@@ -23,7 +23,8 @@
             case 'messaging':
                 case 'mensajeria':            $imag = 'msg';      $title = 'Messaging';       $id = 'Messaging';      $link = '#Messaging';       break;
 
-            case 'media':           $imag = 'media';    $title = 'Media';           $id = 'Media';          $link = '#Media';           break;
+            case 'media': case'multimedia':
+                    $imag = 'media';$title = 'Media'; $titulo = 'Multi-Media'; $id = 'Media'; $link = '#Media'; break;
 
             case 'runtimes':        $imag = 'rt';       $title = 'Runtimes';        $id = 'Runtimes';       $link = '#Runtimes';        break;
 
@@ -51,7 +52,7 @@
                 <img src="https://latinospc.com/images/programs/<?= $imag; ?>.jpg" width="263" height="670"
                     alt="<?php if(!empty($title)){echo$title;}else{echo"image";} ?>" class="fl" /></a>
             <!--
-multimedia','runtimes','imagingenes','documentos','archivosparacompartir','almacenamientoenlinea','otros','utilidades','compression','herramientasparadesarrollar']];
+runtimes','imagingenes','documentos','archivosparacompartir','almacenamientoenlinea','otros','utilidades','compression','herramientasparadesarrollar']];
         -->
 
             <h2>&larr;
@@ -59,37 +60,63 @@ multimedia','runtimes','imagingenes','documentos','archivosparacompartir','almac
             </h2>
             <!--Figure out a way that The link will go to the correct page in Spanish or English -->
             <aside class="colms2 buttons">
-                <a href="?<?= empty($programs) ? $programas['links'][0] : $programs['links'][0];?>#ps2"
-                    id="refresh"><button type="button"
-                        class="bttn"><?= empty($programs) ? $programas[1] : $programs[1];?></button></a>
-                <a href="?<?= empty($programs) ? $programas['links'][1] : $programs['links'][1];?>#ps2"
-                    id="refresh"><button type="button"
-                        class="bttn"><?= empty($programs) ? $programas[2] : $programs[2];?></button></a>
-                <a href="?<?= empty($programs) ? $programas['links'][2] : $programs['links'][2];?>#ps2"
-                    id="refresh"><button type="button"
-                        class="bttn"><?= empty($programs) ? $programas[3] : $programs[3];?></button></a>
-                <a href="?messaging#ps2" id="refresh"><button type="button"
-                        class="bttn"><?= empty($programs) ? $programas[4] : $programs[4];?></button></a>
-                <a href="?media#ps2" id="refresh"><button type="button"
-                        class="bttn"><?= empty($programs) ? $programas[5] : $programs[5];?></button></a>
-                <a href="?runtimes#ps2" id="refresh"><button type="button"
-                        class="bttn"><?= empty($programs) ? $programas[6] : $programs[6];?></button></a>
-                <a href="?imaging#ps2" id="refresh"><button type="button"
-                        class="bttn"><?= empty($programs) ? $programas[7] : $programs[7];?></button></a>
-                <a href="?documents#ps2" id="refresh"><button type="button"
-                        class="bttn"><?= empty($programs) ? $programas[8] : $programs[8];?></button></a>
-                <a href="?filesharing#ps2" id="refresh"><button type="button"
-                        class="bttn"><?= empty($programs) ? $programas[9] : $programs[9];?></button></a>
-                <a href="?onlinestorage#ps2" id="refresh"><button type="button"
-                        class="bttn"><?= empty($programs) ? $programas[10] : $programs[10];?></button></a>
-                <a href="?other#ps2" id="refresh"><button type="button"
-                        class="bttn"><?= empty($programs) ? $programas[11] : $programs[11];?></button></a>
-                <a href="?utilities#ps2" id="refresh"><button type="button"
-                        class="bttn"><?= empty($programs) ? $programas[12] : $programs[12];?></button></a>
-                <a href="?compression#ps2" id="refresh"><button type="button"
-                        class="bttn"><?= empty($programs) ? $programas[13] : $programs[13];?></button></a>
-                <a href="?developertools#ps2" id="refresh"><button type="button"
-                        class="bttn"><?= empty($programs) ? $programas[14] : $programs[14];?></button></a>
+
+                <a href="?<?= empty($programs) ? $programas['links'][0] : $programs['links'][0];?>#ps2">
+                    <button type="button"class="bttn"><?= empty($programs) ? $programas[1] : $programs[1];?></button>
+                </a>
+
+                <a href="?<?= empty($programs) ? $programas['links'][1] : $programs['links'][1];?>#ps2">
+                    <button type="button"class="bttn"><?= empty($programs) ? $programas[2] : $programs[2];?></button>
+                </a>
+
+                <a href="?<?= empty($programs) ? $programas['links'][2] : $programs['links'][2];?>#ps2">
+                    <button type="button"class="bttn"><?= empty($programs) ? $programas[3] : $programs[3];?></button>
+                </a>
+
+                <a href="?<?= empty($programs) ? $programas['links'][3] : $programs['links'][3];?>#ps2" >
+                    <button type="button"class="bttn"><?= empty($programs) ? $programas[4] : $programs[4];?></button>
+                </a>
+
+                <a href="?<?= empty($programs) ? $programas['links'][4] : $programs['links'][4];?>#ps2" >
+                    <button type="button"class="bttn"><?= empty($programs) ? $programas[5] : $programs[5];?></button>
+                </a>
+
+                <a href="?<?= empty($programs) ? $programas['links'][5] : $programs['links'][5];?>#ps2" >
+                    <button type="button"class="bttn"><?= empty($programs) ? $programas[6] : $programs[6];?></button>
+                </a>
+
+                <a href="?<?= empty($programs) ? $programas['links'][6] : $programs['links'][6];?>#ps2" >
+                    <button type="button"class="bttn"><?= empty($programs) ? $programas[7] : $programs[7];?></button>
+                </a>
+
+                <a href="?<?= empty($programs) ? $programas['links'][7] : $programs['links'][7];?>#ps2" >
+                    <button type="button"class="bttn"><?= empty($programs) ? $programas[8] : $programs[8];?></button>
+                </a>
+
+                <a href="?<?= empty($programs) ? $programas['links'][8] : $programs['links'][8];?>#ps2" >
+                    <button type="button"class="bttn"><?= empty($programs) ? $programas[9] : $programs[9];?></button>
+                </a>
+
+                <a href="?<?= empty($programs) ? $programas['links'][9] : $programs['links'][9];?>#ps2" >
+                    <button type="button"class="bttn"><?= empty($programs) ? $programas[10] : $programs[10];?></button>
+                </a>
+
+                <a href="?<?= empty($programs) ? $programas['links'][10] : $programs['links'][10];?>#ps2" >
+                    <button type="button"class="bttn"><?= empty($programs) ? $programas[11] : $programs[11];?></button>
+                </a>
+
+                <a href="?<?= empty($programs) ? $programas['links'][11] : $programs['links'][11];?>#ps2" >
+                    <button type="button"class="bttn"><?= empty($programs) ? $programas[12] : $programs[12];?></button>
+                </a>
+
+                <a href="?<?= empty($programs) ? $programas['links'][12] : $programs['links'][12];?>#ps2" >
+                    <button type="button"class="bttn"><?= empty($programs) ? $programas[13] : $programs[13];?></button>
+                </a>
+
+                <a href="?<?= empty($programs) ? $programas['links'][13] : $programs['links'][13];?>#ps2" >
+                    <button type="button"class="bttn"><?= empty($programs) ? $programas[14] : $programs[14];?></button>
+                </a>
+
             </aside>
             <div class="clr">each</div>
             <h3><a href="<?php if (key($_GET)){ echo $link; } ?>" class="rm"
