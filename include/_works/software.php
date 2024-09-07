@@ -147,50 +147,80 @@
 <!--Full Bar -->
 
 <article class="fullbar" id="programs"><br />
-    <?php if (key($_GET)){ ?>
+    <?php if (key($_GET)){
+        //<!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|-Short Descriptions -\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ `ღ´ -->
+    ?>
     <div id="<?= $id ?>" class="hero4 blurb" style="padding-bottom: 3em;">
         <h2><?php if ($sw == 'en'){echo $title;} elseif ($sw == 'es'){echo $titulo;}?></h2>
-        <!-- here subtitle for the descriptions is being checked against the Spanish and English versions of the code. -->
         <section tabindex="0" class="selection"><p>
-            <?php //INORDER TO GET THE DESIRED SOLUTION HERE, BOTH SPANISH AND ENGLISH IMPLEMENTATIONS HAVE TO BE CONSIDERED, LIKE HOW IM GOING TO CHOOSE BETWEEN THE LANGUAGES BASED ON THE STATE OF THE PAGE,
-        //English version
+            <?php
+        /* EG. Click ON antivirus or the "read more" link, and a window with a description will manifest lower down the page.
+       Read more inside the description will Take you to a directory inside software called antivirus.*/
+        //<!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|-English Version -\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ `ღ´ -->
         if ($sw == 'en'){
-//IKNOWTHISCODECANBESHORTENEDWITHSOMEALTSYNTAX Also make it readable
-/* Click ON antivirus and a window with a description will open.
-        Click on the image and it will Take you to a directory inside software called antivirus.
-        Read more will do the same.
-        */
-        if (isset($_GET['antivirus'])) :
-                echo $descriptions ['av'];
-        
-
-        elseif (isset($_GET['malwarecleaner'])) :
-            echo $descriptions ['mlwc'];
-            
-
-        elseif (isset($_GET['webbrowsers'])) :
-            echo $descriptions ['wb'];
-            
-
-        endif;
-    }
-        //Spanish version
-        if ($sw == 'es') {
-
-
-        if (isset($_GET['antivirus'])) {
-        echo 'AV spanish description';
-        }
-        elseif (isset($_GET['limpiadordemalware'])) {
-            echo 'MLWC spanish description';
-            }
-            elseif (isset($_GET['navegadoresweb'])) {
-                echo 'Navegadores Web spanish description';
+            $options = [
+                'antivirus'      => 'av',
+                'malwarecleaner' => 'mlwc',
+                'webbrowsers'    => 'wb',
+                'messaging'      => 'msg',
+                'media'          => 'media',
+                'runtimes'       => 'rtimes',
+                'imaging'        => 'imgs',
+                'documents'      => 'docs',
+                'filesharing'    => 'flsha',
+                'onlinestorage'  => 'onsto',
+                'other'          => 'oth',
+                'utilities'      => 'uth',
+                'compression'    => 'compr',
+                'developertools' => 'devtools'
+            ];  foreach ($options as $key => $value) {
+                    if (isset($_GET[$key])) {
+                        echo $descriptions[$value];
+                    break;
                 }
+            }
+        }
+        //<!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|-Spanish Version -\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ `ღ´ -->
+        if ($sw == 'es') {
+            $opciones = [
+                'antivirus'                   => 'av',
+                'limpiadordemalware'          => 'mlwc',
+                'navegadoresweb'              => 'wb',
+                'mensajeria'                  => 'msg',
+                'multimedia'                  => 'media',
+                'runtimes'                    => 'rtimes',
+                'imagenes'                    => 'imgs',
+                'documentos'                  => 'docs',
+                'archivosparacompartir'       => 'flsha',
+                'almacenamientoenlinea'       => 'onsto',
+                'otros'                       => 'oth',
+                'utilidades'                  => 'uth',
+                'compresion'                  => 'compr',
+                'herramientasparadesarrollar' => 'devtools'
+            ];  foreach ($opciones as $llave => $valor) {
+                    if (isset($_GET[$llave])) {
+                        echo $descripciones[$valor];
+                break;
+                }
+            }
         }
 
         ?>
-        </p></section><span style="float:right; padding-right: 3em;">read more.</span>
+
+
+    <!-- HERE begins the link that takes the user to a more well informative page -->
+
+
+
+
+        </p></section><a style="font-size: 1.3em; float:right; padding-right: 2em; margin-top: .7em;cursor: pointer;" href="<?php if (isset($_GET['antivirus'])) {echo 'antivirus';} ?>"><?php if ($sw == 'es') {echo 'Leer más';} else {echo'Read more';}?></a>
+
+
+
+
+
+
+
     </div> <?php } ?>
     <br />
     <a href="#software" id="title" class="sub_title">
