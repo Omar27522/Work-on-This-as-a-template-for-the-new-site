@@ -1,14 +1,15 @@
-<article class="fullbar"> <!--PLEASE REFORMAT THIS PAGE, MAKE THE CODE MORE READABLE  =0k= -->
-    <!--Full Bar -->
+<article class="fullbar">
     <section class="hero3" id="software">
-        <div class="container"><?= empty($title) ? $titulo : $title;?>
+        <div class="container"><h2><?= empty($titles) ? $titulos[0] : $titles[0];
+        #<!-- script checks if the english $variable is empty. if it is, the Spanish version will be displayed otherwise the English version will be displayed =0k= -->
+        ?></h2>
             <a href="#title"><img src="https://latinospc.com/images/programs/code.jpg" width="263" height="146"
                     alt="image" class="rtl" /></a>
             <?= empty($description) ? $descripcion[0] : $description[0];?>
         </div><span id="ps2"></span><br />
         <div class="container">
-            <?php //ISSET checks if $_GET is set then depending on the key the switch statement will have the Spanish and english versions of each of the program categories. for right now the id's and the links will remain the same for both versions. and focuser image is the image file, later we might change this to incorporate a different version of the image.
-            //Also the titles need to be changed || added to titulos for the h2 in the description
+            <?php /*ISSET checks if $_GET is set then depending on the key, the switch statement will have the Spanish and English versions of each of the program categories.
+                    For right now the id's and the links will remain the same for both versions.*/
             if (isset($_GET)) :
                 switch (key($_GET)) :
             case 'antivirus': $imag = 'av'; $title = 'Antivirus'; $titulo = $title; $id = 'Anti-Virus'; $link = '#Anti-Virus';
@@ -73,14 +74,12 @@
             ?>
             <a href="<?php if(!empty($link)){echo$link;}else{echo"#title";} ?>">
                 <img src="https://latinospc.com/images/programs/<?= $imag; ?>.jpg" width="263" height="670"
-                    alt="<?php if(!empty($title)){echo$title;}else{echo"image";} ?>" class="fl" /></a>
-
+                    alt="<?php if(!empty(key($_GET))){echo (key($_GET));}else{echo "Code Image";} ?>" class="fl" /></a>
             <h2>&larr;
                 <?= empty($programs) ? $programas[0] : $programs[0];?>
             </h2>
-            <!--Figure out a way that The link will go to the correct page in Spanish or English -->
+            <!--checks if the $variable programs is empty. if it is the Spanish version will be displayed. otherwise the english version will be displayed -->
             <aside class="colms2 buttons">
-
                 <a href="?<?= empty($programs) ? $programas['links'][0] : $programs['links'][0];?>#ps2">
                     <button type="button"class="bttn"><?= empty($programs) ? $programas[1] : $programs[1];?></button>
                 </a>
@@ -145,7 +144,6 @@
     </section>
 </article>
 <!--Full Bar -->
-
 <article class="fullbar" id="programs"><br />
     <?php if (key($_GET)){
         //<!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|-Short Descriptions -\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ `ღ´ -->
@@ -204,86 +202,106 @@
                 }
             }
         }
-
         ?>
-
-
-    <!-- HERE begins the link that takes the user to a more well informative page -->
-
-
-
-
-        </p></section><a style="font-size: 1.3em; float:right; padding-right: 2em; margin-top: .7em;cursor: pointer;" href="<?php if (isset($_GET['antivirus'])) {echo 'antivirus';} ?>"><?php if ($sw == 'es') {echo 'Leer más';} else {echo'Read more';}?></a>
-
-
-
-
-
-
+        </p></section><a style="font-size: 1.3em; float:right; padding-right: 2em; margin-top: .7em;cursor: pointer;" href="<?php
+            #<!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|-This link takes the user to a more informative page -\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ `ღ´ -->
+            if ($sw == 'en')  {
+                    if (isset($_GET['antivirus'])) {echo 'antivirus';}
+                    elseif (isset($_GET['malwarecleaner'])) {echo 'malwarecleaner';}
+                    elseif (isset($_GET['webbrowsers'])) {echo 'webbrowsers';}
+                    elseif (isset($_GET['messaging'])) {echo 'messaging';}
+                    elseif (isset($_GET['media'])) {echo 'media';}
+                    elseif (isset($_GET['runtimes'])) {echo 'runtimes';}
+                    elseif (isset($_GET['imaging'])) {echo 'imaging';}
+                    elseif (isset($_GET['documents'])) {echo 'documents';}
+                    elseif (isset($_GET['filesharing'])) {echo 'filesharing';}
+                    elseif (isset($_GET['onlinestorage'])) {echo 'onlinestorage';}
+                    elseif (isset($_GET['other'])) {echo 'other';}
+                    elseif (isset($_GET['utilities'])) {echo 'utilities';}
+                    elseif (isset($_GET['compression'])) {echo 'compression';}
+                    elseif (isset($_GET['developertools'])) {echo 'developtools';}
+                }
+                  elseif ($sw == 'es') {
+                    if (isset($_GET['antivirus'])) {echo 'antivirus';}
+                    elseif (isset($_GET['limpiadoresdemalware'])) {echo 'limpiadoresdemalware';}
+                    elseif (isset($_GET['navegadoresweb'])) {echo 'navegadoresweb';}
+                    elseif (isset($_GET['mensajeria'])) {echo 'mensajeria';}
+                    elseif (isset($_GET['multimedia'])) {echo 'multimedia';}
+                    elseif (isset($_GET['runtimes'])) {echo 'tiemposdeejecucion';}
+                    elseif (isset($_GET['imagenes'])) {echo 'imagenes';}
+                    elseif (isset($_GET['documentos'])) {echo 'documentos';}
+                    elseif (isset($_GET['archivosparacompartir'])) {echo 'archivosparacompartir';}
+                    elseif (isset($_GET['almacenamientoenlinea'])) {echo 'almacenamientoenlinea';}
+                    elseif (isset($_GET['otros'])) {echo 'otros';}
+                    elseif (isset($_GET['utilidades'])) {echo 'utilidades';}
+                    elseif (isset($_GET['compresion'])) {echo 'compresion';}
+                    elseif (isset($_GET['herramientasparadesarrollar'])) {echo 'herramientasparadesarrollar';}
+                }
+                    ?>">    <?php if ($sw == 'es') {echo 'Leer más';} else {echo'Read more';}?></a>
 
     </div> <?php } ?>
     <br />
     <a href="#software" id="title" class="sub_title">
-        When it comes to choosing the right software for the job, there are many factors to consider.</a>
+        <?= empty($titles) ? $titulos[1] : $titles[1]; ?>
+        </a>
     <div class="spacer">
         <hr />
     </div><br />
-
-
-
-
     <div class="hero4 blurb">
-        <h2>Here are a few steps you can take to help you make the right choice:</h2>
+        <h2><?= empty($titles) ? $titulos[2] : $titles[2]; ?></h2>
         <section tabindex="0" class="selection">
-
-            <p><strong>Define your requirements:</strong> Clearly define the specific tasks and functionality you need
-                the software to perform. This will help you to narrow down your options and make it easier to compare
-                different software packages.</p>
-            <p><strong>Research available options:</strong> Look into the different software options available that meet
-                your requirements. Make a list of the software packages that seem like they would be a good fit.</p>
-            <p><strong>Check for compatibility:</strong> Make sure that the software is compatible with your operating
-                system and any other software you are currently using. Also check if the software is compatible with
-                any hardware you are using as well.</p>
-            <p><strong>Read reviews and user feedback:</strong> Read online reviews and user feedback to get an idea of
-                how well the software works and how easy it is to use.</p>
-            <p>
-                <strong>Try before you buy:</strong> Many software vendors offer free trial versions of their software,
-                so you can test the software out before you make a purchase.
+            <p><strong><?= empty($rightChoice) ? $correctaEleccion['strong'][0] : $rightChoice['strong'][0]; ?>:</strong>
+            <?= empty($rightChoice) ? $correctaEleccion['descriptions'][0] : $rightChoice['descriptions'][0]; ?>
             </p>
-            <p><strong>Consider cost:</strong> Consider the cost of the software, including any additional costs for
-                support, upgrades, or additional features. Compare the cost of different software packages and see
-                which one offers the best value for your budget.</p>
-            <p><strong>Support and updates:</strong> Consider the level of support and updates provided by the software
-                vendor. Make sure that the software will continue to be updated and supported in the future.</p>
-            <p><strong>Technical requirements:</strong> If you are looking for software that require specific technical
-                requirements, make sure that the software you choose meet them, for example if you are developing a
-                mobile app, make sure that the software you choose can export the app to the platform you need.</p>
-
-            <h2>Ultimately, the key is to find software that meets your specific needs and fits
-                within your budget, while also being easy to use and compatible with your current setup.</h2>
+            <p><strong><?= empty($rightChoice) ? $correctaEleccion['strong'][1] : $rightChoice['strong'][1]; ?>:</strong>
+            <?= empty($rightChoice) ? $correctaEleccion['descriptions'][1] : $rightChoice['descriptions'][1]; ?>
+            </p>
+            <p><strong><?= empty($rightChoice) ? $correctaEleccion['strong'][2] : $rightChoice['strong'][2]; ?>:</strong>
+            <?= empty($rightChoice) ? $correctaEleccion['descriptions'][2] : $rightChoice['descriptions'][2]; ?>
+            </p>
+            <p><strong><?= empty($rightChoice) ? $correctaEleccion['strong'][3] : $rightChoice['strong'][3]; ?>:</strong>
+            <?= empty($rightChoice) ? $correctaEleccion['descriptions'][3] : $rightChoice['descriptions'][3]; ?>
+            </p>
+            <p><strong><?= empty($rightChoice) ? $correctaEleccion['strong'][4] : $rightChoice['strong'][4]; ?>:</strong>
+            <?= empty($rightChoice) ? $correctaEleccion['descriptions'][4] : $rightChoice['descriptions'][4]; ?>
+            </p>
+            <p><strong><?= empty($rightChoice) ? $correctaEleccion['strong'][5] : $rightChoice['strong'][5]; ?>:</strong>
+            <?= empty($rightChoice) ? $correctaEleccion['descriptions'][5] : $rightChoice['descriptions'][5]; ?>
+            </p>
+            <p><strong><?= empty($rightChoice) ? $correctaEleccion['strong'][6] : $rightChoice['strong'][6]; ?>:</strong>
+            <?= empty($rightChoice) ? $correctaEleccion['descriptions'][6] : $rightChoice['descriptions'][6]; ?>
+            </p>
+            <p><strong><?= empty($rightChoice) ? $correctaEleccion['strong'][7] : $rightChoice['strong'][7]; ?>:</strong>
+            <?= empty($rightChoice) ? $correctaEleccion['descriptions'][7] : $rightChoice['descriptions'][7]; ?></p>
+            <h2>
+            <?= empty($titles) ? $titulos[3] : $titles[3]; ?>
+            </h2><!-- Implement the Spanish version of the right choice $variable, is not on _works/_software/index.php -->
         </section>
     </div> <br />
     <ul tabindex="0" class="selection hero4">
         <a href="#navi">
-            <h2>Open source:</h2>
+            <h2><?= empty($titles) ? $titulos[4] : $titles[4]; ?>:</h2>
+        </a> <!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|-
+        NOT REALLY SURE WHAT I AM TRYING TO DO HERE.
+        I WAS CONSIDERING MAYBE MOVING THESE TWO LAST SECTIONS UNDERNEATH THE FIRST SECTION RIGHT BEFORE THE BUTTONS, BUT IDK.
+        -\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ `ღ´ -->
+        <p>This type of software is freely available for use, modification, and distribution. The source code is also available for users to view and modify.</p>
+        <a href="#navi">
+            <h2><?= empty($titles) ? $titulos[5] : $titles[5]; ?>:</h2>
         </a>
-        <li class="no-list">This type of software is freely available for use, modification, and distribution. The
-            source
-            code is also available for users to view and modify.</li>
-        <p><a href="#navi">
-                <h2>Free:</h2>
-            </a>This type of software is also freely available for use, but the source code may not be available
-            for modification.</p>
-        <p>
-        <h2><a href="#navi">Shareware:</h2></a>This type of software is typically available for a free trial
+        <p>This type of software is also freely available for use, but the source code may not be available for modification.</p>
+        <a href="#navi">
+            <h2><?= empty($titles) ? $titulos[6] : $titles[6]; ?>:</h2>
+        </a>
+        <p>This type of software is typically available for a free trial
         period, after which the user must purchase a license to continue using the software.</p>
         <p>
-        <h2><a href="#navi">Trialware:</h2></a> Similar to shareware, this type of software is available for a
+        <h2><a href="#navi"><?= empty($titles) ? $titulos[7] : $titles[7]; ?>:</h2></a> Similar to shareware, this type of software is available for a
         free trial period, but typically includes more limitations or reduced functionality.</p>
         <p>
-        <h2><a href="#navi">Paid:</h2></a> This type of software must be purchased in order to use it.</p>
+        <h2><a href="#navi"><?= empty($titles) ? $titulos[8] : $titles[8]; ?>:</h2></a> This type of software must be purchased in order to use it.</p>
         <p>
-        <h2><a href="#navi">Subscription:</h2></a> This type of software requires a recurring payment (such as a
+        <h2><a href="#navi"><?= empty($titles) ? $titulos[9] : $titles[9]; ?>:</h2></a> This type of software requires a recurring payment (such as a
         monthly or annual fee) in order to continue using the software. Examples include software as a service
         (SaaS) applications.</p>
     </ul>

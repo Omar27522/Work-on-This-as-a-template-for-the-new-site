@@ -1,6 +1,16 @@
 <?php
 if ($sw == 'en'){
-$title ='<h2>Commonly known as computer programs -these, are the instructions for the computer’s tasks.</h2>';
+$titles = ['Commonly known as computer programs -these, are the instructions for the computer’s tasks.',
+          'When it comes to choosing the right software for the job, there are many factors to consider.',
+          'Here are a few steps you can take to help you make the right choice:',
+          'Ultimately, the key is to find software that meets your specific needs and fits within your budget, while also being easy to use and compatible with your current setup.',
+          'Open Source',
+          'Free',
+          'Shareware',
+          'Trialware',
+          'Paid',
+          'Subscription',
+        ];
 $description=[
     '<p>Like paper
             programs, (which we get before the start of performances, like Concert Shows, a Graduation or Stage Plays.</p>
@@ -33,16 +43,34 @@ $descriptions = [//up to 52 word descriptions
     'uth'=>'Computer utilities manage, maintain, and optimize performance by cleaning hard drives, defragmenting disks, repairing errors, and enhancing security. Examples include antivirus software, disk cleanup tools, and system optimizers. These utilities, either built-in or standalone, improve speed and efficiency, ensuring smooth operation and preventing issues.',
     'compr'=>'File compression reduces file size for storage and transmission. Early methods like run-length encoding evolved into sophisticated algorithms such as LZW, used in GIF and ZIP formats. Modern compression includes MP3 and JPEG. Common formats include ZIP, RAR, TAR, GZ, and BZ2, enhancing efficiency and performance.',
     'devtools'=>'Here at LAtinosPC, developers enhance the website to be advanced yet user-friendly. They refine code for clarity and organization, ensuring a seamless browsing experience. Utilizing tools like Google Keep, WPS Office, Notepad++, GIMP, and WAMP, they create a better site for visitors, supported by resources like FileHippo and SourceForge.'
-
-
-];
-        }
+    ];
+$rightChoice = [
+    'strong' => [ 'Define your requirements',
+                'Research available options',
+                'Check for compatibility',
+                'Read reviews and user feedback',
+                'Try before you buy',
+                'Consider cost',
+                'Support and updates',
+                'Technical requirements'
+                ],
+    'descriptions' => [ 'Clearly define the specific tasks and functionality you need the software to perform. This will help you to narrow down your options and make it easier to compare different software packages.',
+                        'Look into the different software options available that meet your requirements. Make a list of the software packages that seem like they would be a good fit.',
+                        'Make sure that the software is compatible with your operating system and any other software you are currently using. Also check if the software is compatible with any hardware you are using as well.',
+                        'Read online reviews and user feedback to get an idea of how well the software works and how easy it is to use.',
+                        'Many software vendors offer free trial versions of their software, so you can test the software out before you make a purchase.',
+                        'Consider the cost of the software, including any additional costs for support, upgrades, or additional features. Compare the cost of different software packages and see which one offers the best value for your budget.',
+                        'Consider the level of support and updates provided by the software vendor. Make sure that the software will continue to be updated and supported in the future.',
+                        'If you are looking for software that require specific technical requirements, make sure that the software you choose meet them, for example if you are developing a mobile app, make sure that the software you choose can export the app to the platform you need.'
+                      ]
+    ];
+}
 
 if ($sw == 'es') {
     /*change this one to titles and fix teh PHP code structure on Software,
     I just came back to it and Im using this file as both the English and Spanish software $vars file*/
 
-$titulo = '<h2>Conocidos comúnmente como programas de computadora -estos son las instrucciones para las tareas del ordenador.</h2>';
+$titulos = ['Conocidos comúnmente como programas de computadora -estos son las instrucciones para las tareas del ordenador.', 'dajsdakjsdajsdhajs','djasdkjasdh'];
 
 $descripcion = ['<p>Al igual que los programas en papel (los cuales recibimos antes de comenzar los eventos, como conciertos, graduaciones o obras de teatro).</p>
 <p><strong>El software</strong> es una forma de comunicar al usuario de la computadora sobre las tareas en curso del sistema.<br />
