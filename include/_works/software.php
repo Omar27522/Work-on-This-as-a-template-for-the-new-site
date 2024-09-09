@@ -6,6 +6,7 @@
             <a href="#title"><img src="https://latinospc.com/images/programs/code.jpg" width="263" height="146"
                     alt="image" class="rtl" /></a>
             <?= empty($description) ? $descripcion[0] : $description[0];?>
+            <a href="#title"><?= empty($programs) ? $programas[15] : $programs[15];?></a>
         </div><span id="ps2"></span><br />
         <div class="container">
             <?php /*ISSET checks if $_GET is set then depending on the key, the switch statement will have the Spanish and English versions of each of the program categories.
@@ -238,7 +239,6 @@
                     elseif (isset($_GET['herramientasparadesarrollar'])) {echo 'herramientasparadesarrollar';}
                 }
                     ?>">    <?php if ($sw == 'es') {echo 'Leer más';} else {echo'Read more';}?></a>
-
     </div> <?php } ?>
     <br />
     <a href="#software" id="title" class="sub_title">
@@ -285,25 +285,36 @@
         NOT REALLY SURE WHAT I AM TRYING TO DO HERE.
         I WAS CONSIDERING MAYBE MOVING THESE TWO LAST SECTIONS UNDERNEATH THE FIRST SECTION RIGHT BEFORE THE BUTTONS, BUT IDK.
         -\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ `ღ´ -->
-        <p>This type of software is freely available for use, modification, and distribution. The source code is also available for users to view and modify.</p>
+        <p>
+        <?= empty($types) ? $tipos['codigoabierto'] : $types['opensource']; ?>
+        </p>
         <a href="#navi">
             <h2><?= empty($titles) ? $titulos[5] : $titles[5]; ?>:</h2>
         </a>
-        <p>This type of software is also freely available for use, but the source code may not be available for modification.</p>
+        <p>
+        <?= empty($types) ? $tipos['free'] : $types['free']; ?>
+        </p>
         <a href="#navi">
             <h2><?= empty($titles) ? $titulos[6] : $titles[6]; ?>:</h2>
         </a>
-        <p>This type of software is typically available for a free trial
-        period, after which the user must purchase a license to continue using the software.</p>
         <p>
-        <h2><a href="#navi"><?= empty($titles) ? $titulos[7] : $titles[7]; ?>:</h2></a> Similar to shareware, this type of software is available for a
-        free trial period, but typically includes more limitations or reduced functionality.</p>
+        <?= empty($types) ? $tipos['shareware'] : $types['shareware']; ?>
+        </p>
+        
+        <h2><a href="#navi"><?= empty($titles) ? $titulos[7] : $titles[7]; ?>:</h2></a>
         <p>
-        <h2><a href="#navi"><?= empty($titles) ? $titulos[8] : $titles[8]; ?>:</h2></a> This type of software must be purchased in order to use it.</p>
+            <?= empty($types) ? $tipos['trial'] : $types['trialware']; ?>
+        </p>
+        
+        <h2><a href="#navi"><?= empty($titles) ? $titulos[8] : $titles[8]; ?>:</h2></a>
         <p>
-        <h2><a href="#navi"><?= empty($titles) ? $titulos[9] : $titles[9]; ?>:</h2></a> This type of software requires a recurring payment (such as a
-        monthly or annual fee) in order to continue using the software. Examples include software as a service
-        (SaaS) applications.</p>
+        <?= empty($types) ? $tipos['paid'] : $types['paid']; ?>
+        </p>
+        
+        <h2><a href="#navi"><?= empty($titles) ? $titulos[9] : $titles[9]; ?>:</h2></a>
+        <p>
+            <?= empty($types) ? $tipos['subscription'] : $types['subscription']; ?>
+        </p>
     </ul>
 </article>
 <br />

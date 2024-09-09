@@ -64,6 +64,14 @@ $rightChoice = [
                         'If you are looking for software that require specific technical requirements, make sure that the software you choose meet them, for example if you are developing a mobile app, make sure that the software you choose can export the app to the platform you need.'
                       ]
     ];
+$types=[
+    'opensource'=>'This type of software is freely available for use, modification, and distribution. The source code is also available for users to view and modify.',
+    'free'=>'This type of software is also freely available for use, but the source code may not be available for modification.',
+    'shareware'=>'This type of software is typically available for a free trial period, after which the user must purchase a license to continue using the software.',
+    'trialware'=>'Similar to shareware, this type of software is available for a free trial period, but typically includes more limitations or reduced functionality.',
+    'paid'=>'This type of software must be purchased in order to use it.',
+    'subscription'=>'This type of software requires a recurring payment (such as a monthly or annual fee) in order to continue using the software. Examples include software as a service (SaaS) applications.',
+];
 }
 
 if ($sw == 'es') {
