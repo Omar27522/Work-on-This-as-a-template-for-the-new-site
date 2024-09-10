@@ -45,15 +45,15 @@ $descriptions = [//up to 52 word descriptions
     'devtools'=>'Here at LAtinosPC, developers enhance the website to be advanced yet user-friendly. They refine code for clarity and organization, ensuring a seamless browsing experience. Utilizing tools like Google Keep, WPS Office, Notepad++, GIMP, and WAMP, they create a better site for visitors, supported by resources like FileHippo and SourceForge.'
     ];
 $rightChoice = [
-    'strong' => [ 'Define your requirements',
-                'Research available options',
-                'Check for compatibility',
-                'Read reviews and user feedback',
-                'Try before you buy',
-                'Consider cost',
-                'Support and updates',
-                'Technical requirements'
-                ],
+    'strong' => [     'Define your requirements',
+                      'Research available options',
+                      'Check for compatibility',
+                      'Read reviews and user feedback',
+                      'Try before you buy',
+                      'Consider cost',
+                      'Support and updates',
+                      'Technical requirements'
+                      ],
     'descriptions' => [ 'Clearly define the specific tasks and functionality you need the software to perform. This will help you to narrow down your options and make it easier to compare different software packages.',
                         'Look into the different software options available that meet your requirements. Make a list of the software packages that seem like they would be a good fit.',
                         'Make sure that the software is compatible with your operating system and any other software you are currently using. Also check if the software is compatible with any hardware you are using as well.',
@@ -78,7 +78,17 @@ if ($sw == 'es') {
     /*change this one to titles and fix teh PHP code structure on Software,
     I just came back to it and Im using this file as both the English and Spanish software $vars file*/
 
-$titulos = ['Conocidos comúnmente como programas de computadora -estos son las instrucciones para las tareas del ordenador.', 'dajsdakjsdajsdhajs','djasdkjasdh'];
+$titulos = ['Comúnmente conocidos como programas de computadora - estos son las instrucciones para las tareas del equipo.',
+    'Cuando se trata de elegir el software adecuado para el trabajo, hay muchos factores a considerar.',
+    'Aquí hay algunos pasos que puedes seguir para ayudarte a tomar la decisión correcta:',
+    'En última instancia, la clave es encontrar software que satisfaga tus necesidades específicas y se ajuste a tu presupuesto, además de ser fácil de usar y compatible con tu configuración actual.',
+    'Código Abierto',
+    'Gratuito',
+    'Shareware',
+    'Trialware',
+    'De Pago',
+    'Suscripción',
+  ];
 
 $descripcion = ['<p>Al igual que los programas en papel (los cuales recibimos antes de comenzar los eventos, como conciertos, graduaciones o obras de teatro).</p>
 <p><strong>El software</strong> es una forma de comunicar al usuario de la computadora sobre las tareas en curso del sistema.<br />
@@ -106,5 +116,37 @@ $descripciones = [
     'compr'=>'La compresión de archivos reduce el tamaño del archivo para almacenamiento y transmisión. Los métodos antiguos como la codificación de longitud de ejecución evolucionaron a algoritmos sofisticados como LZW, utilizados en los formatos GIF y ZIP. La compresión moderna incluye MP3 y JPEG. Los formatos comunes incluyen ZIP, RAR, TAR, GZ y BZ2, lo que mejora la eficiencia y el rendimiento.',
     'devtools'=>'Aquí en LAtinosPC, nuestros desarrolladores mejoran el sitio web para que sea avanzado pero fácil de usar. Refinando el código para que sea claro y organizado, asegurando una experiencia de navegación sin problemas. Utilizando herramientas como Google Keep, WPS Office, Notepad++, GIMP y WAMP, crean un mejor sitio para los visitantes, respaldado por recursos como FileHippo y SourceForge.'
 ];
+
+$correctaEleccion = [
+    'strong' => [ 'Define tus requisitos',
+                'Investiga las opciones disponibles',
+                'Verifica la compatibilidad',
+                'Lee reseñas y comentarios de usuarios',
+                'Prueba antes de comprar',
+                'Considera el costo',
+                'Soporte y actualizaciones',
+                'Requisitos técnicos'
+                ],
+    'descriptions' => [ 'Define claramente las tareas y funcionalidades específicas que necesitas que el software realice. Esto te ayudará a reducir tus opciones y a comparar diferentes paquetes de software.',
+                        'Investiga las diferentes opciones de software disponibles que cumplan con tus requisitos. Haz una lista de los paquetes de software que parezcan ser adecuados.',
+                        'Asegúrate de que el software sea compatible con tu sistema operativo y con cualquier otro software que estés utilizando. También verifica si el software es compatible con el hardware que estés usando.',
+                        'Lee reseñas en línea y comentarios de usuarios para tener una idea de qué tan bien funciona el software y qué tan fácil es de usar.',
+                        'Muchos proveedores de software ofrecen versiones de prueba gratuitas, para que puedas probar el software antes de comprarlo.',
+                        'Considera el costo del software, incluidos los costos adicionales por soporte, actualizaciones o características adicionales. Compara el costo de diferentes paquetes de software y ve cuál ofrece el mejor valor para tu presupuesto.',
+                        'Considera el nivel de soporte y actualizaciones proporcionado por el proveedor del software. Asegúrate de que el software seguirá siendo actualizado y soportado en el futuro.',
+                        'Si buscas software que requiera requisitos técnicos específicos, asegúrate de que el software que elijas los cumpla, por ejemplo, si estás desarrollando una app móvil, asegúrate de que el software que elijas pueda exportar la app a la plataforma que necesitas.'
+                      ]
+];
+
+
+$tipos = [
+    'codigoabierto' => 'Este tipo de software está disponible de forma gratuita para su uso, modificación y distribución. El código fuente también está disponible para que los usuarios lo vean y lo modifiquen.',
+    'gratis' => 'Este tipo de software también está disponible de forma gratuita para su uso, pero el código fuente puede no estar disponible para su modificación.',
+    'shareware' => 'Este tipo de software generalmente está disponible por un período de prueba gratuito, después del cual el usuario debe comprar una licencia para continuar usando el software.',
+    'prueba' => 'Similar al shareware, este tipo de software está disponible por un período de prueba gratuito, pero generalmente incluye más limitaciones o funcionalidad reducida.',
+    'pagado' => 'Este tipo de software debe comprarse para poder utilizarlo.',
+    'subscripcion' => 'Este tipo de software requiere un pago recurrente (como una tarifa mensual o anual) para continuar usándolo. Ejemplos incluyen aplicaciones de software como servicio (SaaS).',
+];
+
         }
 ?>

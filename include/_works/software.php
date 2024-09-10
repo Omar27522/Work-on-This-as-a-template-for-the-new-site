@@ -292,7 +292,7 @@
             <h2><?= empty($titles) ? $titulos[5] : $titles[5]; ?>:</h2>
         </a>
         <p>
-        <?= empty($types) ? $tipos['free'] : $types['free']; ?>
+        <?= empty($types) ? $tipos['gratis'] : $types['free']; ?>
         </p>
         <a href="#navi">
             <h2><?= empty($titles) ? $titulos[6] : $titles[6]; ?>:</h2>
@@ -303,17 +303,17 @@
         
         <h2><a href="#navi"><?= empty($titles) ? $titulos[7] : $titles[7]; ?>:</h2></a>
         <p>
-            <?= empty($types) ? $tipos['trial'] : $types['trialware']; ?>
+            <?= empty($types) ? $tipos['prueba'] : $types['trialware']; ?>
         </p>
         
         <h2><a href="#navi"><?= empty($titles) ? $titulos[8] : $titles[8]; ?>:</h2></a>
         <p>
-        <?= empty($types) ? $tipos['paid'] : $types['paid']; ?>
+        <?= empty($types) ? $tipos['pagado'] : $types['paid']; ?>
         </p>
         
         <h2><a href="#navi"><?= empty($titles) ? $titulos[9] : $titles[9]; ?>:</h2></a>
         <p>
-            <?= empty($types) ? $tipos['subscription'] : $types['subscription']; ?>
+            <?= empty($types) ? $tipos['subscripcion'] : $types['subscription']; ?>
         </p>
     </ul>
 </article>
