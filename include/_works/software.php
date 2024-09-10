@@ -220,7 +220,7 @@
                     elseif (isset($_GET['other'])) {echo 'other';}
                     elseif (isset($_GET['utilities'])) {echo 'utilities';}
                     elseif (isset($_GET['compression'])) {echo 'compression';}
-                    elseif (isset($_GET['developertools'])) {echo 'developtools';}
+                    elseif (isset($_GET['developertools'])) {echo 'developertools';}
                 }
                   elseif ($sw == 'es') {
                     if (isset($_GET['antivirus'])) {echo 'antivirus';}
@@ -236,7 +236,7 @@
                     elseif (isset($_GET['otros'])) {echo 'otros';}
                     elseif (isset($_GET['utilidades'])) {echo 'utilidades';}
                     elseif (isset($_GET['compresion'])) {echo 'compresion';}
-                    elseif (isset($_GET['herramientasparadesarrollar'])) {echo 'herramientasparadesarrollar';}
+                    elseif (isset($_GET['herramientasparadesarrollar'])) {echo 'herramientasparadesarrolladores';}
                 }
                     ?>">    <?php if ($sw == 'es') {echo 'Leer más';} else {echo'Read more';}?></a>
     </div> <?php } ?>
@@ -278,40 +278,45 @@
             </h2><!-- Implement the Spanish version of the right choice $variable, is not on _works/_software/index.php -->
         </section>
     </div> <br />
-    <ul tabindex="0" class="selection hero4">
-        <a href="#navi">
-            <h2><?= empty($titles) ? $titulos[4] : $titles[4]; ?>:</h2>
-        </a> <!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|-
-        NOT REALLY SURE WHAT I AM TRYING TO DO HERE.
-        I WAS CONSIDERING MAYBE MOVING THESE TWO LAST SECTIONS UNDERNEATH THE FIRST SECTION RIGHT BEFORE THE BUTTONS, BUT IDK.
+    <ul tabindex="0" class="selection hero4"><!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|-
+        links, will choose which $links item from the array to use.
+        Only open source is available, I hope I can have many more links to use.
+        This will be done after the structure of the site is done.
+        <b>Links</b> and <b>images</b> for the site will be some of the last items to be worked on.
         -\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ `ღ´ -->
+        <a href="<?= empty($links['opensource']) ? $links['codigoabierto'] : $links['opensource']; ?>">
+            <h2><?= empty($titles) ? $titulos[4] : $titles[4]; ?>:</h2>
+        </a>
         <p>
         <?= empty($types) ? $tipos['codigoabierto'] : $types['opensource']; ?>
         </p>
-        <a href="#navi">
+        <a href="#navi"><!-- (╯°□°）╯ FREE ┻━┻ `ღ´ -->
             <h2><?= empty($titles) ? $titulos[5] : $titles[5]; ?>:</h2>
         </a>
         <p>
         <?= empty($types) ? $tipos['gratis'] : $types['free']; ?>
         </p>
-        <a href="#navi">
+        <a href="#navi"><!-- (╯°□°）╯ SHAREWARE  ┻━┻ `ღ´ -->
             <h2><?= empty($titles) ? $titulos[6] : $titles[6]; ?>:</h2>
         </a>
         <p>
         <?= empty($types) ? $tipos['shareware'] : $types['shareware']; ?>
         </p>
-        
-        <h2><a href="#navi"><?= empty($titles) ? $titulos[7] : $titles[7]; ?>:</h2></a>
+        <h2><a href="#navi"><!-- (╯°□°）╯ TRIAL ┻━┻ `ღ´ -->
+            <?= empty($titles) ? $titulos[7] : $titles[7]; ?>:</h2>
+        </a>
         <p>
             <?= empty($types) ? $tipos['prueba'] : $types['trialware']; ?>
         </p>
-        
-        <h2><a href="#navi"><?= empty($titles) ? $titulos[8] : $titles[8]; ?>:</h2></a>
+        <h2><a href="#navi"><!-- (╯°□°）╯ PAID ┻━┻ `ღ´ -->
+            <?= empty($titles) ? $titulos[8] : $titles[8]; ?>:</h2>
+        </a>
         <p>
         <?= empty($types) ? $tipos['pagado'] : $types['paid']; ?>
         </p>
-        
-        <h2><a href="#navi"><?= empty($titles) ? $titulos[9] : $titles[9]; ?>:</h2></a>
+        <h2><a href="#navi"><!-- (╯°□°）╯ SUBSCRIPTION ┻━┻ `ღ´ -->
+            <?= empty($titles) ? $titulos[9] : $titles[9]; ?>:</h2>
+        </a>
         <p>
             <?= empty($types) ? $tipos['subscripcion'] : $types['subscription']; ?>
         </p>

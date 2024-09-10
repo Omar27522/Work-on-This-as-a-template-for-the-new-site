@@ -22,4 +22,12 @@ function content(){
     endswitch;
 endif;
 }
+
+/*---->CONTENT<---
+Each of the subdirectories shall look like this one. maybe have the content just like hardware
+under _works/_software/
+where the actual content will be held, make it simple, similar, and easy to understand.
+
+
+*/
 ?>
