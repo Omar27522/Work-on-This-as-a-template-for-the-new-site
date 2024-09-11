@@ -13,21 +13,24 @@ function content(){
     //$include_path   = '../include/_works/_hardware/';
     //$software_path  = '../hardware/';
 
- if (isset($_GET)) :
-    switch (key($_GET)) :
- default:
+ //if (isset($_GET)) :
+   // switch (key($_GET)) :
+ //default:
         include ('../include/_works/_software/index.php');
         include ('../include/_works/software.php');
-            break;
-    endswitch;
-endif;
+            //break;
+    //endswitch;
+//endif;
 }
 
 /*---->CONTENT<---
 Each of the subdirectories shall look like this one. maybe have the content just like hardware
 under _works/_software/
 where the actual content will be held, make it simple, similar, and easy to understand.
+*/
 
+/*The work has begun, the last item added was devtools
+    Docs has page template, we just need to import Articles/Software from LiveLATPC for the remainder of the items.
 
 */
 ?>
