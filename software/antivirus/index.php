@@ -7,7 +7,7 @@ $directoryPath = '../../';
 include ('../../include/_code/page.php');
 
     function content(){
-        echo'Antivirus'; //This first echo shifts the <h2> to the left. once deleted it goes back with indentation.
+        //echo'Antivirus'; //This first echo shifts the <h2> to the left. once deleted it goes back with indentation.
         include ('../../include/_works/_software/antivirus.php');
     }
 ?>
