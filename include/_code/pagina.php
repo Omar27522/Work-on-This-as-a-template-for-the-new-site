@@ -54,34 +54,27 @@
                 <a href="<?= $directoryPath ?>español/acerca/escritura/">Escritura</a>
 
                 </div>
-              </li>
+              </li><!-- Menu-nav bar -->
+              <li class="<?= empty($home) ? ($home = 'current') : ($home = 'active'); ?>">
+                <a href="<?=$directoryPath ?>español">Inicio</a></li>
 
-              <li class="<?= empty($casa) ? ($casa = 'current') : ($casa = 'active'); ?>">
-              <a href="<?= ($casa == 'active') ? './' : $directoryPath.'./español/'; ?>">Inicio</a></li>
+              <li class="<?= empty($es) ? ($es = 'current') : ($es = 'active');?>">
+                <a href="<?= $directoryPath ?>">English</a></li>
 
-              <li class="current">
-                <a href="<?= $directoryPath ?>../">English</a></li>
+              <li class="<?= empty($about) ? ($about = 'current') : ($about = 'active');?>">
+                <a href="<?= $directoryPath ?>español/acerca/">Acerca de</a></li>
 
-              <li class="<?= empty($acerca) ? ($acerca = 'current') : ($acerca = 'active'); ?>">
-                <a href="<?= ($acerca == 'active') ? './' : $directoryPath.'español/acerca'; ?>">Acerca de</a>
-              </li>
+              <li class="<?= empty($hardware) ? ($hardware = 'current') : ($hardware = 'active');?>">
+                <a href="<?= $directoryPath ?>español/hardware/">Hardware </a></li>
 
-              <li class="<?= empty($hardware) ? ($hardware = 'current') : ($hardware = 'active'); ?>">
-                <a href="<?= ($hardware == 'active') ? './' : $directoryPath.'español/hardware/'; ?>">Hardware</a>
-              </li>
+              <li class="<?= empty($software) ? ($software = 'current') : ($software = 'active');?>">
+                <a href="<?= $directoryPath ?>español/software/">Software </a></li>
 
-              <li class="<?= empty($software) ? ($software = 'current') : ($software = 'active'); ?>">
-                <a href="<?= ($software == 'active') ? './' : $directoryPath.'español/software/'; ?>">Software</a>
-              </li>
+              <li class="<?= empty($contact) ? ($contact = 'current') : ($contact = 'active');?>">
+                <a href="<?= $directoryPath ?>español/contacto/">Contacto</a></li>
 
-              <li class="<?= empty($contacto) ? ($contacto = 'current') : ($contacto = 'active'); ?>">
-                <a href="<?= ($contacto == 'active') ? './' : $directoryPath.'español/contacto/'; ?>">Contacto</a>
-              </li>
-
-              <li class="<?= empty($critica) ? ($critica = 'current') : ($critica = 'active'); ?>">
-                <a href="<?= ($critica == 'active') ? './' : $directoryPath.'español/critica/'; ?>">Reseñas</a>
-              </li>
-
+              <li class="<?= empty($reviews) ? ($reviews = 'current') : ($reviews = 'active');?>">
+                <a href="<?= $directoryPath ?>español/critica/">Reseñas</a></li>
               <li class="<?= $phone="current"; ?>"><a href="tel:9092767214" style="translate: 705px -85px;color: #fff;font-size: 30px;background-color: rgba(51, 170, 51, .384);">909-276-7214</a></li>
             </ul>
         </nav>

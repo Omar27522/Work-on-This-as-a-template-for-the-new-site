@@ -204,6 +204,39 @@
             }
         }
         ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- En español en leer mas, antivirus sirve bien, pero al momento de mostrar malware cleaner, no funciona me manda a un link ?limpiadordemalware -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         </p></section><a style="font-size: 1.3em; float:right; padding-right: 2em; margin-top: .7em;cursor: pointer;" href="<?php
             #<!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|-This link takes the user to a more informative page -\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ `ღ´ -->
             if ($sw == 'en')  {
