@@ -255,9 +255,9 @@
                     elseif (isset($_GET['compression'])) {echo 'compression';}
                     elseif (isset($_GET['developertools'])) {echo 'developertools';}
                 }
-                  elseif ($sw == 'es') {
+                  if ($sw == 'es') {
                     if (isset($_GET['antivirus'])) {echo 'antivirus';}
-                    elseif (isset($_GET['limpiadoresdemalware'])) {echo 'limpiadoresdemalware';}
+                    elseif (isset($_GET['limpiadordemalware'])) {echo 'limpiadoresdemalware';}
                     elseif (isset($_GET['navegadoresweb'])) {echo 'navegadoresweb';}
                     elseif (isset($_GET['mensajeria'])) {echo 'mensajeria';}
                     elseif (isset($_GET['multimedia'])) {echo 'multimedia';}
