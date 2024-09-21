@@ -1,16 +1,23 @@
 
 <article class="hero4">
 <div class=" fullbar"><div style="display:inline-block;">
-<a href="../#ps2"><h2 id="title"style="text-align:center;"><?= empty($title) ? $titulo : $title; ?></h2></a></div>
-<p tabindex="0" class="selection">
-    <?= $av[0]; ?><br /><br /><?= $av[1]; ?><br /><br /><?= $av[2]; ?>
-</p>
-    <section tabindex="0" class="selection">
-<p><strong>The Bad Old Days:</strong> Way back when computers were clunky behemoths, problems started popping up. Little mistakes in their programming turned into annoying glitches. Nobody knew it then, but these were the tiny seeds of trouble that would grow into something much bigger.</p>
-<p><strong>From Mistakes to Menace:</strong> As computers got smarter, so did the people using them. Some folks figured out how to turn those little mistakes into mean little programs. These digital bullies, called viruses, started causing chaos, stealing stuff, and generally being jerks to computers.</p>
-<p><strong>The Virus Wild West:</strong> Viruses didn't stop at being annoying. They got super sneaky, hiding in places you'd never expect. It was like a digital Wild West, with viruses always coming up with new tricks to mess with your computer.</p>
-<p><strong>Why You Need to Protect Your Digital Castle:</strong> Viruses can steal your stuff, ruin your computer, and even steal your identity. It's like leaving your front door wide open for any creep to walk in. So lock that digital door, and don't be a sitting duck for those virtual villains.</p>
+<a href="../#ps2"><h2 id="title"style="text-align:center;"><?= empty($title) ? $titulo : $title;?></h2></a></div>
+<p tabindex="0" class="selection"><?= $av[0]; ?><br /><br /><?= $av[1]; ?><br /><br /><?= $av[2];?></p>
+
+<section tabindex="0" class="selection">
+<p><strong><?= empty($history) ?$historia[0]: $history[0];?>:</strong>
+    <?= empty($history) ?$historia['_']: $history['oldDays'];?></p>
+
+<p><strong><?= empty($history) ?$historia[1]: $history[1];?>:</strong>
+    <?= empty($history) ?$historia['_']: $history['fromMto_M'];?></p>
+
+<p><strong><?= empty($history) ?$historia[2]: $history[2];?>:</strong>
+    <?= empty($history) ?$historia['_']: $history['wildWest'];?></p>
+
+<p><strong><?= empty($history) ?$historia[3]: $history[3];?>:</strong>
+    <?= empty($history) ?$historia['_']: $history['digitalCastle'];?></p>
 </section>
+
 <p tabindex="0" class="selection">An anti-virus program in itself, is created to help the computer shield itself from
     viruses.<br /><br />
     The best antivirus solutions are the ones keeping Up to date with whats out there trying to harm the computer
