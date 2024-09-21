@@ -1,13 +1,9 @@
 
 <article class="hero4">
 <div class=" fullbar"><div style="display:inline-block;">
-<a href="../#ps2"><h2 id="title"style="text-align:center;">Antivirus</h2></a></div>
-<p tabindex="0" class="selection">An anti-virus program in itself, is created to help the computer shield itself from
-    viruses.<br /><br />
-    The best antivirus solutions are the ones keeping Up to date with whats out there trying to harm the computer
-    (PC).<br /><br />
-    Also, the best antivirus solutions are simple, cost less than imagined, and bring peace of mind to the whole
-    operation; which is to keep the PC Free from any viruses that will harm the computer and/or its components.
+<a href="../#ps2"><h2 id="title"style="text-align:center;"><?= empty($title) ? $titulo : $title; ?></h2></a></div>
+<p tabindex="0" class="selection">
+    <?= $av[0]; ?><br /><br /><?= $av[1]; ?><br /><br /><?= $av[2]; ?>
 </p>
     <section tabindex="0" class="selection">
 <p><strong>The Bad Old Days:</strong> Way back when computers were clunky behemoths, problems started popping up. Little mistakes in their programming turned into annoying glitches. Nobody knew it then, but these were the tiny seeds of trouble that would grow into something much bigger.</p>
