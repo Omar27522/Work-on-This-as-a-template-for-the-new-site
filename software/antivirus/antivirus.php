@@ -1,8 +1,8 @@
 <?php
 $title = 'Antivirus';
-$links = ['https://en.wikipedia.org/wiki/Computer_virus'];
+$links = ['computerVirus'=>'https://en.wikipedia.org/wiki/Computer_virus'];
 $av =[
-    "An anti-virus program in itself, is created to help the computer shield itself from <a href=\"$links[0]\">viruses</a>.",
+    'An anti-virus program in itself, is created to help the computer shield itself from <a href="'.$links['computerVirus'].'">viruses</a>.',
     'The best antivirus solutions are the ones keeping Up to date with whats out there trying to harm the computer (PC).',
     'Also, the best antivirus solutions are simple, cost less than imagined, and bring peace of mind to the whole operation; which is to keep the PC Free from any viruses that will harm the computer and/or its components.'
 ];
@@ -32,7 +32,8 @@ $tips = [
     'safe'=>'Be cautious of suspicious links and websites, and avoid downloading files from unknown sources.',
     'updates'=>'Keep your operating system and software applications up-to-date with the latest security patches.',
     'passwords'=>'Create complex and unique passwords for your online accounts, and consider using a password manager.',
-    'backup'=>'Regularly back up your important files to an external hard drive or cloud storage.'
+    'backup'=>'Regularly back up your important files to an external hard drive or cloud storage.',
+    'title'=>'Tips'
 ];
 
 $features = [

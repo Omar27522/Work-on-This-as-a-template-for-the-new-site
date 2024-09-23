@@ -23,7 +23,7 @@
                 <?= empty($history) ?$historia['_']: $history['digitalCastle'];?></p>
         </section>
 
-        <h2>Tips</h2>
+        <h2><?= empty($tips) ? $consejos['titulo'] : $tips['title'];?></h2>
         <section>
             <p class="colms2">
                 <span tabindex="0" class="selection_2">
