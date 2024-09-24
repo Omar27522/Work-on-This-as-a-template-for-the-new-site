@@ -49,36 +49,37 @@
             </div>
         </section>
     </div><!-- /fullbar -->
+
     <div class="spacer">
         <hr />
     </div>
     <div class="blurb fullbar hero4">
-        <h2>Antivirus Features</h2>
+        <h2><?= empty($features) ? $caracteristicas['_'] : $features['title'];?></h2>
         <section tabindex="0" class="selection">
-            <p><strong>Real-time protection:</strong> Constantly monitors your system for threats, blocking them before
-                they can cause damage.</p>
-            <p><strong>Firewall:</strong> Acts as a security barrier, protecting your computer from unauthorized network
-                access.</p>
-            <p><strong>Phishing protection:</strong> Identifies and blocks fraudulent attempts to steal your personal
-                information.</p>
-            <p><strong>Ransomware protection:</strong> Detects and prevents ransomware attacks, safeguarding your files.
-            </p>
-            <p><strong>Performance impact:</strong> Offers strong protection without significantly slowing down your
-                computer.</p>
+            <p><strong><?= empty($features) ? $caracteristicas['_'] : $features[0];?>:</strong>
+                <?= empty($features) ? $caracteristicas['_'] : $features['real-time'];?></p>
+            <p><strong><?= empty($features) ? $caracteristicas['_'] : $features[1];?>:</strong>
+                <?= empty($features) ? $caracteristicas['_'] : $features['firewall']; ?></p>
+            <p><strong><?= empty($features) ? $caracteristicas['_'] : $features[2];?>:</strong>
+                <?= empty($features) ? $caracteristicas['_'] : $features['phishing-protection']; ?></p>
+            <p><strong><?= empty($features) ? $caracteristicas['_'] : $features[3];?>:</strong>
+                <?= empty($features) ? $caracteristicas['_'] : $features['ransomware-protection']; ?></p>
+            <p><strong><?= empty($features) ? $caracteristicas['_'] : $features[4];?>:</strong>
+                <?= empty($features) ? $caracteristicas['_'] : $features['performance']; ?></p>
         </section>
-        <h2>Common Antivirus Questions</h2>
+
+        <h2><?= empty($questions) ? $preguntas['_'] : $questions['title']; ?></h2>
         <section tabindex="0" class="selection">
-            <p><strong>Is a paid antivirus really necessary?</strong> While free options exist, paid antivirus solutions
-                often offer more comprehensive protection, advanced features, and dedicated customer support.</p>
-            <p><strong>What are the key benefits of paid antivirus software?</strong> Paid antivirus typically includes
-                features like real-time protection, firewalls, anti-phishing, ransomware protection, VPN access,
-                password managers, and cloud storage.</p>
-            <p><strong>How much does a good antivirus program cost?</strong> Prices vary based on the features and
-                number of devices covered. Many offer flexible subscription plans.</p>
-            <p><strong>Is it worth paying for extra features like VPN and password management?</strong> It depends on
-                your needs. If you value online privacy and convenience, these features can be beneficial.</p>
-            <p><strong>Can I rely solely on my operating system's built-in protection?</strong> While operating systems
-                offer some protection, a dedicated antivirus provides more robust security.</p>
+            <p><strong><?= empty($questions) ? $preguntas[0] : $questions[0];?></strong>
+                <?= empty($questions) ? $preguntas['avPagado'] : $questions['paidAv']; ?></p>
+            <p><strong><?= empty($questions) ? $preguntas[1] : $questions[1];?></strong>
+                <?= empty($questions) ? $preguntas['beneficios'] : $questions['benefits']; ?></p>
+            <p><strong><?= empty($questions) ? $preguntas[2] : $questions[2];?></strong>
+                <?= empty($questions) ? $preguntas['costo'] : $questions['cost']; ?></p>
+            <p><strong><?= empty($questions) ? $preguntas[3] : $questions[3];?></strong>
+                <?= empty($questions) ? $preguntas['vpn'] : $questions['vpn']; ?></p>
+            <p><strong><?= empty($questions) ? $preguntas[4] : $questions[4];?></strong>
+                <?= empty($questions) ? $preguntas['incorporado'] : $questions['built-in']; ?></p>
         </section>
     </div>
 </article>

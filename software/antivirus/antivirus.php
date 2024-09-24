@@ -37,10 +37,30 @@ $tips = [
 ];
 
 $features = [
-
+    'Real-time protection',
+    'Firewall',
+    'Phishing protection',
+    'Ransomware protection',
+    'Performance impact',
+    'real-time'=>'Constantly monitors your system for threats, blocking them before they can cause damage.',
+    'firewall'=>'Acts as a security barrier, protecting your computer from unauthorized network access.',
+    'phishing-protection'=>'Identifies and blocks fraudulent attempts to steal your personal information.',
+    'ransomware-protection'=>'Detects and prevents ransomware attacks, safeguarding your files.',
+    'performance'=>'Offers strong protection without significantly slowing down your computer.',
+    'title'=>'Antivirus Features'
 ];
 
 $questions = [
-
+    'Is a paid antivirus really necessary?',
+    'What are the key benefits of paid antivirus software?',
+    'How much does a good antivirus program cost?',
+    'Is it worth paying for extra features like VPN and password management?',
+    'Can I rely solely on my operating system\'s built-in protection?',
+    'paidAv'=>'While free options exist, paid antivirus solutions often offer more comprehensive protection, advanced features, and dedicated customer support.',
+    'benefits'=>'Paid antivirus typically includes features like real-time protection, firewalls, anti-phishing, ransomware protection, VPN access, password managers, and cloud storage.',
+    'cost'=>'Prices vary based on the features and number of devices covered. Many offer flexible subscription plans.',
+    'vpn'=>'It depends on your needs. If you value online privacy and convenience, these features can be beneficial.',
+    'built-in'=>'While operating systems offer some protection, a dedicated antivirus provides more robust security.',
+    'title'=>'Common Antivirus Questions'
 ];
 ?>
