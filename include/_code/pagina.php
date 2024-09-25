@@ -55,13 +55,13 @@
 
                 </div>
               </li><!-- Menu-nav bar -->
-              <li class="<?= empty($home) ? ($home = 'current') : ($home = 'active'); ?>">
+              <li class="<?= empty($casa) ? ($casa = 'current') : ($casa = 'active'); ?>">
                 <a href="<?=$directoryPath ?>español">Inicio</a></li>
 
               <li class="<?= empty($es) ? ($es = 'current') : ($es = 'active');?>">
                 <a href="<?= $directoryPath ?>">English</a></li>
 
-              <li class="<?= empty($about) ? ($about = 'current') : ($about = 'active');?>">
+              <li class="<?= empty($acerca) ? ($acerca = 'current') : ($acerca = 'active');?>">
                 <a href="<?= $directoryPath ?>español/acerca/">Acerca de</a></li>
 
               <li class="<?= empty($hardware) ? ($hardware = 'current') : ($hardware = 'active');?>">
@@ -70,10 +70,10 @@
               <li class="<?= empty($software) ? ($software = 'current') : ($software = 'active');?>">
                 <a href="<?= $directoryPath ?>español/software/">Software </a></li>
 
-              <li class="<?= empty($contact) ? ($contact = 'current') : ($contact = 'active');?>">
+              <li class="<?= empty($contacto) ? ($contacto = 'current') : ($contacto = 'active');?>">
                 <a href="<?= $directoryPath ?>español/contacto/">Contacto</a></li>
 
-              <li class="<?= empty($reviews) ? ($reviews = 'current') : ($reviews = 'active');?>">
+              <li class="<?= empty($critica) ? ($critica = 'current') : ($critica = 'active');?>">
                 <a href="<?= $directoryPath ?>español/critica/">Reseñas</a></li>
               <li class="<?= $phone="current"; ?>"><a href="tel:9092767214" style="translate: 705px -85px;color: #fff;font-size: 30px;background-color: rgba(51, 170, 51, .384);">909-276-7214</a></li>
             </ul>

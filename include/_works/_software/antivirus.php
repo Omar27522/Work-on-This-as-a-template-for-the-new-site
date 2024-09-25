@@ -39,13 +39,13 @@
             </p>
             <div tabindex="0" class="selection">
                 <p><strong><?= empty($tips) ? $consejos[5] : $tips[5];?>:</strong>
-                    <?= empty($tips) ? $consejos['_'] : $tips['safe']; ?></p>
+                    <?= empty($tips) ? $consejos['aSalvo'] : $tips['safe']; ?></p>
                 <p><strong><?= empty($tips) ? $consejos[6] : $tips[6];?>:</strong>
-                    <?= empty($tips) ? $consejos['_'] : $tips['updates']; ?></p>
+                    <?= empty($tips) ? $consejos['actualizaciones'] : $tips['updates']; ?></p>
                 <p><strong><?= empty($tips) ? $consejos[7] : $tips[7];?>:</strong>
-                    <?= empty($tips) ? $consejos['_'] : $tips['passwords']; ?></p>
+                    <?= empty($tips) ? $consejos['contraseñas'] : $tips['passwords']; ?></p>
                 <p><strong><?= empty($tips) ? $consejos[8] : $tips[8];?>:</strong>
-                    <?= empty($tips) ? $consejos['_'] : $tips['backup']; ?></p>
+                    <?= empty($tips) ? $consejos['respaldo'] : $tips['backup']; ?></p>
             </div>
         </section>
     </div><!-- /fullbar -->
@@ -54,21 +54,21 @@
         <hr />
     </div>
     <div class="blurb fullbar hero4">
-        <h2><?= empty($features) ? $caracteristicas['_'] : $features['title'];?></h2>
+        <h2><?= empty($features) ? $caracteristicas['titulo'] : $features['title'];?></h2>
         <section tabindex="0" class="selection">
-            <p><strong><?= empty($features) ? $caracteristicas['_'] : $features[0];?>:</strong>
-                <?= empty($features) ? $caracteristicas['_'] : $features['real-time'];?></p>
-            <p><strong><?= empty($features) ? $caracteristicas['_'] : $features[1];?>:</strong>
-                <?= empty($features) ? $caracteristicas['_'] : $features['firewall']; ?></p>
-            <p><strong><?= empty($features) ? $caracteristicas['_'] : $features[2];?>:</strong>
-                <?= empty($features) ? $caracteristicas['_'] : $features['phishing-protection']; ?></p>
-            <p><strong><?= empty($features) ? $caracteristicas['_'] : $features[3];?>:</strong>
-                <?= empty($features) ? $caracteristicas['_'] : $features['ransomware-protection']; ?></p>
-            <p><strong><?= empty($features) ? $caracteristicas['_'] : $features[4];?>:</strong>
-                <?= empty($features) ? $caracteristicas['_'] : $features['performance']; ?></p>
+            <p><strong><?= empty($features) ? $caracteristicas[0] : $features[0];?>:</strong>
+                <?= empty($features) ? $caracteristicas['tiempoReal'] : $features['realTime'];?></p>
+            <p><strong><?= empty($features) ? $caracteristicas[1] : $features[1];?>:</strong>
+                <?= empty($features) ? $caracteristicas['paredesCortaFuegos'] : $features['firewall']; ?></p>
+            <p><strong><?= empty($features) ? $caracteristicas[2] : $features[2];?>:</strong>
+                <?= empty($features) ? $caracteristicas['proteccionFraude'] : $features['phishingProtection']; ?></p>
+            <p><strong><?= empty($features) ? $caracteristicas[3] : $features[3];?>:</strong>
+                <?= empty($features) ? $caracteristicas['proteccionRescate'] : $features['ransomwareProtection']; ?></p>
+            <p><strong><?= empty($features) ? $caracteristicas[4] : $features[4];?>:</strong>
+                <?= empty($features) ? $caracteristicas['rendimiento'] : $features['performance']; ?></p>
         </section>
 
-        <h2><?= empty($questions) ? $preguntas['_'] : $questions['title']; ?></h2>
+        <h2><?= empty($questions) ? $preguntas['titulo'] : $questions['title']; ?></h2>
         <section tabindex="0" class="selection">
             <p><strong><?= empty($questions) ? $preguntas[0] : $questions[0];?></strong>
                 <?= empty($questions) ? $preguntas['avPagado'] : $questions['paidAv']; ?></p>
@@ -79,7 +79,7 @@
             <p><strong><?= empty($questions) ? $preguntas[3] : $questions[3];?></strong>
                 <?= empty($questions) ? $preguntas['vpn'] : $questions['vpn']; ?></p>
             <p><strong><?= empty($questions) ? $preguntas[4] : $questions[4];?></strong>
-                <?= empty($questions) ? $preguntas['incorporado'] : $questions['built-in']; ?></p>
+                <?= empty($questions) ? $preguntas['incorporado'] : $questions['builtIn']; ?></p>
         </section>
     </div>
 </article>

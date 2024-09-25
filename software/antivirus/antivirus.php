@@ -23,7 +23,7 @@ $tips = [
     'Never install 2 antivirus solutions; this is due to the fact that False positives are a true nature on any field.',
     'Free antivirus solutions are just as good as paid ones, but paid ones have an incentive which is to keep the PC free from viruses, and because of their technology the PC can ensure trust in their solution.
         <br />Also Paid solutions have more features than free solutions such as, online storage, and malware protection, etc.',
-    'Paid antivirus solutions also offer live support, and are reliable solution to ultimately keep Computer data, safe.',
+    'Paid antivirus solutions also offer live support, and are reliable solution to ultimately keep computer data, safe.',
     'Scheduled scans: are a great way to ensure no viruses are hiding behind other files, and can be on set hours that the computer might not be in use.',
     'Safe browsing habits',
     'Software updates',
@@ -42,10 +42,10 @@ $features = [
     'Phishing protection',
     'Ransomware protection',
     'Performance impact',
-    'real-time'=>'Constantly monitors your system for threats, blocking them before they can cause damage.',
+    'realTime'=>'Constantly monitors your system for threats, blocking them before they can cause damage.',
     'firewall'=>'Acts as a security barrier, protecting your computer from unauthorized network access.',
-    'phishing-protection'=>'Identifies and blocks fraudulent attempts to steal your personal information.',
-    'ransomware-protection'=>'Detects and prevents ransomware attacks, safeguarding your files.',
+    'phishingProtection'=>'Identifies and blocks fraudulent attempts to steal your personal information.',
+    'ransomwareProtection'=>'Detects and prevents ransomware attacks, safeguarding your files.',
     'performance'=>'Offers strong protection without significantly slowing down your computer.',
     'title'=>'Antivirus Features'
 ];
@@ -60,7 +60,7 @@ $questions = [
     'benefits'=>'Paid antivirus typically includes features like real-time protection, firewalls, anti-phishing, ransomware protection, VPN access, password managers, and cloud storage.',
     'cost'=>'Prices vary based on the features and number of devices covered. Many offer flexible subscription plans.',
     'vpn'=>'It depends on your needs. If you value online privacy and convenience, these features can be beneficial.',
-    'built-in'=>'While operating systems offer some protection, a dedicated antivirus provides more robust security.',
+    'builtIn'=>'While operating systems offer some protection, a dedicated antivirus provides more robust security.',
     'title'=>'Common Antivirus Questions'
 ];
 ?>
