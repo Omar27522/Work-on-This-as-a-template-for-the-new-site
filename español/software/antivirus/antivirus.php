@@ -7,6 +7,17 @@ $av = [
     'Además, las mejores soluciones antivirus son sencillas, cuestan menos de lo que se imagina y brindan tranquilidad a toda la operación; que es mantener la PC libre de cualquier virus que dañe la computadora o sus componentes.'
   ];
 
+$historia = [
+    'Los Viejos Tiempos Malos',
+    'De Errores a Amenazas',
+    'El Salvaje Oeste del Virus',
+    'Para qué Necesitas Proteger tu Castillo Digital',
+    'viejosTiempos'=>'Hace mucho tiempo, cuando las computadoras eran torpes behemoths, comenzaron a surgir problemas. Pequeños errores en la programación de estas, se convirtieron en molestos fallos. Nadie lo sabía en aquel entonces, pero estas eran las pequeñas semillas de problemas que crecerían en algo mucho más grande.',
+    'de_M_a_M'=>'A medida que las computadoras se volvían más inteligentes, también lo hacía la gente que las usaba. Algunas personas descubrieron cómo convertir esos pequeños errores en pequeños programas maliciosos. Estos bravucones digitales, llamados virus, comenzaron a causar caos, robar información privada y, en general, ser groseros en contra de las computadoras.',
+    'salvajeOeste'=>'Los virus no se detuvieron en ser molestos. Se volvieron súper sigilosos, escondiéndose en lugares que nunca esperarías. Era como un salvaje oeste digital, con virus siempre inventando nuevos trucos para infiltrarse en la computadora.',
+    'castilloDigital'=>'Los virus pueden robar información privada, o mas valiosa, arruinar tu computadora e incluso robar la identidad de los usuarios. Es como dejar la puerta principal abierta de par en par para que cualquier tipo entre. Así que cierra esa puerta digital y no seas un pato sentado para esos villanos virtuales.',
+];
+
 $consejos = [
     'Los escaneos de antivirus regulares, son cada vez menos necesarios debido a la tecnología dentro de cada solución antivirus.',
     'Nunca instales dos soluciones de antivirus; esto se debe a que los falsos positivos son una naturaleza verdadera en cualquier campo.',

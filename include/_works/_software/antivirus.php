@@ -14,13 +14,13 @@
 
         <section tabindex="0" class="selection">
             <p><strong><?= empty($history) ?$historia[0]: $history[0];?>:</strong>
-                <?= empty($history) ?$historia['_']: $history['oldDays'];?></p>
+                <?= empty($history) ?$historia['viejosTiempos']: $history['oldDays'];?></p>
             <p><strong><?= empty($history) ?$historia[1]: $history[1];?>:</strong>
-                <?= empty($history) ?$historia['_']: $history['fromMto_M'];?></p>
+                <?= empty($history) ?$historia['de_M_a_M']: $history['fromMto_M'];?></p>
             <p><strong><?= empty($history) ?$historia[2]: $history[2];?>:</strong>
-                <?= empty($history) ?$historia['_']: $history['wildWest'];?></p>
+                <?= empty($history) ?$historia['salvajeOeste']: $history['wildWest'];?></p>
             <p><strong><?= empty($history) ?$historia[3]: $history[3];?>:</strong>
-                <?= empty($history) ?$historia['_']: $history['digitalCastle'];?></p>
+                <?= empty($history) ?$historia['castilloDigital']: $history['digitalCastle'];?></p>
         </section>
 
         <h2><?= empty($tips) ? $consejos['titulo'] : $tips['title'];?></h2>
