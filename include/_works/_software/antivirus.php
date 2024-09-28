@@ -53,7 +53,7 @@
     <div class="spacer">
         <hr />
     </div>
-    <div class="blurb fullbar hero4">
+    <div class="blurb fullbar hero4" style="margin-bottom: 0;">
         <h2><?= empty($features) ? $caracteristicas['titulo'] : $features['title'];?></h2>
         <section tabindex="0" class="selection">
             <p><strong><?= empty($features) ? $caracteristicas[0] : $features[0];?>:</strong>
