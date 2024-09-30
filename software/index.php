@@ -33,4 +33,6 @@ where the actual content will be held, make it simple, similar, and easy to unde
     Docs has page template, we just need to import Articles/Software from LiveLATPC for the remainder of the items.
 
 */
+
+//Maybe make each button focused when active...
 ?>
