@@ -8,7 +8,7 @@
             "type": "msedge",
             "request": "launch",
             "name": "Open index - Copy.html",
-            "url": "http://refactorlatpc/"
+            "url": "http://refactorlatpc/software/malwarecleaner/"
         }
     ]
 }
