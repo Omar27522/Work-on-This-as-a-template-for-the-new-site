@@ -6,6 +6,7 @@
     <link href="<?= $directoryPath ?>include/_code/style.css" rel="stylesheet" type="text/css" />
     <link href="<?= $directoryPath ?>include/_works/start.css" rel="stylesheet" type="text/css" />
     <link href="<?= $directoryPath ?>include/_code/nav.css" rel="stylesheet" type="text/css" />
+    <?php if(!empty($css)){  echo $css;  } /*CSS used in software pages*/ ?>
     <script defer src="<?= $directoryPath ?>include/_code/script.js" ></script>
 	<link rel="icon" href="<?= $directoryPath ?>annotation_2019_12_08_033413_AUw_2.ico">
   <?php if(!empty($palabrasClave) && !empty($descripción)){  echo $palabrasClave.$descripción;  } ?>
