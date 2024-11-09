@@ -10,7 +10,9 @@
                 <h2 id="title"><?= empty($title) ? $titulo : $title;?></h2>
             </a>
         </div>
-        <p tabindex="0" class="selection"><?= $av[0]; ?><br /><br /><?= $av[1]; ?><br /><br /><?= $av[2];?></p>
+        <p tabindex="0" class="selection"><?= $av[0]; ?><br />
+        <img src="" height="210" width="240" alt="First Image" class="rtl" style="background-color: darkgray;color: whitesmoke;text-align: center;font-size: 2rem;">
+        <br /><?= $av[1]; ?><br /><br /><?= $av[2];?></p>
 
         <section tabindex="0" class="selection">
             <p><strong><?= empty($history) ?$historia[0]: $history[0];?>:</strong>
@@ -19,6 +21,7 @@
                 <?= empty($history) ?$historia['de_M_a_M']: $history['fromMto_M'];?></p>
             <p><strong><?= empty($history) ?$historia[2]: $history[2];?>:</strong>
                 <?= empty($history) ?$historia['salvajeOeste']: $history['wildWest'];?></p>
+                <img src="" height="300" width="500" alt="Second Image" class="fl" style="background-color: darkcyan;color: whitesmoke;text-align: center;font-size: 2rem;">
             <p><strong><?= empty($history) ?$historia[3]: $history[3];?>:</strong>
                 <?= empty($history) ?$historia['castilloDigital']: $history['digitalCastle'];?></p>
         </section>
@@ -40,6 +43,7 @@
             <div tabindex="0" class="selection">
                 <p><strong><?= empty($tips) ? $consejos[5] : $tips[5];?>:</strong>
                     <?= empty($tips) ? $consejos['aSalvo'] : $tips['safe']; ?></p>
+                    <img src="" height="315" width="440" alt="Second to Last Image" class="rtl" style="background-color: burlywood;color: whitesmoke;text-align: center;font-size: 2rem;">
                 <p><strong><?= empty($tips) ? $consejos[6] : $tips[6];?>:</strong>
                     <?= empty($tips) ? $consejos['actualizaciones'] : $tips['updates']; ?></p>
                 <p><strong><?= empty($tips) ? $consejos[7] : $tips[7];?>:</strong>
@@ -74,6 +78,7 @@
                 <?= empty($questions) ? $preguntas['avPagado'] : $questions['paidAv']; ?></p>
             <p><strong><?= empty($questions) ? $preguntas[1] : $questions[1];?></strong>
                 <?= empty($questions) ? $preguntas['beneficios'] : $questions['benefits']; ?></p>
+                    <img src="" height="150" width="250" alt="Last Image" class="fl" style="background-color: darkred;color: whitesmoke;text-align: center;font-size: 2rem;">
             <p><strong><?= empty($questions) ? $preguntas[2] : $questions[2];?></strong>
                 <?= empty($questions) ? $preguntas['costo'] : $questions['cost']; ?></p>
             <p><strong><?= empty($questions) ? $preguntas[3] : $questions[3];?></strong>
