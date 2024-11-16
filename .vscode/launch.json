@@ -8,7 +8,7 @@
             "type": "msedge",
             "request": "launch",
             "name": "Open index - Copy.html",
-            "url": "http://localhost:3000/espa%C3%B1ol/software/navegadoresweb"
+            "url": "http://refactorlatpc/espa%c3%b1ol/software/limpiadoresdemalware/"
         }
     ]
 }
