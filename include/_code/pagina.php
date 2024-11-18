@@ -60,7 +60,49 @@
                 <a href="<?=$directoryPath ?>español">Inicio</a></li>
 
               <li class="<?= empty($es) ? ($es = 'current') : ($es = 'active');?>">
-                <a href="<?= $directoryPath ?>">English</a></li>
+                <a href="<?php
+              $uri = urldecode($_SERVER['REQUEST_URI']);
+              $rutas = [
+                "/español/contacto/"=>"../../contact/",
+                "/español/critica/"=>"../../reviews/",
+                "/español/software/"=>"../../software/",
+                "/español/hardware/"=>"../../hardware/",
+                "/español/acerca/"=>"../../about/",
+                "/español/software/antivirus"=>"../../software/antivirus",
+                "/español/software/limpiadoresdemalware"=>"../../software/malwarecleaner",
+                "/español/software/navegadoresweb"=>"../../software/webbrowsers",
+                "/español/software/mensajeria"=>"../../software/messaging",
+                "/español/software/multimedia"=>"../../software/media",
+                "/español/software/tiemposdeejecucion"=>"../../software/runtimes",
+                "/español/software/imagenes"=>"../../software/imaging",
+                "/español/software/documentos"=>"../../software/documents",
+                "/español/software/archivosparacompartir"=>"../../software/filesharing",
+                "/español/software/almacenamientoenlinea"=>"../../software/onlinestorage",
+                "/español/software/otros"=>"../../software/other",
+                "/español/software/utilidades"=>"../../software/utilities",
+                "/español/software/compresion"=>"../../software/compression",
+                "/español/software/herramientasparadesarrolladores"=>"../../software/developertools",
+              ];
+              
+             $var = isset($rutas[$uri]) ? $rutas[$uri] : "/";
+              
+              
+             
+              
+              echo $var;
+              //echo "#".$var."->".$uri; 
+              
+
+              //We know where we are clicking from.
+              # We must match that click with another look alike.
+
+              //maybe a table can be built with where the reroutes should take the user. but this way evryone needs to be added by hand.
+              //good ver.1 it solves the problem, but it does not scale. Good job!
+              
+              
+              
+              
+              ?>">English</a></li>
 
               <li class="<?= empty($acerca) ? ($acerca = 'current') : ($acerca = 'active');?>">
                 <a href="<?= $directoryPath ?>español/acerca/">Acerca de</a></li>

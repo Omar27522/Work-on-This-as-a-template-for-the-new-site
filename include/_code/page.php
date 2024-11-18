@@ -44,8 +44,52 @@
               <li class="<?= empty($home) ? ($home = 'current') : ($home = 'active'); ?>">
                 <a href="<?=$directoryPath ?>">Home</a></li>
 
-              <li class="<?= empty($es) ? ($es = 'current') : ($es = 'active');?>">
-                <a href="<?= $directoryPath ?>español/">En Español</a></li>
+              <?php
+              /*<li class="<?= empty($es) ? ($es = 'current') : ($es = 'active');?>">
+                <a href="<?= $directoryPath ?>español/">En Español</a></li>*/
+              ?><li class="current"><a href="<?php
+              $uri = $_SERVER['REQUEST_URI'];
+              $routes = [
+                "/about/" => "../../español/acerca",
+                "/hardware/" => "../../español/hardware",
+                "/software/" => "../../español/software",
+                "/contact/" => "../../español/contacto",
+                "/reviews/" => "../../español/critica",
+                "/software/webbrowsers" => "../../español/software/navegadoresweb",
+                  "/software/antivirus" => "../../español/software/antivirus",
+                  "/software/malwarecleaner" => "../../español/software/limpiadoresdemalware",
+                  "/software/messaging" => "../../español/software/mensajeria",
+                  "/software/media" => "../../español/software/multimedia",
+                  "/software/runtimes" => "../../español/software/tiemposdeejecucion",
+                  "/software/imaging" => "../../español/software/imagenes",
+                  "/software/documents" => "../../español/software/documentos",
+                  "/software/filesharing" => "../../español/software/archivosparacompartir",
+                  "/software/onlinestorage" => "../../español/software/almacenamientoenlinea",
+                  "/software/other" => "../../español/software/otros",
+                  "/software/utilities" => "../../español/software/utilidades",
+                  "/software/compression" => "../../español/software/compresion",
+                  "/software/developertools" => "../../español/software/herramientasparadesarrolladores"
+              ];
+              
+              $var = isset($routes[$uri]) ? $routes[$uri] : $directoryPath."español/";
+              
+              
+             
+              
+              
+              echo $var; 
+              
+
+              //We know where we are clicking from.
+              # We must match that click with another look alike.
+
+              //maybe a table can be built with where the reroutes should take the user. but this way evryone needs to be added by hand.
+              //good ver.1 it solves the problem, but it does not scale. Good job!
+              
+              
+              
+              
+              ?>">En Español</a></li>
 
               <li class="<?= empty($about) ? ($about = 'current') : ($about = 'active');?>">
                 <a href="<?= $directoryPath ?>about/">About Us</a></li>
