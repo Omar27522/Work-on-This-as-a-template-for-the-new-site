@@ -111,8 +111,16 @@
         </fieldset>
     </section>
     <hr style="width:65%;">
+    <style>
+    details {
+        font-size: 18px;
+    }
 
-    <section class="section">
+    summary {
+        display: inline;
+    }
+    </style>
+    <section class="selection">
         <details style="decoration:none;">
             <summary>Online Development and Testing</summary> Web developers use browsers to build and test websites and
             applications. Developer tools available in browsers help debug code, analyze performance, and inspect
@@ -171,6 +179,41 @@
             <summary>Crowdfunding and Fundraising</summary> Platforms like Kickstarter and GoFundMe are accessed through
             browsers, allowing individuals and organizations to raise funds for projects and causes.
         </details>
+    </section>
+    <section>
+            <p>Once upon a time in a bustling city, there was a diligent professional named Jordan. Jordan's day started
+                early, as the sun began to rise over the skyline.</p>
+            <p><strong>6:30 AM:</strong> The alarm on Jordan's phone chimed, and after a quick stretch, Jordan grabbed
+                the phone and opened the web browser to check the morning news. Scanning through headlines, Jordan
+                caught up on world events and local news, feeling ready to face the day.</p>
+            <p><strong>7:00 AM:</strong> Over breakfast, Jordan used the browser to watch a couple of tutorial videos on
+                a new software tool needed for a project at work. The videos were informative and set a positive tone
+                for the day.</p>
+            <p><strong>8:30 AM:</strong> Arriving at the office, Jordan opened the browser again, this time to access
+                the company's project management software. Tasks were assigned, deadlines checked, and a quick chat with
+                colleagues on the integrated communication platform helped clarify the day's priorities.</p>
+            <p><strong>11:00 AM:</strong> During a break, Jordan used the browser to check personal emails and social
+                media accounts. Responding to a few messages and scrolling through the latest updates from friends and
+                family added a light-hearted touch to the busy morning.</p>
+            <p><strong>1:00 PM:</strong> After lunch, it was time for some online shopping. Jordan needed to buy a few
+                things for an upcoming event, so the browser was used to compare prices, read reviews, and make a
+                purchase.</p>
+            <p><strong>3:00 PM:</strong> As the afternoon wore on, Jordan accessed the browser again to join a virtual
+                meeting. The browser facilitated the video call, and Jordan shared a presentation using the browser's
+                screen-sharing feature.</p>
+            <p><strong>5:30 PM:</strong> Wrapping up the workday, Jordan used the browser to manage finances. Online
+                banking allowed Jordan to pay bills, check account balances, and ensure everything was in order.</p>
+            <p><strong>7:00 PM:</strong> At home, Jordan used the browser to plan a weekend trip. Researching travel
+                destinations, booking a hotel, and checking flight options were all seamlessly done online.</p>
+            <p><strong>9:00 PM:</strong> The day winding down, Jordan settled on the couch with a laptop. Browsers made
+                it easy to stream a favorite TV show on a popular streaming platform, providing a relaxing end to a
+                productive day.</p>
+            <p><strong>11:00 PM:</strong> Before bed, Jordan used the browser one last time to review an online course.
+                Learning something new felt like a great way to wrap up the day.</p>
+            <p>And so, the day in the life of Jordan, filled with browsing for work, pleasure, and everything in
+                between, came to an end. The browser had been a constant companion, making each task a bit easier and
+                more connected to the wider world.</p>
+            <p>Jordan drifted off to sleep, ready to navigate another day with the trusty web browser at hand. 📱💻</p>
     </section>
 </article>
 <div class="spacer">
