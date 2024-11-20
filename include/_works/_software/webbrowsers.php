@@ -63,6 +63,7 @@
         </div>
     </section> <!-- colms2 -->
     <hr style="width:65%;">
+    <h2 class="center">Web Browser Use Cases</h2>
     <section class="colms newspaper2">
         <fieldset>
             <legend>Research and Learning</legend> Browsers are used to search for information on virtually any topic,
@@ -114,17 +115,27 @@
     <style>
     details {
         font-size: 18px;
+        border:solid 2px black;
+        width:75%;
+        display:inline-block;
     }
 
     summary {
         display: inline;
+        padding:1%;
+        background-color:red;
     }
     </style>
-    <section class="selection">
+    <section class="">
+        <h2 style="padding-left:27%;">Professional Enviroment</h2>
         <details style="decoration:none;">
-            <summary>Online Development and Testing</summary> Web developers use browsers to build and test websites and
+            <summary>Online Development and Testing</summary>
+            <img src="" style="
+                background-color:white; font-size:large; height:50px; width:70px; margin-left:30px"
+            alt="Image" class="rtl">
+            <span= class="selection_2">Web developers use browsers to build and test websites and
             applications. Developer tools available in browsers help debug code, analyze performance, and inspect
-            elements.
+            elements.</span>
         </details>
         <details>
             <summary>Virtual Workspaces</summary> Many businesses use web-based virtual desktop environments where
@@ -179,7 +190,8 @@
             <summary>Crowdfunding and Fundraising</summary> Platforms like Kickstarter and GoFundMe are accessed through
             browsers, allowing individuals and organizations to raise funds for projects and causes.
         </details>
-    </section>
+    </section><hr style="width:65%;">
+    <h2>A professional Intraction with Web Browsers</h2>
     <section>
             <p>Once upon a time in a bustling city, there was a diligent professional named Jordan. Jordan's day started
                 early, as the sun began to rise over the skyline.</p>
