@@ -123,8 +123,9 @@
     summary {
         display: inline;
         padding:1%;
-        background-color:red;
+        background-color:gray;
     }
+    summary::after{padding-top:13px;} /*inset a br after each details opened*/
     </style>
     <section class="">
         <h2 style="padding-left:27%;">Professional Enviroment</h2>
