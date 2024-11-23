@@ -33,8 +33,8 @@ function content(){ ?>
         <article>
             <section id="refactorization" tabindex="0" class="blurb container">
                 <h1><a href="#top">NEW RE-FACTORIZATION</a></h1>
-                <p>Pomona, CA | 909-276-7214 | help@latinospc.com | 7/13/2024</p>
-                <p>Welcome to the refactorization project! We're enhancing the user experience, optimizing performance,
+                <p>Pomona, CA | 909-276-7214 | help@latinospc.com | 11/23/2024</p>
+                <p>Welcome to the re-factorization project! We're enhancing the user experience, optimizing performance,
                     and
                     updating the design.<br /><br />
                     Expect a smoother, faster, and more visually appealing site that better meets

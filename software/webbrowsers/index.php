@@ -10,6 +10,6 @@ $software ='active';
 include ('../../include/_code/page.php');
 
 function content(){
- echo 'Web Browsers';
- include ('../../include/_works/_software/webbrowsers.php');
+    include ('../../software/webbrowsers/browsers.php');
+    include ('../../include/_works/_software/webbrowsers.php');
 }
