@@ -112,35 +112,6 @@
         </fieldset>
     </section>
     <hr style="width:65%;">
-    <style>
-    details {
-        font-size: 18px;
-        border: solid 2px black;
-        width: 75%;
-        display: inline-block;
-        padding-top: 1%;
-        padding-bottom: 1%;
-    }
-
-    summary {
-        display: inline;
-        padding: 1%;
-        background: linear-gradient(to right, #868f96 0%, #596164 100%);
-        border-radius: 0 20px 0 25px;
-        cursor: pointer;
-        color:#FAFAFA;
-        padding-left:5%;
-    }
-    summary:hover, summary:focus{
-        color:black;
-    }
-    .pe{
-        margin-top:7px;
-        padding-right:13px;
-    }
-    #image-container { width: 100%; height: 100%; position: relative; }
-    #image-container img { width: 100%; height: 71rem; position: absolute;}
-    </style>
     <section class="" style="align-contents:center;">
         <h2 style="padding-left:27%;">Professional Environment</h2>
         <div class="colms2">
@@ -209,9 +180,11 @@
         <p>And so, the day in the life of Jordan, filled with browsing for work, pleasure, and everything in
             between, came to an end. The browser had been a constant companion, making each task a bit easier and
             more connected to the wider world.</p>
-        <p>Jordan drifted off to sleep, ready to navigate another day with the trusty web browser at hand. 📱💻</p>
+        <p style="display:inline;">Jordan drifted off to sleep, ready to navigate another day with the trusty web browser at hand. 📱💻</p>
     </section>
 </article>
+<!--
 <div class="spacer">
     <hr />
 </div>
+        -->
