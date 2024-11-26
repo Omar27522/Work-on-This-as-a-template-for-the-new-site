@@ -101,5 +101,5 @@ $pro_environment=[
         'The browser market continues to evolve with new features, security updates, and innovations in areas like artificial intelligence and virtual reality.'
     ]
 ];
-
+//These Detail $pro_environment['detail'] do not lead anywhere.
 ?>
