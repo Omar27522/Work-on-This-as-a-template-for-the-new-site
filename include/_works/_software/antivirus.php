@@ -51,31 +51,36 @@
 
         
        
-            <form id="myForm" action="./antivirus" method="get">
+            
+            <form id="myForm" method="post">
                 <nav class="crumbs">
                     <ul>
                         <li><a href="./#software">Home</a></li>
                         <li>MLWC</li>
                         <li class="active">Dev Tools</li>
-                        <li> <select id="programs">
-                                <option>Anti-Virus</option>
-                                <option>Malware Cleaners</option>
-                                <option>Web Browsers</option>
-                                <option>Messaging</option>
-                                <option>Media</option>
-                                <option>Runtimes</option>
-                                <option>Documents</option>
-                                <option>File Sharing</option>
-                                <option>Online Storage</option>
-                                <option>Other</option>
-                                <option>Utilities</option>
-                                <option>Compression</option>
-                                <option>Development Tools</option>
-                            </select> </li> <input type="submit">
+                        <li> <select id="programs" name="program">
+                                <option value="antivirus">Anti-Virus</option>
+                                <option value="malware">Malware Cleaners</option>
+                                <option value="browsers">Web Browsers</option>
+                                <option value="messaging">Messaging</option>
+                                <option value="media">Media</option>
+                                <option value="runtimes">Runtimes</option>
+                                <option value="documents">Documents</option>
+                                <option value="filesharing">File Sharing</option>
+                                <option value="storage">Online Storage</option>
+                                <option value="other">Other</option>
+                                <option value="utilities">Utilities</option>
+                                <option value="compression">Compression</option>
+                                <option value="devtools">Development Tools</option>
+                            </select> </li> <input type="submit" value="Go">
                     </ul>
                 </nav>
             </form>
-
+        <?php
+        if(isset($_POST['program'])) {
+            echo $_POST['program'];
+        }// We can modify this to equal the isset to the location where the page should go to.
+        ?>
             <p tabindex="0" class="selection"><?= $av[0]; ?><br />
                 <img src="" height="210" width="240" alt="First Image" class="rtl"
                     style="background-color: darkgray;color: whitesmoke;text-align: center;font-size: 2rem;">
@@ -123,7 +128,6 @@
                 </div>
             </section>
     </div><!-- /fullbar -->
-
     <div class="spacer">
         <hr />
     </div>
