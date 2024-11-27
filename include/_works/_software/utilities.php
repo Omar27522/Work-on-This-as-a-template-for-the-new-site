@@ -1,67 +1,137 @@
-<h1 id="title">Utilities</h1>
+<h1 id="title">Computer Utilities & System Optimization</h1>
 <div class="blurb">
+    <section class="intro">
+        <p tabindex="0" class="selection">
+            Computer utilities are essential programs that help manage, maintain, and enhance your computer's performance. These powerful tools can perform various tasks, from cleaning up your hard drive to ensuring optimal system security. Whether built into your operating system or available as standalone applications, utilities play a crucial role in keeping your computer running at its best.
+        </p>
+    </section>
 
-    <p tabindex="0" class="selection">Computer utilities are programs that help you manage, maintain, and optimize your computers performance. They can
-        perform a variety of tasks, such as cleaning up your hard drive, defragmenting your disk, repairing system
-        errors,
-        and improving system security. Some common examples of computer utilities include antivirus software, disk
-        cleanup
-        tools, and system optimizers. These utilities can be built into your operating system or downloaded as
-        standalone
-        programs. They can be very useful for improving your computers performance and keeping it running smoothly.</p>
-    <p tabindex="0" class="selection">Windows system optimizers are programs that are designed to improve the performance of a computer running the
-        Windows
-        operating system. These programs can be used to clean up the system, remove unnecessary files, and optimize
-        various
-        settings in order to improve the speed and efficiency of the computer. Some common features of Windows system
-        optimizers include:</p>
-    <details>
-        <summary tabindex="0" class="selection">Disk cleanup:</summary>
-        <fieldset tabindex="0" class="selection">
-            <p>Removing temporary files, logs, and other unnecessary files from the hard drive to free up space and
-                improve performance.</p>
-        </fieldset>
-    </details>
-<br /><br />
-    <details>
-        <summary tabindex="0" class="selection">Registry cleanup:</summary>
-        <fieldset tabindex="0" class="selection">
-            <p>Removing invalid entries from the Windows registry to improve system stability and prevent errors.</p>
-        </fieldset>
-    </details>
-    <br /><br />
-    <details>
-        <summary tabindex="0" class="selection">Startup optimization:</summary>
-        <fieldset tabindex="0" class="selection">
-            <p>Disabling unnecessary programs that run at startup to reduce the time it takes for the computer to boot
-                up.</p>
-        </fieldset>
-    </details>
-    <br /><br />
-    <details>
-        <summary tabindex="0" class="selection">Service optimization:</summary>
-        <fieldset tabindex="0" class="selection">
-            <p>Disabling unnecessary services to free up system resources and improve performance.</p>
-        </fieldset>
-    </details>
-    <br /><br />
-    <details>
-        <summary tabindex="0" class="selection">Internet optimization:</summary>
-        <fieldset tabindex="0" class="selection">
-            <p>Adjusting settings to improve the speed and efficiency of internet connections.</p>
-        </fieldset>
-    </details>
-    <br /><br />
-    <p tabindex="0" class="selection" >Its important to note that while these programs can be useful for improving the performance of a computer, they
-        can
-        also cause problems if used improperly. Its always a good idea to create a system restore point before using any
-        optimization software, in case any changes made to the system cause problems.</p>
+    <section class="windows-optimization">
+        <h2 tabindex="0">Windows System Optimization</h2>
+        <p tabindex="0" class="selection">
+            Windows system optimizers are specialized programs designed to enhance the performance of Windows-based computers. These tools offer a comprehensive suite of features to clean, optimize, and maintain your system for peak efficiency.
+        </p>
+
+        <div class="features-grid">
+            <details class="feature-card">
+                <summary tabindex="0" class="selection">Disk Cleanup</summary>
+                <fieldset tabindex="0" class="selection">
+                    <p>Efficiently removes temporary files, system logs, and unnecessary data to free up valuable disk space and improve overall system performance.</p>
+                </fieldset>
+            </details>
+
+            <details class="feature-card">
+                <summary tabindex="0" class="selection">Registry Cleanup</summary>
+                <fieldset tabindex="0" class="selection">
+                    <p>Scans and repairs invalid Windows registry entries to enhance system stability and prevent common errors.</p>
+                </fieldset>
+            </details>
+
+            <details class="feature-card">
+                <summary tabindex="0" class="selection">Startup Optimization</summary>
+                <fieldset tabindex="0" class="selection">
+                    <p>Manages and optimizes startup programs to significantly reduce boot times and improve initial system responsiveness.</p>
+                </fieldset>
+            </details>
+
+            <details class="feature-card">
+                <summary tabindex="0" class="selection">Service Optimization</summary>
+                <fieldset tabindex="0" class="selection">
+                    <p>Intelligently manages system services to optimize resource allocation and enhance overall system performance.</p>
+                </fieldset>
+            </details>
+
+            <details class="feature-card">
+                <summary tabindex="0" class="selection">Internet Optimization</summary>
+                <fieldset tabindex="0" class="selection">
+                    <p>Fine-tunes network settings to maximize internet connection speed and reliability.</p>
+                </fieldset>
+            </details>
+        </div>
+    </section>
+
+    <section class="warning">
+        <div class="warning-box">
+            <h3 tabindex="0">⚠️ Important Note</h3>
+            <p tabindex="0" class="selection">
+                While optimization tools can significantly improve your computer's performance, it's crucial to use them carefully. Always create a system restore point before making any system modifications. This precaution ensures you can revert changes if needed.
+            </p>
+        </div>
+    </section>
 </div>
-<div class="spacer">
-    <hr />
-</div>
+
 <style>
-    .blurb summary{
-        font-size: x-large;
+    .blurb {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .intro {
+        margin-bottom: 40px;
+    }
+
+    .windows-optimization h2 {
+        color: #2c3e50;
+        margin-bottom: 20px;
+    }
+
+    .features-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        margin: 30px 0;
+    }
+
+    .feature-card {
+        background: #f8f9fa;
+        border-radius: 8px;
+        padding: 15px;
+        transition: transform 0.2s ease;
+    }
+
+    .feature-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .blurb summary {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #34495e;
+        cursor: pointer;
+        padding: 10px;
+    }
+
+    fieldset {
+        border: none;
+        padding: 15px;
+        background: white;
+        border-radius: 4px;
+        margin-top: 10px;
+    }
+
+    .warning-box {
+        background: #fff3cd;
+        border-left: 4px solid #ffc107;
+        padding: 20px;
+        margin-top: 40px;
+        border-radius: 4px;
+    }
+
+    .warning-box h3 {
+        color: #856404;
+        margin-top: 0;
+    }
+
+    /* Accessibility improvements */
+    *:focus {
+        outline: 2px solid #007bff;
+        outline-offset: 2px;
+    }
+
+    @media (max-width: 768px) {
+        .features-grid {
+            grid-template-columns: 1fr;
+        }
     }
 </style>
