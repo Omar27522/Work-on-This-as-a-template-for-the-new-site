@@ -4,3 +4,19 @@ Software | Directories there
 
 currently working on: breadcrumbs located in AV
 
+
+11/29/2024
+
+Software | Directories there
+
+currently working on:
+debugging breadcrumbs located in software,
+and the Spanish and English buttons.
+
+The Live environment is working fine,
+when I tested in another environment that resembled the production server,
+the page was breaking, due to the header() calls.
+
+Right now I will continue to develop in the live environment,
+hoping that I can fix these issues in production.
+

@@ -240,36 +240,36 @@
         </p></section><a style="font-size: 1.3em; float:right; padding-right: 2em; margin-top: .7em;cursor: pointer;" href="<?php
             #<!-- (-.-)Zzz...--|c[_]|--☁【ツ】☁--|c[_]|-This link takes the user to a more informative page -\(^-^)/--|c[_]|--(╯°□°）╯ ︵ ┻━┻ `ღ´ -->
             if ($sw == 'en')  {
-                    if (isset($_GET['antivirus'])) {echo 'antivirus';}
-                    elseif (isset($_GET['malwarecleaner'])) {echo 'malwarecleaner';}
-                    elseif (isset($_GET['webbrowsers'])) {echo 'webbrowsers';}
-                    elseif (isset($_GET['messaging'])) {echo 'messaging';}
-                    elseif (isset($_GET['media'])) {echo 'media';}
-                    elseif (isset($_GET['runtimes'])) {echo 'runtimes';}
-                    elseif (isset($_GET['imaging'])) {echo 'imaging';}
-                    elseif (isset($_GET['documents'])) {echo 'documents';}
-                    elseif (isset($_GET['filesharing'])) {echo 'filesharing';}
-                    elseif (isset($_GET['onlinestorage'])) {echo 'onlinestorage';}
-                    elseif (isset($_GET['other'])) {echo 'other';}
-                    elseif (isset($_GET['utilities'])) {echo 'utilities';}
-                    elseif (isset($_GET['compression'])) {echo 'compression';}
-                    elseif (isset($_GET['developertools'])) {echo 'developertools';}
+                    if (isset($_GET['antivirus'])) {echo 'antivirus/';}
+                    elseif (isset($_GET['malwarecleaner'])) {echo 'malwarecleaner/';}
+                    elseif (isset($_GET['webbrowsers'])) {echo 'webbrowsers/';}
+                    elseif (isset($_GET['messaging'])) {echo 'messaging/';}
+                    elseif (isset($_GET['media'])) {echo 'media/';}
+                    elseif (isset($_GET['runtimes'])) {echo 'runtimes/';}
+                    elseif (isset($_GET['imaging'])) {echo 'imaging/';}
+                    elseif (isset($_GET['documents'])) {echo 'documents/';}
+                    elseif (isset($_GET['filesharing'])) {echo 'filesharing/';}
+                    elseif (isset($_GET['onlinestorage'])) {echo 'onlinestorage/';}
+                    elseif (isset($_GET['other'])) {echo 'other/';}
+                    elseif (isset($_GET['utilities'])) {echo 'utilities/';}
+                    elseif (isset($_GET['compression'])) {echo 'compression/';}
+                    elseif (isset($_GET['developertools'])) {echo 'developertools/';}
                 }
                   if ($sw == 'es') {
-                    if (isset($_GET['antivirus'])) {echo 'antivirus';}
-                    elseif (isset($_GET['limpiadordemalware'])) {echo 'limpiadoresdemalware';}
-                    elseif (isset($_GET['navegadoresweb'])) {echo 'navegadoresweb';}
-                    elseif (isset($_GET['mensajeria'])) {echo 'mensajeria';}
-                    elseif (isset($_GET['multimedia'])) {echo 'multimedia';}
-                    elseif (isset($_GET['runtimes'])) {echo 'tiemposdeejecucion';}
-                    elseif (isset($_GET['imagenes'])) {echo 'imagenes';}
-                    elseif (isset($_GET['documentos'])) {echo 'documentos';}
-                    elseif (isset($_GET['archivosparacompartir'])) {echo 'archivosparacompartir';}
-                    elseif (isset($_GET['almacenamientoenlinea'])) {echo 'almacenamientoenlinea';}
-                    elseif (isset($_GET['otros'])) {echo 'otros';}
-                    elseif (isset($_GET['utilidades'])) {echo 'utilidades';}
-                    elseif (isset($_GET['compresion'])) {echo 'compresion';}
-                    elseif (isset($_GET['herramientasparadesarrollar'])) {echo 'herramientasparadesarrolladores';}
+                    if (isset($_GET['antivirus'])) {echo 'antivirus/';}
+                    elseif (isset($_GET['limpiadordemalware'])) {echo 'limpiadoresdemalware/';}
+                    elseif (isset($_GET['navegadoresweb'])) {echo 'navegadoresweb/';}
+                    elseif (isset($_GET['mensajeria'])) {echo 'mensajeria/';}
+                    elseif (isset($_GET['multimedia'])) {echo 'multimedia/';}
+                    elseif (isset($_GET['runtimes'])) {echo 'tiemposdeejecucion/';}
+                    elseif (isset($_GET['imagenes'])) {echo 'imagenes/';}
+                    elseif (isset($_GET['documentos'])) {echo 'documentos/';}
+                    elseif (isset($_GET['archivosparacompartir'])) {echo 'archivosparacompartir/';}
+                    elseif (isset($_GET['almacenamientoenlinea'])) {echo 'almacenamientoenlinea/';}
+                    elseif (isset($_GET['otros'])) {echo 'otros/';}
+                    elseif (isset($_GET['utilidades'])) {echo 'utilidades/';}
+                    elseif (isset($_GET['compresion'])) {echo 'compresion/';}
+                    elseif (isset($_GET['herramientasparadesarrollar'])) {echo 'herramientasparadesarrolladores/';}
                 }
                     ?>">    <?php if ($sw == 'es') {echo 'Leer más';} else {echo'Read more';}?></a>
     </div> <?php } ?>
