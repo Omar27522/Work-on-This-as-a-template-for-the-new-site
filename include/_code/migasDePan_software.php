@@ -41,7 +41,7 @@
 <form id="myForm" method="post">
     <nav class="crumbs">
         <ul class="breadcrumb">
-            <li><a href="./#software">Casa</a></li>
+            <li><a href="../#software">Casa</a></li>
             <li><?php
                     $uri = $_SERVER['REQUEST_URI'];
                     $trimmedUri = preg_replace('#^/[^/]+/#', '', $uri);

@@ -1,7 +1,7 @@
 <article class="hero4">
     <div class=" fullbar">
         <div style="display:inline-block;">
-            <a href="./#software">
+            <a href="../#software">
                 <h2 id="title"><?= empty($title) ? $titulo : $title;?></h2>
             </a>
         </div>
