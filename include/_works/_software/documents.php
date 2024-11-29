@@ -14,7 +14,6 @@
 
     <section class="electronic-documents">
         <h2>Electronic Documents</h2>
-        
         <div class="document-section">
             <h3>Common File Formats</h3>
             <div class="format-grid">

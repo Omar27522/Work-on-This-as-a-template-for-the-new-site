@@ -41,7 +41,7 @@
 <form id="myForm" method="post">
 <nav class="crumbs">
                     <ul class="breadcrumb">
-                        <li><a href="./#software">Home</a></li>
+                        <li><a href="../#software">Home</a></li>
                         <li>
                         <?php
                             $uri = $_SERVER['REQUEST_URI'];

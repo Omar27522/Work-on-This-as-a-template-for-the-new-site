@@ -1,7 +1,4 @@
 <article class="hero4">
-    <style>
-    
-    </style>
     <div class=" fullbar">
         <div style="display:inline-block;">
             <a href="./#software">
@@ -17,7 +14,7 @@
     }
                 ?>
             <p tabindex="0" class="selection"><?= $av[0]; ?><br />
-                <img src="" height="210" width="240" alt="First Image" class="rtl"
+                <img tabindex="0" src="https://latinospc.com/images/programs/av.jpg" height="210" width="240" alt="First Image" class="rtl selection_2 card2"
                     style="background-color: darkgray;color: whitesmoke;text-align: center;font-size: 2rem;">
                 <br /><?= $av[1]; ?><br /><br /><?= $av[2];?>
             </p>
@@ -29,7 +26,7 @@
                     <?= empty($history) ?$historia['de_M_a_M']: $history['fromMto_M'];?></p>
                 <p><strong><?= empty($history) ?$historia[2]: $history[2];?>:</strong>
                     <?= empty($history) ?$historia['salvajeOeste']: $history['wildWest'];?></p>
-                <img src="" height="300" width="500" alt="Second Image" class="fl"
+                <img tabindex="0" src="../../../tempimages/th.jpg" height="150" width="350" alt="Second Image" class="fl selection_2 card2"
                     style="background-color: darkcyan;color: whitesmoke;text-align: center;font-size: 2rem;">
                 <p><strong><?= empty($history) ?$historia[3]: $history[3];?>:</strong>
                     <?= empty($history) ?$historia['castilloDigital']: $history['digitalCastle'];?></p>
@@ -52,7 +49,7 @@
                 <div tabindex="0" class="selection">
                     <p><strong><?= empty($tips) ? $consejos[5] : $tips[5];?>:</strong>
                         <?= empty($tips) ? $consejos['aSalvo'] : $tips['safe']; ?></p>
-                    <img src="" height="315" width="440" alt="Second to Last Image" class="rtl"
+                    <img tabindex="0" src="../../../tempimages/OIG2.jpg" height="315" width="440" alt="Second to Last Image" class="rtl selection_2 card2"
                         style="background-color: burlywood;color: whitesmoke;text-align: center;font-size: 2rem;">
                     <p><strong><?= empty($tips) ? $consejos[6] : $tips[6];?>:</strong>
                         <?= empty($tips) ? $consejos['actualizaciones'] : $tips['updates']; ?></p>
@@ -87,7 +84,7 @@
                 <?= empty($questions) ? $preguntas['avPagado'] : $questions['paidAv']; ?></p>
             <p><strong><?= empty($questions) ? $preguntas[1] : $questions[1];?></strong>
                 <?= empty($questions) ? $preguntas['beneficios'] : $questions['benefits']; ?></p>
-            <img src="" height="150" width="250" alt="Last Image" class="fl"
+            <img tabindex="0" src="../../../tempimages/thm.jpg" height="150" width="250" alt="Last Image" class="fl selection_2 card2"
                 style="background-color: darkred;color: whitesmoke;text-align: center;font-size: 2rem;">
             <p><strong><?= empty($questions) ? $preguntas[2] : $questions[2];?></strong>
                 <?= empty($questions) ? $preguntas['costo'] : $questions['cost']; ?></p>

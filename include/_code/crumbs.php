@@ -2,7 +2,7 @@
 
     if (isset($_POST['program'])) { //Refreshes the page if the criteria is met after the form is submitted
         $pages = [
-            'all'             =>    '../#ps2/',
+            'all'             =>    '../#ps2',
             'devtools'        =>    '../developertools/',
             'compression'     =>    '../compression/',
             'utilities'       =>    '../utilities/',
@@ -26,14 +26,14 @@
 
     if (isset($_POST['programas'])) { //Refresca la pagina si se cumple la condición de la búsqueda de programas
         $pages = [
-            'all'             =>    '../#ps2/',
+            'all'             =>    '../#ps2',
             'devtools'        =>    '../herramientasparadesarrolladores/',
             'compression'     =>    '../compresion/',
             'utilities'       =>    '../utilidades/',
             'other'           =>    '../otros/',
             'filesharing'     =>    '../archivosparacompartir/',
             'onlinestorage'   =>    '../almacenamientoenlinea/',
-            'documents'       =>    '../documentos',
+            'documents'       =>    '../documentos/',
             'imaging'         =>    '../imagenes/',
             'runtimes'        =>    '../tiemposdeejecucion/',
             'media'           =>    '../multimedia/',
