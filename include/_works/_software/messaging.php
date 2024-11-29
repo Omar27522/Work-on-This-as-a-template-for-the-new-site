@@ -60,7 +60,7 @@ $additional_apps = [
 <div class="hero4 fullbar">
     <h2 id="title"><?php echo $introduction['title']; ?></h2>
     <?php //BreadCrumbs
-    if (urldecode($_SERVER['REQUEST_URI'])==="/español/software/mensajeria") {
+    if (urldecode($_SERVER['REQUEST_URI'])==="/español/software/mensajeria/") {
                     include ('../../../include/_code/migasDePan_software.php');
     }
     else {

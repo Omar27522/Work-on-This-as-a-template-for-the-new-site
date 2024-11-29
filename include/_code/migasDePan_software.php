@@ -37,31 +37,7 @@
         }
         .breadcrumb{padding-right:2%;}
 </style>
-<?php
-    if (isset($_POST['programas'])) { //Refresca la pagina si se cumple la condición de la búsqueda de programas
-        $pages = [
-            'all'             =>    './#ps2',
-            'devtools'        =>    './herramientasparadesarrolladores',
-            'compression'     =>    './compresion',
-            'utilities'       =>    './utilidades',
-            'other'           =>    './otros',
-            'filesharing'     =>    './archivosparacompartir',
-            'onlinestorage'   =>    './almacenamientoenlinea',
-            'documents'       =>    './documentos',
-            'imaging'         =>    './imagenes',
-            'runtimes'        =>    './tiemposdeejecucion',
-            'media'           =>    './multimedia',
-            'messaging'       =>    './messajeria',
-            'webbrowsers'     =>    './navegadoresweb',
-            'malware'         =>    './limpiadoresdemalware',
-            'antivirus'       =>    './antivirus'
-        ];
-        if (array_key_exists($_POST['programas'], $pages)) {
-            header("Location: " . $pages[$_POST['programas']]);
-            exit;
-        }
-    }
-?>
+
 <form id="myForm" method="post">
     <nav class="crumbs">
         <ul class="breadcrumb">
@@ -69,6 +45,7 @@
             <li><?php
                     $uri = $_SERVER['REQUEST_URI'];
                     $trimmedUri = preg_replace('#^/[^/]+/#', '', $uri);
+                    $trimmedUri = rtrim($trimmedUri, '/');
                     $segments = explode('/', $trimmedUri);
                     $lastSegment = end($segments);
                     echo ucfirst($lastSegment);

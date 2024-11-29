@@ -1,7 +1,7 @@
 <div class="blurb">
     <h2 id="title">Understanding Documents in the Modern World</h2>
     <?php //BreadCrumbs
-    if (urldecode($_SERVER['REQUEST_URI'])==="/español/software/documentos") {
+    if (urldecode($_SERVER['REQUEST_URI'])==="/español/software/documentos/") {
                     include ('../../../include/_code/migasDePan_software.php');
     }
     else {

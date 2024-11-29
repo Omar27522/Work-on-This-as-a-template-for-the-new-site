@@ -1,6 +1,6 @@
 <h2 id="title">File Compression: The Art of Digital Space-Saving</h2>
 <?php //BreadCrumbs
-    if (urldecode($_SERVER['REQUEST_URI'])==="/español/software/compresion") {
+    if (urldecode($_SERVER['REQUEST_URI'])==="/español/software/compresion/") {
                     include ('../../../include/_code/migasDePan_software.php');
     }
     else {

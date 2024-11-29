@@ -41,7 +41,7 @@
 <div class="blurb">
     <h2>Developer Tools</h2>
     <?php //BreadCrumbs
-    if (urldecode($_SERVER['REQUEST_URI'])==="/español/software/herramientasparadesarrolladores") {
+    if (urldecode($_SERVER['REQUEST_URI'])==="/español/software/herramientasparadesarrolladores/") {
                     include ('../../../include/_code/migasDePan_software.php');
     }
     else {

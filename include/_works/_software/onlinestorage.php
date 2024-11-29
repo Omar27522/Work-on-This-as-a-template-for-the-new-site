@@ -2,7 +2,7 @@
 <h1 id="title"><a href="https://www.pcmag.com/picks/the-best-cloud-storage-and-file-sharing-services"
         title="PC Magazine Best CloudStorage 2022">Online storage</a></h1>
         <?php //BreadCrumbs
-    if (urldecode($_SERVER['REQUEST_URI'])==="/español/software/almacenamientoenlinea") {
+    if (urldecode($_SERVER['REQUEST_URI'])==="/español/software/almacenamientoenlinea/") {
                     include ('../../../include/_code/migasDePan_software.php');
     }
     else {

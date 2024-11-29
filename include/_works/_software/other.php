@@ -1,14 +1,13 @@
 <div class="blurb">
     <h2 id="title">Computer Tools & Resources</h2>
     <?php //BreadCrumbs
-    if (urldecode($_SERVER['REQUEST_URI'])==="/español/software/otros") {
+    if (urldecode($_SERVER['REQUEST_URI'])==="/español/software/otros/") {
                     include ('../../../include/_code/migasDePan_software.php');
     }
     else {
         include ('../../include/_code/breadCrumbs_software.php');
     }
                 ?>
-    
     <div class="content-grid">
         <!-- Computer Repair Section -->
         <details tabindex="0" class="selection main-section">
@@ -17,7 +16,6 @@
             </summary>
             <div class="section-content">
                 <p class="section-intro">Troubleshooting computer issues can be challenging, but following these systematic steps can help identify and resolve common problems quickly and effectively.</p>
-                
                 <div class="troubleshooting-steps">
                     <details tabindex="0" class="selection step-item">
                         <summary class="selection card2">1. Check Physical Connections</summary>

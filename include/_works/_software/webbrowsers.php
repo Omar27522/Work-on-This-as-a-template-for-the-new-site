@@ -1,7 +1,7 @@
 <article class="hero4 fullbar">
     <h2 id="title"><?= empty($titles) ? $titulos[0] : $titles[0];?></h2>
     <?php //BreadCrumbs
-    if (urldecode($_SERVER['REQUEST_URI'])==="/español/software/navegadoresweb") {
+    if (urldecode($_SERVER['REQUEST_URI'])==="/español/software/navegadoresweb/") {
                     include ('../../../include/_code/migasDePan_software.php');
     }
     else {

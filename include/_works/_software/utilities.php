@@ -1,6 +1,6 @@
 <h2 id="title">Computer Utilities & System Optimization</h2>
 <?php //BreadCrumbs
-    if (urldecode($_SERVER['REQUEST_URI'])==="/español/software/utilidades") {
+    if (urldecode($_SERVER['REQUEST_URI'])==="/español/software/utilidades/") {
                     include ('../../../include/_code/migasDePan_software.php');
     }
     else {

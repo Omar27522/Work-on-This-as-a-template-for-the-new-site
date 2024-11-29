@@ -27,7 +27,7 @@
 
         <?php // This is the Breadcrumbs redirect for the Software pages.
             if (isset($_POST['program'])){
-                include($directoryPath.'include/_code/breadCrumbs_software.php');
+                include($directoryPath.'include/_code/crumbs.php');
                                         }
         ?>
         <!-- Dropdown Menu https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp -->
@@ -63,20 +63,20 @@
                                 $sw                     => $t."/software",
                                 "/contact/"             => $t."/contacto",
                                 "/reviews/"             => $t."/critica",
-                                  $sw."webbrowsers"     => $t.$sw."navegadoresweb",
-                                  $sw."antivirus"       => $t.$sw."antivirus",
-                                  $sw."malwarecleaner"  => $t.$sw."limpiadoresdemalware",
-                                  $sw."messaging"       => $t.$sw."mensajeria",
-                                  $sw."media"           => $t.$sw."multimedia",
-                                  $sw."runtimes"        => $t.$sw."tiemposdeejecucion",
-                                  $sw."imaging"         => $t.$sw."imagenes",
-                                  $sw."documents"       => $t.$sw."documentos",
-                                  $sw."filesharing"     => $t.$sw."archivosparacompartir",
+                                  $sw."webbrowsers/"     => $t.$sw."navegadoresweb",
+                                  $sw."antivirus/"       => $t.$sw."antivirus",
+                                  $sw."malwarecleaner/"  => $t.$sw."limpiadoresdemalware",
+                                  $sw."messaging/"       => $t.$sw."mensajeria",
+                                  $sw."media/"           => $t.$sw."multimedia",
+                                  $sw."runtimes/"        => $t.$sw."tiemposdeejecucion",
+                                  $sw."imaging/"         => $t.$sw."imagenes",
+                                  $sw."documents/"       => $t.$sw."documentos",
+                                  $sw."filesharing/"     => $t.$sw."archivosparacompartir",
                                   $sw."onlinestorage"   => $t.$sw."almacenamientoenlinea",
-                                  $sw."other"           => $t.$sw."otros",
-                                  $sw."utilities"       => $t.$sw."utilidades",
-                                  $sw."compression"     => $t.$sw."compresion",
-                                  $sw."developertools"  => $t.$sw."herramientasparadesarrolladores"
+                                  $sw."other/"           => $t.$sw."otros",
+                                  $sw."utilities/"       => $t.$sw."utilidades",
+                                  $sw."compression/"     => $t.$sw."compresion",
+                                  $sw."developertools/"  => $t.$sw."herramientasparadesarrolladores"
                                             ];// $routes should match $uri
                                 $var = isset($routes[$uri]) ? $routes[$uri] : $directoryPath."/español/";
                                 echo $var;?>">En Español</a>

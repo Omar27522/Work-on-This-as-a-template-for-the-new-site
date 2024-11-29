@@ -31,7 +31,7 @@
         <!--^^ Header ^^-->
         <?php // This is the Breadcrumbs redirect for the Software pages.
             if (isset($_POST['programas'])){
-                include($directoryPath.'include/_code/migasDePan_software.php');
+                include($directoryPath.'include/_code/crumbs.php');
                                         }
         ?>
 
@@ -81,27 +81,27 @@
                             <a href="<?php
                                           $uri = urldecode($_SERVER['REQUEST_URI']);
                                           $rutas = [
-                                            "/español/contacto/"=>"../../contact/",
-                                            "/español/critica/"=>"../../reviews/",
-                                            "/español/software/"=>"../../software/",
-                                            "/español/hardware/"=>"../../hardware/",
-                                            "/español/acerca/"=>"../../about/",
-                                            "/español/software/antivirus"=>"../../software/antivirus",
-                                            "/español/software/limpiadoresdemalware"=>"../../software/malwarecleaner",
-                                            "/español/software/navegadoresweb"=>"../../software/webbrowsers",
-                                            "/español/software/mensajeria"=>"../../software/messaging",
-                                            "/español/software/multimedia"=>"../../software/media",
-                                            "/español/software/tiemposdeejecucion"=>"../../software/runtimes",
-                                            "/español/software/imagenes"=>"../../software/imaging",
-                                            "/español/software/documentos"=>"../../software/documents",
-                                            "/español/software/archivosparacompartir"=>"../../software/filesharing",
-                                            "/español/software/almacenamientoenlinea"=>"../../software/onlinestorage",
-                                            "/español/software/otros"=>"../../software/other",
-                                            "/español/software/utilidades"=>"../../software/utilities",
-                                            "/español/software/compresion"=>"../../software/compression",
-                                            "/español/software/herramientasparadesarrolladores"=>"../../software/developertools",
+                                            "/español/contacto/"=>"../../../contact/",
+                                            "/español/critica/"=>"../../../reviews/",
+                                            "/español/software/"=>"../../../software/",
+                                            "/español/hardware/"=>"../../../hardware/",
+                                            "/español/acerca/"=>"../../../about/",
+                                            "/español/software/antivirus/"=>"../../../software/antivirus",
+                                            "/español/software/limpiadoresdemalware/"=>"../../../software/malwarecleaner",
+                                            "/español/software/navegadoresweb/"=>"../../../software/webbrowsers",
+                                            "/español/software/mensajeria/"=>"../../../software/messaging",
+                                            "/español/software/multimedia/"=>"../../../software/media",
+                                            "/español/software/tiemposdeejecucion/"=>"../../../software/runtimes",
+                                            "/español/software/imagenes/"=>"../../../software/imaging",
+                                            "/español/software/documentos/"=>"../../../software/documents",
+                                            "/español/software/archivosparacompartir/"=>"../../../software/filesharing",
+                                            "/español/software/almacenamientoenlinea/"=>"../../../software/onlinestorage",
+                                            "/español/software/otros/"=>"../../../software/other",
+                                            "/español/software/utilidades/"=>"../../../software/utilities",
+                                            "/español/software/compresion/"=>"../../../software/compression",
+                                            "/español/software/herramientasparadesarrolladores/"=>"../../../software/developertools",
                                           ];
-                                          $var = isset($rutas[$uri]) ? $rutas[$uri] : "/";  echo $var;  //echo "#".$var."->".$uri;
+                                          $var = urldecode(isset($rutas[$uri])) ? $rutas[$uri] : "/";  echo $var;  //echo "#".$var."->".$uri;
                                       ?>">English</a>
                         </li>
 

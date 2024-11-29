@@ -1,7 +1,7 @@
 <div class="blurb">
     <h2 id="title">Imaging</h2>
     <?php //BreadCrumbs
-    if (urldecode($_SERVER['REQUEST_URI'])==="/español/software/imagenes") {
+    if (urldecode($_SERVER['REQUEST_URI'])==="/español/software/imagenes/") {
                     include ('../../../include/_code/migasDePan_software.php');
     }
     else {

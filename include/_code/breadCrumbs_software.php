@@ -36,40 +36,22 @@
         }
         .breadcrumb{padding-right:2%;}</style>
 
-<?php
 
-if (isset($_POST['program'])) { //Refreshes the page if the criteria is met after the form is submitted
-    $pages = [
-        'all'             =>    './#ps2',
-        'devtools'        =>    './developertools',
-        'compression'     =>    './compression',
-        'utilities'       =>    './utilities',
-        'other'           =>    './other',
-        'filesharing'     =>    './filesharing',
-        'onlinestorage'   =>    './onlinestorage',
-        'documents'       =>    './documents',
-        'imaging'         =>    './imaging',
-        'runtimes'        =>    './runtimes',
-        'media'           =>    './media',
-        'messaging'       =>    './messaging',
-        'webbrowsers'     =>    './webbrowsers',
-        'malware'         =>    './malwarecleaner',
-        'antivirus'       =>    './antivirus'
-    ];
-
-    if (array_key_exists($_POST['program'], $pages)) {
-        header("Location: " . $pages[$_POST['program']]);
-        exit;
-    }
-}
-
-?>
 
 <form id="myForm" method="post">
 <nav class="crumbs">
                     <ul class="breadcrumb">
                         <li><a href="./#software">Home</a></li>
-                        <li><?= ucfirst(preg_replace('#^/[^/]+/#', '', $_SERVER['REQUEST_URI'])); ?></li>
+                        <li>
+                        <?php
+                            $uri = $_SERVER['REQUEST_URI'];
+                            $trimmedUri = preg_replace('#^/[^/]+/#', '', $uri);
+                            $trimmedUri = rtrim($trimmedUri, '/');
+                            $segments = explode('/', $trimmedUri);
+                            $lastSegment = end($segments);
+                            echo ucfirst($lastSegment);
+                        ?>
+                        </li>
                         <!-- <li class="active">Dev Tools</li> -->
                         <li> <select id="programs" name="program">
                                 <option value="all">All</option>

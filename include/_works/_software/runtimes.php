@@ -76,7 +76,7 @@
     <div class="fullbar">
         <h2 id="title">Understanding Program Runtimes: The Magic Behind Your Apps</h2>
         <?php //BreadCrumbs
-    if (urldecode($_SERVER['REQUEST_URI'])==="/español/software/tiemposdeejecucion") {
+    if (urldecode($_SERVER['REQUEST_URI'])==="/español/software/tiemposdeejecucion/") {
                     include ('../../../include/_code/migasDePan_software.php');
     }
     else {

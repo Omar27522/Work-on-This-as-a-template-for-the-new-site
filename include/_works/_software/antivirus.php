@@ -8,8 +8,8 @@
                 <h2 id="title"><?= empty($title) ? $titulo : $title;?></h2>
             </a>
         </div>
-        <?php //BreadCrumbs
-    if (urldecode($_SERVER['REQUEST_URI'])==="/español/software/antivirus") {
+        <?php  //BreadCrumbs
+    if (urldecode($_SERVER['REQUEST_URI'])==="/español/software/antivirus/") {
                     include ('../../../include/_code/migasDePan_software.php');
     }
     else {

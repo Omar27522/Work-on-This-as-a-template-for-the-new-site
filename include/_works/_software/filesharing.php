@@ -1,6 +1,6 @@
 
 <?php //BreadCrumbs
-    if (urldecode($_SERVER['REQUEST_URI'])==="/español/software/archivosparacompartir") {
+    if (urldecode($_SERVER['REQUEST_URI'])==="/español/software/archivosparacompartir/") {
                     include ('../../../include/_code/migasDePan_software.php');
     }
     else {
