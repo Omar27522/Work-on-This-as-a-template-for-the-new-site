@@ -229,10 +229,29 @@ blockquote.expert-quote footer {
         padding: 1rem;
     }
 }
+#title{
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 0.5rem;
+    margin: 0;
+    padding: 16px 0;
+    font: normal 38px / 1.2em Arial, Helvetica, sans-serif;
+    letter-spacing: -2px;
+}
 </style>
 
 <div class="blurb">
-    <h1 id="title">Digital Media</h1>
+    <h2 id="title">Digital Media</h2>
+    <?php //BreadCrumbs
+    if (urldecode($_SERVER['REQUEST_URI'])==="/español/software/multimedia") {
+                    include ('../../../include/_code/migasDePan_software.php');
+    }
+    else {
+        include ('../../include/_code/breadCrumbs_software.php');
+    }
+                ?>
     <h2>Understanding Digital Media: Visual, Audio, and Interactive Content</h2>
     
     <div tabindex="0" class="selection">

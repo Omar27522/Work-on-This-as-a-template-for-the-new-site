@@ -1,8 +1,6 @@
 <article class="hero4">
     <style>
-    h2 {
-        Padding-left: 20%;
-    }
+    
     </style>
     <div class=" fullbar">
         <div style="display:inline-block;">
@@ -10,77 +8,14 @@
                 <h2 id="title"><?= empty($title) ? $titulo : $title;?></h2>
             </a>
         </div>
-        <style>
-        .crumbs {
-            /* The Whole Nav*/
-            color: rgb(3, 49, 33);
-            font-size: 16px;
-            text-align: right;
-        }
-
-        .crumbs li {
-            /* Every Item on the nav*/
-            display: inline-block;
-        }
-
-        .crumbs li a:hover {
-            color: rgb(0, 255, 166);
-            text-decoration-line: overline;
-        }
-
-        .crumbs li a {
-            /* Every Item on the nav that is a link*/
-            text-decoration-line: none;
-        }
-
-        .crumbs li::after {
-            /* The separator between the items*/
-            content: " ➪";
-        }
-
-        .crumbs li:last-child::after {
-            /* The separator between the items*/
-            content: "";
-        }
-
-        .crumbs .active {
-            /* The item that is active most of the time it will not be a link */
-            color: red;
-        }
-        </style>
-
-        
-       
-            
-            <form id="myForm" method="post">
-                <nav class="crumbs">
-                    <ul>
-                        <li><a href="./#software">Home</a></li>
-                        <li>MLWC</li>
-                        <li class="active">Dev Tools</li>
-                        <li> <select id="programs" name="program">
-                                <option value="antivirus">Anti-Virus</option>
-                                <option value="malware">Malware Cleaners</option>
-                                <option value="browsers">Web Browsers</option>
-                                <option value="messaging">Messaging</option>
-                                <option value="media">Media</option>
-                                <option value="runtimes">Runtimes</option>
-                                <option value="documents">Documents</option>
-                                <option value="filesharing">File Sharing</option>
-                                <option value="storage">Online Storage</option>
-                                <option value="other">Other</option>
-                                <option value="utilities">Utilities</option>
-                                <option value="compression">Compression</option>
-                                <option value="devtools">Development Tools</option>
-                            </select> </li> <input type="submit" value="Go">
-                    </ul>
-                </nav>
-            </form>
-        <?php
-        if(isset($_POST['program'])) {
-            echo $_POST['program'];
-        }// We can modify this to equal the isset to the location where the page should go to.
-        ?>
+        <?php //BreadCrumbs
+    if (urldecode($_SERVER['REQUEST_URI'])==="/español/software/antivirus") {
+                    include ('../../../include/_code/migasDePan_software.php');
+    }
+    else {
+        include ('../../include/_code/breadCrumbs_software.php');
+    }
+                ?>
             <p tabindex="0" class="selection"><?= $av[0]; ?><br />
                 <img src="" height="210" width="240" alt="First Image" class="rtl"
                     style="background-color: darkgray;color: whitesmoke;text-align: center;font-size: 2rem;">

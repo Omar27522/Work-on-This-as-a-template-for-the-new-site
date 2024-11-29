@@ -58,16 +58,25 @@ $additional_apps = [
 ?>
 
 <div class="hero4 fullbar">
-    <h2 id="title"><?php echo $introduction['title']; ?></h2><img class="rtl" style="background-color:black" height="45px" width=75px>
+    <h2 id="title"><?php echo $introduction['title']; ?></h2>
+    <?php //BreadCrumbs
+    if (urldecode($_SERVER['REQUEST_URI'])==="/español/software/mensajeria") {
+                    include ('../../../include/_code/migasDePan_software.php');
+    }
+    else {
+        include ('../../include/_code/breadCrumbs_software.php');
+    }
+                ?><br />
+    <img class="rtl" style="background-color:black" height="45px" width=75px>
     <?php foreach ($introduction['content'] as $paragraph) : ?>
-        <p tabindex="0" class="selection"><?php echo $paragraph; ?></p>
+    <p tabindex="0" class="selection"><?php echo $paragraph; ?></p>
     <?php endforeach; ?>
     <p tabindex="0" class="selection"><a href="<?php echo $introduction['wiki_link']; ?>">Wikipedia</a></p>
     <hr />
     <h2><?php echo $recent_apps['title']; ?></h2>
     <ul class="newspaper2">
         <?php foreach ($recent_apps['apps'] as $app) : ?>
-            <li><?php echo $app; ?></li>
+        <li><?php echo $app; ?></li>
         <?php endforeach; ?>
     </ul>
     <h2><?php echo $recent_apps['security_title']; ?></h2>
@@ -77,7 +86,7 @@ $additional_apps = [
     <p tabindex="0" class="selection"><?php echo $advanced_features['intro']; ?></p>
     <ul class="newspaper2">
         <?php foreach ($advanced_features['features'] as $feature) : ?>
-            <li><?php echo $feature; ?></li>
+        <li><?php echo $feature; ?></li>
         <?php endforeach; ?>
     </ul>
     <hr />
@@ -88,7 +97,7 @@ $additional_apps = [
     <hr />
     <ul class="newspaper2 lastItem">
         <?php foreach ($additional_apps['apps'] as $app) : ?>
-            <li><?php echo $app; ?></li>
+        <li><?php echo $app; ?></li>
         <?php endforeach; ?>
     </ul>
 </div>

@@ -74,7 +74,15 @@
 
 <div class="content_resize">
     <div class="fullbar">
-        <h1 id="title">Understanding Program Runtimes: The Magic Behind Your Apps</h1>
+        <h2 id="title">Understanding Program Runtimes: The Magic Behind Your Apps</h2>
+        <?php //BreadCrumbs
+    if (urldecode($_SERVER['REQUEST_URI'])==="/español/software/tiemposdeejecucion") {
+                    include ('../../../include/_code/migasDePan_software.php');
+    }
+    else {
+        include ('../../include/_code/breadCrumbs_software.php');
+    }
+                ?>
         
         <div class="article">
             <div class="highlight-box">

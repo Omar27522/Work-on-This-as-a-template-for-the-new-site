@@ -1,6 +1,13 @@
 <div class="blurb">
-    <h1 id="title">Understanding Documents in the Modern World</h1>
-    
+    <h2 id="title">Understanding Documents in the Modern World</h2>
+    <?php //BreadCrumbs
+    if (urldecode($_SERVER['REQUEST_URI'])==="/español/software/documentos") {
+                    include ('../../../include/_code/migasDePan_software.php');
+    }
+    else {
+        include ('../../include/_code/breadCrumbs_software.php');
+    }
+                ?>
     <section class="intro">
         <p>Documents are fundamental tools for storing, sharing, and preserving information. As we bridge the gap between traditional and digital worlds, understanding both physical and electronic documents becomes increasingly important.</p>
     </section>

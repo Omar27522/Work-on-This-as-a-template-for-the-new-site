@@ -1,5 +1,13 @@
 <article class="hero4 fullbar">
     <h2 id="title"><?= empty($titles) ? $titulos[0] : $titles[0];?></h2>
+    <?php //BreadCrumbs
+    if (urldecode($_SERVER['REQUEST_URI'])==="/español/software/navegadoresweb") {
+                    include ('../../../include/_code/migasDePan_software.php');
+    }
+    else {
+        include ('../../include/_code/breadCrumbs_software.php');
+    }
+                ?>
     <h2><span style="text-align:right;color:blue;">
             <!-- INDENT THE SECOND H2 -->
             <?= empty($titles) ? $titulos[1] : $titles[1];?>

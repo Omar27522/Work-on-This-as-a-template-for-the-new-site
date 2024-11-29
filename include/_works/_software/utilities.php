@@ -1,4 +1,12 @@
-<h1 id="title">Computer Utilities & System Optimization</h1>
+<h2 id="title">Computer Utilities & System Optimization</h2>
+<?php //BreadCrumbs
+    if (urldecode($_SERVER['REQUEST_URI'])==="/español/software/utilidades") {
+                    include ('../../../include/_code/migasDePan_software.php');
+    }
+    else {
+        include ('../../include/_code/breadCrumbs_software.php');
+    }
+                ?>
 <div class="blurb">
     <section class="intro">
         <p tabindex="0" class="selection">

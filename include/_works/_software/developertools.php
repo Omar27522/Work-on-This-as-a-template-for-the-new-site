@@ -40,6 +40,14 @@
 
 <div class="blurb">
     <h2>Developer Tools</h2>
+    <?php //BreadCrumbs
+    if (urldecode($_SERVER['REQUEST_URI'])==="/español/software/herramientasparadesarrolladores") {
+                    include ('../../../include/_code/migasDePan_software.php');
+    }
+    else {
+        include ('../../include/_code/breadCrumbs_software.php');
+    }
+                ?>
     <p tabindex="0" class="selection">The job of the developer here at LAtinosPC is to grow or cause the site to grow and
         become more mature, advanced, or elaborate, yet simple and intuitive to browse. Also our job is to elaborate (like a
         musical theme) by modification of the melody, harmony, or rhythm; a better website for our visitors. We not only

@@ -1,5 +1,13 @@
 <div class="blurb">
-    <h1 id="title">Imaging</h1>
+    <h2 id="title">Imaging</h2>
+    <?php //BreadCrumbs
+    if (urldecode($_SERVER['REQUEST_URI'])==="/español/software/imagenes") {
+                    include ('../../../include/_code/migasDePan_software.php');
+    }
+    else {
+        include ('../../include/_code/breadCrumbs_software.php');
+    }
+                ?>
     <div tabindex="0" class="selection">
     <h2>Humans have senses to measure the environment they are in.</h2>
     <p>One of these senses is <b><u>sight</u></b>. When light bounces off an object, human eyes detect the variations of

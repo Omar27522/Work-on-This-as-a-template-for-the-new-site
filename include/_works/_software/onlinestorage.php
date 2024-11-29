@@ -1,6 +1,14 @@
 <div class="blurb">
 <h1 id="title"><a href="https://www.pcmag.com/picks/the-best-cloud-storage-and-file-sharing-services"
         title="PC Magazine Best CloudStorage 2022">Online storage</a></h1>
+        <?php //BreadCrumbs
+    if (urldecode($_SERVER['REQUEST_URI'])==="/español/software/almacenamientoenlinea") {
+                    include ('../../../include/_code/migasDePan_software.php');
+    }
+    else {
+        include ('../../include/_code/breadCrumbs_software.php');
+    }
+                ?>
 <p tabindex="0" class="selection">Also known as <a href="https://www.pcmag.com/picks/the-best-cloud-storage-and-file-sharing-services"
         title="PC Magazine Best CloudStorage 2022">cloud storage,</a> this technology revolutionizes how we store and manage digital content. It enables seamless data storage and access through remote servers via the internet, eliminating the limitations of physical storage devices. This modern solution offers enhanced flexibility, allowing users to access their files from any internet-connected device while providing robust backup protection against hardware failures.</p>
 <p tabindex="0" class="selection"><a href="https://www.pcmag.com/picks/the-best-cloud-storage-and-file-sharing-services"

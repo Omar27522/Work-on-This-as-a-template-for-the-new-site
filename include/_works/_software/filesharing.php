@@ -1,11 +1,19 @@
-<h1 id="title">File sharing</h1>
+
+<?php //BreadCrumbs
+    if (urldecode($_SERVER['REQUEST_URI'])==="/español/software/archivosparacompartir") {
+                    include ('../../../include/_code/migasDePan_software.php');
+    }
+    else {
+        include ('../../include/_code/breadCrumbs_software.php');
+    }
+                ?>
 <!-- latinospc\articles\software\fileshar.html -->
-<div class="blurb">
+<div class="blurb"><h2 id="title">File sharing</h2>
 <p class="selection">Imagine sending photos, videos, or documents to anyone, anywhere in the world, instantly! File sharing makes this possible by letting you move files between devices without physically carrying them around. Whether you're sharing vacation photos with family or working on projects with colleagues, file sharing makes it simple and fast.</p>
 
 <details>
     <summary>Popular file sharing services:</summary>
-    <p tabindex="0" class="selection buttonskit">
+    <p tabindex="0" class="selection buttonskit colms2">
         <button><a class="bttn" href="https://www.dropbox.com/" title="DropBox">Dropbox</a></button>
         <button><a class="bttn" href="https://www.google.com/drive/" title="Google Drive">Google Drive</a></button>
         <button><a class="bttn" href="https://www.microsoft.com/en-us/microsoft-365/onedrive/online-cloud-storage" title="One Drive">OneDrive</a></button>
@@ -46,26 +54,28 @@
         <figcaption>Share!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Securely, Reliably, Fast!<br /></figcaption>
         <iframe src="https://latinospc.com/images/gallery/thumbnail/mail.png" title="Share" width="263px" height="263px"></iframe>
     </figure>
-    <details>
-        <summary>1</summary>
-        <p style="border:2px solid green;">Create strong passwords using a mix of letters, numbers, and symbols - think of it as making a secret code that only you know!</p>
-    </details>
-    <details>
-        <summary>2</summary>
-        <p style="border:2px solid red;">Keep your passwords private - sharing them is like giving away the keys to your house.</p>
-    </details>
-    <details>
-        <summary>3</summary>
-        <p style="border:2px solid purple;">Use a password manager - it's like having a secure digital safe for all your passwords.</p>
-    </details>
-    <details>
-        <summary>4</summary>
-        <p style="border:2px solid orange;">Remember to remove access when you're done sharing - just like taking back a spare key.</p>
-    </details>
-    <details>
-        <summary>5</summary>
-        <p style="border:2px solid yellow;">Keep an eye on your accounts - checking regularly helps catch any unusual activity early.</p>
-    </details>
+    <div class="colms2">
+        <fieldset>
+            <legend>1</legend>
+            <p style="border:2px solid green;">Create strong passwords using a mix of letters, numbers, and symbols - think of it as making a secret code that only you know!</p>
+        </fieldset>
+        <fieldset>
+            <legend>2</legend>
+            <p style="border:2px solid red;">Keep your passwords private - sharing them is like giving away the keys to your house.</p>
+        </fieldset>
+        <fieldset>
+            <legend>3</legend>
+            <p style="border:2px solid purple;">Use a password manager - it's like having a secure digital safe for all your passwords.</p>
+        </fieldset>
+        <fieldset>
+            <legend>4</legend>
+            <p style="border:2px solid orange;">Remember to remove access when you're done sharing - just like taking back a spare key.</p>
+        </fieldset>
+        <fieldset>
+            <legend>5</legend>
+            <p style="border:2px solid yellow;">Keep an eye on your accounts - checking regularly helps catch any unusual activity early.</p>
+        </fieldset>
+    </div>
     <p>Remember: staying safe online is easy when you make it a habit, just like locking your door when you leave home!</p>
 </fieldset>
 </div>
@@ -188,77 +198,4 @@
         font-size: 2.5rem;
     }
 
-    .spacer hr {
-        margin: 40px 0;
-        border: none;
-        height: 1px;
-        background: linear-gradient(to right, transparent, #007bff, transparent);
-    }
-
-    .tip {
-        background-color: #e3f2fd;
-        padding: 15px;
-        border-radius: 8px;
-        margin: 15px 0;
-        border-left: 4px solid #1976d2;
-    }
-
-    .tool-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 15px;
-        margin: 20px 0;
-    }
-
-    .tool-link {
-        display: block;
-        padding: 15px;
-        background-color: #f8f9fa;
-        border-radius: 6px;
-        text-decoration: none;
-        color: #2c3e50;
-        transition: all 0.3s ease;
-    }
-
-    .tool-link:hover {
-        background-color: #e9ecef;
-        transform: translateY(-2px);
-    }
-
-    .safety-tips {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 20px;
-        margin: 20px 0;
-    }
-
-    .tip-item {
-        background-color: #f8f9fa;
-        padding: 20px;
-        border-radius: 8px;
-        text-align: center;
-    }
-
-    .tip-item h3 {
-        color: #1976d2;
-        margin-bottom: 10px;
-    }
-
-    ul {
-        list-style-type: none;
-        padding-left: 20px;
-    }
-
-    ul li {
-        position: relative;
-        padding-left: 25px;
-        margin-bottom: 10px;
-    }
-
-    ul li:before {
-        content: "→";
-        position: absolute;
-        left: 0;
-        color: #1976d2;
-    }
-</style>
+    </style>

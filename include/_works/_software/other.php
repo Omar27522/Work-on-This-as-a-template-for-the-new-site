@@ -1,5 +1,13 @@
 <div class="blurb">
-    <h1 id="title">Computer Tools & Resources</h1>
+    <h2 id="title">Computer Tools & Resources</h2>
+    <?php //BreadCrumbs
+    if (urldecode($_SERVER['REQUEST_URI'])==="/español/software/otros") {
+                    include ('../../../include/_code/migasDePan_software.php');
+    }
+    else {
+        include ('../../include/_code/breadCrumbs_software.php');
+    }
+                ?>
     
     <div class="content-grid">
         <!-- Computer Repair Section -->

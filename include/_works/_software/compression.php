@@ -1,5 +1,12 @@
-{{ ... }}
-<h1 id="title">File Compression: The Art of Digital Space-Saving</h1>
+<h2 id="title">File Compression: The Art of Digital Space-Saving</h2>
+<?php //BreadCrumbs
+    if (urldecode($_SERVER['REQUEST_URI'])==="/español/software/compresion") {
+                    include ('../../../include/_code/migasDePan_software.php');
+    }
+    else {
+        include ('../../include/_code/breadCrumbs_software.php');
+    }
+                ?>
 <div class="blurb">
     <section class="intro">
         <p tabindex="0" class="selection">
@@ -243,4 +250,3 @@
         }
     }
 </style>
-{{ ... }}
