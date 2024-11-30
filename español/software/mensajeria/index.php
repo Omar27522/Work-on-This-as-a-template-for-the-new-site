@@ -2,12 +2,13 @@
 $titulo = 'Mensajería';
 $software ='active';
 $directoryPath = '../../../';
+$css = '<link href="../../../include/_code/softwareCSS/messaging.css" rel="stylesheet" type="text/css" />';
 //$palabrasClave ='<meta name="keywords" content="">';
 //$descripción  = '<meta name="description" content="" />';
 include ('../../../include/_code/pagina.php');
 
     function content(){
-        echo' Mensajería en Español'; //This first echo shifts the <h2> to the left. once deleted it goes back with indentation.
+        include('./mensajeria.php');
         include ('../../../include/_works/_software/messaging.php');
     }
 ?>

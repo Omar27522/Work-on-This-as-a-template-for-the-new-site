@@ -10,6 +10,6 @@ $css = '<link rel="stylesheet" type="text/css" href="../../include/_code/softwar
 include ('../../include/_code/page.php');
 
 function content(){
- echo '';
+ include('./messaging.php');
  include ('../../include/_works/_software/messaging.php');
 }
