@@ -38,13 +38,14 @@ function content(){ ?>
 $location = "Pomona, CA";
 $phone = "909-276-7214";
 $email = "help@latinospc.com";
+$lastUpdate="Last Update: 11/30/2024";
 
 // Get the current date dynamically
 $date = new DateTime(); 
 $formattedDate = $date->format('m/d/Y');
 
 // Output the information
-echo "<p>$location | $phone | $email | $formattedDate</p>";
+echo "<p>$location | $phone | $email | $formattedDate | $lastUpdate</p>";
 ?>
                 <p>Welcome to the re-factorization project! We're enhancing the user experience, optimizing performance,
                     and
