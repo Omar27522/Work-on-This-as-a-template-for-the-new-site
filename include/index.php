@@ -33,7 +33,19 @@ function content(){ ?>
         <article>
             <section id="refactorization" tabindex="0" class="blurb container">
                 <h1><a href="#top">NEW RE-FACTORIZATION</a></h1>
-                <p>Pomona, CA | 909-276-7214 | help@latinospc.com | 11/23/2024</p>
+                <?php
+// Define variables for the data
+$location = "Pomona, CA";
+$phone = "909-276-7214";
+$email = "help@latinospc.com";
+
+// Get the current date dynamically
+$date = new DateTime(); 
+$formattedDate = $date->format('m/d/Y');
+
+// Output the information
+echo "<p>$location | $phone | $email | $formattedDate</p>";
+?>
                 <p>Welcome to the re-factorization project! We're enhancing the user experience, optimizing performance,
                     and
                     updating the design.<br /><br />
