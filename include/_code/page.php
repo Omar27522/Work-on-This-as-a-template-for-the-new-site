@@ -28,6 +28,7 @@
         <?php // This is the Breadcrumbs redirect for the Software pages.
             if (isset($_POST['program'])){
                 include($directoryPath.'include/_code/crumbs.php');
+                crumb();
                                         }
         ?>
         <!-- Dropdown Menu https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp -->

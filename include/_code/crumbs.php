@@ -1,6 +1,6 @@
 <?php
 
-    if (isset($_POST['program'])) { //Refreshes the page if the criteria is met after the form is submitted
+    function crumb() { //Refreshes the page if the criteria is met after the form is submitted
         $pages = [
             'all'             =>    '../#ps2',
             'devtools'        =>    '../developertools/',
