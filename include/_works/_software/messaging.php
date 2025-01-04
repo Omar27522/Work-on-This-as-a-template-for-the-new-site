@@ -8,14 +8,14 @@
         include ('../../include/_code/breadCrumbs_software.php');
     }
                 ?><br />
-    <img class="rtl" style="background-color:black" height="45px" width=75px>
+    <img src="../../../tempimages/messaging1.jpg" class="rtl" style="background-color:black">
 
     <?php if (!empty($introduction) || !empty($introduccion)) :
          foreach ((!empty($introduction) ? $introduction['content'] : $introduccion['contenido']) as $paragraph) : ?>
     <p tabindex="0" class="selection"><?php echo $paragraph; ?></p>
     <?php endforeach;  endif; ?>
 
-    <p tabindex="0" class="selection"><a
+    <p tabindex="0" class="selection" style="display:inline;margin:1%;"><a
             href="<?= empty($introduction) ? $introduccion['wiki_link'] : $introduction['wiki_link']; ?>">Wikipedia</a>
     </p>
     <hr />
@@ -24,7 +24,7 @@
 
         <?php   if(!empty($recent_apps) || !empty($apps_recientes)) :
         foreach ((!empty($recent_apps) ? $recent_apps['apps'] : $apps_recientes['apps']) as $app): ?>
-        <li><?php echo $app; ?></li>
+        <li style="line-height:1.5;"><?php echo $app; ?></li>
         <?php   endforeach; endif; ?>
 
     </ul>
@@ -39,7 +39,9 @@
 
         <?php if (!empty($advanced_features) || !empty($rasgos_avanzados)) :
         foreach ((!empty($advanced_features) ? $advanced_features['features'] : $rasgos_avanzados['rasgos']) as $feature) : ?>
-        <li><?php echo $feature; ?></li>
+        <p>
+            <li tabindex="0" class="border-li"><?php echo $feature; ?></li>
+        </p>
         <?php endforeach; endif; ?>
     </ul>
     <hr />
@@ -53,7 +55,9 @@
     <ul class="newspaper2 lastItem">
         <?php if (!empty($additional_apps) || !empty($apps_adicionales)) :
         foreach (!empty($additional_apps) ? $additional_apps['apps'] : $apps_adicionales['apps'] as $app) : ?>
-        <li><?php echo $app; ?></li>
+        <div style="line-height:1.5;">
+            <li><?php echo $app; ?></li>
+        </div>
         <?php endforeach; endif; ?>
     </ul>
 </div>

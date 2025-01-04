@@ -3,22 +3,65 @@
 $introduction = [
     'title' => 'Messaging',
     'content' => [
-        'From the dawn of human civilization, the need to communicate has driven countless innovations. As societies evolved, so did their methods of communication, transitioning from smoke signals and carrier pigeons to telegraphs and telephones. With the advent of the internet in the late 20th century, a new era of instantaneous, global communication was born.',
+        'From the dawn of human civilization, the need to communicate has driven countless innovations. As societies evolved, so did their methods of communication, transitioning from smoke signals and carrier pigeons to telegraphs and telephones. With the advent of the internet in the late 20th century, a new era of instantaneous, global communication was born. <a href="https://www.scicommcollective.com/articles/sccsymposium/communicationmedia" style="padding-left:200px;" title="Science Communication Through Art: The Universal Language">Communication</a>',
         'Aside from email, we can communicate instantaneously over the internet using a messaging program (APP), now days we can send attached video files, pictures, links and attachments over these apps. Most modern messaging applications offer private group chats, video/voice calling the person(s), make and accept payments, and of course, play games.',
-        '"Though the term dates from the 1990s, instant messaging predates the Internet, first appearing on multi-user operating systems like Compatible Time-Sharing System (CTSS) and Multiplexed Information and Computing Service (Multics)[12][13] in the mid-1960s. Initially, some of these systems were used as notification systems for services like printing, but quickly were used to facilitate communication with other users logged into the same machine. CTSS facilitated communication via text message for up to 30 people.[14] "'
+        '"<i>Though the term dates from the 1990s, instant messaging predates the Internet, first appearing on multi-user operating systems like Compatible Time-Sharing System (CTSS) and Multiplexed Information and Computing Service (Multics)[12][13] in the mid-1960s. Initially, some of these systems were used as notification systems for services like printing, but quickly were used to facilitate communication with other users logged into the same machine. CTSS facilitated communication via text message for up to 30 people.[14] </i>"'
     ],
     'wiki_link' => 'https://en.wikipedia.org/wiki/Instant_messaging'
 ];
+
+$links = ['sms'=> 'https://en.wikipedia.org/wiki/SMS',
+            'whatsApp'=>'https://www.whatsapp.com/',
+            'facebookMessenger'=>'https://www.messenger.com/',
+            'weChat'=>'https://www.wechat.com/en/',
+            'telegram'=>'https://telegram.org/',
+            'signal'=>'https://signal.org/',
+            'iMessage'=>'https://en.wikipedia.org/wiki/IMessage',
+            'googleChat'=>'https://workspace.google.com/products/chat/',
+            'slack'=>'https://slack.com/',
+            'microsoftTeams'=>'https://www.microsoft.com/en-us/microsoft-365/microsoft-teams/group-chat-software',
+
+            'encryptionEnd2End'=>'https://en.wikipedia.org/wiki/End-to-end_encryption',
+
+            'discord'=>'https://discord.com/',
+            'snapchat'=>'https://www.snapchat.com/',
+            'viber'=>'https://www.viber.com/',
+            'line'=>'https://line.me/en/',
+            'kik'=>'https://www.kik.com/',
+            'skype'=>'https://www.skype.com/',
+            'dust'=>'https://www.useDust.com/',
+            'qq'=>'https://www.imqq.com/',
+            'kakaoTalk'=>'https://www.kakaocorp.com/page/service/service/KakaoTalk?lang=ENG&tab=all',
+            'marcoPolo'=>'https://www.marcopolo.me/',
+            'textMe'=>'https://www.textmeinc.com/',
+            'textNow'=>'https://www.textnow.com/',
+            'threema'=>'https://threema.ch/en/',
+            'wire'=>'https://wire.com/',
+            'session'=>'https://getsession.org/',
+            'wickr'=>'https://wickr.com/',
+            'tango'=>'https://www.tango.me/',
+            'chompSMS'=>'https://chompsms.com/',
+            'pinger'=>'https://www.pinger.com/',
+            'hike'=>'https://hike.in/'
+        ];
 
 // Recent Messaging Apps section
 $recent_apps = [
     'title' => 'Here are some Messaging Apps as of recently',
     'apps' => [
-        'Text Messaging (SMS)', 'WhatsApp', 'Facebook Messenger', 'WeChat', 'Telegram',
-        'Signal', 'iMessage', 'Google Chat', 'Slack', 'Microsoft Teams'
+        '<a href="'.$links['sms'].'">Text Messaging (SMS)</a>',
+        '<a href="'.$links['whatsApp'].'">WhatsApp</a>',
+        '<a href="'.$links['facebookMessenger'].'">Facebook Messenger</a>',
+        '<a href="'.$links['weChat'].'">WeChat</a>',
+        '<a href="'.$links['telegram'].'">Telegram</a>',
+        '<a href="'.$links['signal'].'">Signal</a>',
+        '<a href="'.$links['iMessage'].'">iMessage</a>',
+        '<a href="'.$links['googleChat'].'">Google Chat</a>',
+        '<a href="'.$links['slack'].'">Slack</a>',
+        '<a href="'.$links['microsoftTeams'].'">Microsoft Teams</a>'
     ],
     'security_title' => 'Security and Privacy in Modern Messaging',
-    'security_content' => "In today's digital age, security and privacy have become paramount in messaging applications. Most modern messaging platforms implement end-to-end encryption, ensuring that only the intended recipients can read the messages. Features like disappearing messages, two-factor authentication, and secure cloud backups have become standard. Apps like Signal and Telegram have gained popularity specifically for their enhanced security features and commitment to user privacy."
+    'security_content' => 'In today\'s digital age, security and privacy have become paramount in messaging applications. Most modern messaging platforms implement <a href="'.$links['encryptionEnd2End'].'">end-to-end encryption</a>, ensuring that only the intended recipients can read the messages. Features like disappearing messages, two-factor authentication, and secure cloud backups have become standard. Apps like Signal and Telegram have gained popularity specifically for their enhanced security features and commitment to user privacy.'
 ];
 
 // Advanced Features section
@@ -50,9 +93,26 @@ $market_stats = [
 // Additional Messaging Apps section
 $additional_apps = [
     'apps' => [
-        'Discord', 'Snapchat', 'Viber', 'Line', 'Kik', 'Skype', 'Dust', 'QQ', 'KakaoTalk',
-        'Marco Polo', 'Text Me', 'Text Now', 'Threema', 'Wire', 'Session', 'Wickr', 'Tango',
-        'Chomp SMS', 'Pinger', 'Hike'
+        '<a href="'.$links['discord'].'">Discord</a>',
+        '<a href="'.$links['snapchat'].'">Snapchat</a>',
+        '<a href="'.$links['viber'].'">Viber</a>',
+        '<a href="'.$links['line'].'">Line</a>',
+        '<a href="'.$links['kik'].'">Kik</a>',
+        '<a href="'.$links['skype'].'">Skype</a>',
+        '<a href="'.$links['dust'].'">Dust</a>',
+        '<a href="'.$links['qq'].'">QQ</a>',
+        '<a href="'.$links['kakaoTalk'].'">KakaoTalk</a>',
+        '<a href="'.$links['marcoPolo'].'">Marco Polo</a>',
+        '<a href="'.$links['textMe'].'">Text Me</a>',
+        '<a href="'.$links['textNow'].'">Text Now</a>',
+        '<a href="'.$links['threema'].'">Threema</a>',
+        '<a href="'.$links['wire'].'">Wire</a>',
+        '<a href="'.$links['session'].'">Session</a>',
+        '<a href="'.$links['wickr'].'">Wickr</a>',
+        '<a href="'.$links['tango'].'">Tango</a>',
+        '<a href="'.$links['chompSMS'].'">Chomp SMS</a>',
+        '<a href="'.$links['pinger'].'">Pinger</a>',
+        '<a href="'.$links['hike'].'">Hike</a>'
     ]
 ];
 ?>
