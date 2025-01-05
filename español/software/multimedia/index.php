@@ -2,12 +2,13 @@
 $titulo = 'Multimedia';
 $software ='active';
 $directoryPath = '../../../';
+$css = '<link href="../../../include/_code/softwareCSS/media.css" rel="stylesheet" type="text/css" />';
 //$palabrasClave ='<meta name="keywords" content="">';
 //$descripción  = '<meta name="description" content="" />';
 include ('../../../include/_code/pagina.php');
 
     function content(){
-        echo' Multimedia en Español'; //This first echo shifts the <h2> to the left. once deleted it goes back with indentation.
+        include ('./multimedia.php');
         include ('../../../include/_works/_software/media.php');
     }
 ?>
