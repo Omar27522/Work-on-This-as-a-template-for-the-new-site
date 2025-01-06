@@ -6,14 +6,6 @@
   line-height: 1.6;
 }
 
-.blurb h1#title {
-  font-size: 2.5rem;
-  color: #2c3e50;
-  margin-bottom: 1rem;
-  border-bottom: 3px solid #3498db;
-  padding-bottom: 0.5rem;
-}
-
 .blurb h2 {
   font-size: 1.8rem;
   color: #34495e;
@@ -61,7 +53,9 @@
   left: 0;
   font-weight: bold;
 }
-
+ .selection p{
+  font-size: 1.5rem;
+ }
 code {
   background: #2c3e50;
   color: #ecf0f1;
@@ -147,10 +141,13 @@ blockquote.expert-quote footer {
   border-radius: 8px;
   text-align: center;
   transition: transform 0.3s ease;
+  text-decoration: none;
 }
 
 .stat-card:hover {
   transform: scale(1.05);
+  text-decoration: none;
+  color: white;
 }
 
 .stat-number {
@@ -168,6 +165,7 @@ blockquote.expert-quote footer {
   position: relative;
   margin: 3rem 0;
   padding-left: 2rem;
+  font-size: 1.5rem;
 }
 
 .timeline::before {
@@ -184,6 +182,10 @@ blockquote.expert-quote footer {
   position: relative;
   margin-bottom: 2rem;
   padding-left: 1.5rem;
+}
+
+.timeline-item a{
+  color:black;
 }
 
 .timeline-item::before {
@@ -204,12 +206,17 @@ blockquote.expert-quote footer {
   margin: 2rem 0;
 }
 
+.tech-grid a {
+  color:black;
+}
+
 .tech-item {
   background: #f8f9fa;
   padding: 1rem;
   border-radius: 8px;
   text-align: center;
   transition: all 0.3s ease;
+  text-decoration: none;
 }
 
 .tech-item:hover {
