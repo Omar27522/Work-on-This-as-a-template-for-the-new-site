@@ -5,28 +5,28 @@ $enlaces = ['multimediaFormatos'=>['https://docs.fileformat.com/es/misc/media-fi
             'internetUsuarios'=>['https://marketing4ecommerce.net/usuarios-de-internet-mundo/','El número de usuarios de internet en el mundo crece un 1,8% y alcanza los 5.350 millones (2024)'],
             'video'=>['https://www.1to1video.com/es/estadisticas-de-video-marketing_6821','Estadísticas de Vídeo Marketing'],
 
-            'centro'=>['imagen'=>['https://www.iana.org/assignments/media-types/media-types.xhtml#image','Media Types Images'],
-                        'audio'=>['https://www.iana.org/assignments/media-types/media-types.xhtml#audio','Media Types Audio'],
-                        'video'=>['https://www.iana.org/assignments/media-types/media-types.xhtml#video','Media Types Video'],
-                        'texto'=>['https://www.iana.org/assignments/media-types/media-types.xhtml#text','Media Types Text']
+            'centro'=>['imagen'=>['https://www.iana.org/assignments/media-types/media-types.xhtml#image','Imagenes'],
+                        'audio'=>['https://www.iana.org/assignments/media-types/media-types.xhtml#audio','Audio'],
+                        'video'=>['https://www.iana.org/assignments/media-types/media-types.xhtml#video','Video'],
+                        'texto'=>['https://www.iana.org/assignments/media-types/media-types.xhtml#text','Texto']
                     ],
-            'evolucion'=>['40'=>['http://world-information.org/wio/infostructure/100437611663/100438659338','Early Digital Computing'],
-                            '60'=>['https://en.wikipedia.org/wiki/Digital_audio','Digital Audio and Storage'],
-                            '80'=>['https://en.wikipedia.org/wiki/Digital_image','Digital Images','https://en.wikipedia.org/wiki/Digital_video','Digital Video'],
-                            '00'=>['https://www.socialchamp.io/in/blog/history-of-social-media/','History of Social Media: Tracing the Evolution from the Beginning to Now'],
-                            '20'=>['https://www.interaction-design.org/literature/topics/immersive-media','Immersive Media']
+            'evolucion'=>['40'=>['https://pcweb.info/historia-del-pc-1940-1962-computadoras-computacion/','Computadoras, computación, primera generación'],
+                            '60'=>['https://es.wikipedia.org/wiki/Audio_digital','Almacenamiento y Audio Digital'],
+                            '80'=>['https://es.wikipedia.org/wiki/Imagen_digital','Imagen Digital','https://es.wikipedia.org/wiki/Video_digital','Video Digital'],
+                            '00'=>['https://sefhor.com/guia-historia-redes-sociales/','Historia de las redes sociales: desde el origen hasta la actualidad'],
+                            '20'=>['https://es.wikipedia.org/wiki/Inmersi%C3%B3n_(realidad_virtual)#Medios_y_tecnolog%C3%ADa_inmersivos','Medios y tecnología inmersiva']
                         ],
-            'formatos'=>['jpg'=>['https://en.wikipedia.org/wiki/JPEG','JPEG'],
-                                    'png'=>['https://en.wikipedia.org/wiki/PNG','PNG'],
-                                    'mp4'=>['https://en.wikipedia.org/wiki/MP4_file_format','MP4'],
-                                    'mp3'=>['https://en.wikipedia.org/wiki/MP3','MP3'],
-                                    'gif'=>['https://en.wikipedia.org/wiki/GIF','GIF'],
-                                    'wav'=>['https://en.wikipedia.org/wiki/WAV','WAV'],
-                                    'pdf'=>['https://en.wikipedia.org/wiki/PDF','PDF'],
-                                    'svg'=>['https://en.wikipedia.org/wiki/SVG','SVG']
+            'formatos'=>['jpg'=>['https://es.wikipedia.org/wiki/Joint_Photographic_Experts_Group','JPEG'],
+                                    'png'=>['https://es.wikipedia.org/wiki/Portable_Network_Graphics','PNG'],
+                                    'mp4'=>['https://es.wikipedia.org/wiki/MPEG-4_Parte_14','MP4'],
+                                    'mp3'=>['https://es.wikipedia.org/wiki/MP3','MP3'],
+                                    'gif'=>['https://es.wikipedia.org/wiki/Graphics_Interchange_Format','GIF'],
+                                    'wav'=>['https://es.wikipedia.org/wiki/Waveform_Audio_Format','WAV'],
+                                    'pdf'=>['https://es.wikipedia.org/wiki/PDF','PDF'],
+                                    'svg'=>['https://es.wikipedia.org/wiki/Gr%C3%A1ficos_vectoriales_escalables','SVG']
                                 ],
-            'aACR'=>['https://www.mentalhelp.net/internet/types-of-media/','American Addiction Centers Resource'],
-            'tiposMultimedia'=>'https://en.wikipedia.org/wiki/Media_type'
+            'aACR'=>['https://upanama.educativa.org/archivos/repositorio/17750/17760/html/14_clasificacin_de_la_multimedia.html','Clasificación de la Multimedia'],
+            'tiposMultimedia'=>'https://www.trabajosocial.unlp.edu.ar/uploads/docs/multimedia.pdf'
         ];
 
 $subTitulo = ['Entendiendo las Multimedias Digitales: Contenido Visual, Auditivo e Interactivo',
@@ -57,6 +57,6 @@ $rol = ['Los medios digitales han transformado la forma en que nos comunicamos, 
           'Expresión creativa y compartición',
           'Preservación digital de la cultura',
           'Entrega de contenido multiplataforma'];
-$multimediaModerna = ['aACR'=>'Recurso de los Centros Americanos de Adicción', 'cita'=>'"Los medios modernos vienen en muchos formatos diferentes, incluidos los medios impresos (libros, revistas, periódicos), televisión, películas, videojuegos, música, teléfonos celulares, diversos tipos de software e Internet."'];
+$multimediaModerna = ['aACR'=>'Fundamentos de la tecnología multimedia', 'cita'=>'"Los medios modernos vienen en muchos formatos diferentes, incluidos los medios impresos (libros, revistas, periódicos), televisión, películas, videojuegos, música, teléfonos celulares, diversos tipos de software e Internet."'];
 $aprender = ['Más información sobre Tipos de Medios de Internet →'];
 ?>
