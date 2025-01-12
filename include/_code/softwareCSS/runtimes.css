@@ -1,0 +1,71 @@
+.highlight-box {
+    background: linear-gradient(145deg, #f6f8fa 0%, #e9ecef 100%);
+    border-left: 4px solid #386baa;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 0 8px 8px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.fun-fact {
+    background: linear-gradient(145deg, #fff4e6 0%, #ffe8cc 100%);
+    border: 1px solid #ffd8a8;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 12px;
+    position: relative;
+}
+
+.fun-fact:before {
+    content: "💡";
+    font-size: 24px;
+    position: absolute;
+    top: -12px;
+    left: 20px;
+    background: transparent;
+    padding: 0 10px;
+}
+
+.device-list li {
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 6px;
+    transition: transform 0.2s;
+}
+
+.device-list li:hover {
+    transform: translateX(10px);
+    background: #f8f9fa;
+}
+
+.pro-tip {
+    background: linear-gradient(145deg, #e3f2fd 0%, #bbdefb 100%);
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 8px;
+    border: 1px solid #90caf9;
+}
+
+.future-section {
+    background: linear-gradient(145deg, #f3e5f5 0%, #e1bee7 100%);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 12px;
+    border: 1px solid #ce93d8;
+}
+
+.learn-more {
+    background: linear-gradient(145deg, #e8f5e9 0%, #c8e6c9 100%);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 12px;
+    border: 1px solid #a5d6a7;
+}
+
+.kitchen-analogy li {
+    padding: 10px;
+    margin: 5px 0;
+    background: #f8f9fa;
+    border-radius: 6px;
+    border-left: 3px solid #386baa;
+}
