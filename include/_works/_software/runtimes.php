@@ -1,7 +1,7 @@
 <article class="hero4">
     <div class="content_resize">
         <div class="fullbar">
-            <h2 id="title">Understanding Program Runtimes: The Magic Behind Your Apps</h2>
+            <h2 id="title"><?= empty($title) ? $titulo : $title;?></h2>
 
             <?php /*BreadCrumbs*/
     if (urldecode($_SERVER['REQUEST_URI'])==="/español/software/tiemposdeejecucion/") {
@@ -13,20 +13,34 @@
 
             <div class="article">
                 <div class="highlight-box">
-                    <p style="font-size: 14px;">Ever wondered why some apps run smoothly while others feel sluggish? Or
-                        why the same game might run perfectly
-                        on your friend's phone but struggle on yours? The answer lies in something called "runtime" -
-                        the invisible
-                        conductor orchestrating everything your apps do.</p>
+                    <p><?= empty($question) ? $pregunta : $question ?></p>
                 </div>
 
-                <h2>What is Runtime? Think of it as a Kitchen</h2>
-                <p>Imagine your computer as a busy restaurant kitchen:</p>
+
+
+
+
+
+<?php
+$kitchen2 = [   'the'=>'The',
+                'chef'=>['chef','(runtime environment)','coordinates everything']
+                ];
+                $the =empty($kitchen2['the']) ? $kitchen2['the'] : $kitchen2['the'];
+?>
+
+
+El La
+
+
+
+                <h2><?= empty($title) ? $subtitulos[0] : $subtitles[0]; ?></h2>
+                <p><?= empty($kitchen) ? $cocina[0] : $kitchen[0]; ?></p>
                 <ul class="kitchen-analogy">
-                    <li>The <strong>chef (runtime environment)</strong> coordinates everything</li>
-                    <li>The <strong>recipe (program code)</strong> tells what needs to be done</li>
-                    <li>The <strong>ingredients (data)</strong> are what you're working with</li>
-                    <li>The <strong>kitchen tools (system resources)</strong> help get the job done</li>
+                    <!-- <li>The chef <strong>(runtime environment)</strong> coordinates everything</li> -->
+                    <li><?= $the ?> <?= $kitchen2['chef'][0]; ?> <strong>(runtime environment)</strong> coordinates everything</li>
+                    <li>The recipe <strong>(program code)</strong> tells what needs to be done</li>
+                    <li>The ingredients <strong>(data)</strong> are what you're working with</li>
+                    <li>The kitchen tools <strong>(system resources)</strong> help get the job done</li>
                 </ul>
                 <p>Just like a kitchen needs all these elements working together to serve a meal, your apps need runtime
                     to function!</p>

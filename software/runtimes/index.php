@@ -11,6 +11,6 @@ $css = '<link href="../../include/_code/softwareCSS/runtimes.css" rel="styleshee
 include ('../../include/_code/page.php');
 
 function content(){
- echo 'Runtimes';
+ include ('./runtimes.php');
  include ('../../include/_works/_software/runtimes.php');
 }
