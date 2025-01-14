@@ -12,10 +12,10 @@ $subtitles= [
 $kitchen = [
             'Imagine your computer as a busy restaurant kitchen:',
             'the'=>'The',
-            'chef'=>['chef','(runtime environment)','coordinates everything'],
-            'recipe'=>['recipe','(program code)','tells what needs to be done'],
-            'ingredients'=>['ingredients','(data)','are what you\'re working with'],
-            'tools'=>['kitchen tools','(system resources)','help get the job done'],
+            'chef'=>['The chef','(runtime environment)','coordinates everything'],
+            'recipe'=>['The recipe','(program code)','tells what needs to be done'],
+            'ingredients'=>['The ingredients','(data)','are what you\'re working with'],
+            'tools'=>['The kitchen tools','(system resources)','help get the job done'],
             'just'=>'Just like a kitchen needs all these elements working together to serve a meal, your apps need runtime to function!'
 ];
 ?>

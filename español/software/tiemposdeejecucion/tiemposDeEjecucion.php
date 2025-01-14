@@ -6,10 +6,10 @@ $subtitulos = [
 ];
 $cocina = [
     'Imagina tu computadora como una cocina de restaurante muy ocupada:',
-    'chef' => ['chef', '(entorno de ejecución)', 'coordina todo'],
-    'receta' => ['receta', '(código del programa)', 'indica lo que debe hacerse'],
-    'ingredientes' => ['ingredientes', '(datos)', 'son con lo que estás trabajando'],
-    'herramientas' => ['herramientas de cocina', '(recursos del sistema)', 'ayudan a terminar el trabajo'],
+    'chef' => ['El chef', '(entorno de ejecución)', 'coordina todo'],
+    'receta' => ['La receta', '(código del programa)', 'indica lo que debe hacerse'],
+    'ingredientes' => ['Los ingredientes', '(datos)', 'son con lo que estás trabajando'],
+    'herramientas' => ['Las herramientas de cocina', '(recursos del sistema)', 'ayudan a terminar el trabajo'],
     'justo' => 'Así como una cocina necesita que todos estos elementos trabajen juntos para servir platillos, tus aplicaciones necesitan un entorno de ejecución para funcionar.',
 
 ];

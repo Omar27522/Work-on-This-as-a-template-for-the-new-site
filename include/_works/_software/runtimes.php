@@ -16,31 +16,12 @@
                     <p><?= empty($question) ? $pregunta : $question ?></p>
                 </div>
 
-
-
-
-
-
-<?php
-                if (!empty($kitchen)) { $the =empty($kitchen['the']) ? $kitchen['the'] : $kitchen['the'];}
-?>
-
-
-
                 <h2><?= empty($title) ? $subtitulos[0] : $subtitles[0]; ?></h2>
                 <p><?= empty($kitchen) ? $cocina[0] : $kitchen[0]; ?></p>
                 <ul class="kitchen-analogy">
-                    <!-- <li>The chef <strong>(runtime environment)</strong> coordinates everything</li>
-                    <li><?=empty($kitchen) ? 'El'  : $the ?> <?= empty($kitchen) ? $cocina['chef'][0] :$kitchen['chef'][0]; ?> <strong><?=empty($kitchen) ? $cocina['chef'][1] : $kitchen['chef'][1]; ?></strong> <?=empty($kitchen) ? $cocina['chef'][2] : $kitchen['chef'][2]; ?></li>
-                    <li><?=empty($kitchen) ? 'La'  : $the ?> <?=empty($kitchen) ? $cocina['receta'][0] : $kitchen['recipe'][0]; ?> <strong><?=empty($kitchen) ? $cocina['receta'][1] : $kitchen['recipe'][1]; ?></strong> <?=empty($kitchen) ? $cocina['receta'][2] : $kitchen['recipe'][2]; ?></li>
-                    <li><?=empty($kitchen) ? 'Los' : $the ?> <?=empty($kitchen) ? $cocina['ingredientes'][0] : $kitchen['ingredients'][0]; ?> <strong><?=empty($kitchen) ? $cocina['ingredientes'][1] : $kitchen['ingredients'][1]; ?></strong> <?=empty($kitchen) ? $cocina['ingredientes'][2] : $kitchen['ingredients'][2]; ?></li>
-                    <li><?=empty($kitchen) ? 'La'  : $the ?> <?=empty($kitchen) ? $cocina['herramientas'][0] : $kitchen['tools'][0]; ?> <strong><?=empty($kitchen) ? $cocina['herramientas'][1] : $kitchen['tools'][1]; ?></strong> <?=empty($kitchen) ? $cocina['herramientas'][2] : $kitchen['tools'][2]; ?></li>
-                -->
-                <?php
+                    <?php
                 $activeArray = empty($kitchen) ? $cocina : $kitchen;
-                $keys = empty($kitchen) ? 
-                    ['chef', 'receta', 'ingredientes', 'herramientas'] : 
-                    ['chef', 'recipe', 'ingredients', 'tools'];
+                $keys = empty($kitchen) ? ['chef', 'receta', 'ingredientes', 'herramientas'] : ['chef', 'recipe', 'ingredients', 'tools'];
                 foreach ($keys as $key) {
                     echo '<li>';
                     echo $activeArray[$key][0] . ' '; // Article
@@ -50,7 +31,7 @@
                                 }
 
             ?>
-            </ul>
+                </ul>
                 <p><?=empty($kitchen) ? $cocina['justo'] : $kitchen['just']; ?></p>
 
                 <h2>How Does Runtime Work?</h2>
