@@ -11,7 +11,6 @@
         include ('../../include/_code/breadCrumbs_software.php');
     }  /*BreadCrumbs*/ ?>
 
-            <div class="article">
                 <div class="highlight-box">
                     <p><?= empty($question) ? $pregunta : $question ?></p>
                 </div>
@@ -19,36 +18,24 @@
                 <h2><?= empty($title) ? $subtitulos[0] : $subtitles[0]; ?></h2>
                 <p><?= empty($kitchen) ? $cocina[0] : $kitchen[0]; ?></p>
                 <ul class="kitchen-analogy">
-                    <?php
+            <?php
                 $activeArray = empty($kitchen) ? $cocina : $kitchen;
                 $keys = empty($kitchen) ? ['chef', 'receta', 'ingredientes', 'herramientas'] : ['chef', 'recipe', 'ingredients', 'tools'];
-                foreach ($keys as $key) {
+                foreach ($keys as $key) :
                     echo '<li>';
                     echo $activeArray[$key][0] . ' '; // Article
                     echo '<strong>' . $activeArray[$key][1] . '</strong> '; // Parenthetical term
                     echo $activeArray[$key][2]; // Description
                     echo '</li>';
-                                }
+                endforeach;
+            ?></ul><p><?=empty($kitchen) ? $cocina['justo'] : $kitchen['just']; ?></p>
 
-            ?>
-                </ul>
-                <p><?=empty($kitchen) ? $cocina['justo'] : $kitchen['just']; ?></p>
-
-                <h2>How Does Runtime Work?</h2>
-                <p>Every <a
-                        href="https://en.wikipedia.org/wiki/History_of_programming_languages#Current_trends">programming
-                        language</a>
-                    needs its own special runtime environment. Think of it as different types of kitchens - a sushi
-                    restaurant needs
-                    different tools than a pizzeria, but they both make delicious food!</p>
+                <h2><?= empty($title) ? $subtitulos[1] : $subtitles[1]; ?></h2>
+                <p><?=empty($kitchen) ? $cocina['como'] : $kitchen['how']; ?></p>
 
                 <div class="fun-fact">
-                    <h3>🌟 Fun Fact:</h3>
-                    <p>When you're playing a mobile game, the runtime is handling millions of tiny tasks every second -
-                        from making
-                        sure your character jumps when you tap, to keeping track of your score, all while making sure
-                        your phone's
-                        battery isn't drained too quickly!</p>
+                    <h3><?= empty($title) ? $subtitulos[2] : $subtitles[2]; ?></h3>
+                    <p><?= empty($funFact) ? $datoCurioso : $funFact; ?></p>
                 </div>
 
                 <h2>Why Some Apps Run Better Than Others</h2>
@@ -108,10 +95,6 @@
                         <li>Check out our other articles about computer basics and advanced topics!</li>
                     </ul>
                 </div>
-            </div>
         </div>
-    </div>
-    <div class="spacer">
-        <hr />
     </div>
 </article>
