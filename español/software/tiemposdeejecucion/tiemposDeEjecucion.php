@@ -9,6 +9,7 @@ $subtitulos = [
     '¿Qué es el tiempo de ejecución? — Piénsalo como una cocina.',
     '¿Cómo funciona el tiempo de ejecución?',
     '🌟 ¡Dato Curioso!',
+    'Por qué algunas aplicaciones funcionan mejor que otras',
     '',
 ];
 $cocina = [
@@ -23,4 +24,9 @@ $cocina = [
 
 ];
 $datoCurioso='Cuando juegas un juego en el <a href="'.$enlaces['movil'].'">móvil</a>, el entorno de ejecución maneja millones de pequeñas tareas cada segundo - desde asegurarse de que tu personaje salte cuando tocas la pantalla, hasta llevar la cuenta de tu puntuación, todo mientras se asegura de que la batería de tu teléfono no se descargue demasiado rápido.';
+$complejidad = [
+    '1. Complejidad de la aplicación',
+    'Las aplicaciones simples (como una calculadora) son como hacer una tostada: rápido y fácil. Los juegos complejos son como preparar una comida de cinco platos: necesitan más tiempo y recursos.',
+    '',
+];
 ?>

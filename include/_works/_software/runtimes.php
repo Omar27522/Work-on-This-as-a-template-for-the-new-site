@@ -38,12 +38,10 @@
                     <p><?= empty($funFact) ? $datoCurioso : $funFact; ?></p>
                 </div>
 
-                <h2>Why Some Apps Run Better Than Others</h2>
-                <h3>1. App Complexity</h3>
+                <h2><?= empty($title) ? $subtitulos[3] : $subtitles[3]; ?></h2>
+                <h3><?= empty($complexity) ? $complejidad[0] : $complexity[0]; ?></h3>
                 <div class="highlight-box">
-                    <p>Simple apps (like a calculator) are like making toast - quick and easy. Complex games are like
-                        preparing a
-                        five-course meal - they need more time and resources!</p>
+                    <p><?= empty($complexity) ? $complejidad[1] : $complexity[1]; ?></p>
                 </div>
 
                 <h3>2. Your Device's Power</h3>

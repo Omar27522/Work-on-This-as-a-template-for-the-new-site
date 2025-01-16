@@ -9,7 +9,7 @@ $subtitles= [
             'What is Runtime? — Think of it as a Kitchen',
             'How Does Runtime Work?',
             '🌟 Fun Fact:',
-            '',
+            'Why Some Apps Run Better Than Others',
             '',
             '',
 ];
@@ -25,4 +25,11 @@ $kitchen = [
 ];
 
 $funFact = 'When you\'re playing a mobile game, the runtime is handling millions of tiny tasks every second - from making sure your character jumps when you tap, to keeping track of your score, all while making sure your phone\'s battery isn\'t drained too quickly!';
+
+$complexity = [
+            '1. App Complexity',
+            'Simple apps (like a calculator) are like making toast - quick and easy. Complex games are like preparing a five-course meal - they need more time and resources!'
+];
+
+$devicePower = [];
 ?>
