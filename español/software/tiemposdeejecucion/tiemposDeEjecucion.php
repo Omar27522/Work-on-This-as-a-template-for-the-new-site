@@ -29,4 +29,20 @@ $complejidad = [
     'Las aplicaciones simples (como una calculadora) son como hacer una tostada: rápido y fácil. Los juegos complejos son como preparar una comida de cinco platos: necesitan más tiempo y recursos.',
     '',
 ];
+$dispositivoPotencia = [
+    '2. La Potencia de tu Dispositivo',
+    'Diferentes dispositivos tienen diferentes capacidades:',
+    'desktop'=>['🖥️ Computadoras de escritorio:','¡Como una cocina profesional - mucha potencia y espacio!'],
+    'laptop'=>['💻 Laptops:','¡Como una cocina en casa - buena para la mayoría de las tareas!'],
+    'mobile'=>['📱 Dispositivos móviles:','¡Como un buen puesto de tacos - algo pequeño pero sorprendentemente capaz!'],
+];
+
+$futuro = [
+    '🚀 ¡El futuro es emocionante!',
+    'La tecnología sigue mejorando - imagina tener el poder de la computadora de escritorio de hoy en el reloj inteligente de mañana! Grandes empresas muy conocidas, están desarrollando constantemente nuevas formas de empaquetar más potencia de procesamiento en espacios más pequeños.',
+];
+
+$aprendeMas=[];
+$consejosPro=[];
+$chapuzon=[];
 ?>

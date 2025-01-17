@@ -36,6 +36,7 @@
 .device-list li:hover {
     transform: translateX(10px);
     background: #f8f9fa;
+    cursor: grab;
 }
 
 .pro-tip {

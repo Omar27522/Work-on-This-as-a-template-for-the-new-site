@@ -31,5 +31,20 @@ $complexity = [
             'Simple apps (like a calculator) are like making toast - quick and easy. Complex games are like preparing a five-course meal - they need more time and resources!'
 ];
 
-$devicePower = [];
+$devicePower = [
+                '2. Your Device\'s Power',
+                'Different devices have different capabilities:',
+                'desktop'=>['🖥️ Desktop Computers:','Like a professional kitchen - lots of power and space'],
+                'laptop'=>['💻 Laptops:','Like a home kitchen - good for most tasks'],
+                'mobile'=>['📱 Mobile Devices:','Like a food truck kitchen - smaller but surprisingly capable!'],
+];
+
+$future = [
+            '🚀 The Future is Exciting!',
+            'Technology keeps getting better - imagine having the power of today\'s desktop computer in tomorrow\'s smartwatch! Many tech-companies are constantly developing new ways to pack more processing power into smaller spaces.',
+];
+
+$learnMore=[];
+$proTips=[];
+$deepDive=[];
 ?>

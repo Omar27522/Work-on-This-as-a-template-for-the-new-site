@@ -44,23 +44,17 @@
                     <p><?= empty($complexity) ? $complejidad[1] : $complexity[1]; ?></p>
                 </div>
 
-                <h3>2. Your Device's Power</h3>
-                <p>Different devices have different capabilities:</p>
+                <h3><?= empty($devicePower) ? $dispositivoPotencia[0] : $devicePower[0]; ?></h3>
+                <p><?= empty($devicePower) ? $dispositivoPotencia[1] : $devicePower[1]; ?></p>
                 <ul class="device-list">
-                    <li>🖥️ <strong>Desktop Computers:</strong> Like a professional kitchen - lots of power and space
-                    </li>
-                    <li>💻 <strong>Laptops:</strong> Like a home kitchen - good for most tasks</li>
-                    <li>📱 <strong>Mobile Devices:</strong> Like a food truck kitchen - smaller but surprisingly
-                        capable!</li>
+                    <li><strong><?= empty($devicePower) ? $dispositivoPotencia['desktop'][0] : $devicePower['desktop'][0]; ?></strong><?= empty($devicePower) ? $dispositivoPotencia['desktop'][1] : $devicePower['desktop'][1]; ?></li>
+                    <li><strong><?= empty($devicePower) ? $dispositivoPotencia['laptop'][0] : $devicePower['laptop'][0]; ?></strong> <?= empty($devicePower) ? $dispositivoPotencia['laptop'][1] : $devicePower['laptop'][1]; ?></li>
+                    <li><strong><?= empty($devicePower) ? $dispositivoPotencia['mobile'][0] : $devicePower['mobile'][0]; ?></strong> <?= empty($devicePower) ? $dispositivoPotencia['mobile'][1] : $devicePower['mobile'][1]; ?></li>
                 </ul>
 
                 <div class="future-section">
-                    <h3>🚀 The Future is Exciting!</h3>
-                    <p>Technology keeps getting better - imagine having the power of today's desktop computer in
-                        tomorrow's
-                        smartwatch! Companies like Apple, AMD, and Intel are constantly developing new ways to pack more
-                        processing
-                        power into smaller spaces.</p>
+                    <h3><?= empty($future) ? $futuro[0] : $future[0]; ?></h3>
+                    <p><?= empty($future) ? $futuro[1] : $future[1]; ?></p>
                 </div>
 
                 <div class="learn-more">
