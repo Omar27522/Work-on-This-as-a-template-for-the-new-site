@@ -70,6 +70,9 @@
     border-radius: 6px;
     border-left: 3px solid #386baa;
 }
+.references{
+    padding-bottom: 1%;
+}
 .hero4 li {
     font-size: 18px ;
 }

@@ -42,7 +42,27 @@ $futuro = [
     'La tecnología sigue mejorando - imagina tener el poder de la computadora de escritorio de hoy en el reloj inteligente de mañana! Grandes empresas muy conocidas, están desarrollando constantemente nuevas formas de empaquetar más potencia de procesamiento en espacios más pequeños.',
 ];
 
-$aprendeMas=[];
-$consejosPro=[];
-$chapuzon=[];
+$aprendeMas = [
+    '¿Quieres aprender más?',
+    'Si tienes curiosidad sobre cómo funcionan las computadoras, el tiempo de ejecución es solo el comienzo. También te puede interesar:',
+    'Cómo funcionan los lenguajes de programación',
+    'Qué hace que algunas computadoras sean más rápidas que otras',
+    'Cómo se crean los juegos y las aplicaciones',
+    'Lo último en tecnología de chips para computadoras'
+];
+
+$consejosPro = [
+    '💡 Consejos Pro para un Mejor Rendimiento en Tiempo de Ejecución',
+    'Mantén actualizado el sistema operativo de tu dispositivo',
+    'Cierra las aplicaciones que no estés usando',
+    'Asegúrate de tener suficiente espacio de almacenamiento libre',
+    'Elige aplicaciones que coincidan con las capacidades de tu dispositivo',
+];
+
+$chapuzon = [
+    '¿Quieres profundizar más?',
+    'Entendiendo el Tiempo de Ejecución (Detalles Técnicos)',
+    '¡Consulta nuestros otros artículos sobre conceptos básicos de computadoras y temas avanzados!'
+];
+
 ?>

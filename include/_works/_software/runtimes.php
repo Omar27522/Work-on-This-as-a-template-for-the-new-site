@@ -46,11 +46,17 @@
 
                 <h3><?= empty($devicePower) ? $dispositivoPotencia[0] : $devicePower[0]; ?></h3>
                 <p><?= empty($devicePower) ? $dispositivoPotencia[1] : $devicePower[1]; ?></p>
-                <ul class="device-list">
-                    <li><strong><?= empty($devicePower) ? $dispositivoPotencia['desktop'][0] : $devicePower['desktop'][0]; ?></strong><?= empty($devicePower) ? $dispositivoPotencia['desktop'][1] : $devicePower['desktop'][1]; ?></li>
-                    <li><strong><?= empty($devicePower) ? $dispositivoPotencia['laptop'][0] : $devicePower['laptop'][0]; ?></strong> <?= empty($devicePower) ? $dispositivoPotencia['laptop'][1] : $devicePower['laptop'][1]; ?></li>
-                    <li><strong><?= empty($devicePower) ? $dispositivoPotencia['mobile'][0] : $devicePower['mobile'][0]; ?></strong> <?= empty($devicePower) ? $dispositivoPotencia['mobile'][1] : $devicePower['mobile'][1]; ?></li>
-                </ul>
+
+                    <ul class="device-list">
+                        <?php $devices = ['desktop', 'laptop', 'mobile'];
+                            foreach ($devices as $device) : ?>
+                            <li>
+                                <strong><?= empty($devicePower) ? $dispositivoPotencia[$device][0] : $devicePower[$device][0]; ?></strong>
+                                <?= empty($devicePower) ? $dispositivoPotencia[$device][1] : $devicePower[$device][1]; ?>
+                            </li>
+                        <?php endforeach; ?>
+                    </ul>
+
 
                 <div class="future-section">
                     <h3><?= empty($future) ? $futuro[0] : $future[0]; ?></h3>
@@ -58,33 +64,33 @@
                 </div>
 
                 <div class="learn-more">
-                    <h2>Want to Learn More?</h2>
-                    <p>If you're curious about how computers work, runtime is just the beginning! You might also be
-                        interested in:</p>
+                    <h2><?= empty($learnMore) ? $aprendeMas[0] : $learnMore[0]; ?></h2>
+                    <p><?= empty($learnMore) ? $aprendeMas[1] : $learnMore[1]; ?></p>
                     <ul>
-                        <li>How programming languages work</li>
-                        <li>What makes some computers faster than others</li>
-                        <li>How games and apps are made</li>
-                        <li>The latest in computer chip technology</li>
+                        <?php $learnMoreToShow = array_slice(empty($learnMore) ? $aprendeMas : $learnMore, 2);
+                            foreach ($learnMoreToShow as $learn) : ?>
+                            <li><?= $learn; ?></li>
+                        <?php endforeach; ?>
                     </ul>
                 </div>
 
                 <div class="pro-tip">
-                    <h3>💡 Pro Tips for Better Runtime Performance</h3>
+                    <h3><?= empty($proTips) ? $consejosPro[0] : $proTips[0]; ?></h3>
                     <ul>
-                        <li>Keep your device's operating system updated</li>
-                        <li>Close apps you're not using</li>
-                        <li>Make sure you have enough free storage space</li>
-                        <li>Choose apps that match your device's capabilities</li>
+                    <?php
+                        $proTipsToShow = array_slice(empty($proTips) ? $consejosPro : $proTips, 1);
+                        foreach ($proTipsToShow as $tip) : ?>
+                            <li><?= $tip; ?></li>
+                    <?php endforeach; ?>
+
                     </ul>
                 </div>
 
                 <div class="references">
-                    <h3>Want to Dive Deeper?</h3>
+                    <h3><?= empty($deepDive) ? $chapuzon[0] : $deepDive[0]; ?></h3>
                     <ul>
-                        <li><a href="https://www.techtarget.com/searchsoftwarequality/definition/runtime">Understanding
-                                Runtime (Technical Details)</a></li>
-                        <li>Check out our other articles about computer basics and advanced topics!</li>
+                        <li><?= empty($deepDive) ? $chapuzon[1] : $deepDive[1]; ?></li>
+                        <li><?= empty($deepDive) ? $chapuzon[2] : $deepDive[2]; ?></li>
                     </ul>
                 </div>
         </div>
