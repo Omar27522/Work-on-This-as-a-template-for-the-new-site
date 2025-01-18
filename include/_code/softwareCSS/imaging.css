@@ -27,3 +27,6 @@ justify-content: center;
     text-decoration: underline;
     cursor: pointer;
 }
+.fullbar{
+    padding-bottom: 2%;
+}

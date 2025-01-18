@@ -84,7 +84,7 @@
     <p class = "selection" tabindex = "0">The latest frontier in computer graphics involves immersive technologies:</p>
         <aside class="newspaper2">
     <ul class="imgs">
-            <li class="d4" tabindex = "0"><strong>Virtual Reality (VR):</strong> Creates fully immersive 3D environments, using high-resolution displays, precise motion tracking, and sophisticated controllers for interaction</li>
+            <li class="d4" tabindex = "0"><strong class="strong">Virtual Reality (VR):</strong> Creates fully immersive 3D environments, using high-resolution displays, precise motion tracking, and sophisticated controllers for interaction</li>
             <li class="d4" tabindex = "0"><strong>Augmented Reality (AR):</strong> Overlays digital content onto the real world, using cameras and sensors to blend virtual and physical spaces</li>
             <li class="d4" tabindex = "0"><strong>Mixed Reality (MR):</strong> Combines elements of both VR and AR, allowing virtual objects to interact with the physical environment</li>
         </ul>
@@ -93,11 +93,15 @@
 
     <h2>Modern Computer Imaging</h2>
     <p class = "selection" tabindex = "0">While traditional computer displays work in 2 dimensions, modern technology has evolved to create and manipulate both 2D and 3D imagery. The computer makes complex calculations to represent or display images in various formats, from simple 2D representations to sophisticated 3D models. Today's imaging technology extends beyond mere display - computers can now materialize digital designs into physical objects through <a href="https://all3dp.com/2/3d-file-format-3d-model-types/">3D Printing technology</a>.</p>
-
-    <h3>Common Image File Formats</h3>
+        <aside class="colms2">
+            <div class="item">
+    <h3 style="margin-top: 0;">Common Image File Formats</h3>
     <p class = "selection" tabindex = "0">There are numerous image file formats, each designed for specific uses. You can learn more about the major graphic file formats through this <a href="https://en.wikipedia.org/wiki/Image_file_format#Major_graphic_file_formats">comprehensive guide</a>.</p>
-
-    <h3>Further Exploration</h3>
-    <p class = "selection" tabindex = "0">The field of computer graphics and imaging is vast and constantly evolving. We encourage you to explore topics like ray tracing, vector graphics, raster images, color theory, and the latest developments in real-time rendering. Understanding these concepts can provide deeper insights into how modern digital imaging works and where the technology is headed.</p>
+            </div>
+            <div class="item">
+    <h3 style="text-align:center">Further Exploration</h3>
+    <p class = "selection" tabindex = "0" style="margin-bottom: 0;">The field of computer graphics and imaging is vast and constantly evolving. We encourage you to explore topics like ray tracing, vector graphics, raster images, color theory, and the latest developments in real-time rendering. Understanding these concepts can provide deeper insights into how modern digital imaging works and where the technology is headed.</p>
+    </div>
+</aside>
     </div>
 </article>
