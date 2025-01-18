@@ -1,0 +1,25 @@
+.hero4 .imgs li{
+    font-size: large;
+    line-height: 1.3;
+text-indent: -1.3em;
+justify-content: center;
+}
+.hero4  .imgs{
+    list-style: none;
+    padding-left: 3%;
+    margin-left: 3%;
+}
+.hero4 h3{
+    font-size: x-large;
+}
+.d3{
+    border-radius: 2%;
+    padding-left: 10%;
+}
+.d3:hover,.d3:active,.d3:focus{
+    font-weight: bold;
+    cursor: pointer;
+}
+.spz{
+    padding-bottom: 2%;
+}

@@ -6,6 +6,7 @@ $question="Ever wondered why some apps run smoothly while others feel sluggish? 
 $links=[
     'programming'=>'https://en.wikipedia.org/wiki/History_of_programming_languages#Current_trends',
     'mobile'=>'https://en.wikipedia.org/wiki/Mobile_game',
+    'next100Years'=>'https://www.nyas.org/ideas-insights/blog/imagining-the-next-100-years-of-science-and-technology/',
     'technicalDetails'=>'https://www.techtarget.com/searchsoftwarequality/definition/runtime'
 ];
 
@@ -13,9 +14,7 @@ $subtitles= [
             'What is Runtime? — Think of it as a Kitchen',
             'How Does Runtime Work?',
             '🌟 Fun Fact:',
-            'Why Some Apps Run Better Than Others',
-            '',
-            '',
+            'Why Some Apps Run Better Than Others'
 ];
 
 $kitchen = [
@@ -45,7 +44,7 @@ $devicePower = [
 ];
 
 $future = [
-            '🚀 The Future is Exciting!',
+            '🚀 The <a href="'.$links['next100Years'].'">Future</a> is Exciting!',
             'Technology keeps getting better - imagine having the power of today\'s desktop computer in tomorrow\'s smartwatch! Many tech-companies are constantly developing new ways to pack more processing power into smaller spaces.'
 ];
 
@@ -69,7 +68,7 @@ $proTips = [
 $deepDive = [
     'Want to Dive Deeper?',
     '<a href="'.$links['technicalDetails'].'">Understanding Runtime (Technical Details)</a>',
-    'Check out our other articles about computer basics and advanced topics!'
+    'Check out our other <a href="../#ps2">articles</a> about computer basics and advanced topics!'
 ];
 
 ?>
