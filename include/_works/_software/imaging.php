@@ -72,21 +72,23 @@
     <p class = "selection" tabindex = "0">Today's display technology has evolved dramatically, offering unprecedented visual experiences:</p>
     <aside class="colms2">
         <ul class="imgs">
-            <li class="item spz"><strong>High Refresh Rates:</strong> Modern displays can achieve 144Hz, 240Hz, or even higher, providing smoother motion and reducing motion blur</li>
-            <li class="item spz"><strong>Resolution:</strong> From 4K (3840x2160) to 8K (7680x4320) displays, offering incredibly detailed images</li>
-            <li class="item spz"><strong>HDR (High Dynamic Range):</strong> Enabling a wider range of colors and brightness levels</li>
-            <li class="item spz"><strong>OLED and Mini-LED:</strong> Delivering deeper blacks and better contrast ratios</li>
+            <li class="item spz d4" tabindex = "0"><strong>High Refresh Rates:</strong> Modern displays can achieve 144Hz, 240Hz, or even higher, providing smoother motion and reducing motion blur</li>
+            <li class="item spz d4" tabindex = "0"><strong>Resolution:</strong> From 4K (3840x2160) to 8K (7680x4320) displays, offering incredibly detailed images</li>
+            <li class="item spz d4" tabindex = "0"><strong>HDR (High Dynamic Range):</strong> Enabling a wider range of colors and brightness levels</li>
+            <li class="item spz d4" tabindex = "0"><strong>OLED and Mini-LED:</strong> Delivering deeper blacks and better contrast ratios</li>
         </ul>
     </aside>
 
 
     <h2>Virtual and Augmented Reality</h2>
     <p class = "selection" tabindex = "0">The latest frontier in computer graphics involves immersive technologies:</p>
-        <ul class="imgs">
-            <li><strong>Virtual Reality (VR):</strong> Creates fully immersive 3D environments, using high-resolution displays, precise motion tracking, and sophisticated controllers for interaction</li>
-            <li><strong>Augmented Reality (AR):</strong> Overlays digital content onto the real world, using cameras and sensors to blend virtual and physical spaces</li>
-            <li><strong>Mixed Reality (MR):</strong> Combines elements of both VR and AR, allowing virtual objects to interact with the physical environment</li>
+        <aside class="newspaper2">
+    <ul class="imgs">
+            <li class="d4" tabindex = "0"><strong>Virtual Reality (VR):</strong> Creates fully immersive 3D environments, using high-resolution displays, precise motion tracking, and sophisticated controllers for interaction</li>
+            <li class="d4" tabindex = "0"><strong>Augmented Reality (AR):</strong> Overlays digital content onto the real world, using cameras and sensors to blend virtual and physical spaces</li>
+            <li class="d4" tabindex = "0"><strong>Mixed Reality (MR):</strong> Combines elements of both VR and AR, allowing virtual objects to interact with the physical environment</li>
         </ul>
+        </aside>
     <p class = "selection" tabindex = "0">These technologies are revolutionizing fields from gaming and entertainment to education, healthcare, and industrial design.</p>
 
     <h2>Modern Computer Imaging</h2>

@@ -23,3 +23,7 @@ justify-content: center;
 .spz{
     padding-bottom: 2%;
 }
+.d4:hover,.d4:active,.d4:focus{
+    text-decoration: underline;
+    cursor: pointer;
+}
