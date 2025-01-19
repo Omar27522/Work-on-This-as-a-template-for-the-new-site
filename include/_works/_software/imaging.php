@@ -9,20 +9,23 @@
         include ('../../include/_code/breadCrumbs_software.php');
     }
                 ?>
+        <div class="colms2" style="padding-top: 1%;">
+            <p class = "selection" tabindex = "0">
+        <span style="font-size: larger;padding-left: 20px">Sight is one of the primary senses humans use to make sense of the world.</span><br />
+        When light reflects off an object, the eyes detect light variations, then the brain processes this information to create a personal experience of perceived reality trough <b>vision</b>.
+        </p>
+        <p class = "selection" tabindex = "0">
+        I'd say, if an object is visible to an observer, the object's existence can be further confirmed by testing it with the other senses, such as <b>touch</b>, <b>sound</b>, <b>taste</b>, and <b>smell</b>, etc...
+        </p>
+        </div><!-- colms2 -->
 
-    <h2>Humans have senses to measure the environment they are in.</h2>
-    <p class = "selection" tabindex = "0">One of these senses is <b><u>sight</u></b>. When light bounces off an object, human eyes detect the variations of
-        these light bounces; then our brain makes the necessary calculations to represent it in the natural world,
-        A.K.A. reality. In other words, if the object is there and you are seeing it, then you can test the reality of
-        said object by measuring it with other senses.</p>
+    <h2 class="eych8">The Evolution of Computer Graphics</h2>
+    <p class = "selection newspaper2" tabindex = "0">The history of computer graphics dates back to the 1950s, beginning with the Whirlwind computer at MIT which used a CRT display for output. In 1963, Ivan Sutherland revolutionized the field with Sketchpad, the first computer-aided design program. The 1970s saw the birth of 2D computer graphics in commercial applications, while the 1980s brought us breakthrough developments in 3D graphics and animation. The 1990s witnessed the rise of dedicated graphics processing units (GPUs), leading to today's photorealistic rendering capabilities and real-time 3D graphics.</p>
 
-    <h2>The Evolution of Computer Graphics</h2>
-    <p class = "selection" tabindex = "0">The history of computer graphics dates back to the 1950s, beginning with the Whirlwind computer at MIT which used a CRT display for output. In 1963, Ivan Sutherland revolutionized the field with Sketchpad, the first computer-aided design program. The 1970s saw the birth of 2D computer graphics in commercial applications, while the 1980s brought us breakthrough developments in 3D graphics and animation. The 1990s witnessed the rise of dedicated graphics processing units (GPUs), leading to today's photorealistic rendering capabilities and real-time 3D graphics.</p>
+    <h2 class="eych8">2D Graphics: The Foundation</h2>
+    <p class = "selection" tabindex = "0" style="font-size: x-large;">2D graphics form the basis of digital imaging, consisting of pixels arranged in a two-dimensional grid. These graphics include everything from basic user interfaces to digital art and photographs. Vector graphics, another form of 2D imaging, use mathematical equations to create scalable images that maintain quality at any size. Common applications include logo design, typography, and technical illustrations.</p>
 
-    <h2>2D Graphics: The Foundation</h2>
-    <p class = "selection" tabindex = "0">2D graphics form the basis of digital imaging, consisting of pixels arranged in a two-dimensional grid. These graphics include everything from basic user interfaces to digital art and photographs. Vector graphics, another form of 2D imaging, use mathematical equations to create scalable images that maintain quality at any size. Common applications include logo design, typography, and technical illustrations.</p>
-
-    <h2>3D Graphics: Adding Depth</h2><aside class="newspaper2">
+    <h2 class="eych8">3D Graphics: Adding Depth</h2><aside class="newspaper2">
     <p class = "selection" tabindex = "0">3D graphics introduce the z-axis, creating virtual objects with depth, volume, and perspective. Modern 3D graphics utilize complex techniques like:</p>
         <ul class="imgs item">
             <li tabindex = "0" class="d3">Polygon mesh modeling for creating object shapes</li>
@@ -33,7 +36,7 @@
     <p class = "selection" tabindex = "0">These technologies power everything from video games to architectural visualization and scientific simulations.</p>
     </aside>
 
-    <h2>Digital Photography and Imaging Hardware</h2>
+    <h2 class="eych8">Digital Photography and Imaging Hardware</h2>
     <p class = "selection" tabindex = "0">Digital photography represents a crucial aspect of modern imaging technology. The key components include:</p>
 
     <aside class="colms2">
@@ -68,7 +71,7 @@
     </div>
     </aside>
 
-    <h2>Modern Display Technologies</h2>
+    <h2 class="eych8">Modern Display Technologies</h2>
     <p class = "selection" tabindex = "0">Today's display technology has evolved dramatically, offering unprecedented visual experiences:</p>
     <aside class="colms2">
         <ul class="imgs">
@@ -80,7 +83,7 @@
     </aside>
 
 
-    <h2>Virtual and Augmented Reality</h2>
+    <h2 class="eych8">Virtual and Augmented Reality</h2>
     <p class = "selection" tabindex = "0">The latest frontier in computer graphics involves immersive technologies:</p>
         <aside class="newspaper2">
     <ul class="imgs">
@@ -91,7 +94,7 @@
         </aside>
     <p class = "selection" tabindex = "0">These technologies are revolutionizing fields from gaming and entertainment to education, healthcare, and industrial design.</p>
 
-    <h2>Modern Computer Imaging</h2>
+    <h2 class="eych8">Modern Computer Imaging</h2>
     <p class = "selection" tabindex = "0">While traditional computer displays work in 2 dimensions, modern technology has evolved to create and manipulate both 2D and 3D imagery. The computer makes complex calculations to represent or display images in various formats, from simple 2D representations to sophisticated 3D models. Today's imaging technology extends beyond mere display - computers can now materialize digital designs into physical objects through <a href="https://all3dp.com/2/3d-file-format-3d-model-types/">3D Printing technology</a>.</p>
         <aside class="colms2">
             <div class="item">
