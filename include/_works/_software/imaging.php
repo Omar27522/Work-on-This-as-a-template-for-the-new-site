@@ -19,21 +19,21 @@
         </div><!-- colms2 -->
 
     <h2 class="eych8"><?= empty($subTitles) ? $subTitulos[0] : $subTitles[0];?></h2>
-    <p class = "selection newspaper2" tabindex = "0">The history of computer graphics dates back to the 1950s, beginning with the Whirlwind computer at MIT which used a CRT display for output. In 1963, Ivan Sutherland revolutionized the field with Sketchpad, the first computer-aided design program. The 1970s saw the birth of 2D computer graphics in commercial applications, while the 1980s brought us breakthrough developments in 3D graphics and animation. The 1990s witnessed the rise of dedicated graphics processing units (GPUs), leading to today's photorealistic rendering capabilities and real-time 3D graphics.</p>
+    <p class = "selection newspaper2" tabindex = "0"><?= empty($evolution) ? $evolucion[0] : $evolution[0];?></p>
 
     <h2 class="eych8"><?= empty($subTitles) ? $subTitulos[1] : $subTitles[1];?></h2>
-    <p class = "selection" tabindex = "0" style="font-size: x-large;">2D graphics form the basis of digital imaging, consisting of pixels arranged in a two-dimensional grid. These graphics include everything from basic user interfaces to digital art and photographs. Vector graphics, another form of 2D imaging, use mathematical equations to create scalable images that maintain quality at any size. Common applications include logo design, typography, and technical illustrations.</p>
+    <p class = "selection" tabindex = "0" style="font-size: x-large;"><?= empty($graphics2D) ? $graficos2D[0] : $graphics2D[0];?></p>
 
     <h2 class="eych8"><?= empty($subTitles) ? $subTitulos[2] : $subTitles[2];?></h2>
     <aside class="newspaper2">
-    <p class = "selection" tabindex = "0">3D graphics introduce the z-axis, creating virtual objects with depth, volume, and perspective. Modern 3D graphics utilize complex techniques like:</p>
+    <p class = "selection" tabindex = "0"><?= empty($graphics3D) ? $graficos3D['tercerD'] : $graphics3D['thirdD'];?></p>
         <ul class="imgs item">
-            <li tabindex = "0" class="d3">Polygon mesh modeling for creating object shapes</li>
-            <li tabindex = "0" class="d3">Texture mapping for adding surface details</li>
-            <li tabindex = "0" class="d3">Ray tracing for realistic lighting and shadows</li>
-            <li tabindex = "0" class="d3">Real-time rendering for interactive experiences</li>
+            <li tabindex = "0" class="d3"><?= empty($graphics3D) ? $graficos3D['primer'] : $graphics3D['first'];?></li>
+            <li tabindex = "0" class="d3"><?= empty($graphics3D) ? $graficos3D['segundo'] : $graphics3D['second'];?></li>
+            <li tabindex = "0" class="d3"><?= empty($graphics3D) ? $graficos3D['tercer'] : $graphics3D['third'];?></li>
+            <li tabindex = "0" class="d3"><?= empty($graphics3D) ? $graficos3D['cuarto'] : $graphics3D['fourth'];?></li>
         </ul>
-    <p class = "selection" tabindex = "0">These technologies power everything from video games to architectural visualization and scientific simulations.</p>
+    <p class = "selection" tabindex = "0"><?= empty($graphics3D) ? $graficos3D['tercerDUltimo'] : $graphics3D['thirdDLast'];?></p>
     </aside>
 
     <h2 class="eych8"><?= empty($subTitles) ? $subTitulos[3] : $subTitles[3];?></h2>
