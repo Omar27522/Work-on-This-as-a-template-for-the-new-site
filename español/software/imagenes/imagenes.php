@@ -11,6 +11,9 @@ $subTitulos = [
     'Imágenes por computadora modernas',
     '',
 ];
+$imagenes = [
+    'girl'=>['https://www.w3schools.com/w3images/photographer.jpg','Fotografa']
+];
 
 $vista = [
     'La visión es uno de los sentidos principales mas usados para comprender el mundo.',
@@ -33,4 +36,17 @@ $graficos3D = [
     'tercerDUltimo' => 'Estas tecnologías impulsan todo, desde videojuegos hasta visualización arquitectónica y simulaciones científicas.',
 ];
 
+$fotografiaDigital = [
+    'foto' => 'La fotografía digital representa un aspecto crucial de la tecnología moderna de la imagen.',
+    'incluye'=>'Componentes clave incluyen:',
+    'sensor'=>['imagen'=>'Sensores de imagen',
+        'tipo'=>'En el corazón de las cámaras digitales hay dos tipos principales de sensores de imagen:',
+            'ccd'=>['fuerte'=>'CCD (Dispositivo de Carga Acoplada):',
+                'pro'=>'Conocido por imágenes de alta calidad con menos ruido, tradicionalmente utilizado en cámaras profesionales'],
+            'cmos'=>['fuerte'=>'CMOS (Semiconductor Complementario de Óxido Metálico):',
+                'pro'=>'Más eficiente en energía y más barato de fabricar, ahora es la tecnología dominante en la mayoría de las cámaras modernas'],
+            'sensores'=>'Estos sensores convierten la luz en señales eléctricas a través de millones de fotositos (píxeles).',
+            ],
+    'componentes'=>[]
+];
 ?>

@@ -11,6 +11,10 @@ $subTitles = [
     'Modern Computer Imaging'
 ];
 
+$images = [
+    'girl'=>['https://www.w3schools.com/w3images/photographer.jpg','Photographer']
+];
+
 $sight = [
     'Sight is one of the primary senses humans use to make sense of the world.',
     'When light reflects off an object, the eyes detect light variations, then the brain processes this information to create a personal experience of perceived reality trough <b>vision</b>.',
@@ -30,6 +34,21 @@ $graphics3D = [
     'third' => 'Ray tracing for realistic lighting and shadows',
     'fourth' => 'Real-time rendering for interactive experiences',
     'thirdDLast' => 'These technologies power everything from video games to architectural visualization and scientific simulations.',
+];
+
+$digitalPhotography = [
+    'photo'=>'Digital photography represents a crucial aspect of modern imaging technology.',
+    'include'=>'Key components include:',
+    'sensor'=>[
+        'image'=>'Image Sensors',
+        'type'=>'At the heart of digital cameras are two main types of image sensors:',
+        'ccd'=>['strong'=>'CCD (Charge-Coupled Device):',
+            'pro'=>'Known for high-quality images with less noise, traditionally used in professional cameras'],
+        'cmos'=>['strong'=>'CMOS (Complementary Metal-Oxide Semiconductor):',
+            'pro'=>'More energy-efficient and cheaper to manufacture, now the dominant technology in most modern cameras'],
+        'sensors'=>'These sensors convert light into electrical signals through millions of photosites (pixels).'
+    ],
+    'components'=>[]
 ];
 
 ?>
