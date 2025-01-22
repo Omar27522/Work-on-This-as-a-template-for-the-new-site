@@ -48,7 +48,15 @@ $digitalPhotography = [
             'pro'=>'More energy-efficient and cheaper to manufacture, now the dominant technology in most modern cameras'],
         'sensors'=>'These sensors convert light into electrical signals through millions of photosites (pixels).'
     ],
-    'components'=>[]
+    'keyComponents'=>'Key Photography Components',
+    'elements'=>'Several elements work together to create digital images:',
+    'components'=>[
+        'lens'=>['Lens System:','Controls focus, zoom, and light gathering through adjustable
+                        apertures'],
+        'processor'=>['Image Processor:','Converts sensor data into digital images, handling tasks like noise reduction and color processing'],
+        'resolution'=>['Resolution:','Measured in megapixels, determining the detail level of captured images'],
+        'range'=>['Dynamic Range:','The camera\'s ability to capture both bright and dark areas in a single shot']
+    ]
 ];
 
 ?>

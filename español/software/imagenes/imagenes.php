@@ -47,6 +47,14 @@ $fotografiaDigital = [
                 'pro'=>'Más eficiente en energía y más barato de fabricar, ahora es la tecnología dominante en la mayoría de las cámaras modernas'],
             'sensores'=>'Estos sensores convierten la luz en señales eléctricas a través de millones de fotositos (píxeles).',
             ],
-    'componentes'=>[]
+    'componentesClave' => 'Componentes Clave de la Fotografía',
+'elementos' => 'Varios elementos trabajan juntos para crear imágenes digitales:',
+'componentes' => [
+    'lente' => ['Sistema de Lentes:', 'Controla el enfoque, el zoom y la recolección de luz a través de aperturas ajustables'],
+    'procesador' => ['Procesador de Imágenes:', 'Convierte los datos del sensor en imágenes digitales, manejando tareas como la reducción de ruido y el procesamiento de color'],
+    'resolucion' => ['Resolución:', 'Medida en megapíxeles, determinando el nivel de detalle de las imágenes capturadas'],
+    'rango' => ['Rango Dinámico:', 'La capacidad de la cámara para capturar tanto áreas brillantes como oscuras en una sola toma']
+]
+
 ];
 ?>
