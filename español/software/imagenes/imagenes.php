@@ -57,4 +57,15 @@ $fotografiaDigital = [
 ]
 
 ];
+
+$procesamientoDigital = [
+    'titulo' => 'Procesamiento de Imágenes Digitales',
+    'intro' => 'Después de la captura, las imágenes pasan por varios pasos de procesamiento:',
+    'pasos' => [
+        'raw' => ['Procesamiento RAW:', 'Conversión de datos brutos del sensor en imágenes visibles'],
+        'color' => ['Corrección de Color:', 'Ajuste del balance de blancos y precisión del color'],
+        'ruido' => ['Reducción de Ruido:', 'Eliminación de artefactos digitales y ruido del sensor'],
+        'compresion' => ['Compresión:', 'Optimización del tamaño del archivo manteniendo la calidad de la imagen']
+    ]
+];
 ?>

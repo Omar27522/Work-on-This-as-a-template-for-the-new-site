@@ -51,11 +51,27 @@ $digitalPhotography = [
     'keyComponents'=>'Key Photography Components',
     'elements'=>'Several elements work together to create digital images:',
     'components'=>[
-        'lens'=>['Lens System:','Controls focus, zoom, and light gathering through adjustable
-                        apertures'],
+        'lens'=>['Lens System:','Controls focus, zoom, and light gathering through adjustable apertures'],
         'processor'=>['Image Processor:','Converts sensor data into digital images, handling tasks like noise reduction and color processing'],
         'resolution'=>['Resolution:','Measured in megapixels, determining the detail level of captured images'],
-        'range'=>['Dynamic Range:','The camera\'s ability to capture both bright and dark areas in a single shot']
+        'range'=>['Dynamic Range:','The camera\'s ability to capture both bright and dark areas in a single shot'],
+        'keyComponentsSection'=>[
+            'lens'=>['Lens System:','Controls focus, zoom, and light gathering through adjustable apertures'],
+            'processor'=>['Image Processor:','Converts sensor data into digital images, handling tasks like noise reduction and color processing'],
+            'resolution'=>['Resolution:','Measured in megapixels, determining the detail level of captured images'],
+            'range'=>['Dynamic Range:','The camera\'s ability to capture both bright and dark areas in a single shot']
+        ]
+    ]
+];
+
+$digitalProcessing = [
+    'title' => 'Digital Image Processing',
+    'intro' => 'After capture, images go through several processing steps:',
+    'steps' => [
+        'raw' => ['RAW Processing:', 'Converting raw sensor data into viewable images'],
+        'color' => ['Color Correction:', 'Adjusting white balance and color accuracy'],
+        'noise' => ['Noise Reduction:', 'Removing digital artifacts and sensor noise'],
+        'compression' => ['Compression:', 'Optimizing file size while maintaining image quality']
     ]
 ];
 

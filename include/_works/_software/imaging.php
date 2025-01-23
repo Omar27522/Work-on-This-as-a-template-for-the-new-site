@@ -18,7 +18,6 @@
             <p class="selection" tabindex="0">
                 <?= empty($sight) ? $vista[2] : $sight[2];?></p>
         </div><!-- colms2 -->
-
         <h2 class="eych8"><?= empty($subTitles) ? $subTitulos[0] : $subTitles[0];?></h2>
         <p class="selection newspaper2" tabindex="0"><?= empty($evolution) ? $evolucion[0] : $evolution[0];?></p>
 
@@ -69,27 +68,31 @@
                     alt="Photographer" style="width:100%;max-width:400px;margin-top:16px;">
             </div>
             <div class="item">
-                <h3>Key Photography Components</h3>
-                <p class="selection" tabindex="0">Several elements work together to create digital images:</p>
+                <h3><?= empty($digitalPhotography) ? $fotografiaDigital['componentesClave'] : $digitalPhotography['keyComponents'];?></h3>
+                <p class="selection" tabindex="0"><?= empty($digitalPhotography) ? $fotografiaDigital['elementos'] : $digitalPhotography['elements'];?></p>
                 <ul class="imgs">
-                    <li><strong>Lens System:</strong> Controls focus, zoom, and light gathering through adjustable
-                        apertures</li>
-                    <li><strong>Image Processor:</strong> Converts sensor data into digital images, handling tasks like
-                        noise reduction and color processing</li>
-                    <li><strong>Resolution:</strong> Measured in megapixels, determining the detail level of captured
-                        images</li>
-                    <li><strong>Dynamic Range:</strong> The camera's ability to capture both bright and dark areas in a
-                        single shot</li>
+                    <li><strong><?= empty($digitalPhotography) ? $fotografiaDigital['componentes']['lente'][0] : $digitalPhotography['components']['lens'][0];?></strong> 
+                        <?= empty($digitalPhotography) ? $fotografiaDigital['componentes']['lente'][1] : $digitalPhotography['components']['lens'][1];?></li>
+                    <li><strong><?= empty($digitalPhotography) ? $fotografiaDigital['componentes']['procesador'][0] : $digitalPhotography['components']['processor'][0];?></strong>
+                        <?= empty($digitalPhotography) ? $fotografiaDigital['componentes']['procesador'][1] : $digitalPhotography['components']['processor'][1];?></li>
+                    <li><strong><?= empty($digitalPhotography) ? $fotografiaDigital['componentes']['resolucion'][0] : $digitalPhotography['components']['resolution'][0];?></strong>
+                        <?= empty($digitalPhotography) ? $fotografiaDigital['componentes']['resolucion'][1] : $digitalPhotography['components']['resolution'][1];?></li>
+                    <li><strong><?= empty($digitalPhotography) ? $fotografiaDigital['componentes']['rango'][0] : $digitalPhotography['components']['range'][0];?></strong>
+                        <?= empty($digitalPhotography) ? $fotografiaDigital['componentes']['rango'][1] : $digitalPhotography['components']['range'][1];?></li>
                 </ul>
             </div>
             <div class="item">
-                <h3>Digital Image Processing</h3>
-                <p class="selection" tabindex="0">After capture, images go through several processing steps:</p>
+                <h3><?= empty($digitalProcessing) ? $procesamientoDigital['titulo'] : $digitalProcessing['title'];?></h3>
+                <p class="selection" tabindex="0"><?= empty($digitalProcessing) ? $procesamientoDigital['intro'] : $digitalProcessing['intro'];?></p>
                 <ul class="imgs">
-                    <li><strong>RAW Processing:</strong> Converting raw sensor data into viewable images</li>
-                    <li><strong>Color Correction:</strong> Adjusting white balance and color accuracy</li>
-                    <li><strong>Noise Reduction:</strong> Removing digital artifacts and sensor noise</li>
-                    <li><strong>Compression:</strong> Optimizing file size while maintaining image quality</li>
+                    <li><strong><?= empty($digitalProcessing) ? $procesamientoDigital['pasos']['raw'][0] : $digitalProcessing['steps']['raw'][0];?></strong> 
+                        <?= empty($digitalProcessing) ? $procesamientoDigital['pasos']['raw'][1] : $digitalProcessing['steps']['raw'][1];?></li>
+                    <li><strong><?= empty($digitalProcessing) ? $procesamientoDigital['pasos']['color'][0] : $digitalProcessing['steps']['color'][0];?></strong>
+                        <?= empty($digitalProcessing) ? $procesamientoDigital['pasos']['color'][1] : $digitalProcessing['steps']['color'][1];?></li>
+                    <li><strong><?= empty($digitalProcessing) ? $procesamientoDigital['pasos']['ruido'][0] : $digitalProcessing['steps']['noise'][0];?></strong>
+                        <?= empty($digitalProcessing) ? $procesamientoDigital['pasos']['ruido'][1] : $digitalProcessing['steps']['noise'][1];?></li>
+                    <li><strong><?= empty($digitalProcessing) ? $procesamientoDigital['pasos']['compresion'][0] : $digitalProcessing['steps']['compression'][0];?></strong>
+                        <?= empty($digitalProcessing) ? $procesamientoDigital['pasos']['compresion'][1] : $digitalProcessing['steps']['compression'][1];?></li>
                 </ul>
             </div>
         </aside>
