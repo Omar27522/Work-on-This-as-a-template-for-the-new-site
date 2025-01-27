@@ -7,8 +7,8 @@
         {
             "type": "msedge",
             "request": "launch",
-            "name": "Open index - Copy.html",
-            "url": "http://localhost:3000/software/webbrowsers"
+            "name": "Images",
+            "url": "http://refactorlatpc/software/imaging/"
         }
     ]
 }
