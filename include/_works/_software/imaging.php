@@ -156,7 +156,7 @@
                 <?php
                 $appTypes = ['medica' => 'medical', 'satelital' => 'satellite', 'ia' => 'ai'];
                 foreach ($appTypes as $es => $en) : ?>
-                <li class="item spz d4" tabindex="0">
+                <li class="item spz" tabindex="0">
                     <strong><?= empty($modernImaging) ? $imagenModerna['aplicaciones'][$es]['titulo'] : $modernImaging['applications'][$en]['title'];?>:</strong>
                     <?= empty($modernImaging) ? $imagenModerna['aplicaciones'][$es]['descripcion'] : $modernImaging['applications'][$en]['description'];?>
                 </li>

@@ -14,7 +14,13 @@ $subTitulos = [
 
 $enlaces =[
     'terceraDimension'=>'https://all3dp.com/2/3d-file-format-3d-model-types/',
-    'formatoArchivos'=>'https://www.adobe.com/creativecloud/file-types/image/raster.html'
+    'formatoArchivos'=>'https://www.adobe.com/creativecloud/file-types/image/raster.html',
+    'resonanciaM'=>'https://www.mayoclinic.org/es/tests-procedures/mri/about/pac-20384768',
+    'tomografia'=>'https://www.mayoclinic.org/es/tests-procedures/ct-scan/about/pac-20393675',
+    'satelites'=>'https://cienciasinlimites.org/los-satelites-de-observacion-terrestre-y-su-impacto-en-la-ciencia/',
+    'inteligenciaArtificial'=>'https://diarioia.com/enciclopedia-inteligencia-artificial-iapedia/',
+    ''=>'',
+    ''=>'',
 ];
 
 $imagenes = [
@@ -121,15 +127,15 @@ $imagenModerna = [
     'aplicaciones' => [
         'medica' => [
             'titulo' => 'Imágenes Médicas',
-            'descripcion' => 'Técnicas avanzadas de visualización como la resonancia magnética y las tomografías proporcionan vistas detalladas en 3D del cuerpo humano'
+            'descripcion' => 'Técnicas avanzadas de visualización como la <a href="'.$enlaces['resonanciaM'].'">resonancia magnética</a> y las <a href="'.$enlaces['tomografia'].'">tomografías</a> proporcionan vistas detalladas en 3D del cuerpo humano'
         ],
         'satelital' => [
             'titulo' => 'Imágenes Satelitales',
-            'descripcion' => 'Los satélites de observación terrestre de alta resolución capturan imágenes detalladas para mapeo, pronóstico del tiempo y monitoreo ambiental'
+            'descripcion' => 'Los <a href="'.$enlaces['satelites'].'">satélites de observación terrestre de alta resolución</a> capturan imágenes detalladas para mapeo, pronóstico del tiempo y monitoreo ambiental'
         ],
         'ia' => [
             'titulo' => 'Imágenes Mejoradas por IA',
-            'descripcion' => 'Los algoritmos de aprendizaje automático mejoran la calidad de imagen, automatizan el análisis y permiten nuevas aplicaciones como el reconocimiento facial'
+            'descripcion' => 'Los <a href="'.$enlaces['inteligenciaArtificial'].'">algoritmos de aprendizaje automático</a> mejoran la calidad de imagen, automatizan el análisis y permiten nuevas aplicaciones como el reconocimiento facial'
         ]
     ],
     'conclusion'=>'La tecnología de imágenes actual va más allá de la mera visualización - las computadoras ahora pueden materializar diseños digitales en objetos físicos a través de la <a href="'.$enlaces['terceraDimension'].'">tecnología de impresión 3D</a>.'
