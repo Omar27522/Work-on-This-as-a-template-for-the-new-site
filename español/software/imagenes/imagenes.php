@@ -15,6 +15,9 @@ $subTitulos = [
 $enlaces =[
     'terceraDimension'=>'https://all3dp.com/2/3d-file-format-3d-model-types/',
     'formatoArchivos'=>'https://www.adobe.com/creativecloud/file-types/image/raster.html',
+    
+    
+    
     'resonanciaM'=>'https://www.mayoclinic.org/es/tests-procedures/mri/about/pac-20384768',
     'tomografia'=>'https://www.mayoclinic.org/es/tests-procedures/ct-scan/about/pac-20393675',
     'satelites'=>'https://cienciasinlimites.org/los-satelites-de-observacion-terrestre-y-su-impacto-en-la-ciencia/',

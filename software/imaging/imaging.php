@@ -13,7 +13,31 @@ $subTitles = [
 
 $links = [
     'thirdDimension'=>'https://all3dp.com/2/3d-file-format-3d-model-types/',
-    'graphicFileFormats'=>'https://www.adobe.com/creativecloud/file-types/image/raster.html'
+    'graphicFileFormats'=>'https://www.adobe.com/creativecloud/file-types/image/raster.html',
+    'sight'=>'https://www.livescience.com/60752-human-senses.html#section-sense-of-sight',
+    'optics'=>'https://en.wikipedia.org/wiki/Optics',
+    'vision'=>'https://en.wikipedia.org/wiki/Visual_perception',
+    'mit'=>'https://mitmuseum.mit.edu/collections/object/2000.006.001',
+    'whirlwind'=>'https://en.wikipedia.org/wiki/Whirlwind_I',
+    'ivanSutherland'=>'https://en.wikipedia.org/wiki/Ivan_Sutherland',
+    'sketchPad'=>'https://en.wikipedia.org/wiki/Sketchpad',
+    'graphics1970'=>'https://danielsevo.com/hocg/hocg_1970.htm',
+    'graphics1980'=>'https://danielsevo.com/hocg/hocg_1980.htm',
+    'animation'=>'https://en.wikipedia.org/wiki/History_of_computer_animation#Towards_3-D:_mid-1970s_into_the_1980s',
+    'gpu'=>'https://www.techspot.com/article/650-history-of-the-gpu/',
+    'realTimeGraphics'=>'https://www.advances.realtimerendering.com/',
+    'photoRealism'=>'https://www.theartstory.org/movement/photorealism/',
+    ''=>'',
+    ''=>'',
+    ''=>'',
+    ''=>'',
+    ''=>'',
+    ''=>'',
+    ''=>'',
+    ''=>'',
+    ''=>'',
+    
+    //don't forget the links have titles. an imagesTitles variable will be needed for this feat, because Im not using arrays like last time. Last time was fun right? I bet it was, supposedly im done, so I don't have to look at old code ever again. hahhahahahah 🙃 I love PHP, write it once Forget it for a cool lustrum.
 ];
 
 $images = [
@@ -21,13 +45,13 @@ $images = [
 ];
 
 $sight = [
-    'Sight is one of the primary senses humans use to make sense of the world.',
-    'When light reflects off an object, the eyes detect light variations, then the brain processes this information to create a personal experience of perceived reality trough <b>vision</b>.',
+    '<a href="'.$links['sight'].'">Sight</a> is one of the primary senses humans use to make sense of the world.',
+    'When <a href="'.$links['optics'].'">light reflects off an object</a>, the eyes detect light variations, then the brain processes this information to create a personal experience of perceived reality trough <b><a href="'.$links['vision'].'">vision</a></b>.',
     'I\'d say, if an object is visible to an observer, the object\'s existence can be further confirmed by testing it with the other senses, such as <b>touch</b>, <b>sound</b>, <b>taste</b>, and <b>smell</b>, etc...'
 ];
 
 $evolution = [
-    'The history of computer graphics dates back to the 1950s, beginning with the Whirlwind computer at MIT which used a CRT display for output. In 1963, Ivan Sutherland revolutionized the field with Sketchpad, the first computer-aided design program. The 1970s saw the birth of 2D computer graphics in commercial applications, while the 1980s brought us breakthrough developments in 3D graphics and animation. The 1990s witnessed the rise of dedicated graphics processing units (GPUs), leading to today\'s photorealistic rendering capabilities and real-time 3D graphics.'
+    'The history of computer graphics dates back to the 1950s, beginning with the <a href="'.$links['whirlwind'].'">Whirlwind computer</a> at <a href="'.$links['mit'].'">MIT</a> which used a CRT display for output. In 1963, <a href="'.$links['ivanSutherland'].'">Ivan Sutherland</a> revolutionized the field with <a href="'.$links['sketchPad'].'">Sketchpad</a>, the first computer-aided design program. The 1970s saw the birth of <a href="'.$links['graphics1970'].'">2D computer graphics</a> in commercial applications, while the 1980s brought us breakthrough developments in <a href="'.$links['graphics1980'].'">3D graphics</a> and <a href="'.$links['animation'].'">animation</a>. The 1990s witnessed the rise of dedicated <a href="'.$links['gpu'].'">graphics processing units</a> (GPUs), leading to today\'s <a href="'.$links['photoRealism'].'">photorealistic</a> rendering capabilities and <a href="'.$links['realTimeGraphics'].'">real-time 3D graphics</a>.'
 ];
 
 $graphics2D = ['2D graphics form the basis of digital imaging, consisting of pixels arranged in a two-dimensional grid. These graphics include everything from basic user interfaces to digital art and photographs. Vector graphics, another form of 2D imaging, use mathematical equations to create scalable images that maintain quality at any size. Common applications include logo design, typography, and technical illustrations.'];
