@@ -27,16 +27,23 @@ $links = [
     'gpu'=>'https://www.techspot.com/article/650-history-of-the-gpu/',
     'realTimeGraphics'=>'https://www.advances.realtimerendering.com/',
     'photoRealism'=>'https://www.theartstory.org/movement/photorealism/',
+    'vector'=>'https://www.techtarget.com/whatis/definition/vector-graphics',
+    'twoD'=>'https://www.velocenetwork.com/tech/what-is-a-2d-computer-graphic/',
+    'threeD'=>'https://blog.zwsoft.com/3d-computer-graphics/',
+    'logo'=>'https://en.wikipedia.org/wiki/Logo',
+    'typography'=>'https://en.wikipedia.org/wiki/Typography',
+    'technicalIllustrations'=>'https://en.wikipedia.org/wiki/Technical_illustration',
+    'polygons'=>'https://ikarus3d.com/media/3d-blog/a-comprehensive-guide-to-polygonal-modeling/',
+    'rayTracing'=>'https://en.wikipedia.org/wiki/Ray_tracing_(graphics)',
+    'realtimeRendering'=>'https://en.wikipedia.org/wiki/Real-time_computer_graphics',
+    'digitalPhotography'=>'https://en.wikipedia.org/wiki/Digital_photography',
+    'sensors'=>'https://petapixel.com/2025/02/03/the-60-year-history-of-digital-image-sensors-as-told-by-those-involved/',
     ''=>'',
     ''=>'',
     ''=>'',
     ''=>'',
     ''=>'',
-    ''=>'',
-    ''=>'',
-    ''=>'',
-    ''=>'',
-    
+
     //don't forget the links have titles. an imagesTitles variable will be needed for this feat, because Im not using arrays like last time. Last time was fun right? I bet it was, supposedly im done, so I don't have to look at old code ever again. hahhahahahah 🙃 I love PHP, write it once Forget it for a cool lustrum.
 ];
 
@@ -54,19 +61,19 @@ $evolution = [
     'The history of computer graphics dates back to the 1950s, beginning with the <a href="'.$links['whirlwind'].'">Whirlwind computer</a> at <a href="'.$links['mit'].'">MIT</a> which used a CRT display for output. In 1963, <a href="'.$links['ivanSutherland'].'">Ivan Sutherland</a> revolutionized the field with <a href="'.$links['sketchPad'].'">Sketchpad</a>, the first computer-aided design program. The 1970s saw the birth of <a href="'.$links['graphics1970'].'">2D computer graphics</a> in commercial applications, while the 1980s brought us breakthrough developments in <a href="'.$links['graphics1980'].'">3D graphics</a> and <a href="'.$links['animation'].'">animation</a>. The 1990s witnessed the rise of dedicated <a href="'.$links['gpu'].'">graphics processing units</a> (GPUs), leading to today\'s <a href="'.$links['photoRealism'].'">photorealistic</a> rendering capabilities and <a href="'.$links['realTimeGraphics'].'">real-time 3D graphics</a>.'
 ];
 
-$graphics2D = ['2D graphics form the basis of digital imaging, consisting of pixels arranged in a two-dimensional grid. These graphics include everything from basic user interfaces to digital art and photographs. Vector graphics, another form of 2D imaging, use mathematical equations to create scalable images that maintain quality at any size. Common applications include logo design, typography, and technical illustrations.'];
+$graphics2D = ['<a href="'.$links['twoD'].'">2D graphics</a> form the basis of digital imaging, consisting of pixels arranged in a two-dimensional grid. These graphics include everything from basic user interfaces to digital art and photographs. <a href="'.$links['vector'].'">Vector graphics</a>, another form of 2D imaging, use mathematical equations to create scalable images that maintain quality at any size. Common applications include <a href="'.$links['logo'].'">logo</a> design, <a href="'.$links['typography'].'">typography</a>, and <a href="'.$links['technicalIllustrations'].'">technical illustrations</a>.'];
 
 $graphics3D = [
-    'thirdD' => '3D graphics introduce the z-axis, creating virtual objects with depth, volume, and perspective. Modern 3D graphics utilize complex techniques like:',
-    'first' => 'Polygon mesh modeling for creating object shapes',
-    'second' => 'Texture mapping for adding surface details',
-    'third' => 'Ray tracing for realistic lighting and shadows',
-    'fourth' => 'Real-time rendering for interactive experiences',
+    'thirdD' => '<a href="'.$links['threeD'].'">3D graphics</a> introduce the z-axis, creating virtual objects with depth, volume, and perspective. Modern 3D graphics utilize complex techniques like:',
+    'first' => 'Polygon mesh <a href="'.$links['polygons'].'">modeling</a> for creating object shapes',
+    'second' => '<a href="'.$links['textureMapping'].'">Texture mapping</a> for adding surface details',
+    'third' => '<a href="'.$links['rayTracing'].'">Ray tracing</a> for realistic lighting and shadows',
+    'fourth' => '<a href="'.$links['realtimeRendering'].'">Real-time rendering</a> for interactive experiences',
     'thirdDLast' => 'These technologies power everything from video games to architectural visualization and scientific simulations.',
 ];
 
 $digitalPhotography = [
-    'photo'=>'Digital photography represents a crucial aspect of modern imaging technology.',
+    'photo'=>'Digital <a href="'.$links['digitalPhotography'].'">photography</a> represents a crucial aspect of modern imaging technology.',
     'include'=>'Key components include:',
     'sensor'=>[
         'image'=>'Image Sensors',
@@ -75,7 +82,7 @@ $digitalPhotography = [
             'pro'=>'Known for high-quality images with less noise, traditionally used in professional cameras'],
         'cmos'=>['strong'=>'CMOS (Complementary Metal-Oxide Semiconductor):',
             'pro'=>'More energy-efficient and cheaper to manufacture, now the dominant technology in most modern cameras'],
-        'sensors'=>'These sensors convert light into electrical signals through millions of photosites (pixels).'
+        'sensors'=>'These <a href="'.$links['sensors'].'">sensors</a> convert light into electrical signals through millions of photosites (pixels).'
     ],
     'keyComponents'=>'Key Photography Components',
     'elements'=>'Several elements work together to create digital images:',
