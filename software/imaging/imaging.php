@@ -38,11 +38,17 @@ $links = [
     'realtimeRendering'=>'https://en.wikipedia.org/wiki/Real-time_computer_graphics',
     'digitalPhotography'=>'https://en.wikipedia.org/wiki/Digital_photography',
     'sensors'=>'https://petapixel.com/2025/02/03/the-60-year-history-of-digital-image-sensors-as-told-by-those-involved/',
-    ''=>'',
-    ''=>'',
-    ''=>'',
-    ''=>'',
-    ''=>'',
+    'textureMapping'=>'https://en.wikipedia.org/wiki/Texture_mapping',
+    'display'=>'../../hardware/?monitor#monitor',
+    'arVr'=>'../../hardware/?headset',
+    'mri'=>'https://www.healthline.com/health/what-is-a-mri#what-it-is',
+    'ct'=>'https://my.clevelandclinic.org/health/diagnostics/4808-ct-computed-tomography-scan',
+    'satelliteImaging'=>'https://business.esa.int/newcomers-earth-observation-guide',
+    'aiImaging'=>'https://www.spectral-ai.com/blog/the-intelligent-revolution-ai-in-medical-imaging-and-diagnostics/',
+    'dataQuality'=>'https://research.aimultiple.com/data-quality-ai/',
+    'ethicalConcerns'=>'https://hbr.org/2024/05/ais-trust-problem',
+    'rasterImages'=>'https://en.wikipedia.org/wiki/Raster_graphics',
+    'colorTheory'=>'https://www.colorsexplained.com/color-theory/',
 
     //don't forget the links have titles. an imagesTitles variable will be needed for this feat, because Im not using arrays like last time. Last time was fun right? I bet it was, supposedly im done, so I don't have to look at old code ever again. hahhahahahah 🙃 I love PHP, write it once Forget it for a cool lustrum.
 ];
@@ -112,7 +118,7 @@ $digitalProcessing = [
 ];
 
 $displayTech = [
-    'intro' => 'Today\'s display technology has evolved dramatically, offering unprecedented visual experiences:',
+    'intro' => 'Today\'s <a href="'.$links['display'].'">display</a> technology has evolved dramatically, offering unprecedented visual experiences:',
     'technologies' => [
         'refresh' => [
             'title' => 'High Refresh Rates',
@@ -149,7 +155,7 @@ $immersiveTech = [
             'description' => 'Blending virtual and real environments where digital and physical objects can interact'
         ]
     ],
-    'conclusion' => 'These technologies are revolutionizing fields from gaming and entertainment to education, healthcare, and professional training, pushing the boundaries of human-computer interaction.'
+    'conclusion' => 'These <a href="'.$links['arVr'].'">technologies</a> are revolutionizing fields from gaming and entertainment to education, healthcare, and professional training, pushing the boundaries of human-computer interaction.'
 ];
 
 $imageFormats = [
@@ -162,15 +168,15 @@ $modernImaging = [
     'applications' => [
         'medical' => [
             'title' => 'Medical Imaging',
-            'description' => 'Advanced visualization techniques like MRI and CT scans provide detailed 3D views of the human body'
+            'description' => 'Advanced visualization techniques like <a href="'.$links['mri'].'">MRI</a> and <a href="'.$links['ct'].'">CT</a> scans provide detailed 3D views of the human body'
         ],
         'satellite' => [
             'title' => 'Satellite Imaging',
-            'description' => 'High-resolution earth observation satellites capture detailed images for mapping, weather forecasting, and environmental monitoring'
+            'description' => 'High-resolution earth observation satellites capture detailed <a href="'.$links['satelliteImaging'].'">images</a> for mapping, weather forecasting, and environmental monitoring'
         ],
         'ai' => [
             'title' => 'AI-Enhanced Imaging',
-            'description' => 'Machine learning algorithms improve image quality, automate analysis, and enable new applications like facial recognition'
+            'description' => 'AI and machine learning are changing medical <a href="'.$links['aiImaging'].'">imaging</a> by making pictures clearer, analyzing them faster, and allowing for new ways to use them. AI improves techniques like MRI and CT scans by reducing noise and enhancing details. While AI offers many benefits, there are still challenges like <a href="'.$links['dataQuality'].'">data quality</a> and <a href="'.$links['ethicalConcerns'].'">ethical concerns</a> to consider.'
         ]
         ],
  'conclusion'=>'Today\'s imaging technology extends beyond mere display - computers can now materialize digital designs into
@@ -180,7 +186,7 @@ $modernImaging = [
 
 $closingText = [
     'title'=>'Further Exploration',
-    'text' => 'The field of computer graphics and imaging is vast and constantly evolving. We encourage you to explore topics like ray tracing, vector graphics, raster images, color theory, and the latest developments in real-time rendering. Understanding these concepts can provide deeper insights into how modern digital imaging works and where the technology is headed.'
+    'text' => 'The field of computer graphics and imaging is vast and constantly evolving. We encourage you to explore topics like <b>ray tracing</b> <small>[<a href="'.$links['rayTracing'].'">1</a>]</small>, <b>vector graphics</b> <small>[<a href="'.$links['vector'].'">1</a>]</small>, <b>raster images</b> <small>[<a href="'.$links['rasterImages'].'">1</a>]</small>, <b>color theory</b> <small>[<a href="'.$links['colorTheory'].'">1</a>]</small>, and the latest developments in <b>real-time rendering</b> <small>[<a href="'.$links['realtimeRendering'].'">1</a>]</small> <small>[<a href="'.$links['realTimeGraphics'].'">2</a>]</small>. Understanding these concepts can provide deeper insights into how modern digital imaging works and where the technology is headed.'
 ];
 
 ?>
