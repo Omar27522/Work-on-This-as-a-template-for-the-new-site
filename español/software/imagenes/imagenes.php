@@ -8,15 +8,18 @@ $subTitulos = [
     'Fotografía digital y hardware de imagen',
     'Tecnologías modernas de pantalla',
     'Realidad virtual y aumentada',
-    'Imágenes por computadora modernas',
-    '',
+    'Imágenes por computadora modernas'
 ];
 
 $enlaces =[
     'terceraDimension'=>'https://all3dp.com/2/3d-file-format-3d-model-types/',
     'formatoArchivos'=>'https://www.adobe.com/creativecloud/file-types/image/raster.html',
-    
-    
+    'vista'=>'https://concepto.de/sentido-de-la-vista/',
+    ''=>'',
+    ''=>'',
+    ''=>'',
+    ''=>'',
+    ''=>'',
     
     'resonanciaM'=>'https://www.mayoclinic.org/es/tests-procedures/mri/about/pac-20384768',
     'tomografia'=>'https://www.mayoclinic.org/es/tests-procedures/ct-scan/about/pac-20393675',
