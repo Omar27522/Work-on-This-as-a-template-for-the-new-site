@@ -15,6 +15,14 @@ $enlaces =[
     'terceraDimension'=>'https://all3dp.com/2/3d-file-format-3d-model-types/',
     'formatoArchivos'=>'https://www.adobe.com/creativecloud/file-types/image/raster.html',
     'vista'=>'https://concepto.de/sentido-de-la-vista/',
+    'optica'=>'https://es.wikipedia.org/wiki/%C3%93ptica',
+    'vision'=>'https://es.wikipedia.org/wiki/Visi%C3%B3n',
+    'whirlwind'=>'https://es.wikipedia.org/wiki/Whirlwind',
+    'mit'=>'https://lapasiondepensar.wordpress.com/2018/08/28/proyecto-whirlwind/comment-page-1/',
+    'ivan'=>'https://es.wikipedia.org/wiki/Ivan_Sutherland',
+    'sketchPad'=>'https://es.wikipedia.org/wiki/Sketchpad',
+    'dosD'=>'https://academia-lab.com/enciclopedia/graficos-2d-por-computadora/',
+    'tresD'=>'https://niixer.com/index.php/2024/03/02/graficos-3d-su-evolucion-de-vectores-a-realidades-virtuales/',
     ''=>'',
     ''=>'',
     ''=>'',
@@ -34,13 +42,13 @@ $imagenes = [
 ];
 
 $vista = [
-    'La visión es uno de los sentidos principales mas usados para comprender el mundo.',
-    'Cuando la luz se refleja en un objeto, los ojos detectan las variaciones de luz, luego el cerebro procesa esta información; crea una experiencia, y una percepción personal de la realidad mediante el uso de la <b>vista</b>.',
+    'La <a href="'.$enlaces['vista'].'">visión</a> es uno de los sentidos principales mas usados para comprender el mundo.',
+    'Cuando la <a href="'.$enlaces['optica'].'">luz se refleja en un objeto</a>, los ojos detectan las variaciones de luz, luego el cerebro procesa esta información; crea una experiencia, y una percepción personal de la realidad mediante el uso de la <b><a href="'.$enlaces['vision'].'">vista</a></b>.',
     'Diría que, si un objeto es visible para un observador, la existencia del mismo objeto puede ser confirmada aún más poniéndolo a prueba con los otros sentidos, como el <b>tacto</b>, el <b>oído</b>, el <b>gusto</b> y el <b>olfato</b>, etc...'
 ];
 
 $evolucion = [
-    'La historia de los gráficos por computadora se remonta a la década de 1950, comenzando con la computadora Whirlwind en el MIT que utilizaba una pantalla CRT para la salida. En 1963, Ivan Sutherland revolucionó el campo con Sketchpad, el primer programa de diseño asistido por computadora. La década de 1970 vio el nacimiento de los gráficos por computadora en 2D en aplicaciones comerciales, mientras que la década de 1980 nos trajo desarrollos revolucionarios en gráficos y animación en 3D. La década de 1990 fue testigo del surgimiento de unidades de procesamiento gráfico (GPUs) dedicadas, lo que llevó a las capacidades de renderizado foto-realistas y gráficos 3D en tiempo real de hoy en día.'
+    'La historia de los gráficos por computadora se remonta a la década de 1950, comenzando con la <a href="'.$enlaces['mit'].'">computadora</a> <a href="'.$enlaces['whirlwind'].'">Whirlwind</a> en el MIT que utilizaba una pantalla CRT para la salida. En 1963, <a href="'.$enlaces['ivan'].'">Ivan Sutherland</a> revolucionó el campo con <a href="'.$enlaces['sketchPad'].'">Sketchpad</a>, el primer programa de diseño asistido por computadora. La década de 1970 vio el nacimiento de los <a href="'.$enlaces['dosD'].'">gráficos por computadora en 2D</a> en aplicaciones comerciales, mientras que la década de 1980 nos trajo desarrollos revolucionarios en <a href="'.$enlaces['tresD'].'">gráficos</a> y animación en 3D. La década de 1990 fue testigo del surgimiento de unidades de procesamiento gráfico (GPUs) dedicadas, lo que llevó a las capacidades de renderizado foto-realistas y gráficos 3D en tiempo real de hoy en día.'
 ];
 
 $graficos2D = ['Los gráficos en 2D forman la base de la imagen digital, consistiendo en píxeles organizados en una cuadrícula bidimensional. Estos gráficos incluyen desde interfaces de usuario básicas hasta arte digital y fotografías. Los gráficos vectoriales, otra forma de imágenes en 2D, utilizan ecuaciones matemáticas para crear imágenes escalables que mantienen su calidad a cualquier tamaño. Las aplicaciones comunes incluyen el diseño de logotipos, la tipografía y las ilustraciones técnicas.'];
