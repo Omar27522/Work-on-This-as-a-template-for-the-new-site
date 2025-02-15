@@ -23,6 +23,12 @@ $enlaces =[
     'sketchPad'=>'https://es.wikipedia.org/wiki/Sketchpad',
     'dosD'=>'https://academia-lab.com/enciclopedia/graficos-2d-por-computadora/',
     'tresD'=>'https://niixer.com/index.php/2024/03/02/graficos-3d-su-evolucion-de-vectores-a-realidades-virtuales/',
+    'animacion'=>'https://conceptosdelahistoria.com/innovaciones-tecnologicas/innovaciones-modernas/animacion-por-computadora/',
+    'gpu'=>'https://www.xataka.com/componentes/las-gpu-como-pasado-presente-y-futuro-de-la-computacion',
+    'fotorrealismo'=>'https://www.artlex.com/es/movimientos-artisticos/fotorrealismo/',
+    'tiempoReal'=>'https://www.autodesk.com/mx/solutions/real-time-rendering?msockid=097ed31398d969d61f38c7a5994b6801',
+    ''=>'',
+    ''=>'',
     ''=>'',
     ''=>'',
     ''=>'',
@@ -48,7 +54,7 @@ $vista = [
 ];
 
 $evolucion = [
-    'La historia de los gráficos por computadora se remonta a la década de 1950, comenzando con la <a href="'.$enlaces['mit'].'">computadora</a> <a href="'.$enlaces['whirlwind'].'">Whirlwind</a> en el MIT que utilizaba una pantalla CRT para la salida. En 1963, <a href="'.$enlaces['ivan'].'">Ivan Sutherland</a> revolucionó el campo con <a href="'.$enlaces['sketchPad'].'">Sketchpad</a>, el primer programa de diseño asistido por computadora. La década de 1970 vio el nacimiento de los <a href="'.$enlaces['dosD'].'">gráficos por computadora en 2D</a> en aplicaciones comerciales, mientras que la década de 1980 nos trajo desarrollos revolucionarios en <a href="'.$enlaces['tresD'].'">gráficos</a> y animación en 3D. La década de 1990 fue testigo del surgimiento de unidades de procesamiento gráfico (GPUs) dedicadas, lo que llevó a las capacidades de renderizado foto-realistas y gráficos 3D en tiempo real de hoy en día.'
+    'La historia de los gráficos por computadora se remonta a la década de 1950, comenzando con la <a href="'.$enlaces['mit'].'">computadora</a> <a href="'.$enlaces['whirlwind'].'">Whirlwind</a> en el MIT que utilizaba una pantalla CRT para la salida. En 1963, <a href="'.$enlaces['ivan'].'">Ivan Sutherland</a> revolucionó el campo con <a href="'.$enlaces['sketchPad'].'">Sketchpad</a>, el primer programa de diseño asistido por computadora. La década de 1970 vio el nacimiento de los <a href="'.$enlaces['dosD'].'">gráficos por computadora en 2D</a> en aplicaciones comerciales, mientras que la década de 1980 nos trajo desarrollos revolucionarios en <a href="'.$enlaces['tresD'].'">gráficos</a> y <a href="'.$enlaces['animacion'].'">animación en 3D</a>. La década de 1990 fue testigo del surgimiento de <a href="'.$enlaces['gpu'].'">unidades de procesamiento gráfico (GPUs)</a> dedicadas, lo que llevó a las capacidades de renderizado <a href="'.$enlaces['fotorrealismo'].'">foto-realistas</a> y <a href="'.$enlaces['tiempoReal'].'">gráficos 3D en tiempo real</a> de hoy en día.'
 ];
 
 $graficos2D = ['Los gráficos en 2D forman la base de la imagen digital, consistiendo en píxeles organizados en una cuadrícula bidimensional. Estos gráficos incluyen desde interfaces de usuario básicas hasta arte digital y fotografías. Los gráficos vectoriales, otra forma de imágenes en 2D, utilizan ecuaciones matemáticas para crear imágenes escalables que mantienen su calidad a cualquier tamaño. Las aplicaciones comunes incluyen el diseño de logotipos, la tipografía y las ilustraciones técnicas.'];
